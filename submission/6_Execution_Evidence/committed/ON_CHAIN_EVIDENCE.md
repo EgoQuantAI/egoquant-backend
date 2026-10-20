@@ -26,7 +26,7 @@ How these were made:
   saved the result as `/account/portfolio` does (with `inputs.answers` and both log rows), logged `report_viewed`,
   then `POST /account/reports/{id}/confirm` sealed it with the real Sepolia client.
 - **A5:** the same real C3 report on the real **portfolio page** (local frontend with the wiring), confirmed by
-  clicking "Confirm this plan" → consent → "Confirm and seal". Screenshots 05–08 show this run.
+  clicking "Confirm this plan" → consent → "Confirm and seal". The screenshots of this first run are not in the package; screenshots 05–16 in b_onchain show the final (seal v2) flow.
 - Every proof file includes the saved report, so `/verify` also checks `versions.report_sha256` ("The full report
   matches the sealed fingerprint"). Each tampered copy moves one weight by 1 ppm. For the 100% BIL C1 portfolio,
   the weight moves down by 1 ppm: this case exposed a CLI bug that is now fixed and tested.
@@ -37,7 +37,7 @@ How these were made:
 
 ### Full values (part A)
 
-**A1. C1 no-loss saver** (C1, 1 holdings; data `historical` as of 2026-10-16)
+**A1. C1 no-loss saver** (C1, 1 holding; data `historical` as of 2026-10-16)
 
 - proof: `docs/anchoring/real-no_loss_saver.proof.json`
 - commitment: `b3fa4daed194d4db91d0da8b64508659f8a1fc93956fe20599d66866a91d784c`
@@ -103,8 +103,7 @@ unchanged: the same 0-ETH self-transaction with `EGOQ1` + 32 bytes.
 
 C2 on the chain (read with a public node): status success, from the sealing address to itself, 0 ETH, input 37 bytes
 (`EGOQ1` + commitment), 14,368 gas. C1 is checked in the tests against a read-only snapshot of its transaction
-(`tests/anchoring/test_committed_proofs.py`; the file is `docs/anchoring/demo-sealed-report.v2.html`). C2's sealed report
-belongs to its account and is not committed.
+(`tests/anchoring/test_committed_proofs.py`; the file is `docs/anchoring/demo-sealed-report.v2.html`). C2's downloaded sealed report is included as b_onchain/proofs/C2-live-sealed-report.html.
 
 ## Screenshots
 
