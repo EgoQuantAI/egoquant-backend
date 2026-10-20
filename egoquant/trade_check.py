@@ -435,7 +435,7 @@ def _limits(profile, profile_config, config: AgentConfig, behavioral: list[Const
     for asset_class, field_name in CLASS_CAP_FIELDS.items():
         cap = getattr(policy, field_name)
         if asset_class == "cash":
-            # CLAUDE.md decision 14: Agent A caps cash only so that a minimum-variance optimizer does not park a growth
+            # DESIGN.md decision 14: Agent A caps cash only so that a minimum-variance optimizer does not park a growth
             # portfolio in T-bills. That is a portfolio-construction rule, not investor protection (more cash cannot
             # raise the stress loss or an R-level), so the trade check does not apply it to the investor's own trades
             # (branch trade-check-cash). It is therefore also out of the Risk Engine review below. The investor's own

@@ -48,8 +48,7 @@ Risk questionnaire ──> C1–C5, product R-level, loss capacity, knowledge re
 | Accounts | `egoquant/accounts/`, `supabase/` | Optional Supabase sign-in, stored IBKR history and saved reports (row-level security) |
 | Web API | `main.py`, `egoquant_routes.py` | FastAPI app used by the frontend |
 
-More detail: [EGOQUANT.md](EGOQUANT.md) (engine overview and risk-class table) and [CLAUDE.md](CLAUDE.md) (team
-rules, principles and open decisions).
+More detail: [EGOQUANT.md](EGOQUANT.md) (engine overview and risk-class table) and [DESIGN.md](DESIGN.md) (principles, conventions and open decisions).
 
 ## Run locally
 

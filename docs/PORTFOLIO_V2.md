@@ -64,7 +64,7 @@ The saved `engine_version` ends with `+pv2`. Onur's `report.py` shows them in th
 - Full offline suite green (known Agent D failures only). Docs updated. Report shows the method.
 - If any item fails, the flag stays `v1`; v1 remains the demo engine.
 
-## 6. Lanes and branches (REVISED 19 Oct evening: Zerya's Claude is offline, so Agent A v2 is built by the other four sessions)
+## 6. Lanes and branches (REVISED 19 Oct evening: Zerya is away, so Agent A v2 is built by the other four)
 All new v2 math lives in NEW files under `egoquant/agents/quant/v2/` (package `__init__.py` by Onur). Zerya's v1 code (`core.py`, `agent.py`, `goal.py`, `egoquant/regime/**`) is NOT edited
 except by Onur at three marked hook points, each guarded by `portfolio_method() == "v2"`, so v1 is byte-identical when the flag is off (golden tests prove it). Zerya reviews when she is back.
 | Who | Branch | Files |

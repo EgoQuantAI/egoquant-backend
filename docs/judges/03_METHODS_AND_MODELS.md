@@ -4,7 +4,7 @@ How to read this document. Every section starts with a paragraph in plain words,
 the file or the test that shows it, relative to the backend repository. **Every cut-off and cap is PROVISIONAL**: it is a team
 proposal for the hackathon demo, not a bank's approved policy, and it lives in a configuration file (never inside the logic), so a bank
 can replace it. No language model ever sets a score, a category, a limit, a weight, an approval or a trade verdict: those are fixed
-code (`CLAUDE.md`, "Core principles"). Sections 1 to 6 describe the risk profile, the Risk Game, the preferences, the behavioural twin
+code (`DESIGN.md`, "Core principles"). Sections 1 to 6 describe the risk profile, the Risk Game, the preferences, the behavioural twin
 (Agent B) and how they were evaluated. Part B, `03b_METHODS_QUANT_RISK_ADVISOR.md`, covers what the category means in numbers, the
 portfolio optimiser (Agent A), the goal simulation, the Risk Engine, the trade check, the report and the adviser.
 

@@ -12,7 +12,7 @@ The code is in two repositories, the backend (Python / FastAPI) and the frontend
 
 ## 1. The security design in ten sentences
 
-1. **Decisions are code, explanations are AI.** Scores, categories, limits, weights, approvals and trade verdicts come from deterministic, tested code; a language model only explains results it is given, and one labelled exception (Agent D's news-tone label) never touches a number a user acts on [design: `CLAUDE.md`, `docs/AGENT_D_LIMITATIONS.md`].
+1. **Decisions are code, explanations are AI.** Scores, categories, limits, weights, approvals and trade verdicts come from deterministic, tested code; a language model only explains results it is given, and one labelled exception (Agent D's news-tone label) never touches a number a user acts on [design: `DESIGN.md`, `docs/AGENT_D_LIMITATIONS.md`].
 2. **Suitability comes first.** A person's risk category is the **lower** of what their finances allow (capacity) and how they say and play they feel about risk (attitude: two thirds questionnaire, one third Risk Game); "I could not accept any loss" always gives the most cautious category [code: `egoquant/risk_profile/scoring.py`; `docs/RISK_GAME_BLEND.md`].
 3. **An independent Risk Engine has the final word.** It recomputes every limit from the weights alone, without calling the optimiser, and only an approved portfolio is shown [code: `egoquant/risk_engine.py`].
 4. **Behaviour can only tighten.** What a person actually did in past market falls (their trade history), a crash test and the game can lower a limit, never raise it [code: `egoquant/agents/behavioral/`].

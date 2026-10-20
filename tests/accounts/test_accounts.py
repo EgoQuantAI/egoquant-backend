@@ -458,7 +458,7 @@ def test_the_supabase_client_reads_only_our_metadata_and_writes_it_as_the_user()
     assert User.from_auth({"id": "x", "user_metadata": "junk"}) == User("x")
 
 
-# ---------------------------------------------------------------- /account/me reads in parallel (Bideci's AI, 20 Oct)
+# ---------------------------------------------------------------- /account/me reads in parallel (20 Oct)
 def test_me_reports_each_consent_like_has_consent(client, store):
     """One consents read for every scope gives the same answer as has_consent: current version and not expired only."""
     assert client.get("/account/me", headers=A).json()["consents"] == {"ibkr_data": False, "trade_check": False}

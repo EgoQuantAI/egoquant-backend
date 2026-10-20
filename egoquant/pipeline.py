@@ -12,7 +12,7 @@
     optional, after the verdict: Agent D market briefing + "What changed" (read-only, never changes a number)
 
 Deterministic: same inputs, same outputs. No LLM sets any number here (the optional briefing's tone labels
-only feed the briefing itself; see CLAUDE.md). The questionnaire score never leaves the risk
+only feed the briefing itself; see DESIGN.md). The questionnaire score never leaves the risk
 profile; Agent A and Agent B get the C-level and numeric limits only.
 """
 

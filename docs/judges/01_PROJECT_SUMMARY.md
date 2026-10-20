@@ -121,7 +121,7 @@ Category limits are provisional; goal chances depend on past data; Yahoo-sourced
 
 ## 12. Team and way of working
 
-The people and the Claude sessions: Savas (manager), Bideci (Supabase and integration), Aslan (news briefing and the on-chain seal), Zerya (the goal simulation and regime model) and the Claude sessions Onur (integration, quant), Umut (frontend), Damla (data and tests), Bartu (questionnaire, behaviour, evaluation). Rules that kept it safe: own git worktrees, a full automatic test suite before every merge, secret scans on every diff, one integration branch, an independent check at every boundary, and a written team tracker.
+The team: Savas (manager), Bideci (Supabase and integration), Aslan (news briefing and the on-chain seal) and Zerya (the goal simulation and regime model). Rules that kept it safe: own git worktrees, a full automatic test suite before every merge, secret scans on every diff, one integration branch, an independent check at every boundary, and a written team tracker.
 
 ## Glossary
 

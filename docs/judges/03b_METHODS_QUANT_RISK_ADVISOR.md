@@ -18,7 +18,7 @@ The stock, gold-and-commodity and crypto caps, the product risk level and the lo
 
 *The named crash scenario* is `equity_down_30_bond_down_5`: stocks fall 30%, bonds 5%, gold and commodities 15%, crypto 60%. Four more hypothetical scenarios are always shown (stocks -20%; a +100 basis point rate shock; an inflation shock;
 a gold, commodity and crypto sell-off). Further limits: no single holding above 40% (the optimizer's standard limit; category C1, whose only funds are two short-Treasury funds, may hold up to 100% in one fund, and in the trade check a purchase into a holding already over 40% is a warning, not a block), instrument caps from Agent C (for example 10% per single stock), the person's cash need, and the knowledge gate for complex products.
-The cash cap is a portfolio-construction rule (so that a minimum-variance optimiser does not park a growth portfolio in cash); it is not applied to a person's own trades (`CLAUDE.md` decision 14).
+The cash cap is a portfolio-construction rule (so that a minimum-variance optimiser does not park a growth portfolio in cash); it is not applied to a person's own trades (`DESIGN.md` decision 14).
 
 ## 2. Agent A: how candidate portfolios are built
 

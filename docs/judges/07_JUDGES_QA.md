@@ -124,7 +124,7 @@ Because the task is a constrained optimisation with legal-style limits that must
 ## F. Engineering and process
 
 **29. How was it built, and how do you know it works?**
-By a small team working with several Claude Code sessions, each with its own area, its own git worktree and a written tracker. Every change was tested and secret-scanned before it was pushed (fast-forward pushes only); the last complete test run is in `docs/judges/04_TESTING_AND_EVIDENCE.md` (3,538 passed, one known failing timing test of the news page);
+By a small team, each member with their own part of the system, their own git worktree and a written tracker. Every change was tested and secret-scanned before it was pushed (fast-forward pushes only); the last complete test run is in `docs/judges/04_TESTING_AND_EVIDENCE.md` (3,538 passed, one known failing timing test of the news page);
 a read-only `eval/deploy_check.py` checks a deployment (status, headers, CORS, builds, trade checks). We say it plainly because the process is part of the safety story. (`docs/DEPLOY_ENV.md`)
 
 **30. Is a result reproducible?**

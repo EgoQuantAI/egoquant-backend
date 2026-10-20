@@ -94,7 +94,7 @@ with tests if you say yes; nothing has been changed.
 **Part 2, outside quant (routed by Onur): `zc_z2_proposed_rate_anchor_part2_outside_quant.diff`.**
 - `report.py`: one sentence under "Corrections against over-optimism", so the investor is told.
 - `demo/goal_walkthrough.py`: the independent re-derivation does the same, so the reproducibility check stays green.
-- `CLAUDE.md`: a note under decision 19.
+- `DESIGN.md`: a note under decision 19.
 
 **Verification.**
 - **On `96b94e8`:** the memory-fix diff, then part 1, then part 2 apply cleanly. The full offline suite gives

@@ -1,14 +1,14 @@
 # On-chain decisions (Aslan)
 
-Savas's rule (20 Oct 2026, about 08:40 Dubai): **Aslan's recorded on-chain decisions win over every session**, as Bideci's
-recorded UI decisions (`UI_DECISIONS.md`, frontend repo) win for the UI. Savas can overrule. Every session follows the lines
-marked `binding`. A `proposal` is Aslan's AI's suggestion or default: it is not Aslan's decision until he confirms it.
+Savas's rule (20 Oct 2026, about 08:40 Dubai): **Aslan's recorded on-chain decisions win over everyone else's**, as Bideci's
+recorded UI decisions (`UI_DECISIONS.md`, frontend repo) win for the UI. Savas can overrule. Everyone follows the lines
+marked `binding`. A `proposal` is a suggestion or default: it is not Aslan's decision until he confirms it.
 
 Guard rails that are not taste (Savas, same day): every existing proof file keeps verifying (new formats are versioned and
 additive), keys live only in Railway's environment, testnet only (chain id 11155111) unless Aslan **and** Savas decide
 otherwise in writing, and advice is never blocked when the chain or the RPC is down (the plan is confirmed and the seal is sent later; the badge reads "Sealing… (the fingerprint will be sent shortly; your plan is confirmed)").
 
-Kept by Aslan's AI on branch `docs/aslan-N`. One line per decision; a later line can replace an earlier one by naming its ID.
+Kept on branch `docs/aslan-N`. One line per decision; a later line can replace an earlier one by naming its ID.
 
 | ID | Decision (plain words) | Date | Source | Status |
 |---|---|---|---|---|
@@ -27,9 +27,9 @@ Kept by Aslan's AI on branch `docs/aslan-N`. One line per decision; a later line
 | OC-13 | **My seals** on the Account page lists the user's own seals with their transactions. | 19 Oct 2026 | Aslan's final-round brief, Part 2 | binding |
 | OC-14 | UI: the seal wording sits before the button; sidebar item **Verify a report** (shield icon, subline "Check a sealed report on the blockchain"); `/verify` in 3 steps, with the demo report and a link to the sealing address. Account: Saved reports and My seals first, IBKR second as "Optional: learn from your past trades (Interactive Brokers)" with a sample file. A note says a PDF copy cannot prove itself. Bideci's UI decisions still apply (no new colours, red only for problems). | 19 Oct 2026 | Aslan's final-round brief, Part 3 | binding |
 | OC-15 | The signed-in check "This report is from your account / belongs to a different account" on `/verify` is **not built** this round (only if everything else was finished and pushed). | 19 Oct 2026 | Aslan's final-round brief, scope note | binding (deferred) |
-| OC-16 | The seal waits until the report's news rating is finished (`409` "news not final"), so the fingerprint covers the finished report. | 19 Oct 2026 | Aslan's brief ("news fully rated in every report", on-chain steps "complete and clear"); the implementation choice is Aslan's AI's | proposal |
-| OC-17 | The seal v2 column lives in its own migration `008_seal_v2.sql` (007 stays as applied). Until 008 runs, confirm falls back to a v1 seal instead of failing (`test_without_migration_008_the_plan_is_still_confirmed_and_sealed_as_v1`). | 20 Oct 2026 | Aslan's AI, after Savas's brief (007 already applied live) | proposal |
-| OC-18 | Limits: 5 seals per account per day, 200 a day in total (`EGOQ_SEAL_MAX_PER_DAY`, marked provisional in `egoquant/anchoring/config.py`); past them the plan is still confirmed and the seal waits. | before 19 Oct 2026 | implemented by Aslan's AI; Aslan has not confirmed the numbers | proposal |
+| OC-16 | The seal waits until the report's news rating is finished (`409` "news not final"), so the fingerprint covers the finished report. | 19 Oct 2026 | Aslan's brief ("news fully rated in every report", on-chain steps "complete and clear"); the implementation choice is a proposal | proposal |
+| OC-17 | The seal v2 column lives in its own migration `008_seal_v2.sql` (007 stays as applied). Until 008 runs, confirm falls back to a v1 seal instead of failing (`test_without_migration_008_the_plan_is_still_confirmed_and_sealed_as_v1`). | 20 Oct 2026 | After Savas's brief (007 already applied live) | proposal |
+| OC-18 | Limits: 5 seals per account per day, 200 a day in total (`EGOQ_SEAL_MAX_PER_DAY`, marked provisional in `egoquant/anchoring/config.py`); past them the plan is still confirmed and the seal waits. | before 19 Oct 2026 | implemented; Aslan has not confirmed the numbers | proposal |
 | OC-19 | Roadmap, not built: the same commitment on a consortium chain such as FISCO BCOS (what changes: the client and the chain id; what stays: the record, the salt, the commitment, the verifier). | 20 Oct 2026 | Savas's brief (open facts) | proposal |
 
 ## Bonus points (on-chain work)

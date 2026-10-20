@@ -90,7 +90,7 @@ def _approved_independently(key, check) -> bool:
     engine.r_levels.setdefault(CASH_ID, 1)
     proposal = PortfolioProposal(stage="constrained", method="sweep", as_of=AS_OF, status="optimal",
                                  weights=dict(check.after.weights))
-    # The risk-class cash cap is Agent A's construction rule (CLAUDE.md decision 14); the trade check does not
+    # The risk-class cash cap is Agent A's construction rule (DESIGN.md decision 14); the trade check does not
     # apply it to the investor's own trades (trade_check._limits, branch trade-check-cash), so this independent
     # check skips it too. Every other limit the pipeline's Risk Engine used still applies.
     constraints = [c for c in out.review_constraints

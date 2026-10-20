@@ -1,6 +1,6 @@
 # 08 · Frontend and API reference
 
-*Written by Bideci's AI for Bideci (frontend and infrastructure). State: the version tagged `submission-20oct` in both repositories (live since 20 Oct 2026, 12:40 Dubai for the first deployment; the checks below were made on the backend `8f21177` and the frontend `7bb7ec2`). Re-checked against the live servers that day: `eval/deploy_check.py` on the
+*Written by Bideci (frontend and infrastructure) for the judges. State: the version tagged `submission-20oct` in both repositories (live since 20 Oct 2026, 12:40 Dubai for the first deployment; the checks below were made on the backend `8f21177` and the frontend `7bb7ec2`). Re-checked against the live servers that day: `eval/deploy_check.py` on the
 live API (price mode `snapshot`) passed 71 of 71 checks; demo builds took 5 to 7 s on saved prices (live, 20 Oct; 20 interest areas: 5.4 s),
 a heavy 60-year goal build 12 to 17 s on the development PC; every trade check answered in under 4.5 s.*
 

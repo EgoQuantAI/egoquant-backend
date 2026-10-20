@@ -140,7 +140,7 @@ def test_growth_investor_gets_individual_stocks_capped_and_no_energy():
 
 
 def test_every_universe_stays_within_the_budget():
-    """Agent C's universe caps (CLAUDE.md open decision 17): 100 in total, 50 single stocks, 30 crypto-assets,
+    """Agent C's universe caps (DESIGN.md open decision 17): 100 in total, 50 single stocks, 30 crypto-assets,
     25 per interest area (cluster)."""
     for key in PERSONAS:
         out = run(key)
