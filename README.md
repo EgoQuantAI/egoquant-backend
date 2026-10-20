@@ -48,15 +48,15 @@ You answer a proper risk questionnaire, play a short game about risk and say wha
 
 ```mermaid
 flowchart LR
-    Q["Questionnaire<br/>+ Risk Game"] --> P["Category C1 to C5<br/>+ numeric limits"]
-    P --> C["Agent C<br/>allowed universe, real prices"]
-    C --> A["Agent A<br/>~100 candidate portfolios"]
-    A --> B["Agent B<br/>behaviour: tighten only"]
-    B --> G["Goal simulation<br/>10,000 futures"]
-    G --> R{"Risk Engine<br/>independent check"}
-    R -- approved --> Rep["Report<br/>JSON + HTML"]
-    Rep --> Adv["Advisor<br/>explains, what-if, trade check"]
-    Rep --> Seal["Seal on Sepolia<br/>(when confirmed)"]
+    Q[Questionnaire and Risk Game] --> P[Category C1 to C5 and limits]
+    P --> C[Agent C: allowed universe and real prices]
+    C --> A[Agent A: about 100 candidate portfolios]
+    A --> B[Agent B: behaviour, tighten only]
+    B --> G[Goal simulation: 10,000 futures]
+    G --> R{Risk Engine: independent check}
+    R -->|approved| Rep[Report]
+    Rep --> Adv[Advisor: explains, what-if, trade check]
+    Rep --> Seal[Seal on Sepolia when confirmed]
 ```
 
 ## 🚀 Try it in two minutes
