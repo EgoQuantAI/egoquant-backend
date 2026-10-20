@@ -13,7 +13,7 @@
 | 7 | 14:05:27 | Report viewed | The investor opens the saved report. | view recorded |
 | 8 | 14:05:27 | Import past trades (IBKR) | Uploads the demo pack's INVENTED Interactive Brokers file (no real account). | 7 trades and 1 cash flow imported (2025-01-02 to 2026-05-04) |
 | 9 | 14:05:28 | Trade check | Asks: 'buy 1,500 USD of VTI (US stocks)?' The rules answer, not the AI. | verdict: outside your limits (Your stock share is already above the limit of 40.0% (60.5%); this trade makes it 63.2%.) |
-| 10 | 14:05:28 | Rebuild with the trading history | The portfolio is built again; the investor's own trading history can only make limits stricter. | behaviour limits before: 0, after: 1: 'Loss in a severe fall, behavioural limit' at most 8.8% (from what your past choices suggest (confidence 80%) (equities fa…) |
+| 10 | 14:05:28 | Rebuild with the trading history | The portfolio is built again; the investor's own trading history can only make limits stricter. | behaviour limits before: 0, after: 1: 'Loss in a severe fall, behavioural limit', at most 8.8% (learned from past trading choices, confidence 80%) |
 | 11 | 14:05:28 | Confirm and seal | The investor confirms the approved plan; only a 32-byte fingerprint is sent, here to a TEST chain inside the sandbox. | confirmed; seal confirmed (sandbox chain, block 1000001) |
 | 12 | 14:05:28 | Verify the sealed report | The downloaded sealed report is checked against the chain; then a copy with one number changed (2.4% -> 99.9%). | original: Unchanged; changed copy: Does not match (report changed) |
 | 13 | 14:05:28 | Delete my data | The investor deletes their data. | rows before: 29, after: 0 (sign-in and username stay, as designed) |

@@ -10,13 +10,12 @@ submitted. It shows the advisor working end to end, step by step, and what it wr
 Every step below is one line of [sandbox_operation_log.md](sandbox_operation_log.md) (the # column).
 
 1. Signed in to a test account (#1) and agreed to the data and trade-check terms (#2, #3).
-2. Answered the 26-question risk questionnaire and played the Risk Game → **category C3 (balanced)** (#4).
+2. Answered the risk questionnaire (25 questions, 26 answers) and played the Risk Game → **category C3 (balanced)** (#4).
 3. EgoQuant built a portfolio on saved real market prices; the independent risk check **approved** it, and it was saved (#5).
 4. The news about each fund was rated to the end: 8 headlines, 12 ratings, **none left unrated** (#6).
 5. The investor opened the saved report (#7). The report itself: [sandbox_report.html](sandbox_report.html).
 6. Uploaded an **invented** Interactive Brokers file: 7 trades and 1 cash payment imported (#8).
-7. Asked "should I buy 1,500 USD of VTI (US stocks)?" → **outside your limits**: the stock share would rise from 60.5% to 63.2%,
-   above the 40% limit. The rules decided this, not the AI (#9).
+7. Asked "should I buy 1,500 USD of VTI (US stocks)?" → **outside your limits**: the investor's current holdings (from the imported file) are already 60.5% stocks, above the C3 limit of 40%, and this trade would make it 63.2%. The rules decided this, not the AI (#9).
 8. Rebuilt the portfolio with the trading history → one **stricter** limit appeared: a loss in a severe fall of at most 8.8%,
    learned from past behaviour. History can only make limits stricter, never looser (#10).
 9. Confirmed the approved plan → it was **sealed** (a 32-byte fingerprint on the sandbox test chain) (#11).
@@ -33,12 +32,12 @@ The raw output: [sandbox_run_console.log](sandbox_run_console.log).
 |---|---|
 | [../deploy_check_live_new_service_59960_20oct_1744.txt](../deploy_check_live_new_service_59960_20oct_1744.txt), [../deploy_check_live_after_final_deploy.txt](../deploy_check_live_after_final_deploy.txt), [../deploy_check_live_20oct_1604.txt](../deploy_check_live_20oct_1604.txt) | Read-only checks of the live service on 20 Oct: **71 of 71 passed** each time, including real portfolio builds for test investors. |
 | [../data_status_live_new_service_59960_20oct_1744.json](../data_status_live_new_service_59960_20oct_1744.json) (and the two earlier `data_status_live_*.json`) | What the live service reported about its data and settings at that moment (no secrets in it). |
-| [../fourteen_investors_20oct_texts.md](../fourteen_investors_20oct_texts.md), [../fourteen_investors_20oct_data.json](../fourteen_investors_20oct_data.json), [../fourteen_investors_20oct_console.log](../fourteen_investors_20oct_console.log) | Fourteen invented investors (the first is a 22-year-old student with 500 USD) run through the advisor, with every sentence they would read. |
+| [../fourteen_investors_20oct_texts.md](../fourteen_investors_20oct_texts.md), [../fourteen_investors_20oct_data.json](../fourteen_investors_20oct_data.json), [../fourteen_investors_20oct_console.log](../fourteen_investors_20oct_console.log) | Fourteen invented investors run through the advisor, with every sentence they would read. |
 | [../test_run_by_area_20oct.txt](../test_run_by_area_20oct.txt) | The full automated test run: **3,538 passed of 3,540** selected (1 known timing test failed, 1 skipped). |
 | [../committed/chat_redteam_20261020_164237.jsonl](../committed/chat_redteam_20261020_164237.jsonl) | Hostile questions to the AI advisor (asking for buy/sell tips, personal data, made-up numbers): **41 of 42 passed**. |
 | [../committed/trade_explain_redteam_20261020_162406.jsonl](../committed/trade_explain_redteam_20261020_162406.jsonl) | The same for the plain-English trade explanations: **51 of 51 passed**. |
 | [../committed/SUPABASE_LOG.md](../committed/SUPABASE_LOG.md) | How the account database was set up and locked down, step by step. |
-| Demo video | Handled separately; the script is in [../../2_Presentation/DEMO_VIDEO_SCRIPT.pdf](../../2_Presentation/DEMO_VIDEO_SCRIPT.pdf). |
+| Demo video | Recorded (about 5 minutes), submitted with this package; narration: [../../2_Presentation/DEMO_VIDEO_SCRIPT.pdf](../../2_Presentation/DEMO_VIDEO_SCRIPT.pdf). |
 
 ## Check it yourself
 
