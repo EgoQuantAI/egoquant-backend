@@ -1,7 +1,7 @@
 # EgoQuant: Project Summary
 
 *2026 Shenzhen FinTechathon, WeBank International Track, Topic B: Wealth Advisory Agent. Status: 20 October 2026.
-Live system: https://fintechaton-frontend.vercel.app (API: https://web-production-59960.up.railway.app, interactive docs at `/docs`).*
+Live system: https://www.egoquant.app (API: https://web-production-59960.up.railway.app, interactive docs at `/docs`).*
 
 ## 1. In one paragraph
 

@@ -4,7 +4,7 @@
 live API (price mode `snapshot`) passed 71 of 71 checks; demo builds took 5 to 7 s on saved prices (live, 20 Oct; 20 interest areas: 5.4 s),
 a heavy 60-year goal build 12 to 17 s on the development PC; every trade check answered in under 4.5 s.*
 
-Live: website <https://fintechaton-frontend.vercel.app> (Next.js on Vercel), API <https://web-production-59960.up.railway.app>
+Live: website <https://www.egoquant.app> (Next.js on Vercel), API <https://web-production-59960.up.railway.app>
 (FastAPI on Railway), database and sign-in: Supabase (Postgres with Row-Level Security).
 
 ---

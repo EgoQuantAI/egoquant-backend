@@ -9,7 +9,7 @@ about the investor's holdings, and an Advisor chat that explains all of it.
 the briefing's news-tone label (see Agent D below). That label never sets a score, a limit, a weight or an
 approval.
 
-- Live demo: https://fintechaton-frontend.vercel.app
+- Live demo: https://www.egoquant.app
 - API: https://web-production-59960.up.railway.app (interactive docs at `/docs`)
 - Backend repository: https://github.com/EgoQuantAI/egoquant-backend
 - Frontend repository: https://github.com/EgoQuantAI/egoquant-frontend

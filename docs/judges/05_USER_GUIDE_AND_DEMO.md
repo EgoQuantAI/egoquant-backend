@@ -3,7 +3,7 @@
 EgoQuant proposes a portfolio for one person, **and shows how to check it**. This guide is for someone opening the website for the
 first time: what to click, what each screen means, how to read the numbers, and what to try if you want to break it. A five-minute path
 comes first; the rest is reference. Screens are in the folder `screens/` next to this file (in the PDF set: 05b_SCREENS; copied from the frontend repository's folder docs/screens: thirteen screens, each
-at desktop size and phone size). The live site: <https://fintechaton-frontend.vercel.app>.
+at desktop size and phone size). The live site: <https://www.egoquant.app>.
 
 **What it is not.** It does not trade. It does not know the future: every chance and every loss it shows is a **hypothetical
 simulation on past data**, and says so on screen. Its limits are a **draft** for the competition, not a bank's policy, and the page says
