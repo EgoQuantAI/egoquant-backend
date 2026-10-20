@@ -96,7 +96,7 @@ Railway (names only; values never go into the repository):
 | `EGOQUANT_BRIEFING_LLM` | Fund-aware news tone on the web | `1` to enable; capped per request and per hour |
 | `EGOQUANT_CACHE_DIR` | Price cache, tone cache, news archive | Point at a mounted Railway volume (e.g. `/data/egoquant`) |
 | `SUPABASE_URL`, `SUPABASE_ANON_KEY` | Accounts (optional) | Without them `/account` answers 503 and everything else works |
-| `CORS_ORIGINS` | Browser origins | Default: the Vercel site |
+| `CORS_ORIGINS` | Browser origins | Set it to the website's address (the competition deployment: `https://www.egoquant.app`); the code's default is the project's earlier Vercel address |
 | `EGOQUANT_PRICE_MODE` | Where prices come from | `live` (default: Tiingo/Binance first, the committed snapshot as the fallback) or `snapshot` (the committed snapshot of real prices as of 16 Oct 2026, ZERO live requests: fastest and the right choice for the demo and for portfolio method v2) |
 | `EGOQUANT_LIVE_BUDGET_SECONDS` | Slow live feed guard | Default 15: after this much waiting for live prices in one build the whole build switches to the snapshot |
 | `EGOQUANT_SLOW_REQUEST_SECONDS` | Slow live feed guard | Default 8: two live requests slower than this also switch the build to the snapshot |

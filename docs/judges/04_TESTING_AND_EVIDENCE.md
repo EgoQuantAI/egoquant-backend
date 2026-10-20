@@ -41,7 +41,7 @@ RISK_GAME_SWEEP_N=300  pytest -q tests/system/test_risk_game_blend.py        # t
 RISK_GAME_E2E_N=100    pytest -q tests/system/test_risk_game_end_to_end.py   # 100 investors through /portfolio (default 30)
 CONCURRENT_ROUNDS=3    pytest -q tests/system/test_concurrent_builds.py      # 3 rounds of 8 simultaneous builds (default 1)
 TRADE_SWEEP_N=1000     pytest -q tests/system/test_trade_check_sweep.py      # 5 personas x 1,000 random trades
-python eval/deploy_check.py https://web-production-59960.up.railway.app --quick   # the live system (read-only)
+python eval/deploy_check.py https://web-production-59960.up.railway.app --origin https://www.egoquant.app --quick   # the live system (read-only)
 ```
 
 The stress tools of section 7 and 8 are in `eval/stress/` (a README there says how to run each; the load and edge tools start their own local server, use the committed price snapshot, and need no network and no key; the two probe scripts, `probe.py` and `probe_after_deploy.py`, call a deployed URL instead and only send read-only requests).

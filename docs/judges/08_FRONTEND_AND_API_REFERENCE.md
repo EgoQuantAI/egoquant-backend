@@ -162,7 +162,7 @@ Gaps:
 1. `script-src` still allows `'unsafe-inline'`: Next.js inlines its bootstrap scripts; a per-request nonce would replace it.
    (`'unsafe-eval'` is gone in production; checked on the live site 20 Oct.)
 2. `connect-src 'self'` is strict: the browser can reach only our own site; all backend and database calls go through the proxy.
-3. HSTS: Vercel sends it for `*.vercel.app` (`max-age=63072000; includeSubDomains; preload`); the backend sends its own.
+3. HSTS: Vercel sends it on the website's own address too (`max-age=63072000`; on `*.vercel.app` also `includeSubDomains; preload`); the backend sends its own.
 
 ## 6. Database (Supabase) in one paragraph
 

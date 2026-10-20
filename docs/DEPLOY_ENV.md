@@ -74,7 +74,7 @@ for 3.14 on Linux x86-64; they have none for 3.15, so run the tests in a 3.13 or
 |---|---|---|---|
 | `SUPABASE_URL` | empty | The Supabase project. With the key below unset, `/account/*` answers 503 "Accounts are not configured" and everything else works. | no |
 | `SUPABASE_ANON_KEY` (alias `SUPABASE_KEY`) | empty | The **anon** key only. A `service_role` key is refused (accounts answer 503) because it would bypass row-level security. | **yes** |
-| `CORS_ORIGINS` | `https://fintechaton-frontend.vercel.app` | Comma-separated browser origins allowed to call the API; no credentials. Set it if the Vercel domain differs. | no |
+| `CORS_ORIGINS` | `https://fintechaton-frontend.vercel.app` | Comma-separated browser origins allowed to call the API; no credentials. Set it if the Vercel domain differs: the competition deployment's site is `https://www.egoquant.app`, so it sets `CORS_ORIGINS=https://www.egoquant.app` and the deploy check runs with `--origin https://www.egoquant.app`. | no |
 | `EGOQUANT_DEBUG_PAGES` | unset (= off) | `on` (also `1`, `true`, `yes`) enables `POST /debug/portfolio` (demo personas on synthetic prices). Any other value, or unset, makes it answer 404. **Keep unset in production.** Only the tests and `eval/chat_redteam.py` / `eval/chat_regime_redteam.py` use it, in-process; they turn it on themselves. Nothing the app or the judges' demo uses depends on it. The frontend has the same variable on Vercel for its `/debugmodels` page. | no |
 | `PORT` | 8000 | Set by Railway; the `Procfile` runs `uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}`. | no |
 
