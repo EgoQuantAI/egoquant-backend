@@ -42,7 +42,7 @@ The raw output: [sandbox_run_console.log](sandbox_run_console.log).
 
 ## Check it yourself
 
-Open **https://fintechaton-frontend.vercel.app**. Click **I. Profile** and answer the questions, then **IV. Portfolio** → **Build Portfolio**: you get your own
+Open **https://www.egoquant.app**. Click **I. Profile** and answer the questions, then **IV. Portfolio** → **Build Portfolio**: you get your own
 checked plan in a few seconds. Or click **Verify a report** → **Use the demo report** to check a real sealed report.
 
 ## What this does not show
