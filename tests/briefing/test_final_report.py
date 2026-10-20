@@ -81,10 +81,10 @@ def test_report_agent_d_section_equals_the_jobs_final_briefing(client):
         [a["tone"] for a in week["instrument_aggregates"]]
     # Agent A's and the Risk Engine's numbers are untouched
     assert without_agent_d(report) == without_agent_d(out["report"])
-    # the HTML download is rendered from the final version and leaves the news out (Bideci, 20 Oct: News tab only)
+    # the HTML download is rendered from the final version, with the news period beside the price date
     html = got["html"]
     start = datetime.fromisoformat(week["period_start"]).strftime("%d %b")
-    assert f"News {start} to " not in html and "Market Briefing" not in html and "What changed" not in html
+    assert f"News {start} to " in html and "prices as of" in html
     assert "not yet assessed" not in html and "cache only" not in html
     # the Advisor's sealed context now carries the final briefing
     from egoquant.advisor.context import _briefing_facts, open_context

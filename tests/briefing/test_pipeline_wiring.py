@@ -12,7 +12,7 @@ from egoquant.briefing.loader import load_config
 from egoquant.briefing.models import DEMO_BANNER, BriefingAlert
 from egoquant.cli import main as cli_main
 from egoquant.demo.personas import PERSONAS, run_persona
-from egoquant.report import RECHECK_OFFER, attach_what_changed, render_html, what_changed_html, what_changed_lines
+from egoquant.report import RECHECK_OFFER, attach_what_changed, render_html, what_changed_lines
 from egoquant.risk_engine import RiskEngine
 
 AS_OF = date(2026, 10, 16)
@@ -96,10 +96,9 @@ def test_what_changed_is_built_from_the_numbers(plain):
     assert lines[1] == b.alerts[0].summary and lines[1].startswith("News tone about VNQ moved from ")
     report = attach_what_changed(plain.report, [DD], b, {"VNQ": "Vanguard Real Estate ETF"}, holdings=["VNQ"])
     assert report.what_changed_action == "offer_risk_profile_recheck"
-    html = what_changed_html(report)
+    html = render_html(report)
     assert "<h2>What changed</h2>" in html and "data-action='offer_risk_profile_recheck'" in html
     assert RECHECK_OFFER in html and html.count("data-action=") == 1
-    assert "What changed" not in render_html(report)                     # the download leaves it out (News tab only)
     assert "invented (synthetic) demo prices" in report.what_changed[0]     # plain ran on synthetic prices
 
 
@@ -125,7 +124,7 @@ def test_held_drawdown_above_5_percent_offers_the_recheck(plain):
     big = with_holding(plain.report, "VNQ", 0.30)
     r = attach_what_changed(big, [dd("VNQ", -0.12)], None, holdings=["VNQ"], drawdown_threshold=0.10)
     assert r.what_changed[0].startswith("VNQ") and r.what_changed_action == "offer_risk_profile_recheck"
-    assert "data-action='offer_risk_profile_recheck'" in what_changed_html(r)
+    assert "data-action='offer_risk_profile_recheck'" in render_html(r)
     small = attach_what_changed(with_holding(plain.report, "VNQ", 0.05), [dd("VNQ", -0.12)], None, holdings=["VNQ"],
                                 drawdown_threshold=0.10)
     assert small.what_changed and small.what_changed_action is None                 # 5% is not "more than 5%"
@@ -158,7 +157,7 @@ def test_recheck_offer_only_for_negative_tone_moves(plain):
                                                        action=None)]})
     report = attach_what_changed(plain.report, [], up, holdings=["VNQ"])
     assert report.what_changed == ["News tone about VNQ moved up."] and report.what_changed_action is None
-    assert "data-action=" not in what_changed_html(report)
+    assert "data-action=" not in render_html(report)
     report = attach_what_changed(with_holding(plain.report, "VNQ", 0.03), [DD], None, holdings=["VNQ"])
     assert report.what_changed and report.what_changed_action is None   # a 3% holding's drawdown: listed, no offer
     with pytest.raises(ValueError):                                     # a rise never carries the offer
@@ -205,7 +204,7 @@ def test_what_changed_drops_advice_lines_and_has_no_action_when_empty(plain):
     assert lines == []
     report = attach_what_changed(plain.report, [], None)
     assert report.what_changed == [] and report.what_changed_action is None
-    assert "What changed" not in what_changed_html(report)
+    assert "What changed" not in render_html(report)
 
 
 # ---- CLI -----------------------------------------------------------------------------------------------------------
@@ -213,8 +212,8 @@ def test_cli_advise_with_briefing_and_period(tmp_path, capsys):
     cli_main(["advise", "growth_investor", "--synthetic", "--as-of", "2026-10-16", "--briefing", "--period", "month",
               "--out", str(tmp_path)])
     html = (tmp_path / "growth_investor_2026-10-16.html").read_text()
-    # the download leaves the news and its DEMO banner out (News tab only)
-    assert "Market Briefing" not in html and "Agent D" not in html and "DEMO: sample news items" not in html
+    assert "<h2>Market Briefing (read-only)</h2>" in html and "Agent D" not in html and "DEMO: sample news items" in html
+    assert "this month" in html
     assert "AGENT D briefing (month, fixture)" in capsys.readouterr().out
 
 

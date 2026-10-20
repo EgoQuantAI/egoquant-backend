@@ -74,7 +74,7 @@ Soft constraints are not enforced here (Agent A may relax them by design, and th
 
 ## 6. The report
 
-A client report (JSON and a self-contained HTML page) from fixed templates: the headline, the category and **how it was set** (`category_basis`), the allocation, each limit with its source and where it stands, the reasons, the Risk Engine's checks, five stress scenarios, fees and trading costs, the goal analysis, the data sources and dates, notes, and the mandatory disclosures
+A client report (JSON and a self-contained HTML page that makes no request when it is opened: no web fonts, no scripts, `tests/system/test_report_no_remote_resources.py`) from fixed templates: the headline, the category and **how it was set** (`category_basis`), the allocation, each limit with its source and where it stands, the reasons, the Risk Engine's checks, five stress scenarios, fees and trading costs, the goal analysis, the data sources and dates, notes, and the mandatory disclosures
 (hypothetical, in-sample, "DRAFT LIMITS" banner, not a forecast). Wording is plain ("your category", "attitude to risk"); sentences from the Risk Engine and the trade check are rewritten into plain language by tested rules (`egoquant/report.py`, `egoquant/risk_engine.py` `plain_violations`).
 The HTML equals the JSON by construction (a test compares them).
 

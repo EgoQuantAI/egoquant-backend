@@ -4,7 +4,7 @@ Two repositories, both at the version tagged **`submission-20oct`** (20 October 
 
 | Repository | What it holds | Link |
 |---|---|---|
-| `fintechaton-backend` | Python 3.14, FastAPI: the risk questionnaire and Risk Game scoring, Agents A (quant), B (behaviour), C (market data), D (news briefing), the Risk Engine, the trade check, the advisor, accounts (Supabase), the on-chain seal; `tests/` (3,540 offline tests in 141 files); `eval/` (deploy check, stress tools, red-teams, demo pack); `docs/` (every document, including `docs/judges/`) | https://github.com/EgoQuantAI/egoquant-backend (tag `submission-20oct`; a one-commit public copy of the tagged tree; the development history is private) |
+| `fintechaton-backend` | Python 3.14, FastAPI: the risk questionnaire and Risk Game scoring, Agents A (quant), B (behaviour), C (market data), D (news briefing), the Risk Engine, the trade check, the advisor, accounts (Supabase), the on-chain seal; `tests/` (3,554 offline tests); `eval/` (deploy check, stress tools, red-teams, demo pack); `docs/` (every document, including `docs/judges/`) | https://github.com/EgoQuantAI/egoquant-backend (tag `submission-20oct`; a one-commit public copy of the tagged tree; the development history is private) |
 | `fintechaton-frontend` | Next.js 16, React 19, Tailwind: the website, the server-side proxy that holds the session cookies, the Verify page that hashes a sealed report in the browser | https://github.com/EgoQuantAI/egoquant-frontend (tag `submission-20oct`; a one-commit public copy of the tagged tree; the development history is private) |
 
 ## How to run (short form; the READMEs have the long form)
@@ -13,4 +13,4 @@ Two repositories, both at the version tagged **`submission-20oct`** (20 October 
 - Deployed: the frontend on Vercel, the backend on Railway, accounts on Supabase (migrations in `supabase/migrations/`, Row-Level Security proofs in `supabase/tests/`).
 
 ## Test cases
-`tests/` by area: `agent_b` 680, `briefing` 414, `anchoring` 464, top level 407, `system` 360, `agent_a` 287, `accounts` 265, `agent_c` 274, `risk_profile` 134, `regime` 90, `advisor` 105, `preferences` 60 (counted by `pytest --collect-only -q -m "not live"` on the tagged version). The last complete run: 3,538 passed, 1 failed (a known timing test of the news page), 1 skipped (`6_Execution_Evidence/test_run_by_area_20oct.txt`).
+`tests/` by area: `agent_b` 680, `briefing` 414, `anchoring` 464, top level 407, `system` 360, `agent_a` 287, `accounts` 265, `agent_c` 274, `risk_profile` 134, `regime` 90, `advisor` 105, `preferences` 60 (the last complete run, 3,540 tests: 3,538 passed, 1 failed (a known timing test of the news page), 1 skipped, `6_Execution_Evidence/test_run_by_area_20oct.txt`; 14 tests added after that run (13 for the chat's trade tool, 1 for the downloaded report making no request when opened) ran green; 3,554 selected on the tagged version).

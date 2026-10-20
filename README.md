@@ -50,7 +50,7 @@ The full list of settings, with a sentence for each, is in [`docs/DEPLOY_ENV.md`
 pytest -q -m "not live"
 ```
 
-About 3,540 tests, no network, no AI; roughly 35 minutes. On Windows the numerical libraries sometimes crash a long test process at random (we explain this honestly in `docs/judges/04_TESTING_AND_EVIDENCE.md`, section 9); if that happens, run them folder by folder with `python eval/run_tests_per_file.py . results.txt --dir tests/system`.
+3,554 tests, no network, no AI; roughly 35 minutes. On Windows the numerical libraries sometimes crash a long test process at random (we explain this honestly in `docs/judges/04_TESTING_AND_EVIDENCE.md`, section 9); if that happens, run them folder by folder with `python eval/run_tests_per_file.py . results.txt --dir tests/system`.
 
 To check a deployed copy without touching anything on it:
 

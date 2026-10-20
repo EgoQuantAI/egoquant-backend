@@ -1,0 +1,4492 @@
+{
+ "proof": "egoq-proof-1",
+ "record": "{\"allocation\":[{\"ticker\":\"BIL\",\"weight_ppm\":999999}],\"confirmed_at\":\"2026-10-19T16:15:49Z\",\"consent_version\":\"2026-10-20\",\"investor\":{\"answers\":{\"amount_invested_cents\":4000000,\"amount_needed_cents\":4000000,\"choices\":{\"B1\":\"house\",\"B2\":\"y1_3\",\"B4\":\"m3_6\",\"B5\":\"gt75\",\"B6\":\"stable\",\"D1\":\"no\",\"GL1\":\"d\",\"GL10\":\"a\",\"GL11\":\"a\",\"GL12\":\"a\",\"GL13\":\"a\",\"GL2\":\"a\",\"GL3\":\"a\",\"GL4\":\"a\",\"GL5\":\"a\",\"GL6\":\"a\",\"GL7\":\"a\",\"GL8\":\"a\",\"GL9\":\"a\",\"K1\":\"more\",\"K2\":\"less\",\"K3\":\"false\",\"K5\":\"lt1\"},\"multi_choices\":{\"K4\":[\"deposits\"]}},\"questionnaire_version\":\"eq-rq-0.1.0\",\"risk_class\":\"C1\"},\"operation_log\":[{\"action\":\"questionnaire_submitted\",\"at\":\"2026-10-19T16:15:49Z\"},{\"action\":\"report_generated\",\"at\":\"2026-10-19T16:15:49Z\"},{\"action\":\"report_viewed\",\"at\":\"2026-10-19T16:15:49Z\"},{\"action\":\"plan_confirmed\",\"at\":\"2026-10-19T16:15:49Z\"}],\"record_version\":1,\"report_id\":\"7f331fab-9794-40bd-8ee6-0047024144c4\",\"risk_engine\":{\"approved\":true,\"checks\":[{\"detail\":\"BIL (100.0%) is R1; investor maximum is R1\",\"name\":\"r_level[BIL]\",\"passed\":true},{\"detail\":\"commodity weight 0.00% vs limit 0.00% (risk_class:max_class_weight[commodity])\",\"name\":\"risk_class:max_class_weight[commodity]\",\"passed\":true},{\"detail\":\"crypto weight 0.00% vs limit 0.00% (risk_class:max_class_weight[crypto])\",\"name\":\"risk_class:max_class_weight[crypto]\",\"passed\":true},{\"detail\":\"equity weight 0.00% vs limit 0.00% (risk_class:max_equity)\",\"name\":\"risk_class:max_equity\",\"passed\":true},{\"detail\":\"hypothetical loss -0.00% in equity_down_30_bond_down_5 vs limit 5.00% (risk_class:max_stress_loss[equity_down_30_bond_down_5])\",\"name\":\"risk_class:max_stress_loss[equity_down_30_bond_down_5]\",\"passed\":true},{\"detail\":\"equity weight 0.00% vs limit 0.00% (suitability:max_equity)\",\"name\":\"suitability:max_equity\",\"passed\":true},{\"detail\":\"hypothetical loss -0.00% in equity_down_30_bond_down_5 vs limit 0.00% (suitability:max_stress_loss[equity_down_30_bond_down_5])\",\"name\":\"suitability:max_stress_loss[equity_down_30_bond_down_5]\",\"passed\":true},{\"detail\":\"weights sum to 1.000000\",\"name\":\"weights\",\"passed\":true}],\"violations\":[]},\"schema\":\"egoq-record-1\",\"versions\":{\"agent_d_model\":\"gpt-4.1-mini\",\"agent_d_prompt_sha256\":\"ebb752b547507ffcf8edd43fa8eac0bb4dd9990249355a86bbe2bb50ea5c8544\",\"engine\":\"0.3.0\",\"input_hash\":\"aa82419b136a94f7\",\"report_sha256\":\"0782489067c6085a921d26e89843d4682dd73dfeafc93aedc7dac2b38b8ccebf\",\"risk_engine\":\"0.2.0\",\"risk_profile_config\":\"a3dd56a9ff83615ea8893651f02e5c408ce0a04f93facb6e22b7cf0ec5f876e1\"}}",
+ "salt": "bcf8aba1259937e01214bc62dd7b3cf1547c69073ddf4b07bcda61d8fc94980d",
+ "commitment": "b3fa4daed194d4db91d0da8b64508659f8a1fc93956fe20599d66866a91d784c",
+ "chain_id": 11155111,
+ "tx_hash": "0x26e84ac7c5c3317830ca1dfddd791ef96289d4fbdfa071bad1ba1f7cc40e33c5",
+ "sealing_address": "0x3c9E28032A834F958BaBE168aa9AcC116D2c9ddC",
+ "report": {
+  "approved": true,
+  "status": "optimal",
+  "c_level": "C1",
+  "as_of": "2026-10-16",
+  "data_source": "historical",
+  "violations": [],
+  "checks": [
+   {
+    "name": "weights",
+    "passed": true,
+    "detail": "weights sum to 1.000000"
+   },
+   {
+    "name": "r_level[BIL]",
+    "passed": true,
+    "detail": "BIL (100.0%) is R1; investor maximum is R1"
+   },
+   {
+    "name": "suitability:max_equity",
+    "passed": true,
+    "detail": "equity weight 0.00% vs limit 0.00% (suitability:max_equity)"
+   },
+   {
+    "name": "risk_class:max_equity",
+    "passed": true,
+    "detail": "equity weight 0.00% vs limit 0.00% (risk_class:max_equity)"
+   },
+   {
+    "name": "risk_class:max_class_weight[commodity]",
+    "passed": true,
+    "detail": "commodity weight 0.00% vs limit 0.00% (risk_class:max_class_weight[commodity])"
+   },
+   {
+    "name": "risk_class:max_class_weight[crypto]",
+    "passed": true,
+    "detail": "crypto weight 0.00% vs limit 0.00% (risk_class:max_class_weight[crypto])"
+   },
+   {
+    "name": "suitability:max_stress_loss[equity_down_30_bond_down_5]",
+    "passed": true,
+    "detail": "hypothetical loss -0.00% in equity_down_30_bond_down_5 vs limit 0.00% (suitability:max_stress_loss[equity_down_30_bond_down_5])"
+   },
+   {
+    "name": "risk_class:max_stress_loss[equity_down_30_bond_down_5]",
+    "passed": true,
+    "detail": "hypothetical loss -0.00% in equity_down_30_bond_down_5 vs limit 5.00% (risk_class:max_stress_loss[equity_down_30_bond_down_5])"
+   }
+  ],
+  "game_note": null,
+  "goal": null,
+  "universe": {
+   "interest_areas": [
+    "cash"
+   ],
+   "instruments": [
+    {
+     "ticker": "BIL",
+     "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+     "asset_class": "cash",
+     "r_level": 1
+    },
+    {
+     "ticker": "SHY",
+     "name": "iShares 1-3 Year Treasury Bond ETF",
+     "asset_class": "bond",
+     "r_level": 1
+    }
+   ],
+   "not_fetched": [],
+   "n_not_fetched": 0,
+   "deprioritized": 0,
+   "replaced": {},
+   "from_cache": 2,
+   "new_requests": 0,
+   "watchlist": []
+  },
+  "goal_unavailable": null,
+  "fallback_reason": null,
+  "trading_history": null,
+  "report": {
+   "status": "optimal",
+   "investor_id": "web-investor",
+   "as_of": "2026-10-16",
+   "currency": "USD",
+   "reference_amount": 10000.0,
+   "risk_class": "C1",
+   "headline": "We propose 0% in stocks, 0% in bonds and 100% in cash. Its estimated volatility (the typical size of its yearly ups and downs) is about 0.2%. In the harshest of our hypothetical scenarios it would lose about 0% (roughly 0 USD per 10,000 invested).",
+   "equity_weight": 0.0,
+   "bond_weight": 0.0,
+   "cash_weight": 1.0,
+   "commodity_weight": 0.0,
+   "crypto_weight": 0.0,
+   "ex_ante_vol": 0.0019915139465752057,
+   "worst_loss": 0.0,
+   "worst_scenario": "Stocks fall 20%",
+   "limit_scenario": "Severe crash (stocks -30%)",
+   "limits_ok": true,
+   "allocation": [
+    {
+     "asset_id": "BIL",
+     "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+     "asset_class": "cash",
+     "weight": 1.0,
+     "amount": 10000.0,
+     "expense_ratio": 0.0014,
+     "risk_share": 1.0
+    }
+   ],
+   "limits": [
+    {
+     "name": "Share in stocks",
+     "value": 0.0,
+     "limit": 0.0,
+     "direction": "max",
+     "ok": true,
+     "source": "your risk class C1 and suitability rules"
+    },
+    {
+     "name": "Estimated volatility",
+     "value": 0.0019915139465752057,
+     "limit": 0.04,
+     "direction": "max",
+     "ok": true,
+     "source": "your risk class C1"
+    },
+    {
+     "name": "Loss in a severe fall",
+     "value": 0.0,
+     "limit": 0.0,
+     "direction": "max",
+     "ok": true,
+     "source": "your risk class and the loss you said you can afford (equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%)"
+    },
+    {
+     "name": "Largest single holding",
+     "value": 1.0,
+     "limit": 1.0,
+     "direction": "max",
+     "ok": true,
+     "source": "your holding-size preference"
+    }
+   ],
+   "stress": [
+    {
+     "name": "Stocks fall 20%",
+     "description": "Equities fall 20%, crypto falls 40%",
+     "portfolio_return": 0.0,
+     "amount_change": 0.0
+    },
+    {
+     "name": "Severe crash (stocks -30%)",
+     "description": "Equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%",
+     "portfolio_return": 0.0,
+     "amount_change": 0.0
+    },
+    {
+     "name": "Interest rates rise 1%",
+     "description": "Parallel +100bp rate shock (bonds via duration and convexity); gold and commodities -5%, crypto -15%",
+     "portfolio_return": 0.0,
+     "amount_change": 0.0
+    },
+    {
+     "name": "Inflation shock",
+     "description": "Equities -10%, rates +150bp (bonds via duration and convexity), crypto -20%",
+     "portfolio_return": 0.0,
+     "amount_change": 0.0
+    },
+    {
+     "name": "Gold and crypto sell-off",
+     "description": "Gold and commodities fall 25%, crypto falls 70%, equities fall 5%",
+     "portfolio_return": 0.0,
+     "amount_change": 0.0
+    }
+   ],
+   "reverse_stress_equity_drop": null,
+   "menu": [
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "option",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "class_default",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    },
+    {
+     "kind": "baseline",
+     "equity": 0.0,
+     "vol": 0.013559493363712276,
+     "worst_loss": 0.05
+    },
+    {
+     "kind": "recommended",
+     "equity": 0.0,
+     "vol": 0.0019915139465752057,
+     "worst_loss": 0.0
+    }
+   ],
+   "trades": [],
+   "turnover": null,
+   "one_off_trading_cost": null,
+   "ongoing_fee": 0.0014,
+   "reasons": [
+    {
+     "kind": "class",
+     "text": "Your risk questionnaire placed you in class C1 (C1 is the most cautious, C5 the most growth-oriented). That class aims for about 0% in stocks and sets hard limits of at most 0% in stocks, 0% in gold and commodities, 0% in crypto, 4% volatility and a 5% loss in one specific test: equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%."
+    },
+    {
+     "kind": "method",
+     "text": "Within your limits we choose the mix of funds with the lowest estimated volatility for the chosen stock level. We do not forecast returns, so the portfolio is built to control risk rather than to chase gains."
+    },
+    {
+     "kind": "limit",
+     "text": "The most important limit was your class cap of 0% in stocks."
+    },
+    {
+     "kind": "limit",
+     "text": "The most important limit was the suitability cap of 0% in stocks."
+    },
+    {
+     "kind": "limit",
+     "text": "The most important limit was the 0% loss you said you can afford."
+    },
+    {
+     "kind": "regime",
+     "text": "Market volatility is currently normal (recent volatility is 1.10 times its long-run level), so no extra reduction of the risk budget was needed."
+    },
+    {
+     "kind": "diversification",
+     "text": "The portfolio holds 1 funds, equivalent to about 1.0 equally sized holdings. Its volatility is 1.00 times lower than if every holding moved in step with the others."
+    },
+    {
+     "kind": "robustness",
+     "text": "Robustness check: re-running with different history lengths and estimation methods, no holding moved by more than 0.0 percentage points."
+    }
+   ],
+   "risk_facts": {
+    "stressed_correlation_vol": 0.0019915139465752057,
+    "hist_var_1d": -0.0,
+    "hist_cvar_1d": 1.4568776892740869e-05,
+    "hist_max_drawdown": 0.0001094091909947803,
+    "effective_holdings": 1.0,
+    "diversification_ratio": 1.0
+   },
+   "banners": [
+    "DRAFT LIMITS: the C1-C5 limits are EgoQuant's provisional placeholder defaults; a bank would replace them with its own approved mapping."
+   ],
+   "market_briefing": {
+    "as_of": "2026-10-19T16:07:38.351994Z",
+    "investor_id": "web-investor",
+    "data_source": "live",
+    "period_start": "2026-10-12T16:07:38.351994Z",
+    "period_end": "2026-10-19T16:07:38.351994Z",
+    "items": [
+     {
+      "item": {
+       "id": "2283330b0df7f8ab",
+       "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+       "published_at": "2026-10-16T16:27:31Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "7cccb1ce2e666588",
+       "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+       "summary_text": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
+       "published_at": "2026-10-16T15:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "78538cfab8835340",
+       "title": "Economists: Hot PPI shows Fed's work is not done",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+       "published_at": "2026-10-15T15:37:59Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Economists: Hot PPI shows Fed's work is not done.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "e36babe03cef5a26",
+       "title": "U.S. Yield Rise Does Not Mean Risk Rise, And Fed Rate Hike Can Reduce Yields",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/article/4954437-us-yield-rise-does-not-mean-risk-rise-and-fed-rate-hike-can-reduce-yields?source=feed_symbol_SHV",
+       "published_at": "2026-10-15T12:53:35Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: U.S. Yield Rise Does Not Mean Risk Rise, And Fed Rate Hike Can Reduce Yields.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "d9f36eb5d172cf8e",
+       "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+       "summary_text": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
+       "published_at": "2026-10-09T14:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "b33c744db1b6398d",
+       "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
+       "published_at": "2026-10-09T13:09:19Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "20fe5f0ffff3a877",
+       "title": "The Technical Signals Behind (BIL) That Institutions Follow",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTXVkNjRPd0JKanZJeUNDNFRLOHd5d2puUFVUSEVIWllrV3F3dFU4UUUzekluUmRGWUowblZhdDE1eHBya2dkek5hdUEwVUJsUUppYTlOX052c2dadmFpdVhDbEhhdHkyOThac3BWT1I3aVlMaWVXMW9lYnBlX2wyaTBUeC1VWk5LdkFuM3NjZVp1V0RWcURWUTNRcFRqXzZYRzZhUldMRTR0RVIxZDN0ejltYVZ4ZU5PUEVvUjNzX3gxYzZOUzB0bzdCbkhjWkVZdlVF?oc=5",
+       "published_at": "2026-10-09T12:56:02Z",
+       "source_name": "Stock Traders Daily",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Stock Traders Daily",
+      "source_tier": "tier3",
+      "tier_reason": "template-generated trading-signal pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Stock Traders Daily reported: The Technical Signals Behind (BIL) That Institutions Follow.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "2087580f92fe16c6",
+       "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+       "summary_text": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+       "published_at": "2026-10-08T20:30:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "1b273bd579e8db61",
+       "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html",
+       "published_at": "2026-10-08T17:31:03Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Inflation on many everyday items was entirely due to tariffs, NY Fed says.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "f4afbb18f18734fc",
+       "title": "Fed Hikes And A Refinancing Wall: Private Credit Isn't Out Of The Woods",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/article/4952803-fed-hikes-and-a-refinancing-wall-private-credit-isnt-out-of-the-woods?source=feed_symbol_SHV",
+       "published_at": "2026-10-08T15:30:24Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: Fed Hikes And A Refinancing Wall: Private Credit Isn't Out Of The Woods.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "fc1adfd078a06b28",
+       "title": "The Bond Market Wants Lower Fed Target Rates And Inflation To Release Via Non-Core, In My View",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/article/4952740-bond-market-wants-lower-fed-target-rates-and-inflation-to-release-via-non-core-in-my-view?source=feed_symbol_SHV",
+       "published_at": "2026-10-08T11:59:32Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: The Bond Market Wants Lower Fed Target Rates And Inflation To Release Via Non-Core, In My View.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "73373e5267b8915c",
+       "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
+       "published_at": "2026-10-07T18:44:36Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "1d666739bf8e4ce3",
+       "title": "SHV Makes Bullish Cross Above Critical Moving Average",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/shv-makes-bullish-cross-above-critical-moving-average",
+       "published_at": "2026-10-16T19:59:45Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SHV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated ETF flow alerts",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: SHV Makes Bullish Cross Above Critical Moving Average.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "cbbee659b41cff77",
+       "title": "Trading Systems Reacting to (SHV) Volatility",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUUlrSkFQYU9GdXowX1MzaV80TXBhRVJSbzNpcG5wdXozWnpteHFEdkxZYTh6alZkUjBhT3RhWVRQU2dST3RieF9tV0ptOERLdE5MdTFiZGJQZUtYNzNIdlFWa0pnbWtEc0xWajNOVC1GcUhSWVVJTDZXeFVGdlA0VmdGVVF3eGRZQmVUYTFHNlZ5ZlV3TWdQUUxsV0p4bjJ1bkI1aDUyaEpwdEVRRDBRY042dUFsNWdTaGJmSkJn?oc=5",
+       "published_at": "2026-10-14T04:58:02Z",
+       "source_name": "Stock Traders Daily",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SHV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Stock Traders Daily",
+      "source_tier": "tier3",
+      "tier_reason": "template-generated trading-signal pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Stock Traders Daily reported: Trading Systems Reacting to (SHV) Volatility.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "96ac171484421a00",
+       "title": "WisdomTree Floating Rate Treasury Fund (Dinari Tokenized ETF)",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUDl6VWpYM0hxYW1EVmZOMmY4VVdKTWZ1MFluVHBUU2VMUWZra25TWHpIUkxoMUU5eUxKdGlrWGNQa19uOGlxNl9mUG1fd0Z1ZWhUN0x6d0Jmb1dFd2lPRWd5eHRtZV9wZUtIU2xvZkhNb3BfSXZZdXg0SUozV19SbEtfWmY4SGY5SDc4LWJwVWo?oc=5",
+       "published_at": "2026-10-13T18:54:41Z",
+       "source_name": "CryptoRank",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "CryptoRank",
+      "source_tier": "tier3",
+      "tier_reason": "analytics pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CryptoRank reported: WisdomTree Floating Rate Treasury Fund (Dinari Tokenized ETF).",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "a61d9445098146f9",
+       "title": "USFR: The Treasury ETF Whose Yield Resets Every Week When Rates Move",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU2Y2dDB5aHlTLUpGR2VBSHJ3akkwdmlCU3h5TlFtQk45SFAzUmtRMXlXRWpJSUVCUUQ0aFNZQl81TDhXZHVpMUwxU05maE5KVzFiT0U0ZUhPZWZJRi01NFJUdGp0emtlQlVxc2twam9waTAtSVZ2RWF3NlB1NHl4RTY1aDk0dnNybmwtMWZTZjM2Ri05dkxEWVBZMFRyUlhFTkphLTJEQWxnMlJuMTJoYmp1czlBUQ?oc=5",
+       "published_at": "2026-10-13T09:25:00Z",
+       "source_name": "24/7 Wall St.",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "24/7 Wall St.",
+      "source_tier": "tier2",
+      "tier_reason": "commentary with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "24/7 Wall St. reported: USFR: The Treasury ETF Whose Yield Resets Every Week When Rates Move.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "4f5b2d6e682ae61c",
+       "title": "TLT’s Yield Edge Is Thin Over SGOV (NASDAQ:TLT)",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9SWG92S0prbllxSndsWHgycGtTQlI2V3pXa2Q3WWxZRjJsU0U1ckpIOW9qZTZ6cVlxOTNXM0VkRm9HMWFGZC1FcUhBc0Z4cE16dWJjeDZYOEJGczRKZ0V1bmdmVEJ2YjlNWV81XzVHWDRsblVxNTBJTHhYM1FDckE?oc=5",
+       "published_at": "2026-10-13T05:31:03Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: TLT’s Yield Edge Is Thin Over SGOV (NASDAQ:TLT).",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "c79631d2b1921475",
+       "title": "SGOV, AFIF: Big ETF Inflows",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/sgov-afif-big-etf-inflows",
+       "published_at": "2026-10-12T15:52:17Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated ETF flow alerts",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: SGOV, AFIF: Big ETF Inflows.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     }
+    ],
+    "instrument_aggregates": [
+     {
+      "subject": "BIL",
+      "kind": "instrument",
+      "n_items": 4,
+      "tone": null,
+      "n_items_previous": 7,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 1.0,
+      "text": "BIL: 4 headlines this week, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 4,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 4,
+      "themes": [
+       "us_tbills_fed"
+      ],
+      "theme_labels": [
+       "US T-bills & Fed policy"
+      ],
+      "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+      "held": true,
+      "weight": 1.0,
+      "r_level": 1,
+      "areas": [
+       "cash"
+      ],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 4
+      },
+      "instruments": [],
+      "parent_area": null,
+      "headline_ids": [
+       "2283330b0df7f8ab",
+       "7cccb1ce2e666588",
+       "78538cfab8835340",
+       "e36babe03cef5a26"
+      ],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     },
+     {
+      "subject": "SGOV",
+      "kind": "instrument",
+      "n_items": 1,
+      "tone": null,
+      "n_items_previous": 0,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 0.0,
+      "text": "SGOV: 1 headline this week, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 1,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 0,
+      "themes": [
+       "us_tbills_fed"
+      ],
+      "theme_labels": [
+       "US T-bills & Fed policy"
+      ],
+      "name": "iShares 0-3 Month Treasury Bond ETF",
+      "held": false,
+      "weight": null,
+      "r_level": 1,
+      "areas": [
+       "cash"
+      ],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 1
+      },
+      "instruments": [],
+      "parent_area": null,
+      "headline_ids": [],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     },
+     {
+      "subject": "SHV",
+      "kind": "instrument",
+      "n_items": 0,
+      "tone": null,
+      "n_items_previous": 0,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 0.0,
+      "text": "SHV: quiet week, no news about SHV or what it holds",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 0,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 0,
+      "themes": [
+       "us_tbills_fed"
+      ],
+      "theme_labels": [
+       "US T-bills & Fed policy"
+      ],
+      "name": "iShares Short Treasury Bond ETF",
+      "held": false,
+      "weight": null,
+      "r_level": 1,
+      "areas": [
+       "cash"
+      ],
+      "coverage_status": {
+       "state": "quiet",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 0
+      },
+      "instruments": [],
+      "parent_area": null,
+      "headline_ids": [],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     },
+     {
+      "subject": "USFR",
+      "kind": "instrument",
+      "n_items": 1,
+      "tone": null,
+      "n_items_previous": 0,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 0.0,
+      "text": "USFR: 1 headline this week, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 1,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 0,
+      "themes": [
+       "us_tbills_fed"
+      ],
+      "theme_labels": [
+       "US T-bills & Fed policy"
+      ],
+      "name": "WisdomTree Floating Rate Treasury Fund",
+      "held": false,
+      "weight": null,
+      "r_level": 1,
+      "areas": [
+       "cash"
+      ],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 1
+      },
+      "instruments": [],
+      "parent_area": null,
+      "headline_ids": [],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     }
+    ],
+    "area_aggregates": [
+     {
+      "subject": "cash",
+      "kind": "area",
+      "n_items": 2,
+      "tone": null,
+      "n_items_previous": 0,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 1.0,
+      "text": "cash: 2 headlines this week, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 2,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 0,
+      "themes": [],
+      "theme_labels": [],
+      "name": "cash",
+      "held": false,
+      "weight": null,
+      "r_level": null,
+      "areas": [],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 2
+      },
+      "instruments": [
+       {
+        "ticker": "BIL",
+        "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+        "status": "held",
+        "r_level": 1
+       },
+       {
+        "ticker": "SGOV",
+        "name": "iShares 0-3 Month Treasury Bond ETF",
+        "status": "not_held",
+        "r_level": 1
+       },
+       {
+        "ticker": "SHV",
+        "name": "iShares Short Treasury Bond ETF",
+        "status": "not_held",
+        "r_level": 1
+       },
+       {
+        "ticker": "USFR",
+        "name": "WisdomTree Floating Rate Treasury Fund",
+        "status": "not_held",
+        "r_level": 1
+       }
+      ],
+      "parent_area": null,
+      "headline_ids": [
+       "a61d9445098146f9",
+       "4f5b2d6e682ae61c"
+      ],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     }
+    ],
+    "alerts": [],
+    "suitability_notes": [],
+    "diversity_suggestions": [],
+    "metadata": {
+     "n_fetched": 765,
+     "n_non_news": 16,
+     "n_after_dedupe": 565,
+     "n_outside_window": 373,
+     "n_unmatched": 174,
+     "n_matched": 18,
+     "n_filtered": 0,
+     "n_withheld": 0,
+     "n_llm_calls": 0,
+     "n_llm_cache_hits": 0,
+     "n_tone_unavailable": 13,
+     "tone_method": "llm_fund_aware",
+     "n_fund_tones_llm": 0,
+     "n_fund_tones_finbert": 0,
+     "n_fund_tones_unavailable": 13,
+     "n_tone_llm_calls": 0,
+     "tone_fallback_reasons": [
+      "cache only"
+     ],
+     "fallback_tone_model": "ProsusAI/finbert",
+     "tone_llm_model": "gpt-4.1-mini",
+     "llm_model": "gpt-5.5",
+     "prompt_version": "brief-v1",
+     "sources_skipped": [],
+     "tickers_left_out_by_cap": [],
+     "cadence": "weekly briefing, with alerts between briefings",
+     "config_version": "briefing-0.1.0"
+    },
+    "labels": [
+     "Summaries repeat each source's headline (no AI summaries)",
+     "News tone is a measurement of what sources say, not a forecast",
+     "Does not change your portfolio"
+    ],
+    "tone_note": "News tone: AI-assessed for holders of each fund. On 120 headlines labeled by our team, this method matched the human label 85% of the time (FinBERT: 53%). FinBERT is used when offline.",
+    "briefing_period": "week",
+    "banners": [],
+    "period_words": {
+     "this": "this week",
+     "last": "last week"
+    },
+    "alert_threshold": 0.5,
+    "holdings_order": [
+     "BIL"
+    ],
+    "chosen_areas": [
+     "cash"
+    ],
+    "tier_counts": {
+     "tier1": 3,
+     "tier2": 3,
+     "unrated": 0,
+     "tier3": 3
+    },
+    "method_counts": {
+     "llm_fund_aware": 0,
+     "finbert": 0,
+     "not_yet_assessed": 13
+    },
+    "low_reliability_items": [
+     "1d666739bf8e4ce3",
+     "cbbee659b41cff77",
+     "96ac171484421a00"
+    ],
+    "single_tier_notes": [],
+    "largest_move": null,
+    "tier_legend": [
+     {
+      "tier": "tier1",
+      "label": "Established",
+      "explanation": "wires, newspapers, regulators, fund issuers",
+      "weight": 1.0
+     },
+     {
+      "tier": "tier2",
+      "label": "Opinion & analysis",
+      "explanation": "named authors giving opinions",
+      "weight": 0.7
+     },
+     {
+      "tier": "unrated",
+      "label": "Not yet reviewed",
+      "explanation": "sites we haven't rated",
+      "weight": 0.4
+     },
+     {
+      "tier": "tier3",
+      "label": "Automated pages",
+      "explanation": "template or auto-generated pages, shown for transparency",
+      "weight": null
+     }
+    ],
+    "n_date_unknown": 0,
+    "compare_notes": [],
+    "holding_groups": [],
+    "small_positions": []
+   },
+   "what_changed": [],
+   "what_changed_action": null,
+   "profile_assessed_on": "2026-10-16",
+   "profile_valid_until": "2027-10-16",
+   "profile_expired": false,
+   "risk_review_approved": true,
+   "risk_review_violations": [],
+   "interest_notes": [
+    "You asked about cash: you hold SPDR Bloomberg 1-3 Month T-Bill ETF (100%)."
+   ],
+   "goal": null,
+   "disclosures": [
+    "Past data does not predict the future. Volatility and drawdown figures are estimates from recent history and can be wrong.",
+    "Stress scenarios are hypothetical shocks chosen in advance. They are not forecasts, and real losses can be larger.",
+    "This engine makes no forecast of returns. It is designed to control risk within your limits, not to promise gains.",
+    "Fund fees are shown as annual percentages. Trading costs are estimates and apply only to the first purchase or to changes.",
+    "Risk estimates use Ledoit-Wolf shrinkage over about 252 trading days."
+   ],
+   "data_source": "historical",
+   "engine_version": "0.3.0",
+   "input_hash": "aa82419b136a94f7",
+   "market_briefing_month": {
+    "as_of": "2026-10-19T16:07:38.351994Z",
+    "investor_id": "web-investor",
+    "data_source": "live",
+    "period_start": "2026-09-19T16:07:38.351994Z",
+    "period_end": "2026-10-19T16:07:38.351994Z",
+    "items": [
+     {
+      "item": {
+       "id": "2283330b0df7f8ab",
+       "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+       "published_at": "2026-10-16T16:27:31Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "7cccb1ce2e666588",
+       "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+       "summary_text": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
+       "published_at": "2026-10-16T15:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "78538cfab8835340",
+       "title": "Economists: Hot PPI shows Fed's work is not done",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+       "published_at": "2026-10-15T15:37:59Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Economists: Hot PPI shows Fed's work is not done.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "e36babe03cef5a26",
+       "title": "U.S. Yield Rise Does Not Mean Risk Rise, And Fed Rate Hike Can Reduce Yields",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/article/4954437-us-yield-rise-does-not-mean-risk-rise-and-fed-rate-hike-can-reduce-yields?source=feed_symbol_SHV",
+       "published_at": "2026-10-15T12:53:35Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: U.S. Yield Rise Does Not Mean Risk Rise, And Fed Rate Hike Can Reduce Yields.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "d9f36eb5d172cf8e",
+       "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+       "summary_text": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
+       "published_at": "2026-10-09T14:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "b33c744db1b6398d",
+       "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
+       "published_at": "2026-10-09T13:09:19Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "20fe5f0ffff3a877",
+       "title": "The Technical Signals Behind (BIL) That Institutions Follow",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTXVkNjRPd0JKanZJeUNDNFRLOHd5d2puUFVUSEVIWllrV3F3dFU4UUUzekluUmRGWUowblZhdDE1eHBya2dkek5hdUEwVUJsUUppYTlOX052c2dadmFpdVhDbEhhdHkyOThac3BWT1I3aVlMaWVXMW9lYnBlX2wyaTBUeC1VWk5LdkFuM3NjZVp1V0RWcURWUTNRcFRqXzZYRzZhUldMRTR0RVIxZDN0ejltYVZ4ZU5PUEVvUjNzX3gxYzZOUzB0bzdCbkhjWkVZdlVF?oc=5",
+       "published_at": "2026-10-09T12:56:02Z",
+       "source_name": "Stock Traders Daily",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Stock Traders Daily",
+      "source_tier": "tier3",
+      "tier_reason": "template-generated trading-signal pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Stock Traders Daily reported: The Technical Signals Behind (BIL) That Institutions Follow.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "2087580f92fe16c6",
+       "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+       "summary_text": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+       "published_at": "2026-10-08T20:30:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "1b273bd579e8db61",
+       "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html",
+       "published_at": "2026-10-08T17:31:03Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Inflation on many everyday items was entirely due to tariffs, NY Fed says.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "f4afbb18f18734fc",
+       "title": "Fed Hikes And A Refinancing Wall: Private Credit Isn't Out Of The Woods",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/article/4952803-fed-hikes-and-a-refinancing-wall-private-credit-isnt-out-of-the-woods?source=feed_symbol_SHV",
+       "published_at": "2026-10-08T15:30:24Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: Fed Hikes And A Refinancing Wall: Private Credit Isn't Out Of The Woods.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "fc1adfd078a06b28",
+       "title": "The Bond Market Wants Lower Fed Target Rates And Inflation To Release Via Non-Core, In My View",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/article/4952740-bond-market-wants-lower-fed-target-rates-and-inflation-to-release-via-non-core-in-my-view?source=feed_symbol_SHV",
+       "published_at": "2026-10-08T11:59:32Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: The Bond Market Wants Lower Fed Target Rates And Inflation To Release Via Non-Core, In My View.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "73373e5267b8915c",
+       "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+       "summary_text": "",
+       "url": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
+       "published_at": "2026-10-07T18:44:36Z",
+       "source_name": "CNBC",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "CNBC",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "CNBC",
+      "source_tier": "tier1",
+      "tier_reason": "financial broadcaster",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CNBC reported: Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "3b2d993383466a79",
+       "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+       "summary_text": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
+       "published_at": "2026-10-02T20:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "b94c4bdd1480cf2e",
+       "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+       "summary_text": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
+       "published_at": "2026-10-02T15:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "5c35d8bd3276846d",
+       "title": "September Jobs Report: Payrolls Cool, Unemployment Rises - The Fed Can Wait",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/article/4951620-september-jobs-report-payrolls-cool-unemployment-rises-the-fed-can-wait?source=feed_symbol_SGOV",
+       "published_at": "2026-10-02T14:15:28Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: September Jobs Report: Payrolls Cool, Unemployment Rises - The Fed Can Wait.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "28aac29bdc06662f",
+       "title": "Daily ETF Flows: BIL On Top",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRFhZYUdIQWF5YWQ4b19HQTAtYWZXdzkwQ3B5bnNlU0ExRHk1WEVIU2w2dGxKMktma0hpS1FIM3NTT003aGV5Mzk5dmM0RjhvSDhBTWE1YmVWNENjUGNjeFB5aWNZVVBfaEJnY1kyaU1DQ0UzSW5YMDQ5b1pWRDV6ck9feXdtR3JRaENuWlMwZjItZTQ?oc=5",
+       "published_at": "2026-10-01T07:00:00Z",
+       "source_name": "Yahoo Finance",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Yahoo Finance",
+      "source_tier": "tier2",
+      "tier_reason": "Yahoo Finance originals and partners",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Yahoo Finance reported: Daily ETF Flows: BIL On Top.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "0ba22c42de0c1a6b",
+       "title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+       "summary_text": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
+       "published_at": "2026-09-30T13:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "9fc7ba7762307c6a",
+       "title": "Wells Fargo lifts 2027 Fed Funds target and yield forecasts",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/symbol/SGOV/news?source=feed_symbol_SGOV",
+       "published_at": "2026-09-29T14:51:54Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: Wells Fargo lifts 2027 Fed Funds target and yield forecasts.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "cfb51fb311e1374a",
+       "title": "Technical Reactions to BIL Trends in Macro Strategies",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQWNEV1RsNEl3NlZtTXBQMWVIU3ZBdVQyN2xBV3laWm9sM2dOeDZxTzhfUl8waUdOTXQyQlZVOFRTVlRJTEtvVV9JRE5GOHZuWEpQa0tlN2RIaXdVNWJ5ZjJ3X1hOVUlSMkhvMHJsRC01N2JCdFh3ZlZkUW9LMTU1cDVKTndWM3RsVnNxcFZfUm93RmVpQ0djb0o5S0pNcDNNMC1Hc0xIbXg5T1QwbVpNUk1YYlV2NzZ3TjVlYjUxV2t5YzNpUHRydDc0Z0Y?oc=5",
+       "published_at": "2026-09-29T06:04:02Z",
+       "source_name": "Stock Traders Daily",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Stock Traders Daily",
+      "source_tier": "tier3",
+      "tier_reason": "template-generated trading-signal pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Stock Traders Daily reported: Technical Reactions to BIL Trends in Macro Strategies.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "f69bcf4878f8088d",
+       "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+       "summary_text": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
+       "published_at": "2026-09-25T20:30:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "3435f3cf8598e835",
+       "title": "Bill Ackman: ‘The Fed might have just made a mistake. Am I right or am I wrong?’",
+       "summary_text": "",
+       "url": "https://seekingalpha.com/symbol/BIL/news?source=feed_symbol_BIL",
+       "published_at": "2026-09-25T15:04:39Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Seeking Alpha",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: Bill Ackman: ‘The Fed might have just made a mistake. Am I right or am I wrong?’.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "083bb14db3964b1e",
+       "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+       "summary_text": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+       "published_at": "2026-09-24T18:30:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "3ef5daf05149f643",
+       "title": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+       "summary_text": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
+       "published_at": "2026-09-24T15:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "e91f648d57aabe61",
+       "title": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+       "summary_text": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm",
+       "published_at": "2026-09-22T20:30:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board announces approval of application by BancFirst Corporation.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "55b4c5ed45c8351f",
+       "title": "4 Bond ETFs to Gain from Fed Rate Hike",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZ01mS0VwcU1YU21nbEFtSlJ3M2tGamM0cldJaGVDWEhFWnZENHBsdGVqanlOZ2d1YjBDYldwcmcwNDlzbVhSaGxzWnJ1REdRRl9fLTB6UG9MaUttcGVnLXpjWEpmUmVDOG1yWlBDODJWSE5hVDhUV2ZSU1lEbEluWmViUmNxLTZQWFdKZTJpN3I3X3BuUmljR1Z3?oc=5",
+       "published_at": "2026-09-21T07:00:00Z",
+       "source_name": "TradingView",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "TradingView",
+      "source_tier": "tier2",
+      "tier_reason": "market commentary and syndicated news",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "TradingView reported: 4 Bond ETFs to Gain from Fed Rate Hike.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "5d8912079acad17a",
+       "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+       "summary_text": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",
+       "published_at": "2026-09-18T15:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "cdeba77676f4cddb",
+       "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+       "summary_text": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
+       "published_at": "2026-09-18T15:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "313554827a4fc209",
+       "title": "The Fed Just Raised Rates for the First Time Since 2023. These Six Funds Get a Raise With It",
+       "summary_text": "",
+       "url": "https://247wallst.com/investing/etf/2026/09/17/the-fed-just-raised-rates-for-the-first-time-since-2023-these-six-funds-get-a-raise-with-it/?.tsrc=rss",
+       "published_at": "2026-09-17T21:05:26Z",
+       "source_name": "24/7 Wall St.",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Yahoo Finance",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "24/7 Wall St.",
+      "source_tier": "tier2",
+      "tier_reason": "commentary with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "24/7 Wall St. reported: The Fed Just Raised Rates for the First Time Since 2023. These Six Funds Get a Raise With It.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "0423ef2518b5127b",
+       "title": "$100,000 in These 3 ETFs Pays About $465 a Month From T-Bills and CLOs: No Dividend Stocks, Almost No Rate Risk",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNzBIbGZxSkx6Rk1iaGVtNkViTnBpUk5wUjM0R0dPZmRlRC1SZHdQOUVDdkpHR3FRVGJBTk03Q2JJT01IY2RzcXVSSlNkLUVmTHBmQ1dNZUhvNXVJWlE2OWhwalRtdmN1ZFF0YUxTUG9kWlNHMmhqS2RFYU8zQXgwcDhtSUF2cXFFZ1Z6RDJSSFpKV3NzeVgweGNXQW1ndjU0RjYzMFBJc3ZxN2E0WW1zTjRzUFdwdmc4MU1TNHkxM01IRldVVXZPcGtHX2dHMFp2ZkQ0TTlpTHVPQjhzNGIwWTctLV9ZMHZzcXc?oc=5",
+       "published_at": "2026-09-17T07:00:00Z",
+       "source_name": "24/7 Wall St.",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "24/7 Wall St.",
+      "source_tier": "tier2",
+      "tier_reason": "commentary with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "24/7 Wall St. reported: $100,000 in These 3 ETFs Pays About $465 a Month From T-Bills and CLOs: No Dividend Stocks, Almost No Rate Risk.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "3cabbee7c504114c",
+       "title": "Federal Reserve issues FOMC statement",
+       "summary_text": "Federal Reserve issues FOMC statement",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+       "published_at": "2026-09-16T18:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve issues FOMC statement.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "9677a54a87c36120",
+       "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+       "summary_text": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+       "published_at": "2026-09-16T18:00:00Z",
+       "source_name": "Federal Reserve press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Federal Reserve press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "Federal Reserve press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator / central bank",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Federal Reserve press releases reported: Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "9896c555d971a291",
+       "title": "Fixed Income ETFs Surge to All-Time Highs Ahead of Pivotal Fed Decision",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1WaktfMnVVdkZ6ZEludC1VNmRqRFdidWszekRva1gxTmdjTGZZUk41QmNFbEN1c3ZTQXpmTDBlNVFUOVJhYUhCeWE4UTUyVlVTTksxUlB3Z2YtbHE2VGhYQ2RXN3g5d3ZzZ1BWU0Q5cnRwemp1cFhiNTktSGpZdw?oc=5",
+       "published_at": "2026-09-15T07:00:00Z",
+       "source_name": "ETF Database",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "ETF Database",
+      "source_tier": "tier1",
+      "tier_reason": "ETF data and news (VettaFi)",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "ETF Database reported: Fixed Income ETFs Surge to All-Time Highs Ahead of Pivotal Fed Decision.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "a107976140b11c83",
+       "title": "As rate hike looms, short duration, alternative and bond ETFs in the spotlight at Future Proof",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZmppX1EwWkpSQkZTMVY3X3NfNGw1WTJtM0tUUkpYMTlibm9Ha2FqTWJNanVXb2tKNGwzUlJHQ3QzN19TRTE2RWs1akRWTmphUmFhZ2RnUG1vSnV1dFZ4M295TS1TZ25kSkNxOXVNTENjcnZBRndra0d6NmlQMjI5U3FCR29jRVhCaGVpak5iQzVDZ19LSFVmN2Y2YzBiUk5LVmlCQmUtZXI1NWZBN1ZkT3RBcTR3YXA0UFEtRXVDVEpZTXBad3pCLVpldGtWaE1k?oc=5",
+       "published_at": "2026-09-14T07:00:00Z",
+       "source_name": "InvestmentNews",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "InvestmentNews",
+      "source_tier": "unrated",
+      "tier_reason": "not reviewed yet",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "InvestmentNews reported: As rate hike looms, short duration, alternative and bond ETFs in the spotlight at Future Proof.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "547b53bd87db2c1e",
+       "title": "Joint Readout of Principals’ Meeting of U.S. and UK Authorities Regarding Central Counterparty Resolution",
+       "summary_text": "Senior officials from the Securities and Exchange Commission, Federal Deposit Insurance Corporation, Commodity Futures Trading Commission, Federal Reserve Board, and Bank of England convened for a tabletop exercise on Sept. 3, 2026, to discuss certain…",
+       "url": "https://www.sec.gov/newsroom/press-releases/2026-87-joint-readout-principals-meeting-us-uk-authorities-regarding-central-counterparty-resolution",
+       "published_at": "2026-09-11T15:00:00Z",
+       "source_name": "U.S. SEC press releases",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "U.S. SEC press releases",
+       "date_status": "published"
+      },
+      "matched_tickers": [],
+      "matched_areas": [],
+      "publisher": "U.S. SEC press releases",
+      "source_tier": "tier1",
+      "tier_reason": "regulator",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 1.0,
+      "exposure_text": "About what BIL holds: US T-bills & Fed policy. This concerns 100% of your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "U.S. SEC press releases reported: Joint Readout of Principals’ Meeting of U.S. and UK Authorities Regarding Central Counterparty Resolution.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "llm error (BadRequestError)"
+      ]
+     },
+     {
+      "item": {
+       "id": "e2396f4c991a46f0",
+       "title": "Treasury Yields Are Rising Again. Are SGOV and BIL Better Than Cash?",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPR19sNXJDSWJja2lhOVZkWTFaU0xNTFR5emI0MWFVVkhaYmY3NVpOZWo0XzBfXzFHUTJHR3hiR3Vfd2VvNEFNUmRaa3laNk50UG1fYlFaSE96cWx3S21zTmlqYmNOdE4wUUFROW5LWmlqbXFNbGx3QkU4WGw5UEp4bUNUdXhyODJoYVJrRmVOQnkxZDFwM1hYMVF3aXc5MXZsVTFfTzN2MUYyNXJfSkw2eDY4MVJOdjJqU19WbXdNOGlWdmMt?oc=5",
+       "published_at": "2026-09-02T07:00:00Z",
+       "source_name": "Benzinga",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL",
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Benzinga",
+      "source_tier": "tier2",
+      "tier_reason": "market commentary",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Benzinga reported: Treasury Yields Are Rising Again. Are SGOV and BIL Better Than Cash?.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "0ad6031d08398235",
+       "title": "The Increased Uncertainty Increasing The Appeal Of Cash-Like Allocations (NYSEARCA:BIL)",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ0JDcWc5TDhhbWEyQkEwd1JYVnRUcHBUU0hRc0gtZjM0dXJ3NmpfZl9jZlUzWGRXamNXa1ZINTFseEFlU19UVUNLZWR1cXhSMlVaNklxZEpyS3pIQjBQSGRvRVc2Y0dqTUF3eHc3bVAwZVhBQW5kOWJLS2RGQ0xWNnZ0bXhzUjNtMFNsYTRTeC1vODFCRzRxTTNtVUoxRXVKb3I0Ny1Gd0FETUdaQl9XWnlTWQ?oc=5",
+       "published_at": "2026-08-31T07:00:00Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: The Increased Uncertainty Increasing The Appeal Of Cash-Like Allocations (NYSEARCA:BIL).",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "79d55d735583384d",
+       "title": "State Street SPDR Bloomberg 1-3 Month T-Bill ETF Experiences Big Outflow",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/state-street-spdr-bloomberg-1-3-month-t-bill-etf-experiences-big-outflow",
+       "published_at": "2026-08-24T15:04:01Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated ETF flow alerts",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: State Street SPDR Bloomberg 1-3 Month T-Bill ETF Experiences Big Outflow.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "b002bba6e63cea2e",
+       "title": "SPDR Bloomberg 1-3 Month T-Bill ETF (BIL) Stock Price, Chart & News Today",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5idVRhVUQ3eml2RkFQUjA1bjZOZWdhdGw5bkNOVFk3eTlDbTdZWG9SVVZfcEJydFFJYktxVFdRNGNsUlpCRUJqQVVVb1F4bUpWdEZiYmJLVzRVb0ZpdEZkcTRNbjZ2cklFaW5RQlJZYjZyeGVtdkxfeg?oc=5",
+       "published_at": "2026-08-21T04:28:43Z",
+       "source_name": "CoinGecko",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "BIL"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "CoinGecko",
+      "source_tier": "unrated",
+      "tier_reason": "not reviewed yet",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 1.0,
+      "exposure_text": "This concerns 100% of your portfolio (BIL).",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CoinGecko reported: SPDR Bloomberg 1-3 Month T-Bill ETF (BIL) Stock Price, Chart & News Today.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "1d666739bf8e4ce3",
+       "title": "SHV Makes Bullish Cross Above Critical Moving Average",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/shv-makes-bullish-cross-above-critical-moving-average",
+       "published_at": "2026-10-16T19:59:45Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SHV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated ETF flow alerts",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: SHV Makes Bullish Cross Above Critical Moving Average.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "cbbee659b41cff77",
+       "title": "Trading Systems Reacting to (SHV) Volatility",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUUlrSkFQYU9GdXowX1MzaV80TXBhRVJSbzNpcG5wdXozWnpteHFEdkxZYTh6alZkUjBhT3RhWVRQU2dST3RieF9tV0ptOERLdE5MdTFiZGJQZUtYNzNIdlFWa0pnbWtEc0xWajNOVC1GcUhSWVVJTDZXeFVGdlA0VmdGVVF3eGRZQmVUYTFHNlZ5ZlV3TWdQUUxsV0p4bjJ1bkI1aDUyaEpwdEVRRDBRY042dUFsNWdTaGJmSkJn?oc=5",
+       "published_at": "2026-10-14T04:58:02Z",
+       "source_name": "Stock Traders Daily",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SHV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Stock Traders Daily",
+      "source_tier": "tier3",
+      "tier_reason": "template-generated trading-signal pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Stock Traders Daily reported: Trading Systems Reacting to (SHV) Volatility.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "96ac171484421a00",
+       "title": "WisdomTree Floating Rate Treasury Fund (Dinari Tokenized ETF)",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUDl6VWpYM0hxYW1EVmZOMmY4VVdKTWZ1MFluVHBUU2VMUWZra25TWHpIUkxoMUU5eUxKdGlrWGNQa19uOGlxNl9mUG1fd0Z1ZWhUN0x6d0Jmb1dFd2lPRWd5eHRtZV9wZUtIU2xvZkhNb3BfSXZZdXg0SUozV19SbEtfWmY4SGY5SDc4LWJwVWo?oc=5",
+       "published_at": "2026-10-13T18:54:41Z",
+       "source_name": "CryptoRank",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "CryptoRank",
+      "source_tier": "tier3",
+      "tier_reason": "analytics pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CryptoRank reported: WisdomTree Floating Rate Treasury Fund (Dinari Tokenized ETF).",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "a61d9445098146f9",
+       "title": "USFR: The Treasury ETF Whose Yield Resets Every Week When Rates Move",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU2Y2dDB5aHlTLUpGR2VBSHJ3akkwdmlCU3h5TlFtQk45SFAzUmtRMXlXRWpJSUVCUUQ0aFNZQl81TDhXZHVpMUwxU05maE5KVzFiT0U0ZUhPZWZJRi01NFJUdGp0emtlQlVxc2twam9waTAtSVZ2RWF3NlB1NHl4RTY1aDk0dnNybmwtMWZTZjM2Ri05dkxEWVBZMFRyUlhFTkphLTJEQWxnMlJuMTJoYmp1czlBUQ?oc=5",
+       "published_at": "2026-10-13T09:25:00Z",
+       "source_name": "24/7 Wall St.",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "24/7 Wall St.",
+      "source_tier": "tier2",
+      "tier_reason": "commentary with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "24/7 Wall St. reported: USFR: The Treasury ETF Whose Yield Resets Every Week When Rates Move.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "4f5b2d6e682ae61c",
+       "title": "TLT’s Yield Edge Is Thin Over SGOV (NASDAQ:TLT)",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9SWG92S0prbllxSndsWHgycGtTQlI2V3pXa2Q3WWxZRjJsU0U1ckpIOW9qZTZ6cVlxOTNXM0VkRm9HMWFGZC1FcUhBc0Z4cE16dWJjeDZYOEJGczRKZ0V1bmdmVEJ2YjlNWV81XzVHWDRsblVxNTBJTHhYM1FDckE?oc=5",
+       "published_at": "2026-10-13T05:31:03Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: TLT’s Yield Edge Is Thin Over SGOV (NASDAQ:TLT).",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "c79631d2b1921475",
+       "title": "SGOV, AFIF: Big ETF Inflows",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/sgov-afif-big-etf-inflows",
+       "published_at": "2026-10-12T15:52:17Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated ETF flow alerts",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: SGOV, AFIF: Big ETF Inflows.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "79e0272d90be7734",
+       "title": "USFR ETF sees record $800 million in inflows, Eric Balchunas notes",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMTZPRjNoTkJZQXZkV1pUNFVqczJJOGNaRGNRb2Rvb0J5TERKWk45Unc3SUpiUjZBb0Fyd3M3aWdsc01vU2JKMFRwdTF3MjdHZ0l1VVJla2dqQW5NcW5wbWVfX0MzclM4ajhlSFE0N2h5RnVfS216M0FPYjZtSUJHRldhLVlWZ2tE?oc=5",
+       "published_at": "2026-10-05T11:40:09Z",
+       "source_name": "Traders Union",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Traders Union",
+      "source_tier": "unrated",
+      "tier_reason": "not reviewed yet",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Traders Union reported: USFR ETF sees record $800 million in inflows, Eric Balchunas notes.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "6effa1b94d5a1d9a",
+       "title": "Korean Retail Investors Pivot to Ultra-Short Treasury and Dividend ETFs as SGOV Tops Net Buying",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9LM0VIWjZGR3RodW1BYVVvRkJyR2JXTzdZYU8yWXpUODh5NlBOdzVjR2lQRjN1XzdCLTA1RTB4eDRZNF9rVk9UaTkxTTZaU3BmVl93Y3ktUDlfUGlBTV8zdFl5NktIekJ4SjFMX2N6cnJvb2FqSHc?oc=5",
+       "published_at": "2026-10-03T07:00:00Z",
+       "source_name": "BigGo Finance",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BigGo Finance",
+      "source_tier": "tier3",
+      "tier_reason": "AI-written aggregator",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BigGo Finance reported: Korean Retail Investors Pivot to Ultra-Short Treasury and Dividend ETFs as SGOV Tops Net Buying.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "61b54cdedeed6687",
+       "title": "Noteworthy ETF Inflows: SGOV",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/noteworthy-etf-inflows-sgov",
+       "published_at": "2026-10-02T15:30:23Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated ETF flow alerts",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: Noteworthy ETF Inflows: SGOV.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "b7ca3d776d408fe4",
+       "title": "Noteworthy ETF Inflows: USFR",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/noteworthy-etf-inflows-usfr",
+       "published_at": "2026-09-30T14:51:22Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated ETF flow alerts",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: Noteworthy ETF Inflows: USFR.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "48438ebbc4a1aae9",
+       "title": "After Hours Most Active for Sep 29, 2026 : SHV, NU, GRAB, RIG, NEOG, IXUS, NVDA, WMT, PFE, AG, EXC, BMNR",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/after-hours-most-active-sep-29-2026-shv-nu-grab-rig-neog-ixus-nvda-wmt-pfe-ag-exc-bmnr",
+       "published_at": "2026-09-29T20:24:57Z",
+       "source_name": "NASDAQ.com",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SHV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "NASDAQ.com",
+      "source_tier": "unrated",
+      "tier_reason": "not reviewed yet",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "NASDAQ.com reported: After Hours Most Active for Sep 29, 2026 : SHV, NU, GRAB, RIG, NEOG, IXUS, NVDA, WMT, PFE, AG, EXC, BMNR.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "0839c10c1cffcf09",
+       "title": "Navigating Rate Uncertainty: Why USFR Shines After the Fed’s September Meeting",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdWNpOTNyYWpmSlNMTkV6MnE2SEJaaHVXUVY2QmNGX0NBdkVmYmtTNkVaNk1pOWdITTRJYVgxZXgzelNaZ2JWZXZfV2hWNS1WUEViMXhPVTlYWG85U19YOVJKQzhodmR3QjdaUjY1ejNOTE9hZWMwNHZYUGl4NkVnT3VOQmd3dHQyMjdnbWZ4cw?oc=5",
+       "published_at": "2026-09-28T07:00:00Z",
+       "source_name": "ETF Database",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "ETF Database",
+      "source_tier": "tier1",
+      "tier_reason": "ETF data and news (VettaFi)",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "ETF Database reported: Navigating Rate Uncertainty: Why USFR Shines After the Fed’s September Meeting.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "709ea70b9d2cc2c7",
+       "title": "VNQ vs. SGOV: Why Own a REIT ETF When T-Bills Pay Almost as Much With Zero Rate Risk?",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZDB6Qk9tc2lrLUwxUDdiWHl2Mm10UlY2b2hTSFNublhJaXVid0pZVzlsOHBrOEswQjZabU1TWnNtRl9ycG4tczV2aEZ4RGswUUltbzZ5Sy1VcHJvTlk2eks3TVNJc3ZQUkV2V1N0TFMwY2dJLUI1UDJMNjlibGJaRFdVYWEyeXZnNy1HYnloZmF4MTFoaG5jRWVxLS1UTzRDLUJqVjhUYUdad3Q2V3dmbTZWenJmbHVNV2xYcFpaRjR5UlhYTFljcG9B?oc=5",
+       "published_at": "2026-09-22T07:00:00Z",
+       "source_name": "24/7 Wall St.",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "24/7 Wall St.",
+      "source_tier": "tier2",
+      "tier_reason": "commentary with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "24/7 Wall St. reported: VNQ vs. SGOV: Why Own a REIT ETF When T-Bills Pay Almost as Much With Zero Rate Risk?.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "f1fcd3af2b0aeb53",
+       "title": "SGOV vs. VBIL: Vanguard Finally Has a T-Bill ETF, So Is It the Cheaper Place to Park Cash?",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWW1xV2VLanZheDFuay1xNFNfZGlHanRXdUlTMHZZZU9vU01sMmw2OUZlbTJ1djBOTGtLajNIMF82VkZIdWxpdmlZZTROVUxNRnppaU15MmtYOWFSOHVUbm9DR05wQTB6czNsN21OOWpZZzd5T1UtTU9Scm50Vy1oZDNPVjJhSk9mNW1oN1lFVlkwSUtiTzY2NlIycw?oc=5",
+       "published_at": "2026-09-18T07:00:00Z",
+       "source_name": "Yahoo Finance",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Yahoo Finance",
+      "source_tier": "tier2",
+      "tier_reason": "Yahoo Finance originals and partners",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Yahoo Finance reported: SGOV vs. VBIL: Vanguard Finally Has a T-Bill ETF, So Is It the Cheaper Place to Park Cash?.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "1482ac13b82cc1eb",
+       "title": "Fed Rate Hike Is Back: 4 ETFs to Watch as Inflation Stays Sticky - iShares 0-3 Month Treasury Bond ETF (N",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOUdWTWtoNC1Rcmw5WjlQdUV6S0xDWWcxN3l5czRGN0hmVmk3SjRRcXBWRkpBa3pWaVpzMFlpc2hRRWEwcjVOSmlrZGp4dzdiWUVENEZnTGVMS3ltUC1sdkI1VnVjNm9odTRJSjVGV21zRTl1MWc5aWVYSVZHXy1OeHh3RWZhU3RCeDJicDVnZi1ZMU9FYUxrdWNmTnZRZlJTWmVnVzhzaUdNT2hzUVVjb0x3dzBwTXpHdHFBSDNKN09WcjQ2N0J1QWplYzVxODZMR0NaVERKZXZhQQ?oc=5",
+       "published_at": "2026-09-16T07:00:00Z",
+       "source_name": "Benzinga",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Benzinga",
+      "source_tier": "tier2",
+      "tier_reason": "market commentary",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Benzinga reported: Fed Rate Hike Is Back: 4 ETFs to Watch as Inflation Stays Sticky - iShares 0-3 Month Treasury Bond ETF (N.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "30072fb7482fbc4f",
+       "title": "BND and SGOV Are Both “Safe” Bond ETFs, Yet Only One Has Never Had a Losing Year",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdEtNYWZnSTB6UkVlTDNuUUxxdnhJbXJoYnctNjRaMnFHa0ROTXI5MnZGTjdvUkRlOWdoYTUwUDJ6MDBzcjNWdENtWFJLSjZ5ZUJiNXB5OV9wc1AyVjl0SlI5aVRSZDMyMXVKWW9zbkJNZkEtcHQwZVhXaEVJS3V3ZWh1YzdBdVpjOVdwUnBSb1NEa3c?oc=5",
+       "published_at": "2026-09-16T07:00:00Z",
+       "source_name": "Yahoo Finance",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Yahoo Finance",
+      "source_tier": "tier2",
+      "tier_reason": "Yahoo Finance originals and partners",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Yahoo Finance reported: BND and SGOV Are Both “Safe” Bond ETFs, Yet Only One Has Never Had a Losing Year.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "495a282663d04ae5",
+       "title": "Bond ETFs BND and SGOV Both Look Safe, But Only One Has Never Lost Money",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uU3lJVE5XdUtPZ3RVVmlSeVZhaXdpczFXY09Bc1ZET25URDRkWnZWdG9vU18zYWdSQ25aRDdPbllEQlJLWGcyUi0ydjN3QlY1ZzRzY0R2UjVWWHB0WU9mQTNKeEZJTFRzb0ZvN1daUkl6Q3RBNGc?oc=5",
+       "published_at": "2026-09-16T07:00:00Z",
+       "source_name": "BigGo Finance",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BigGo Finance",
+      "source_tier": "tier3",
+      "tier_reason": "AI-written aggregator",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BigGo Finance reported: Bond ETFs BND and SGOV Both Look Safe, But Only One Has Never Lost Money.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "fda441367b8c27c8",
+       "title": "Why Leave Cash in a Money Market Fund When SGOV Pays About the Same and Skips State Income Tax?",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVWpOcWpSME4xTFdqR1UyeWk4YVJPRGM2b05OMWpSYTRBTjBvbjgzbnFjY3RnVUdKTVVMM1dCM2trVGNVVmo5ek1pX1VOZDZ0ZkxSeWtPWU9hdWVZQmg0YU9RbXBUOUVjdURheFVGT1VWOU96YkExUVdGd1Q5WUVwanl6ZnR6cjhVYm5lc2xWUGR3bGxKVmQ2TTZzTE9Jal9UUklFbUN4ZENwYXNySUdxdzFSWUdYZzBvbjA5anY2N0luaE40TnhoSE5BS2d4c1J4NWM5M3BqUGh3QQ?oc=5",
+       "published_at": "2026-09-15T07:00:00Z",
+       "source_name": "24/7 Wall St.",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "24/7 Wall St.",
+      "source_tier": "tier2",
+      "tier_reason": "commentary with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {
+       "BIL": "us_tbills_fed"
+      },
+      "exposure_labels": {
+       "BIL": "US T-bills & Fed policy"
+      },
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "24/7 Wall St. reported: Why Leave Cash in a Money Market Fund When SGOV Pays About the Same and Skips State Income Tax?.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "3259ce0a0afdc4c3",
+       "title": "TLT Holders Are Losing Money Again While SGOV Holders Just Collect Their Yield. Here’s the Difference.",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPX0F5cGdIX3ZsR1NFQUFqUjV2X2IwcHpVb0ZleTR0dTBlcDJmMFIyNGNVanVBRHpvbWJCVkZ1QWp3OXl2YW1hWlFCNFV4M1NoLUo3NDB4OUZWVG9KV296elBVdUZfQWZJTm5yVnhsQUNoTXFQU1dSVE1PcUw1Z2dGdF9tWHRDRm5aMFE1QUFVV241NmVyVGhkT1ZyWVU?oc=5",
+       "published_at": "2026-09-11T07:00:00Z",
+       "source_name": "Yahoo Finance",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Yahoo Finance",
+      "source_tier": "tier2",
+      "tier_reason": "Yahoo Finance originals and partners",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Yahoo Finance reported: TLT Holders Are Losing Money Again While SGOV Holders Just Collect Their Yield. Here’s the Difference.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "a5ead8cf456d9bc1",
+       "title": "USFR, SHAG: Big ETF Inflows",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/usfr-shag-big-etf-inflows",
+       "published_at": "2026-09-10T14:55:04Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated ETF flow alerts",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: USFR, SHAG: Big ETF Inflows.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "313e3d06cc1227c5",
+       "title": "Bond ETF Investors Are Split. SGOV, TLT Draw Billions as Rate Bets Diverge - iShares 0-3 Month Treasury B",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdWVJQUU4M01lX3BLejY2QzRoMnZPenFlZkVuS0w4ZWI4QU5nNkF0MmNWWC04TXRyQlhLd0plZm9qSUtnVkFsblNjUEhJUUE3azM5eXJ2V1pKcTBaM25oMVM5cjMzdjZIZXd4QnBVNTMyYkRDZFZJRHZCanRIa2FnTE1KVjB0dnlOTldCOTl5QkowX20xa013N0xXbGZpWF9KNFJFRTZNLVNuM09NRFc0d2ZSRHdyWUFINGZTNlQ1Sk84NU5xeHhlaUJwT3JqQmtETVE?oc=5",
+       "published_at": "2026-09-09T07:00:00Z",
+       "source_name": "Benzinga",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Benzinga",
+      "source_tier": "tier2",
+      "tier_reason": "market commentary",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Benzinga reported: Bond ETF Investors Are Split. SGOV, TLT Draw Billions as Rate Bets Diverge - iShares 0-3 Month Treasury B.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "ea02df8f392f3783",
+       "title": "$5.3B Flows Into ETFs: VOO, SGOV and GLD Lead Investor Demand - iShares 0-3 Month Treasury Bond ETF (NYSE",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZkhEREFSSk9PcHJCUW94cWRMU3VheVp1a0pOa21VOUxMbUZITjFtRmtrNjc1TDFkaHZyYzBZUXZHR0RnRVdaMDBpWUxLNUEzUFlZYVdEMXVOSXYyZ0dWQWNyMFVWdFl6dFZSYmFwZGVOMGtJb2Y0Q0xCdDV6M3hWUVhhcW4tNlo0RjFnQTl0ZlVERlVMQmFqWG81VFU4OXNNenhUcGdGZklHYzU3cFh0a201ZHlpLVQ1SElHTkYxYjF6SkJpY0c2SU9ZX1Y4MFNDLWM0?oc=5",
+       "published_at": "2026-09-04T07:00:00Z",
+       "source_name": "Benzinga",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Benzinga",
+      "source_tier": "tier2",
+      "tier_reason": "market commentary",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Benzinga reported: $5.3B Flows Into ETFs: VOO, SGOV and GLD Lead Investor Demand - iShares 0-3 Month Treasury Bond ETF (NYSE.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "8a6e756b8455977c",
+       "title": "Daily ETF Flows: SGOV Takes No. 2 Spot",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQ2NzY1hSOXNFQ252UzlxQ2hfa3ZmNEEzWng4WmxUVGthd2ZzSWU3XzNObnZ6bUh2c2NSZWdJaEhzTFZ3WkQ2RDdCUTNHLUhZWGpuTFRNVzRaNEg3NVM0dGNvUmt3MG90Tmlya21neUI4S0lGTFAzRE9RWnE5bW1uY3MwTm9PSlh6UVZIMDZQZlpNUVBrVXlJ?oc=5",
+       "published_at": "2026-09-03T07:00:00Z",
+       "source_name": "Yahoo Finance",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Yahoo Finance",
+      "source_tier": "tier2",
+      "tier_reason": "Yahoo Finance originals and partners",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Yahoo Finance reported: Daily ETF Flows: SGOV Takes No. 2 Spot.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "e1094f59b55eb839",
+       "title": "iShares 0-3 Month Treasury Bond ETF (SGOV) Dividend Yield 2026 & History",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1NMzVhQUhGWkZiTi1MNGxnRlJwREJ6YjdwT0N2WGZPRUdZTFFCQ1lIakxyZ3kzNXAtQkhIYVAtSUpxWVo3UUFFWEJ6OTlrRmdfMjJqUzFpWE1WNHJRUUwzNFB5SQ?oc=5",
+       "published_at": "2026-09-02T18:34:53Z",
+       "source_name": "MarketBeat",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "MarketBeat",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated holdings and 13F pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "MarketBeat reported: iShares 0-3 Month Treasury Bond ETF (SGOV) Dividend Yield 2026 & History.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "7c91cdcf94305b42",
+       "title": "iShares 0-3 Month Treasury Bond ETF (SGOV) Chart and Price History 2026",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9fclI3ckY0OXZNVC1HMUhvNFc5WFd4S3NXZUVJakJPeWVlTmhHWjM3X29EOHlPN3dhM3VBMDZLVW9KbGV1LW9iU29mZ3Vlb3gyZ2JjMEVVUkVfU2tQdGtz?oc=5",
+       "published_at": "2026-09-02T18:05:13Z",
+       "source_name": "MarketBeat",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "MarketBeat",
+      "source_tier": "tier3",
+      "tier_reason": "auto-generated holdings and 13F pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "MarketBeat reported: iShares 0-3 Month Treasury Bond ETF (SGOV) Chart and Price History 2026.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "4b74aa503facdc40",
+       "title": "iShares 0–1 Year Treasury Bond ETF (NYSE: SHV) Share Price, SHV Stock News, SHV Share Price & Updates",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE0xZHJlQkpaNW1WQ19SRWxwXzlyWERkaUJUa3dOUkQ4ZS0tMkZNNFk4QTJWbXp5dDF3Mmp1SEdBQWk4a25VaUhnNTdpZGI?oc=5",
+       "published_at": "2026-09-02T03:25:13Z",
+       "source_name": "kalkine.ca",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SHV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "kalkine.ca",
+      "source_tier": "tier3",
+      "tier_reason": "template pages ('What did X say for Y')",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "kalkine.ca reported: iShares 0–1 Year Treasury Bond ETF (NYSE: SHV) Share Price, SHV Stock News, SHV Share Price & Updates.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "12aaca26e81ff1a1",
+       "title": "SHV: A Look Inside The Structure And Suitability Of This ETF (NYSE:SHV)",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMzRfWEpZZDNuV0U4SF9VaV8taFYyaU5ha3ZSV2pBTlQyWFVZbEJKazN4YkxhMFVDaUxFR1N5ak56X1FMTlBGR1QwZThickd5SXJpcy00Sm9faHo1Yi1fdi12YUxuVkx0SmZzenVPWTBFam9wZUloR1dLTnZGcVdVSHp6ZTQ2aHljVWl2aGJNZ1lxUFo1aUlmZHhR?oc=5",
+       "published_at": "2026-08-29T07:00:00Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SHV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: SHV: A Look Inside The Structure And Suitability Of This ETF (NYSE:SHV).",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "45b42d6b59c1c8b7",
+       "title": "SGOV: Enjoy The Yield While It Lasts (NYSE:SGOV)",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYU03RklKMWgxQTY1dWpJZWFoTXZnNDZlV1FOYW1BU0g5aFRTWVpXQURib3NCbFdoOWduNkQtTzdZWlVrcHRnVXRTLTFPZDQ1UjV4RmNfLWtFYXhfMmFqU3dMcGl1OWFnUTJuaGY5c0FJNThKMTVNLW5HQWc4QkpqYmdn?oc=5",
+       "published_at": "2026-08-29T07:00:00Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: SGOV: Enjoy The Yield While It Lasts (NYSE:SGOV).",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "3049b71e690709ec",
+       "title": "SHV: Large Inflows Detected at ETF",
+       "summary_text": "",
+       "url": "https://www.nasdaq.com/articles/shv-large-inflows-detected-etf",
+       "published_at": "2026-08-28T14:56:40Z",
+       "source_name": "BNK Invest",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Nasdaq",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SHV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "BNK Invest",
+      "source_tier": "tier3",
+      "tier_reason": "automated or template page (headline pattern)",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "BNK Invest reported: SHV: Large Inflows Detected at ETF.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     },
+     {
+      "item": {
+       "id": "79026f76d64aef5f",
+       "title": "$250,000 in SGOV Earned $9,500 Last Year While the Same Money in SPY Earned $48,000",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOd0YwdEtVOHR1Y3Z2eXdJQkh5emJoWUZRLVdjMGNONUFDX2xjSzhqN2l5aDRTZXY3RFljWEsyREJ4UDVoMDF2MmdPb25QcWR0b0IyMFVRTjB3dUhRUllpT29yV2RBdmk4dFN0OFBWN3BPOHhtdm9ocldwbFVHY0lhZVhZbGlWQ21iRzlZNldzR2RNVWJDX05wZGhzWlp5Y3JpTnpweHhzdnNkd2VwOERXc0pYV1puLUcxZlk0a3NWZnNKSTA?oc=5",
+       "published_at": "2026-08-27T07:00:00Z",
+       "source_name": "24/7 Wall St.",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "24/7 Wall St.",
+      "source_tier": "tier2",
+      "tier_reason": "commentary with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "24/7 Wall St. reported: $250,000 in SGOV Earned $9,500 Last Year While the Same Money in SPY Earned $48,000.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "fadbdbe898f3b70e",
+       "title": "USFR: Floating Rate Treasury ETF, Declining Spreads, Zero Present Advantages To Benchmark",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMHVRQTc1b0IyZVdDOVF3VmZhRVBla2xvLW4wTmRtY2lKMDFrTktTajJxaVMyXzkyOFNFMUUyYTVYMjNaYTlzT3FuOHFUZHBJNlNXcTV0Y0pjQ2t1dVFYMnQ4NWExTGdoWGVrMzhCTE8wMTVfVWkyZlF4c0NQOVVDa2JDTmNRZUpKU3psd2xXY2cwdlV0OFFSaEVWSWg1WFJyc09wbkp6dS04VDk2SjltNTNOMUdSLXduYS1ZTldNZDdPRXRpS1E?oc=5",
+       "published_at": "2026-08-27T07:00:00Z",
+       "source_name": "Seeking Alpha",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "USFR"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "Seeking Alpha",
+      "source_tier": "tier2",
+      "tier_reason": "contributor analysis with named authors",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "Seeking Alpha reported: USFR: Floating Rate Treasury ETF, Declining Spreads, Zero Present Advantages To Benchmark.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "headline only: no summary"
+      ]
+     },
+     {
+      "item": {
+       "id": "247bc074e66a344e",
+       "title": "iShares 0-3 Month Tokenized Treasury Bond ETF (Robinhood) Exchanges SGOV Markets | Buy & Sell & Trade",
+       "summary_text": "",
+       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTWktVHEyRDRBWjJHWWpXbWdqRV9pemtLT194M0l2aXJfV0ZKOHlSMEs1SEEyMDdfUF9ZLWJEOERsazg0VUcwLVoteTYzMGZNOVdGZ3BLODBxVEN4dGhYNjhxVzFYUVZSOXl1OHZ4eHAzXzVYUVBpaTFyN21idnQ4czBKMnNyMTVTV3BOLTJULV9WTFM0VkhPNg?oc=5",
+       "published_at": "2026-08-22T00:44:06Z",
+       "source_name": "CryptoRank",
+       "source_type": "outlet",
+       "fetched_at": "2026-10-19T16:07:38.351994Z",
+       "data_source": "live",
+       "feed": "Google News",
+       "date_status": "published"
+      },
+      "matched_tickers": [
+       "SGOV"
+      ],
+      "matched_areas": [
+       "cash"
+      ],
+      "publisher": "CryptoRank",
+      "source_tier": "tier3",
+      "tier_reason": "analytics pages",
+      "tone_by_fund": [],
+      "exposure_of": {},
+      "exposure_labels": {},
+      "exposure": 0.0,
+      "exposure_text": "On your watchlist; not in your portfolio.",
+      "tone": null,
+      "fund_tones": [],
+      "tone_method": "unavailable",
+      "summary": "CryptoRank reported: iShares 0-3 Month Tokenized Treasury Bond ETF (Robinhood) Exchanges SGOV Markets | Buy & Sell & Trade.",
+      "summary_kind": "template",
+      "llm_tone": null,
+      "audit": [
+       "low-reliability source: not used for tone, no LLM call"
+      ]
+     }
+    ],
+    "instrument_aggregates": [
+     {
+      "subject": "BIL",
+      "kind": "instrument",
+      "n_items": 24,
+      "tone": null,
+      "n_items_previous": 13,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 1.0,
+      "text": "BIL: 24 headlines this month, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 24,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 23,
+      "themes": [
+       "us_tbills_fed"
+      ],
+      "theme_labels": [
+       "US T-bills & Fed policy"
+      ],
+      "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+      "held": true,
+      "weight": 1.0,
+      "r_level": 1,
+      "areas": [
+       "cash"
+      ],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 24
+      },
+      "instruments": [],
+      "parent_area": null,
+      "headline_ids": [
+       "2283330b0df7f8ab",
+       "7cccb1ce2e666588",
+       "78538cfab8835340",
+       "e36babe03cef5a26",
+       "d9f36eb5d172cf8e",
+       "b33c744db1b6398d",
+       "2087580f92fe16c6",
+       "1b273bd579e8db61",
+       "f4afbb18f18734fc",
+       "fc1adfd078a06b28",
+       "73373e5267b8915c",
+       "3b2d993383466a79",
+       "b94c4bdd1480cf2e",
+       "5c35d8bd3276846d",
+       "28aac29bdc06662f",
+       "0ba22c42de0c1a6b",
+       "9fc7ba7762307c6a",
+       "0839c10c1cffcf09",
+       "f69bcf4878f8088d",
+       "3435f3cf8598e835",
+       "083bb14db3964b1e",
+       "3ef5daf05149f643",
+       "e91f648d57aabe61",
+       "55b4c5ed45c8351f"
+      ],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     },
+     {
+      "subject": "SGOV",
+      "kind": "instrument",
+      "n_items": 2,
+      "tone": null,
+      "n_items_previous": 11,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 0.0,
+      "text": "SGOV: 2 headlines this month, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 2,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 0,
+      "themes": [
+       "us_tbills_fed"
+      ],
+      "theme_labels": [
+       "US T-bills & Fed policy"
+      ],
+      "name": "iShares 0-3 Month Treasury Bond ETF",
+      "held": false,
+      "weight": null,
+      "r_level": 1,
+      "areas": [
+       "cash"
+      ],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 2
+      },
+      "instruments": [],
+      "parent_area": null,
+      "headline_ids": [],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     },
+     {
+      "subject": "SHV",
+      "kind": "instrument",
+      "n_items": 1,
+      "tone": null,
+      "n_items_previous": 1,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 0.0,
+      "text": "SHV: 1 headline this month, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 1,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 0,
+      "themes": [
+       "us_tbills_fed"
+      ],
+      "theme_labels": [
+       "US T-bills & Fed policy"
+      ],
+      "name": "iShares Short Treasury Bond ETF",
+      "held": false,
+      "weight": null,
+      "r_level": 1,
+      "areas": [
+       "cash"
+      ],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 1
+      },
+      "instruments": [],
+      "parent_area": null,
+      "headline_ids": [],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     },
+     {
+      "subject": "USFR",
+      "kind": "instrument",
+      "n_items": 3,
+      "tone": null,
+      "n_items_previous": 1,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 0.0,
+      "text": "USFR: 3 headlines this month, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 3,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 0,
+      "themes": [
+       "us_tbills_fed"
+      ],
+      "theme_labels": [
+       "US T-bills & Fed policy"
+      ],
+      "name": "WisdomTree Floating Rate Treasury Fund",
+      "held": false,
+      "weight": null,
+      "r_level": 1,
+      "areas": [
+       "cash"
+      ],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 3
+      },
+      "instruments": [],
+      "parent_area": null,
+      "headline_ids": [],
+      "n_shown_under_holdings": 0,
+      "shown_under": {}
+     }
+    ],
+    "area_aggregates": [
+     {
+      "subject": "cash",
+      "kind": "area",
+      "n_items": 7,
+      "tone": null,
+      "n_items_previous": 16,
+      "tone_previous": null,
+      "change": null,
+      "exposure": 1.0,
+      "text": "cash: 7 headlines this month, not rated (no rating available)",
+      "item_ids": [],
+      "n_positive": 0,
+      "n_neutral": 0,
+      "n_negative": 0,
+      "n_unrated": 7,
+      "confidence": null,
+      "confidence_previous": null,
+      "evidence": 0.0,
+      "evidence_previous": 0.0,
+      "compare_note": null,
+      "n_exposure": 0,
+      "themes": [],
+      "theme_labels": [],
+      "name": "cash",
+      "held": false,
+      "weight": null,
+      "r_level": null,
+      "areas": [],
+      "coverage_status": {
+       "state": "unrated",
+       "n": 0,
+       "needed": 0,
+       "n_waiting": 7
+      },
+      "instruments": [
+       {
+        "ticker": "BIL",
+        "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+        "status": "held",
+        "r_level": 1
+       },
+       {
+        "ticker": "SGOV",
+        "name": "iShares 0-3 Month Treasury Bond ETF",
+        "status": "not_held",
+        "r_level": 1
+       },
+       {
+        "ticker": "SHV",
+        "name": "iShares Short Treasury Bond ETF",
+        "status": "not_held",
+        "r_level": 1
+       },
+       {
+        "ticker": "USFR",
+        "name": "WisdomTree Floating Rate Treasury Fund",
+        "status": "not_held",
+        "r_level": 1
+       }
+      ],
+      "parent_area": null,
+      "headline_ids": [
+       "a61d9445098146f9",
+       "4f5b2d6e682ae61c",
+       "79e0272d90be7734",
+       "48438ebbc4a1aae9",
+       "709ea70b9d2cc2c7"
+      ],
+      "n_shown_under_holdings": 2,
+      "shown_under": {}
+     }
+    ],
+    "alerts": [],
+    "suitability_notes": [],
+    "diversity_suggestions": [],
+    "metadata": {
+     "n_fetched": 765,
+     "n_non_news": 16,
+     "n_after_dedupe": 565,
+     "n_outside_window": 217,
+     "n_unmatched": 278,
+     "n_matched": 70,
+     "n_filtered": 0,
+     "n_withheld": 0,
+     "n_llm_calls": 1,
+     "n_llm_cache_hits": 0,
+     "n_tone_unavailable": 53,
+     "tone_method": "llm_fund_aware",
+     "n_fund_tones_llm": 0,
+     "n_fund_tones_finbert": 0,
+     "n_fund_tones_unavailable": 56,
+     "n_tone_llm_calls": 0,
+     "tone_fallback_reasons": [
+      "cache only"
+     ],
+     "fallback_tone_model": "ProsusAI/finbert",
+     "tone_llm_model": "gpt-4.1-mini",
+     "llm_model": "gpt-5.5",
+     "prompt_version": "brief-v1",
+     "sources_skipped": [],
+     "tickers_left_out_by_cap": [],
+     "cadence": "weekly briefing, with alerts between briefings",
+     "config_version": "briefing-0.1.0"
+    },
+    "labels": [
+     "Summaries repeat each source's headline (no AI summaries)",
+     "News tone is a measurement of what sources say, not a forecast",
+     "Does not change your portfolio"
+    ],
+    "tone_note": "News tone: AI-assessed for holders of each fund. On 120 headlines labeled by our team, this method matched the human label 85% of the time (FinBERT: 53%). FinBERT is used when offline.",
+    "briefing_period": "month",
+    "banners": [],
+    "period_words": {
+     "this": "this month",
+     "last": "last month"
+    },
+    "alert_threshold": 0.5,
+    "holdings_order": [
+     "BIL"
+    ],
+    "chosen_areas": [
+     "cash"
+    ],
+    "tier_counts": {
+     "tier1": 16,
+     "tier2": 11,
+     "unrated": 2,
+     "tier3": 9
+    },
+    "method_counts": {
+     "llm_fund_aware": 0,
+     "finbert": 0,
+     "not_yet_assessed": 56
+    },
+    "low_reliability_items": [
+     "20fe5f0ffff3a877",
+     "cfb51fb311e1374a",
+     "1d666739bf8e4ce3",
+     "cbbee659b41cff77",
+     "96ac171484421a00",
+     "c79631d2b1921475",
+     "6effa1b94d5a1d9a",
+     "61b54cdedeed6687",
+     "b7ca3d776d408fe4"
+    ],
+    "single_tier_notes": [],
+    "largest_move": null,
+    "tier_legend": [
+     {
+      "tier": "tier1",
+      "label": "Established",
+      "explanation": "wires, newspapers, regulators, fund issuers",
+      "weight": 1.0
+     },
+     {
+      "tier": "tier2",
+      "label": "Opinion & analysis",
+      "explanation": "named authors giving opinions",
+      "weight": 0.7
+     },
+     {
+      "tier": "unrated",
+      "label": "Not yet reviewed",
+      "explanation": "sites we haven't rated",
+      "weight": 0.4
+     },
+     {
+      "tier": "tier3",
+      "label": "Automated pages",
+      "explanation": "template or auto-generated pages, shown for transparency",
+      "weight": null
+     }
+    ],
+    "n_date_unknown": 0,
+    "month": null,
+    "compare_notes": [],
+    "holding_groups": [],
+    "small_positions": []
+   },
+   "what_changed_month": [],
+   "what_changed_month_action": null
+  },
+  "briefing_context": "eNpNkE9rAyEQxb_LnDdBzcbd7LGH_oFCoaG9lCCjzkbJZreoZJuGfPdqS2kvivObmfeeF-jRpAjdBSwmVGmCDgQTcsHZgkuowAac7TSPKrlA0U2DhY4t-R_Iw2-7ChwNVmGMlH4LU_Cf06jOhCGXxJJV4MdEeUtSGAhLHxiMDnb_SPLmQOGb3Tw8ZgPbu6fXct2X82V7-1zaD37MPkAHT70f95kc8UMFNdCJBuiyvRGPVHJdKwj0PoWkrN9ngTxFumW1kdzWWre83hiuWxSkey1N2yPTBqVkpuYrg6t1L5oVtWtLcmPrpm5Ek9XieUyOslfoehwiVTBjMm7wRaCkn8nv3c_HlhgdX7JrtuIxc95sRC0ka0QFp_y8fgEyfnrc.K2CRKDt0pSgYq4rKaHcSfN3N0uR0EF7_rvs2HKoh4KY",
+  "inputs": {
+   "answers": {
+    "questionnaire_version": "eq-rq-0.1.0",
+    "choices": {
+     "GL1": "d",
+     "GL2": "a",
+     "GL3": "a",
+     "GL4": "a",
+     "GL5": "a",
+     "GL6": "a",
+     "GL7": "a",
+     "GL8": "a",
+     "GL9": "a",
+     "GL10": "a",
+     "GL11": "a",
+     "GL12": "a",
+     "GL13": "a",
+     "B1": "house",
+     "B2": "y1_3",
+     "B4": "m3_6",
+     "B5": "gt75",
+     "B6": "stable",
+     "K1": "more",
+     "K2": "less",
+     "K3": "false",
+     "K5": "lt1",
+     "D1": "no"
+    },
+    "multi_choices": {
+     "K4": [
+      "deposits"
+     ]
+    },
+    "amount_invested": 40000.0,
+    "amount_needed": 40000.0
+   }
+  }
+ }
+}

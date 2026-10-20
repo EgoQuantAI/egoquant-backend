@@ -2,7 +2,7 @@
 
 *2026 Shenzhen FinTechathon, WeBank International Track, Topic B: Wealth Advisory Agent. Status: 20 October 2026.*
 Live system: https://fintechaton-frontend.vercel.app · API: https://web-production-ee5cc.up.railway.app (`/docs`) ·
-Repositories: `fintechaton-backend` (Python, FastAPI) and `fintechaton-frontend` (Next.js), branch `oct19` (the frozen state is tagged).
+Repositories (public copies of the frozen state, tag `submission-20oct`): <https://github.com/EgoQuantAI/egoquant-backend> (Python, FastAPI) and <https://github.com/EgoQuantAI/egoquant-frontend> (Next.js). Our private development repositories are called `fintechaton-backend` and `fintechaton-frontend`; the documents use those names in paths.
 
 ## Five-minute path
 1. Read the one-paragraph summary and the three promises in **[01 Project summary](01_PROJECT_SUMMARY.md)** (sections 1 to 3).

@@ -84,12 +84,10 @@ def test_report_with_briefing_keeps_every_number(run):
     assert a == b
     assert with_b.banners[0] == DEMO_BANNER
     page = render_html(with_b)
-    # the download leaves the news and its banner out (Bideci, 20 Oct: they live on the News tab)
-    assert "Market Briefing" not in page and "Agent D" not in page and DEMO_BANNER not in page
-    section = briefing_section_html(with_b.market_briefing)
-    assert "<h2>Market Briefing (read-only)</h2>" in section and "Agent D" not in section
+    assert "<h2>Market Briefing (read-only)</h2>" in page and "Agent D" not in page and DEMO_BANNER in page
+    assert page.index(DEMO_BANNER) < page.index("<h2>Summary</h2>")      # banner at the top of the page
     for label in TEMPLATE_LABELS:
-        assert html.escape(label) in section
+        assert html.escape(label) in page
 
 
 def test_external_text_is_escaped_and_links_are_safe(run):

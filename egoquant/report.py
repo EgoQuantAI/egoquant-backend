@@ -61,6 +61,7 @@ from egoquant.models import (
     StressScenario,
 )
 from egoquant.risk_engine import RiskReview, plain_violations
+from egoquant.briefing.render import briefing_section_html
 from egoquant.risk_profile.models import RiskProfile
 from egoquant.risk_profile.scoring import is_expired
 from egoquant.scenarios import DEFAULT_STRESS_SCENARIOS, SCENARIO_LABELS
@@ -1193,44 +1194,44 @@ def _binding_text(label: str, value: float | None, result: AgentAResult) -> str 
 # HTML rendering (inline SVG, no external libraries)
 # ==========================================================================
 _CSS = """
-:root{color-scheme:light;--page:#ffffff;--surface:#ffffff;--ink:#18181b;--ink2:#52525b;--ink3:#a1a1aa;--line:#e4e4e7;
---grid:#f4f4f5;--gray:#d4d4d8;--s1:#18181b;--s2:#71717a;--s3:#e4e4e7;--s4:#d4d4d8;--s5:#3f3f46;--ok:#18181b;--warn:#18181b;
---bad:#dc2626;--banner:#fafafa;--bannerink:#18181b;--serif:"Instrument Serif",Georgia,"Times New Roman",serif;
---sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+:root{color-scheme:light;--page:#f4f3f0;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--ink3:#7a7974;--line:#e3e2dd;
+--grid:#ebeae6;--gray:#b9b8b1;--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--ok:#0a7a0a;--warn:#a85a00;--bad:#b02a2a;--banner:#fff4d6;--bannerink:#5c4300}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--page:#121211;--surface:#1a1a19;--ink:#f0efec;
+--ink2:#c3c2b7;--ink3:#9a998f;--line:#34332f;--grid:#2a2926;--gray:#5b5a55;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--ok:#4cc24c;
+--warn:#f0a040;--bad:#ec6a6a;--banner:#3a3015;--bannerink:#f2d98a}}
+:root[data-theme="dark"]{color-scheme:dark;--page:#121211;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--ink3:#9a998f;
+--line:#34332f;--grid:#2a2926;--gray:#5b5a55;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--ok:#4cc24c;--warn:#f0a040;--bad:#ec6a6a;
+--banner:#3a3015;--bannerink:#f2d98a}
 *{box-sizing:border-box}
-body{margin:0;background:var(--page);color:var(--ink);font:15px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
-main{max-width:880px;margin:0 auto;padding:40px 16px 64px}
-h1{font:400 44px/1.05 var(--serif);margin:0 0 12px;padding-bottom:16px;border-bottom:2px solid var(--ink)}
-h2{font:400 28px/1.15 var(--serif);margin:0 0 8px}
-.sub{color:var(--ink2);margin:0 0 8px;font-size:13px}.lede{font:400 22px/1.3 var(--serif);margin:12px 0 0}
-section{background:var(--surface);border-top:2px solid var(--ink);padding:24px 0 8px;margin:32px 0 0}
-.banner{background:var(--banner);color:var(--bannerink);border:1px solid var(--line);border-left:2px solid var(--ink);padding:10px 14px;
-margin:8px 0;font-weight:600;font-size:14px}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin-top:16px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.tile{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 16px}
-.tile .v{font:400 34px/1.05 var(--serif)}.tile .k{color:var(--ink3);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:880px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:26px;margin:0 0 4px}h2{font-size:18px;margin:0 0 4px}
+.sub{color:var(--ink2);margin:0 0 16px}.lede{font-size:17px;margin:12px 0 0}
+section{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;margin:16px 0}
+.banner{background:var(--banner);color:var(--bannerink);border-radius:8px;padding:10px 14px;margin:8px 0;font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:16px}
+.tile{border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.tile .v{font-size:28px;font-weight:650;line-height:1.1}.tile .k{color:var(--ink2);font-size:13px;margin-top:4px}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:12px}
-th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line)}
-th{color:var(--ink3);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:2px solid var(--ink)}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}th{color:var(--ink2);font-weight:600}
 td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.tw,.sv{overflow-x:auto}@media (max-width:700px){svg.wide{min-width:600px}}
-summary{cursor:pointer;margin-top:12px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
-.legend{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--ink2);font-size:13px;margin:10px 0}
-.sw{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:baseline;outline:1px solid var(--line)}
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-svg{width:100%;height:auto;display:block}svg text{fill:var(--ink2);font-size:12px;font-family:var(--sans)}svg .v{fill:var(--ink);font-weight:600}
+.tw,.sv{overflow-x:auto}@media (max-width:700px){svg.wide{min-width:600px}}summary{cursor:pointer;margin-top:12px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--ink2);font-size:13px;margin:8px 0}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:baseline}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+svg{width:100%;height:auto;display:block}svg text{fill:var(--ink2);font-size:12px}svg .v{fill:var(--ink);font-weight:600}
 svg .grid{stroke:var(--grid);stroke-width:1}svg .axis{stroke:var(--line);stroke-width:1}
 .c-equity{fill:var(--s1)}.c-bond{fill:var(--s2)}.c-cash{fill:var(--s3)}.c-commodity{fill:var(--s4)}.c-crypto{fill:var(--s5)}.c-gray{fill:var(--gray)}.c-s1{fill:var(--s1)}.c-s2{fill:var(--s2)}
 .ring{stroke:var(--surface);stroke-width:2}
-.meter{height:6px;background:var(--grid);overflow:hidden;min-width:90px}.meter>i{display:block;height:100%;background:var(--s1)}
+.meter{height:8px;background:var(--grid);border-radius:4px;overflow:hidden;min-width:90px}.meter>i{display:block;height:100%;background:var(--s1);border-radius:4px}
 .ok{color:var(--ok);font-weight:600}.bad{color:var(--bad);font-weight:600}
 ul.reasons{padding-left:20px;margin:8px 0}ul.reasons li{margin:8px 0}
-.small{color:var(--ink2);font-size:13px}.foot{color:var(--ink3);font-size:12px;margin-top:32px;padding-top:16px;border-top:1px solid var(--line);word-break:break-all}
-.fan-o{fill:var(--s1);opacity:.1}.fan-i{fill:var(--s1);opacity:.22}.med{fill:none;stroke:var(--s1);stroke-width:2}
-.goal-line{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:5 4}.ico-y{fill:var(--s1)}.ico-n{fill:var(--grid)}
-.big{font:400 56px/1 var(--serif)}.note{border-left:2px solid var(--ink);padding:4px 0 4px 12px;margin:12px 0}
+.small{color:var(--ink2);font-size:13px}.foot{color:var(--ink3);font-size:12px;margin-top:24px;word-break:break-all}
+.fan-o{fill:var(--s1);opacity:.16}.fan-i{fill:var(--s1);opacity:.34}.med{fill:none;stroke:var(--s1);stroke-width:2}
+.goal-line{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:5 4}.ico-y{fill:var(--s1)}.ico-n{fill:var(--gray)}
+.big{font-size:44px;font-weight:700;line-height:1}.note{border-left:4px solid var(--line);padding:4px 0 4px 12px;margin:12px 0}
 ol.steps{padding-left:22px;margin:8px 0}ol.steps li{margin:10px 0}
-@media print{section{break-inside:avoid}}
+@media print{body{background:#fff}section{break-inside:avoid;border-color:#ccc}}
 """
 
 
@@ -1249,9 +1250,6 @@ def _fit(label: str, width_px: int, char_px: float = 6.6) -> str:
     return label if len(label) <= max_chars else label[:max_chars - 1].rstrip() + "…"
 
 
-_DARK_SEGMENTS = ("c-equity", "c-crypto", "c-bond")      # white label on these (site shades zinc-900/700/500)
-
-
 def _svg_split_bar(parts: list[tuple[str, str, float]], width: int = 640) -> str:
     """One horizontal stacked bar: parts = (css class, label, share). 2px surface gaps between segments."""
     x, h, out = 0.0, 36, []
@@ -1259,9 +1257,9 @@ def _svg_split_bar(parts: list[tuple[str, str, float]], width: int = 640) -> str
     for cls, label, share in shown:
         w = share * width
         out.append(f'<g><title>{_e(label)}: {share:.1%}</title>'
-                   f'<rect x="{x + 1:.1f}" y="0" width="{max(w - 2, 1):.1f}" height="{h}" class="{cls}"/></g>')
+                   f'<rect x="{x + 1:.1f}" y="0" width="{max(w - 2, 1):.1f}" height="{h}" rx="4" class="{cls}"/></g>')
         if w > 90:
-            out.append(f'<text x="{x + w / 2:.1f}" y="{h / 2 + 4}" text-anchor="middle" style="fill:{"#ffffff" if cls in _DARK_SEGMENTS else "#18181b"};font-weight:600">'
+            out.append(f'<text x="{x + w / 2:.1f}" y="{h / 2 + 4}" text-anchor="middle" style="fill:#0b0b0b;font-weight:600">'
                        f'{_e(label)} {share:.0%}</text>')
         x += w
     return f'<div class="sv"><svg class="wide" viewBox="0 0 {width} {h}" role="img" aria-label="Split between asset classes">{"".join(out)}</svg></div>'
@@ -1279,7 +1277,7 @@ def _svg_hbar(rows: list[tuple[str, float, str, str, str]], width: int = 640, la
         w = max(value / vmax * avail, 0)
         out.append(f'<g><title>{_e(tip)}</title><text x="{label_w - 10}" y="{y + 12}" text-anchor="end">{_e(_fit(label, label_w))}</text>')
         if w > 0.5:
-            out.append(f'<rect x="{label_w}" y="{y}" width="{w:.1f}" height="{bar_h}" class="{cls}"/>')
+            out.append(f'<rect x="{label_w}" y="{y}" width="{w:.1f}" height="{bar_h}" rx="4" class="{cls}"/>')
         out.append(f'<text class="v" x="{label_w + w + 8:.1f}" y="{y + 12}">{_e(text)}</text></g>')
     height = gap + len(rows) * (bar_h + gap)
     return f'<div class="sv"><svg class="wide" viewBox="0 0 {width} {height}" role="img" aria-label="{_e(aria)}">{"".join(out)}</svg></div>'
@@ -1299,7 +1297,7 @@ def _svg_paired(rows: list[tuple[str, float, float, str]], cls_a: str, cls_b: st
             yy = y + k * (bar_h + inner)
             w = max(val / vmax * avail, 0)
             if w > 0.5:
-                out.append(f'<rect x="{label_w}" y="{yy}" width="{w:.1f}" height="{bar_h}" class="{cls}"/>')
+                out.append(f'<rect x="{label_w}" y="{yy}" width="{w:.1f}" height="{bar_h}" rx="3" class="{cls}"/>')
             out.append(f'<text class="v" x="{label_w + w + 6:.1f}" y="{yy + 9}" style="font-size:11px">{val:.0%}</text>')
         out.append("</g>")
     height = gap + len(rows) * (2 * bar_h + inner + gap)
@@ -1362,7 +1360,7 @@ def _svg_icons(filled: int, per_row: int = 20) -> str:
     out = []
     for i in range(100):
         x, y = (i % per_row) * (size + gap), (i // per_row) * (size + gap)
-        out.append(f'<rect x="{x}" y="{y}" width="{size}" height="{size}" class="{"ico-y" if i < filled else "ico-n"}"/>')
+        out.append(f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="3" class="{"ico-y" if i < filled else "ico-n"}"/>')
     w, h = per_row * (size + gap) - gap, rows * (size + gap) - gap
     return (f'<svg viewBox="0 0 {w} {h}" style="max-width:{w}px" role="img" aria-label="{filled} of 100 simulated futures '
             f'reach the goal">{"".join(out)}</svg>')
@@ -1474,7 +1472,6 @@ def render_html(report: ClientReport, title: str = "Your proposed portfolio") ->
     ref = f"{r.reference_amount:,.0f} {cur}"
     p: list[str] = [f"<!doctype html><html lang='en'><head><meta charset='utf-8'>"
                     f"<meta name='viewport' content='width=device-width,initial-scale=1'><title>{_e(title)}</title>"
-                    "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif&amp;display=swap'>"
                     f"<style>{_CSS}</style></head><body><main>"]
     p.append(f"<h1>{_e(title)}</h1><p class='sub'>Prepared for {_e(r.investor_id)} · risk class {_e(r.risk_class)} · "
              f"market data as of {(r.prices_as_of or r.as_of):%d %b %Y}</p>")
@@ -1482,14 +1479,15 @@ def render_html(report: ClientReport, title: str = "Your proposed portfolio") ->
         state = " (expired)" if r.profile_expired else ""
         p.append(f"<p class='sub'>Risk profile assessed on {r.profile_assessed_on:%d %b %Y}, "
                  f"valid until {r.profile_valid_until:%d %b %Y}{state}.</p>")
-    news_only = set(r.market_briefing.banners) if r.market_briefing is not None else set()
     for text in r.banners:
-        if text not in news_only:                  # the news is not in the download, so neither is its banner
-            p.append(f"<div class='banner'>{_e(text)}</div>")
+        p.append(f"<div class='banner'>{_e(text)}</div>")
 
     if r.status == "infeasible":
         p.append(f"<section><h2>No portfolio proposed</h2><p class='lede'>{_e(r.headline)}</p>"
                  + "".join(f"<p>{_e(x.text)}</p>" for x in r.reasons) + "</section>")
+        if r.market_briefing is not None:
+            p.append(briefing_section_html(r.market_briefing, prices_as_of=(r.prices_as_of or r.as_of)))
+        p.append(what_changed_html(r))
         p.append(_footer(r))
         return "".join(p) + "</main></body></html>"
 
@@ -1519,7 +1517,7 @@ def render_html(report: ClientReport, title: str = "Your proposed portfolio") ->
              + "".join(f"<span><i class='sw' style='background:var(--{var})'></i>{_e(CLASS_LABEL[c])}</span>"
                        for c, var, _ in shown)
              + "</div>")
-    bars = [(a.name, a.weight, f"c-{a.asset_class}", f"{a.weight:.1%}",
+    bars = [(a.name, a.weight, f"c-{a.asset_class}", f"{a.weight:.0%}",
              f"{a.name}: {a.weight:.1%} ({_money(a.amount, cur)} per {ref})") for a in r.allocation]
     p.append(_svg_hbar(bars, aria="Weight of each holding"))
     has_fees = any(a.expense_ratio > 0 for a in r.allocation)
@@ -1626,8 +1624,10 @@ def render_html(report: ClientReport, title: str = "Your proposed portfolio") ->
             else "Fund fee data was not available for this universe, so ongoing fees are not shown.")
     p.append(f"<p>{cost}{fees}</p></section>")
 
-    # The market briefing and "What changed" are not part of the download (Bideci, 20 Oct): they live on the site's
-    # News tab, which shows the latest news; a report keeps only what the engine decided.
+    # ---- 7b. market briefing (optional; shown alongside, never changes the numbers above) ------
+    if r.market_briefing is not None:
+        p.append(briefing_section_html(r.market_briefing, prices_as_of=(r.prices_as_of or r.as_of)))
+    p.append(what_changed_html(r))
 
     # ---- 8. disclosures ----------------------------------------------------------------------
     p.append("<section><h2>Assumptions and important information</h2><ul class='reasons'>"

@@ -30,9 +30,10 @@ How these were made:
 - Every proof file includes the saved report, so `/verify` also checks `versions.report_sha256` ("The full report
   matches the sealed fingerprint"). Each tampered copy moves one weight by 1 ppm. For the 100% BIL C1 portfolio,
   the weight moves down by 1 ppm: this case exposed a CLI bug that is now fixed and tested.
-- **Not covered with real data:** a very broad portfolio. A C4 request with 20 interest areas made the deployed
-  `/portfolio` answer **502 after 249 s** (19 Oct). Worth knowing before the demo: broad requests may time out on
-  Railway. Part B's 25-fund test record covers the many-holdings case for sealing itself.
+- **Broad portfolios:** on 19 Oct a C4 request with 20 interest areas made the deployed `/portfolio` answer 502 after
+  249 s. **Fixed the same day** (commit `80be208`: the in-request news briefing is cache-only with a hard time budget;
+  the full news rating runs as a background job). The deployed 20-interest-area build now takes **5.4 s** (live deploy
+  check, 20 Oct: 71 of 71 passed). Part B's 25-fund test record covers the many-holdings case for sealing itself.
 
 ### Full values (part A)
 
@@ -107,29 +108,30 @@ belongs to its account and is not committed.
 
 ## Screenshots
 
-In `~/Documents/GitHub/onchain-evidence/` on Bartu's Mac (not in the repo). All show part A data:
-*(These are the 19 Oct screens of seal v1, whose buttons were then "Use the demo proof" and "Download proof file". The
-final site says "Use the demo report" and "Download sealed report": see part C.)*
+In the submission package, `submission/EgoQuant_Submission_20Oct2026/6_Execution_Evidence/b_onchain/screenshots/` (index in that folder's `README.md`):
+- **Live public site (20 Oct):** "Use the demo report" → Unchanged ✓ · Sealed for: demo_investor · block 11,951,549; "Try a tampered
+  copy" → Does not match ✗.
+- **Etherscan (A2):** Success, from = to = the sealing address, 0 ETH, input `0x45474f5131cc578d…08ed335` (`EGOQ1` + commitment).
+- **The final seal flow (seal v2):** waiting for the news rating, Confirm and seal, the consent, Sealed ✓ with Download sealed report,
+  Verify a report (Unchanged ✓ and the original shown), an edited report (Does not match ✗), the seal file (.json), Account → My seals,
+  the sidebar's "Verify a report".
 
-| File | Shows |
-|---|---|
-| `01-etherscan-real-c3-tx-full.jpg` | Etherscan, A2: Success, from = to = the sealing address, 0 ETH, EIP-1559, input data |
-| `02-etherscan-real-c3-input-data-EGOQ1.png` | close-up of the input `0x45474f5131cc578d…08ed335` (EGOQ1 + commitment) |
-| `03-verify-demo-proof-unchanged.jpg` | `/verify` → "Use the demo proof" (A2): **Unchanged ✓**, block 11,949,299, all 8 checks |
-| `04-verify-tampered-copy-does-not-match.jpg` | `/verify` → "Try a tampered copy": **Does not match ✗ (hash differs)** |
-| `05-seal-section-confirm-dialog.jpg` | the portfolio page's Confirm dialog with the consent text (A5) |
-| `06-seal-badge-sealing.jpg` | right after confirming: "Sealing… (waiting for a block)" |
-| `07-seal-badge-sealed.jpg` | "Sealed on Sepolia ✓ · block 11,949,320 · View on Etherscan", plus "Download proof file" |
-| `08-portfolio-page-seal-section.jpg` | the portfolio page (real market data, approved C3) with the Seal section |
-
-Screenshots 05–08 come from a local run: the real frontend and our routes, one invented signed-in user in an
-in-memory account store (no Supabase), and the real Sepolia client.
+*Earlier version (19 Oct, seal v1):* the first run's screens with the old buttons "Use the demo proof" and "Download proof file" are not
+part of the package; they showed the A2 and A5 seals listed above.
 
 ## Check it yourself
 
 ```bash
 python -m egoquant.anchoring verify docs/anchoring/real-balanced_saver.proof.json            # Unchanged ✓
 python -m egoquant.anchoring verify docs/anchoring/real-balanced_saver.tampered.proof.json   # Does not match ✗ (hash differs)
+```
+
+*These two commands run with the server's configuration (they refuse to start without the sealing variables). Without
+anything of ours: recompute the fingerprint with Python's standard library and compare it with the transaction on Etherscan:*
+
+```bash
+python3 -c "import json,hashlib,sys;p=json.load(open(sys.argv[1],encoding='utf-8'));print(hashlib.sha256(bytes.fromhex(p['salt'])+p['record'].encode()).hexdigest())" docs/anchoring/real-balanced_saver.proof.json
+# cc578d89…08ed335 = A2's input data after 0x45474f5131
 ```
 
 Or on the site: sidebar **Verify a report** → **Use the demo report** loads C1 (`public/demo-sealed-report.html` in the

@@ -34,7 +34,7 @@ Two attacks are addressed. A genuine seal shown next to an *edited* report is ca
 - that the market data behind the numbers was right, or that the seal is a legal timestamp (it is a public record on a test network, not a notary);
 - permanence. Sepolia is a test network and makes no promise to keep its entries; a lasting record would be on a chain run by a group of institutions (section 8).
 
-**A check that does not use our website.** The Verify page runs code that our own website serves, so a compromised website could print "Unchanged". The command-line verifier does the same checks without our website (it is our own code, and it reads the chain through a provider): `python -m egoquant.anchoring verify <file>` (a sealed report or a seal file; `tests/anchoring/test_proof_cli.py`), and the transaction can be read on Etherscan by anyone.
+**A check that does not use our website.** The Verify page runs code that our own website serves, so a compromised website could print "Unchanged". A check that needs nothing of ours but the file: recompute the fingerprint with Python's standard library, `python3 -c "import json,hashlib,sys;p=json.load(open(sys.argv[1],encoding='utf-8'));print(hashlib.sha256(bytes.fromhex(p['salt'])+p['record'].encode()).hexdigest())" <seal file>`, and compare it with the transaction's input data on Etherscan (`0x45474f5131` + that value); the submission package's `6_Execution_Evidence/b_onchain/README.md` has this and the sealed-report version. Our own command-line verifier, `python -m egoquant.anchoring verify <file>` (`tests/anchoring/test_proof_cli.py`), runs the full set of checks but starts from the server's configuration, so it is a tool for the team rather than for an outside reader.
 
 ## 4. Check it yourself
 
@@ -42,7 +42,7 @@ Two attacks are addressed. A genuine seal shown next to an *edited* report is ca
 
 **B. Five minutes, with an account** (one account per person; `docs/JUDGE_GUIDE.md`). Build a portfolio while signed in, wait until the news rating of the report is finished, press **Confirm and seal**, read the text and agree. Usually within a minute the badge reads "Sealed on Sepolia ✓ · block N". **Download sealed report**, open **Verify a report**, upload the file: "Unchanged ✓ · Sealed for: <you>". Change any number in the file with a text editor and upload it again: "Does not match".
 
-**C. Without our website.** Run the command-line verifier of section 3, or open the transaction on Etherscan: its input data must start with `0x45474f5131` (the letters EGOQ1) followed by the 32-byte fingerprint, and it must come from the sealing address above.
+**C. Without our website.** Recompute the fingerprint with the one line of section 3 and compare it with the transaction, or open the transaction on Etherscan: its input data must start with `0x45474f5131` (the letters EGOQ1) followed by the 32-byte fingerprint, and it must come from the sealing address above.
 
 ## 5. Privacy and deletion
 

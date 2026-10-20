@@ -11,6 +11,7 @@ approval.
 
 - Live demo: https://fintechaton-frontend.vercel.app
 - API: https://web-production-ee5cc.up.railway.app (interactive docs at `/docs`)
+- Backend repository: https://github.com/EgoQuantAI/egoquant-backend
 - Frontend repository: https://github.com/EgoQuantAI/egoquant-frontend
 
 **For judges: start with [`docs/judges/README.md`](docs/judges/README.md).** Nine short documents, in the order a judge needs them: the project summary, the security and compliance report, the methods, the testing evidence, the user guide with screenshots, the limitations, the questions we expect, the frontend and API reference, and the on-chain seal. Every claim in them names a file, a test or a measured number.
