@@ -338,7 +338,7 @@ Prices come live from Tiingo (US-listed funds and stocks) and Binance (crypto). 
 Everything else runs as usual: the questionnaire limits, the independent Risk Engine, the goal simulation (it always runs on historical returns) and the verdicts. What changes: the prices stop at that date, so weights and the goal chance can move by a few points
 against live prices. Synthetic (invented) prices are never used unless the team switches that on, and it is off.
 Say: **"A feed outage is a designed state of the product, not an error: you always see which prices you are looking at."**
-Rehearsal for the presenter (needs Agent C's slow-feed guard, branch `fix/damla-3`): `python eval/slow_feed_drill.py` builds five portfolios on a fake feed that costs 15 simulated seconds a request (no real waiting): each finishes within 30 simulated seconds on the snapshot, with the banner.
+Rehearsal for the presenter (uses Agent C's slow-feed guard): `python eval/slow_feed_drill.py` builds five portfolios on a fake feed that costs 15 simulated seconds a request (no real waiting): each finishes within 30 simulated seconds on the snapshot, with the banner.
 The live site runs with `EGOQUANT_PRICE_MODE=snapshot` (and so should a backend on a day with unreliable wifi): no live request at all, and a calm one-line note instead of the amber banner. Honest limits: the free sources' terms still have to be checked for production (a real deployment would use licensed data), and a snapshot is a point in time.
 
 ---

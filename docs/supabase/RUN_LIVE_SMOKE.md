@@ -22,7 +22,7 @@ Expected: every line `PASS`, last line "N passed, 0 failed", exit code 0. It kee
 
 ## 3. Clean up
 If you used throw-away accounts, delete them from the account page. Close the shell window so that the variables disappear.
-Paste the PASS/FAIL lines (they contain nothing secret) into `docs/supabase/SUPABASE_LOG.md` or send them to Onur.
+Paste the PASS/FAIL lines (they contain nothing secret) into `docs/supabase/SUPABASE_LOG.md`.
 
 ## If a line fails
-Copy the FAIL line (not the whole screen) to Onur or to Bideci's AI. Common causes: the backend is an old deploy (check `/data/status`), a migration is missing (`docs/supabase/FROM_ONUR_runbook.md`), or the two users were created without Auto Confirm.
+Copy the FAIL line (not the whole screen) into your report. Common causes: the backend is an old deploy (check `/data/status`), a migration is missing (`docs/supabase/SETUP_RUNBOOK.md`), or the two users were created without Auto Confirm.

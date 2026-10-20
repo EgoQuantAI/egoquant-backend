@@ -30,7 +30,7 @@ Optional on top: an OpenAI key for the advisor chat, a Tiingo key for live price
 ## 2. Accounts on Supabase (optional)
 
 1. Create a project. Turn on e-mail sign-in with e-mail confirmation.
-2. In the SQL editor run the files in `supabase/migrations/` in file order (`001_accounts` through `006_onchain`, then `008_seal_v2`), and **`007_erase_everything` last**, again after any migration that changes "delete my data". The order matters because `007` is the final definition of that function; the step-by-step list is `docs/supabase/FROM_ONUR_runbook.md`.
+2. In the SQL editor run the files in `supabase/migrations/` in file order (`001_accounts` through `006_onchain`, then `008_seal_v2`), and **`007_erase_everything` last**, again after any migration that changes "delete my data". The order matters because `007` is the final definition of that function; the step-by-step list is `docs/supabase/SETUP_RUNBOOK.md`.
 3. Check the row-level security proofs: run `supabase/tests/rls_isolation.sql` and `supabase/tests/rls_onchain.sql`; every line should say PASS.
 4. Put the project URL and the anon key into the backend's variables (above). The website needs nothing from Supabase: it only talks to the backend.
 
