@@ -1,0 +1,21 @@
+{"mode": "single", "persona": "balanced_saver", "years": 10.0, "baseline_mb": 168.7, "status": 200, "seconds": 29.47, "peak_mb": 244.5}
+{"mode": "single", "persona": "balanced_saver", "years": 25.0, "baseline_mb": 169.0, "status": 200, "seconds": 33.71, "peak_mb": 276.9}
+{"mode": "single", "persona": "balanced_saver", "years": 30.0, "baseline_mb": 168.8, "status": 200, "seconds": 30.05, "peak_mb": 286.5}
+{"mode": "single", "persona": "balanced_saver", "years": 40.0, "baseline_mb": 168.3, "status": 200, "seconds": 29.34, "peak_mb": 307.2}
+{"mode": "single", "persona": "balanced_saver", "years": 60.0, "baseline_mb": 168.1, "status": 200, "seconds": 30.26, "peak_mb": 347.6}
+{"mode": "single", "persona": "growth_investor", "years": 10.0, "baseline_mb": 168.1, "status": 200, "seconds": 10.75, "peak_mb": 267.9}
+{"mode": "single", "persona": "growth_investor", "years": 25.0, "baseline_mb": 168.3, "status": 200, "seconds": 11.28, "peak_mb": 297.7}
+{"mode": "single", "persona": "growth_investor", "years": 30.0, "baseline_mb": 168.2, "status": 200, "seconds": 11.07, "peak_mb": 307.9}
+{"mode": "single", "persona": "growth_investor", "years": 40.0, "baseline_mb": 168.4, "status": 200, "seconds": 11.47, "peak_mb": 328.5}
+{"mode": "single", "persona": "growth_investor", "years": 60.0, "baseline_mb": 168.3, "status": 200, "seconds": 12.45, "peak_mb": 368.3}
+{"mode": "single", "persona": "crypto_trader", "years": 10.0, "baseline_mb": 168.4, "status": 200, "seconds": 9.59, "peak_mb": 299.1}
+{"mode": "single", "persona": "crypto_trader", "years": 25.0, "baseline_mb": 168.4, "status": 200, "seconds": 9.89, "peak_mb": 327.6}
+{"mode": "single", "persona": "crypto_trader", "years": 30.0, "baseline_mb": 168.2, "status": 200, "seconds": 9.71, "peak_mb": 338.1}
+{"mode": "single", "persona": "crypto_trader", "years": 40.0, "baseline_mb": 168.2, "status": 200, "seconds": 9.94, "peak_mb": 356.5}
+{"mode": "single", "persona": "crypto_trader", "years": 60.0, "baseline_mb": 168.7, "status": 200, "seconds": 10.47, "peak_mb": 397.5}
+{"mode": "whatif", "persona": "balanced_saver", "years": 10.0, "baseline_mb": 168.4, "status": 200, "what_if_status": "ok", "seconds": 1.02, "peak_mb": 248.4}
+{"mode": "whatif", "persona": "balanced_saver", "years": 25.0, "baseline_mb": 168.5, "status": 200, "what_if_status": "ok", "seconds": 1.03, "peak_mb": 256.8}
+{"mode": "whatif", "persona": "balanced_saver", "years": 30.0, "baseline_mb": 168.4, "status": 200, "what_if_status": "ok", "seconds": 1.04, "peak_mb": 263.1}
+{"mode": "pair", "persona": "balanced_saver", "years": 25.0, "baseline_mb": 168.7, "status": [200, 200], "seconds": 78.65, "peak_mb": 351.3}
+{"mode": "pair", "persona": "balanced_saver", "years": 30.0, "baseline_mb": 168.5, "status": [200, 200], "seconds": 81.92, "peak_mb": 369.3}
+{"mode": "pair", "persona": "balanced_saver", "years": 60.0, "baseline_mb": 168.7, "status": [200, 200], "seconds": 90.76, "peak_mb": 499.1}

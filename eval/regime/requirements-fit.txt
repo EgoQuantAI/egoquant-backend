@@ -1,0 +1,8 @@
+# DEV / EVAL ONLY: fitting the market-regime model (scripts/fit_regime_model.py) and its walk-forward refits.
+# Never installed on Railway (requirements.txt is the runtime list). The backend only loads the fitted JSON.
+# hmmlearn has no wheels for Python 3.14+; use a separate Python 3.9-3.13 environment:
+#   python -m venv fitenv && fitenv/Scripts/pip install -r eval/regime/requirements-fit.txt
+hmmlearn==0.3.3
+scikit-learn>=1.3
+numpy>=1.26
+pandas>=2.1

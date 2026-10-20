@@ -1,0 +1,478 @@
+{
+ "03b8da2ee4c08d87|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.8985339403152466,
+  "neutral": 0.08486706018447876,
+  "positive": 0.016598917543888092,
+  "tone": -0.8819350227713585
+ },
+ "0572576e14b5cb6b|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.596962571144104,
+  "neutral": 0.04147491604089737,
+  "positive": 0.3615624010562897,
+  "tone": -0.23540017008781433
+ },
+ "05bf3ed9cc5b0a60|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.5765049457550049,
+  "neutral": 0.11468645185232162,
+  "positive": 0.3088085353374481,
+  "tone": -0.26769641041755676
+ },
+ "0aeb76b24dd494b1|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.8844302892684937,
+  "neutral": 0.048009105026721954,
+  "positive": 0.06756056845188141,
+  "tone": -0.8168697208166122
+ },
+ "0ceba46d9f9a2d42|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.11476507782936096,
+  "neutral": 0.7025094032287598,
+  "positive": 0.18272553384304047,
+  "tone": 0.0
+ },
+ "0d345793681240d9|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.8922629952430725,
+  "neutral": 0.07978370785713196,
+  "positive": 0.02795328013598919,
+  "tone": -0.8643097151070833
+ },
+ "0e3d22e13d9e7116|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.04045337438583374,
+  "neutral": 0.023714160546660423,
+  "positive": 0.9358323812484741,
+  "tone": 0.8953790068626404
+ },
+ "0efcb9ba784c5ac6|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.01674264296889305,
+  "neutral": 0.9237978458404541,
+  "positive": 0.05945952609181404,
+  "tone": 0.0
+ },
+ "123760748feac0cb|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.02374246157705784,
+  "neutral": 0.02022428624331951,
+  "positive": 0.9560331702232361,
+  "tone": 0.9322907086461782
+ },
+ "157784c95be6aea9|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.1213357225060463,
+  "neutral": 0.05651292949914932,
+  "positive": 0.8221513032913208,
+  "tone": 0.7008155807852745
+ },
+ "16ec33404fb28f28|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.05386510491371155,
+  "neutral": 0.02058642916381359,
+  "positive": 0.9255483746528625,
+  "tone": 0.871683269739151
+ },
+ "176bc42c665f1e0d|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.023013273254036903,
+  "neutral": 0.024938877671957016,
+  "positive": 0.9520478844642639,
+  "tone": 0.929034611210227
+ },
+ "1ce69c07b0b80984|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.06348416954278946,
+  "neutral": 0.022305795922875404,
+  "positive": 0.9142099618911743,
+  "tone": 0.8507257923483849
+ },
+ "20ef04f447243cc1|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9687257409095764,
+  "neutral": 0.016243398189544678,
+  "positive": 0.015030906535685062,
+  "tone": -0.9536948343738914
+ },
+ "2797e57a931c99ac|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.024266541004180908,
+  "neutral": 0.023299483582377434,
+  "positive": 0.9524340033531189,
+  "tone": 0.928167462348938
+ },
+ "27caf344c08afb79|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.8326212167739868,
+  "neutral": 0.020015573129057884,
+  "positive": 0.14736318588256836,
+  "tone": -0.6852580308914185
+ },
+ "3365284ec2fa42f8|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9652335047721863,
+  "neutral": 0.024479176849126816,
+  "positive": 0.010287303477525711,
+  "tone": -0.9549462012946606
+ },
+ "3748a280d2f4635c|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9579421877861023,
+  "neutral": 0.011708449572324753,
+  "positive": 0.030349284410476685,
+  "tone": -0.9275929033756256
+ },
+ "3a76c7a2a6d0f8a1|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.29091620445251465,
+  "neutral": 0.6173335909843445,
+  "positive": 0.09175020456314087,
+  "tone": 0.0
+ },
+ "3c075dc16f9b4039|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.792837381362915,
+  "neutral": 0.029551289975643158,
+  "positive": 0.1776113212108612,
+  "tone": -0.6152260601520538
+ },
+ "3ec8a385ffe937ab|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.018009381368756294,
+  "neutral": 0.029801664873957634,
+  "positive": 0.952189028263092,
+  "tone": 0.9341796468943357
+ },
+ "3eebaeaeea97ccc0|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.08252882212400436,
+  "neutral": 0.04545300453901291,
+  "positive": 0.8720181584358215,
+  "tone": 0.7894893363118172
+ },
+ "421a52617f6823e1|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.962502658367157,
+  "neutral": 0.015202106907963753,
+  "positive": 0.022295203059911728,
+  "tone": -0.9402074553072453
+ },
+ "424a6314baf0a519|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.03875406086444855,
+  "neutral": 0.020431116223335266,
+  "positive": 0.9408148527145386,
+  "tone": 0.90206079185009
+ },
+ "43e2d6f98f785da0|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.07309581339359283,
+  "neutral": 0.08776848763227463,
+  "positive": 0.8391357064247131,
+  "tone": 0.7660398930311203
+ },
+ "4ab5199883d72c15|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.05759472772479057,
+  "neutral": 0.40077701210975647,
+  "positive": 0.5416283011436462,
+  "tone": 0.48403357341885567
+ },
+ "4d27aba3d61dac10|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.7789282202720642,
+  "neutral": 0.19690464437007904,
+  "positive": 0.024167101830244064,
+  "tone": -0.7547611184418201
+ },
+ "4e0dd908c2a46613|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.8666063547134399,
+  "neutral": 0.04585824906826019,
+  "positive": 0.08753549307584763,
+  "tone": -0.7790708616375923
+ },
+ "4ec4636ad81c650e|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.030656978487968445,
+  "neutral": 0.01998217962682247,
+  "positive": 0.9493607878684998,
+  "tone": 0.9187038093805313
+ },
+ "52969bd38c3ca03a|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.01684979721903801,
+  "neutral": 0.030147863551974297,
+  "positive": 0.953002393245697,
+  "tone": 0.936152596026659
+ },
+ "52ef7aa185a919be|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.020612023770809174,
+  "neutral": 0.12294398248195648,
+  "positive": 0.8564440011978149,
+  "tone": 0.8358319774270058
+ },
+ "54341af0ab2add4b|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9607909321784973,
+  "neutral": 0.02942826598882675,
+  "positive": 0.009780865162611008,
+  "tone": -0.9510100670158863
+ },
+ "579d2800f6744bab|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.0318894237279892,
+  "neutral": 0.0438336618244648,
+  "positive": 0.9242769479751587,
+  "tone": 0.8923875242471695
+ },
+ "57a3ad2c69bf0dd1|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9735490679740906,
+  "neutral": 0.01883511058986187,
+  "positive": 0.007615784648805857,
+  "tone": -0.9659332833252847
+ },
+ "5aba2fd33f742d0e|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.7792091369628906,
+  "neutral": 0.026599930599331856,
+  "positive": 0.19419090449810028,
+  "tone": -0.5850182324647903
+ },
+ "661b66436d98b291|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.8878418803215027,
+  "neutral": 0.07814580947160721,
+  "positive": 0.034012358635663986,
+  "tone": -0.8538295216858387
+ },
+ "6ae9298a16472d1f|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.7543238997459412,
+  "neutral": 0.027465935796499252,
+  "positive": 0.21821019053459167,
+  "tone": -0.5361137092113495
+ },
+ "798816182972087b|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.029547978192567825,
+  "neutral": 0.042539697140455246,
+  "positive": 0.9279122352600098,
+  "tone": 0.8983642570674419
+ },
+ "7d863d518789a439|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.03630654141306877,
+  "neutral": 0.01834520883858204,
+  "positive": 0.94534832239151,
+  "tone": 0.9090417809784412
+ },
+ "829f3bd54aec6a05|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.026883387938141823,
+  "neutral": 0.022793632000684738,
+  "positive": 0.9503229260444641,
+  "tone": 0.9234395381063223
+ },
+ "82bc30cfb0b48cd9|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.0351267009973526,
+  "neutral": 0.9447662830352783,
+  "positive": 0.020107002928853035,
+  "tone": 0.0
+ },
+ "82dc3700c271890b|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9631249308586121,
+  "neutral": 0.011638417840003967,
+  "positive": 0.025236736983060837,
+  "tone": -0.9378881938755512
+ },
+ "830597a5915f0f3b|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9619215130805969,
+  "neutral": 0.024057762697339058,
+  "positive": 0.01402068231254816,
+  "tone": -0.9479008307680488
+ },
+ "8a8fe4e370ee6c70|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.06813573092222214,
+  "neutral": 0.021237341687083244,
+  "positive": 0.9106269478797913,
+  "tone": 0.8424912169575691
+ },
+ "9f61b6fbf0a12f2f|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.8219040036201477,
+  "neutral": 0.05684354901313782,
+  "positive": 0.1212523877620697,
+  "tone": -0.700651615858078
+ },
+ "a17289c3de85940c|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.0646531954407692,
+  "neutral": 0.9160100817680359,
+  "positive": 0.0193366426974535,
+  "tone": 0.0
+ },
+ "a4a65bfb9728ea8d|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.02065921016037464,
+  "neutral": 0.036099232733249664,
+  "positive": 0.9432415962219238,
+  "tone": 0.9225823860615492
+ },
+ "a6077fda06c18b2a|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.023293841630220413,
+  "neutral": 0.01655328832566738,
+  "positive": 0.9601528644561768,
+  "tone": 0.9368590228259563
+ },
+ "a9abe346d633cc17|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.09873450547456741,
+  "neutral": 0.8777145147323608,
+  "positive": 0.023550955578684807,
+  "tone": 0.0
+ },
+ "aba8cd9172bc7d0c|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.03734683245420456,
+  "neutral": 0.025886524468660355,
+  "positive": 0.9367666840553284,
+  "tone": 0.8994198516011238
+ },
+ "b1a98c27f7ead3ef|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.011154251173138618,
+  "neutral": 0.6070071458816528,
+  "positive": 0.3818385899066925,
+  "tone": 0.0
+ },
+ "bfe9844cc663e6d6|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.07376861572265625,
+  "neutral": 0.07286212593317032,
+  "positive": 0.8533691763877869,
+  "tone": 0.7796005606651306
+ },
+ "bffc754f7c4d902b|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.020978916436433792,
+  "neutral": 0.026479369029402733,
+  "positive": 0.952541708946228,
+  "tone": 0.9315627925097942
+ },
+ "c24c16f8c01b9f85|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.11560945212841034,
+  "neutral": 0.023984339088201523,
+  "positive": 0.860406219959259,
+  "tone": 0.7447967678308487
+ },
+ "c410d7e1af2972eb|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.7827690839767456,
+  "neutral": 0.17396274209022522,
+  "positive": 0.04326816648244858,
+  "tone": -0.739500917494297
+ },
+ "c4ea2a7a5916aa46|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.04446407034993172,
+  "neutral": 0.04225611314177513,
+  "positive": 0.9132797718048096,
+  "tone": 0.8688157014548779
+ },
+ "c575c7406e7a082e|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.026477690786123276,
+  "neutral": 0.018791472539305687,
+  "positive": 0.954730749130249,
+  "tone": 0.9282530583441257
+ },
+ "c6db438662e3f8fc|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9741393327713013,
+  "neutral": 0.01716848649084568,
+  "positive": 0.008692233823239803,
+  "tone": -0.9654470989480615
+ },
+ "c84fe54a78c2cae8|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.04865024611353874,
+  "neutral": 0.026600919663906097,
+  "positive": 0.9247487783432007,
+  "tone": 0.8760985322296619
+ },
+ "ccbdc6f4845529ea|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.04852389544248581,
+  "neutral": 0.7309471368789673,
+  "positive": 0.22052894532680511,
+  "tone": 0.0
+ },
+ "cf33f0759691fa2f|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.9751860499382019,
+  "neutral": 0.016551431268453598,
+  "positive": 0.008262605406343937,
+  "tone": -0.966923444531858
+ },
+ "cfd1350f5d023382|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.02044188417494297,
+  "neutral": 0.41107651591300964,
+  "positive": 0.5684815645217896,
+  "tone": 0.5480396803468466
+ },
+ "d987211b04cb125e|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.0386573001742363,
+  "neutral": 0.028187792748212814,
+  "positive": 0.9331548810005188,
+  "tone": 0.8944975808262825
+ },
+ "e2a39827cbcd2166|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.024672856554389,
+  "neutral": 0.9501268267631531,
+  "positive": 0.025200331583619118,
+  "tone": 0.0
+ },
+ "eca13a3a00bc621e|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.019238093867897987,
+  "neutral": 0.023751918226480484,
+  "positive": 0.9570099711418152,
+  "tone": 0.9377718772739172
+ },
+ "f0e42ce5d7676a06|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.5593594312667847,
+  "neutral": 0.026288464665412903,
+  "positive": 0.4143521189689636,
+  "tone": -0.14500731229782104
+ },
+ "f66bc0231b051cc2|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.4263182282447815,
+  "neutral": 0.027961309999227524,
+  "positive": 0.5457204580307007,
+  "tone": 0.11940222978591919
+ },
+ "fa5fed71b29a87c1|ProsusAI/finbert": {
+  "model": "ProsusAI/finbert",
+  "negative": 0.01460378710180521,
+  "neutral": 0.08279141783714294,
+  "positive": 0.9026048183441162,
+  "tone": 0.888001031242311
+ }
+}

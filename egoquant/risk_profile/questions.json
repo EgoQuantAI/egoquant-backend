@@ -1,0 +1,263 @@
+{
+  "questionnaire_version": "eq-rq-0.1.0",
+  "note": "Section GL is VERBATIM from the Rutgers 'Investment Risk Tolerance Quiz' (Grable & Lytton 1999), including the original dollar amounts and spelling. Sections K1-K3 are VERBATIM from Lusardi & Mitchell (2011), NBER w17078. Do not edit their wording. A \"hint\" is our own reading aid shown above a question (GL9/GL10, the gain/loss framing pair, read alike); it is not part of the scale and is never scored. Sources: egoquant/risk_profile/README.md.",
+  "sections": [
+    {"id": "GL", "title": "Risk tolerance (Grable & Lytton 13-item scale)"},
+    {"id": "B", "title": "Risk capacity"},
+    {"id": "K", "title": "Knowledge and experience"},
+    {"id": "D", "title": "Protecting your money"}
+  ],
+  "questions": [
+    {
+      "id": "GL1", "section": "GL", "type": "single",
+      "text": "In general, how would your best friend describe you as a risk taker?",
+      "options": [
+        {"id": "a", "text": "A real gambler", "points": 4},
+        {"id": "b", "text": "Willing to take risks after completing adequate research", "points": 3},
+        {"id": "c", "text": "Cautious", "points": 2},
+        {"id": "d", "text": "A real risk avoider", "points": 1}
+      ]
+    },
+    {
+      "id": "GL2", "section": "GL", "type": "single",
+      "text": "You are on a TV game show and can choose one of the following. Which would you take?",
+      "options": [
+        {"id": "a", "text": "$1,000 in cash", "points": 1},
+        {"id": "b", "text": "A 50% chance at winning $5,000", "points": 2},
+        {"id": "c", "text": "A 25% chance at winning $10,000", "points": 3},
+        {"id": "d", "text": "A 5% chance at winning $100,000", "points": 4}
+      ]
+    },
+    {
+      "id": "GL3", "section": "GL", "type": "single",
+      "text": "You have just finished saving for a “once-in-a-lifetime” vacation. Three weeks before you plan to leave, you lose your job. You would:",
+      "options": [
+        {"id": "a", "text": "Cancel the vacation", "points": 1},
+        {"id": "b", "text": "Take a much more modest vacation", "points": 2},
+        {"id": "c", "text": "Go as scheduled, reasoning that you need the time to prepare for a job search", "points": 3},
+        {"id": "d", "text": "Extend your vacation, because this might be your last chance to go first-class", "points": 4}
+      ]
+    },
+    {
+      "id": "GL4", "section": "GL", "type": "single",
+      "text": "If you unexpectedly received $20,000 to invest, what would you do?",
+      "options": [
+        {"id": "a", "text": "Deposit it in a bank account, money market account, or an insured CD", "points": 1},
+        {"id": "b", "text": "Invest it in safe high quality bonds or bond mutual funds", "points": 2},
+        {"id": "c", "text": "Invest it in stocks or stock mutual funds", "points": 3}
+      ]
+    },
+    {
+      "id": "GL5", "section": "GL", "type": "single",
+      "text": "In terms of experience, how comfortable are you investing in stocks or stock mutual funds?",
+      "options": [
+        {"id": "a", "text": "Not at all comfortable", "points": 1},
+        {"id": "b", "text": "Somewhat comfortable", "points": 2},
+        {"id": "c", "text": "Very comfortable", "points": 3}
+      ]
+    },
+    {
+      "id": "GL6", "section": "GL", "type": "single",
+      "text": "When you think of the word “risk” which of the following words comes to mind first?",
+      "options": [
+        {"id": "a", "text": "Loss", "points": 1},
+        {"id": "b", "text": "Uncertainty", "points": 2},
+        {"id": "c", "text": "Opportunity", "points": 3},
+        {"id": "d", "text": "Thrill", "points": 4}
+      ]
+    },
+    {
+      "id": "GL7", "section": "GL", "type": "single",
+      "text": "Some experts are predicting prices of assets such as gold, jewels, collectibles, and real estate (hard assets) to increase in value; bond prices may fall, however, experts tend to agree that government bonds are relatively safe. Most of your investment assets are now in high interest government bonds. What would you do?",
+      "options": [
+        {"id": "a", "text": "Hold the bonds", "points": 1},
+        {"id": "b", "text": "Sell the bonds, put half the proceeds into money market accounts, and the other half into hard assets", "points": 2},
+        {"id": "c", "text": "Sell the bonds and put the total proceeds into hard assets", "points": 3},
+        {"id": "d", "text": "Sell the bonds, put all the money into hard assets, and borrow additional money to buy more", "points": 4}
+      ]
+    },
+    {
+      "id": "GL8", "section": "GL", "type": "single",
+      "text": "Given the best and worst case returns of the four investment choices below, which would you prefer?",
+      "options": [
+        {"id": "a", "text": "$200 gain best case; $0 gain/loss worst case", "points": 1},
+        {"id": "b", "text": "$800 gain best case; $200 loss worst case", "points": 2},
+        {"id": "c", "text": "$2,600 gain best case; $800 loss worst case", "points": 3},
+        {"id": "d", "text": "$4,800 gain best case; $2,400 loss worst case", "points": 4}
+      ]
+    },
+    {
+      "id": "GL9", "section": "GL", "type": "single",
+      "hint": "About a GAIN: you start with $1,000 extra. The next question looks alike but is about a loss.",
+      "text": "In addition to whatever you own, you have been given $1,000. You are now asked to choose between:",
+      "options": [
+        {"id": "a", "text": "A sure gain of $500", "points": 1},
+        {"id": "b", "text": "A 50% chance to gain $1,000 and a 50% chance to gain nothing", "points": 3}
+      ]
+    },
+    {
+      "id": "GL10", "section": "GL", "type": "single",
+      "hint": "Now about a LOSS: you start with $2,000 extra, and both choices lose money. Not the same as the last question.",
+      "text": "In addition to whatever you own, you have been given $2,000. You are now asked to choose between:",
+      "options": [
+        {"id": "a", "text": "A sure loss of $500", "points": 1},
+        {"id": "b", "text": "A 50% chance to lose $1,000 and a 50% chance to lose nothing", "points": 3}
+      ]
+    },
+    {
+      "id": "GL11", "section": "GL", "type": "single",
+      "text": "Suppose a relative left you an inheritance of $100,000, stipulating in the will that you invest ALL the money in ONE of the following choices. Which one would you select?",
+      "options": [
+        {"id": "a", "text": "A savings account or money market mutual fund", "points": 1},
+        {"id": "b", "text": "A mutual fund that owns stocks and bonds", "points": 2},
+        {"id": "c", "text": "A portfolio of 15 common stocks", "points": 3},
+        {"id": "d", "text": "Commodities like gold, silver, and oil", "points": 4}
+      ]
+    },
+    {
+      "id": "GL12", "section": "GL", "type": "single",
+      "text": "If you had to invest $20,000, which of the following investment choices would you find most appealing?",
+      "options": [
+        {"id": "a", "text": "60% in low-risk investments 30% in medium-risk investments 10% in high-risk investments", "points": 1},
+        {"id": "b", "text": "30% in low-risk investments 40% in medium-risk investments 30% in high-risk investments", "points": 2},
+        {"id": "c", "text": "10% in low-risk investments 40% in medium-risk investments 50% in high-risk investments", "points": 3}
+      ]
+    },
+    {
+      "id": "GL13", "section": "GL", "type": "single",
+      "text": "Your trusted friend and neighbor, an experienced geologist, is putting together a group of investors to fund an exploratory gold mining venture. The venture could pay back 50 to 100 times the investment if successful. If the mine is a bust, the entire investment is worthless. Your friend estimates the chance of success is only 20%. If you had the money, how much would you invest?",
+      "options": [
+        {"id": "a", "text": "Nothing", "points": 1},
+        {"id": "b", "text": "One month’s salary", "points": 2},
+        {"id": "c", "text": "Three month’s salary", "points": 3},
+        {"id": "d", "text": "Six month’s salary", "points": 4}
+      ]
+    },
+
+    {
+      "id": "B1", "section": "B", "type": "single", "scored": false,
+      "text": "What is the main goal for this money?",
+      "options": [
+        {"id": "retirement", "text": "Retirement"},
+        {"id": "house", "text": "Buying a home"},
+        {"id": "tuition", "text": "Education or tuition"},
+        {"id": "growth", "text": "General wealth growth"},
+        {"id": "other", "text": "Other"}
+      ]
+    },
+    {
+      "id": "B2", "section": "B", "type": "single",
+      "text": "When will you need to start using this money?",
+      "options": [
+        {"id": "lt1", "text": "Less than 1 year"},
+        {"id": "y1_3", "text": "1 to 3 years"},
+        {"id": "y3_5", "text": "3 to 5 years"},
+        {"id": "gt5", "text": "More than 5 years"}
+      ]
+    },
+    {
+      "id": "B3_invested", "section": "B", "type": "number",
+      "text": "How much are you investing now?"
+    },
+    {
+      "id": "B3_needed", "section": "B", "type": "number",
+      "text": "Of that amount, how much must you have back by your goal date?"
+    },
+    {
+      "id": "B4", "section": "B", "type": "single",
+      "text": "How many months of living expenses do you have saved outside this investment?",
+      "options": [
+        {"id": "lt3", "text": "Under 3 months"},
+        {"id": "m3_6", "text": "3 to 6 months"},
+        {"id": "gt6", "text": "More than 6 months"}
+      ]
+    },
+    {
+      "id": "B5", "section": "B", "type": "single",
+      "text": "What share of your total wealth is this investment?",
+      "options": [
+        {"id": "gt75", "text": "Over 75%"},
+        {"id": "p50_75", "text": "Over 50% up to 75%"},
+        {"id": "p25_50", "text": "Over 25% up to 50%"},
+        {"id": "lt25", "text": "25% or less"}
+      ]
+    },
+    {
+      "id": "B6", "section": "B", "type": "single",
+      "text": "How would you describe your income?",
+      "options": [
+        {"id": "none", "text": "No regular income"},
+        {"id": "unstable", "text": "Irregular or unstable income"},
+        {"id": "stable", "text": "Stable income"}
+      ]
+    },
+
+    {
+      "id": "K1", "section": "K", "type": "single",
+      "text": "Suppose you had $100 in a savings account and the interest rate was 2% per year. After 5 years, how much do you think you would have in the account if you left the money to grow: more than $102, exactly $102, less than $102?",
+      "correct_option": "more",
+      "options": [
+        {"id": "more", "text": "More than $102"},
+        {"id": "exact", "text": "Exactly $102"},
+        {"id": "less", "text": "Less than $102"},
+        {"id": "dk", "text": "Do not know"},
+        {"id": "refuse", "text": "Refuse to answer"}
+      ]
+    },
+    {
+      "id": "K2", "section": "K", "type": "single",
+      "text": "Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, would you be able to buy more than, exactly the same as, or less than today with the money in this account?",
+      "correct_option": "less",
+      "options": [
+        {"id": "more", "text": "More than today"},
+        {"id": "same", "text": "Exactly the same as today"},
+        {"id": "less", "text": "Less than today"},
+        {"id": "dk", "text": "Do not know"},
+        {"id": "refuse", "text": "Refuse to answer"}
+      ]
+    },
+    {
+      "id": "K3", "section": "K", "type": "single",
+      "text": "Do you think that the following statement is true or false? “Buying a single company stock usually provides a safer return than a stock mutual fund.”",
+      "correct_option": "false",
+      "options": [
+        {"id": "true", "text": "True"},
+        {"id": "false", "text": "False"},
+        {"id": "dk", "text": "Do not know"},
+        {"id": "refuse", "text": "Refuse to answer"}
+      ]
+    },
+    {
+      "id": "K4", "section": "K", "type": "multi",
+      "text": "Which of these have you invested in before? Select all that apply.",
+      "options": [
+        {"id": "deposits", "text": "Bank deposits or money market funds"},
+        {"id": "bonds", "text": "Bonds or bond funds"},
+        {"id": "stocks", "text": "Stocks or stock funds"},
+        {"id": "derivatives", "text": "Options, futures, leveraged or inverse products"},
+        {"id": "crypto", "text": "Crypto-assets"},
+        {"id": "none", "text": "None of these"}
+      ]
+    },
+    {
+      "id": "K5", "section": "K", "type": "single",
+      "text": "How many years have you been investing?",
+      "options": [
+        {"id": "none", "text": "I have not invested before"},
+        {"id": "lt1", "text": "Less than 1 year"},
+        {"id": "y1_3", "text": "1 to 3 years"},
+        {"id": "y3_5", "text": "3 to 5 years"},
+        {"id": "gt5", "text": "More than 5 years"}
+      ]
+    },
+
+    {
+      "id": "D1", "section": "D", "type": "single",
+      "text": "Could you accept the value of your investment going down, even temporarily? If you answer No, we only offer cash-like products.",
+      "options": [
+        {"id": "yes", "text": "Yes"},
+        {"id": "no", "text": "No"}
+      ]
+    }
+  ]
+}

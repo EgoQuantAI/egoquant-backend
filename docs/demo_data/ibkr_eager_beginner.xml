@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVENTED sample in IBKR's Flex Query XML format. Not real account data. Eager beginner: 10,000 deposited, one first purchase of a single stock, nothing else.
+     Prices are real adjusted closing prices (dividends included) from the committed snapshot on each date. Read-only: EgoQuant never
+     places an order. -->
+<FlexQueryResponse queryName="EgoQuant demo" type="AF">
+<FlexStatements count="1">
+<FlexStatement accountId="U0000000" fromDate="20250101" toDate="20261015" period="Custom" whenGenerated="20261016;180000">
+<Trades>
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="NVDA" description="NVIDIA CORP" tradeDate="20260106" dateTime="20260106;100512" quantity="5" tradePrice="186.8" proceeds="-934.0" ibCommission="-1" netCash="-935.0" buySell="BUY" levelOfDetail="EXECUTION" />
+</Trades>
+<CashTransactions>
+<CashTransaction accountId="U0000000" currency="USD" assetCategory="" symbol="" description="CASH RECEIPTS / ELECTRONIC FUND TRANSFERS" dateTime="20260105" amount="10000" type="Deposits/Withdrawals" />
+</CashTransactions>
+</FlexStatement>
+</FlexStatements>
+</FlexQueryResponse>

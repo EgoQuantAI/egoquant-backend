@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVENTED sample in IBKR's Flex Query XML format. Not real account data. Cautious saver: 200,000 in short-term Treasury bills and an aggregate bond fund, nothing sold.
+     Prices are real adjusted closing prices (dividends included) from the committed snapshot on each date. Read-only: EgoQuant never
+     places an order. -->
+<FlexQueryResponse queryName="EgoQuant demo" type="AF">
+<FlexStatements count="1">
+<FlexStatement accountId="U0000000" fromDate="20250101" toDate="20261015" period="Custom" whenGenerated="20261016;180000">
+<Trades>
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="BIL" description="SPDR BLOOMBERG 1-3 MONTH T-BILL" tradeDate="20250103" dateTime="20250103;100512" quantity="1170" tradePrice="85.49" proceeds="-100023.3" ibCommission="-1" netCash="-100024.3" buySell="BUY" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="AGG" description="ISHARES CORE US AGGREGATE" tradeDate="20250103" dateTime="20250103;100512" quantity="1085" tradePrice="90.31" proceeds="-97986.35" ibCommission="-1" netCash="-97987.35" buySell="BUY" levelOfDetail="EXECUTION" />
+</Trades>
+<CashTransactions>
+<CashTransaction accountId="U0000000" currency="USD" assetCategory="" symbol="" description="CASH RECEIPTS / ELECTRONIC FUND TRANSFERS" dateTime="20250102" amount="200000" type="Deposits/Withdrawals" />
+</CashTransactions>
+</FlexStatement>
+</FlexStatements>
+</FlexQueryResponse>

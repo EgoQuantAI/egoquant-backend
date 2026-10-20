@@ -1,0 +1,3504 @@
+{
+ "saver": {
+  "persona": "cautious_retiree",
+  "description": "Retired, lives partly on this money, wants steady income and asked about gold.",
+  "platforms": [
+   "Fidelity"
+  ],
+  "answers": [
+   {
+    "id": "GL1",
+    "section": "GL",
+    "question": "In general, how would your best friend describe you as a risk taker?",
+    "answer": "Cautious"
+   },
+   {
+    "id": "GL2",
+    "section": "GL",
+    "question": "You are on a TV game show and can choose one of the following. Which would you take?",
+    "answer": "$1,000 in cash"
+   },
+   {
+    "id": "GL3",
+    "section": "GL",
+    "question": "You have just finished saving for a \u201conce-in-a-lifetime\u201d vacation. Three weeks before you plan to leave, you lose your job. You would:",
+    "answer": "Take a much more modest vacation"
+   },
+   {
+    "id": "GL4",
+    "section": "GL",
+    "question": "If you unexpectedly received $20,000 to invest, what would you do?",
+    "answer": "Invest it in safe high quality bonds or bond mutual funds"
+   },
+   {
+    "id": "GL5",
+    "section": "GL",
+    "question": "In terms of experience, how comfortable are you investing in stocks or stock mutual funds?",
+    "answer": "Somewhat comfortable"
+   },
+   {
+    "id": "GL6",
+    "section": "GL",
+    "question": "When you think of the word \u201crisk\u201d which of the following words comes to mind first?",
+    "answer": "Loss"
+   },
+   {
+    "id": "GL7",
+    "section": "GL",
+    "question": "Some experts are predicting prices of assets such as gold, jewels, collectibles, and real estate (hard assets) to increase in value; bond prices may fall, however, experts tend to agree that government bonds are relatively safe. Most of your investment assets are now in high interest government bonds. What would you do?",
+    "answer": "Hold the bonds"
+   },
+   {
+    "id": "GL8",
+    "section": "GL",
+    "question": "Given the best and worst case returns of the four investment choices below, which would you prefer?",
+    "answer": "$800 gain best case; $200 loss worst case"
+   },
+   {
+    "id": "GL9",
+    "section": "GL",
+    "question": "In addition to whatever you own, you have been given $1,000. You are now asked to choose between:",
+    "answer": "A sure gain of $500"
+   },
+   {
+    "id": "GL10",
+    "section": "GL",
+    "question": "In addition to whatever you own, you have been given $2,000. You are now asked to choose between:",
+    "answer": "A sure loss of $500"
+   },
+   {
+    "id": "GL11",
+    "section": "GL",
+    "question": "Suppose a relative left you an inheritance of $100,000, stipulating in the will that you invest ALL the money in ONE of the following choices. Which one would you select?",
+    "answer": "A mutual fund that owns stocks and bonds"
+   },
+   {
+    "id": "GL12",
+    "section": "GL",
+    "question": "If you had to invest $20,000, which of the following investment choices would you find most appealing?",
+    "answer": "60% in low-risk investments 30% in medium-risk investments 10% in high-risk investments"
+   },
+   {
+    "id": "GL13",
+    "section": "GL",
+    "question": "Your trusted friend and neighbor, an experienced geologist, is putting together a group of investors to fund an exploratory gold mining venture. The venture could pay back 50 to 100 times the investment if successful. If the mine is a bust, the entire investment is worthless. Your friend estimates the chance of success is only 20%. If you had the money, how much would you invest?",
+    "answer": "One month\u2019s salary"
+   },
+   {
+    "id": "B1",
+    "section": "B",
+    "question": "What is the main goal for this money?",
+    "answer": "Retirement"
+   },
+   {
+    "id": "B2",
+    "section": "B",
+    "question": "When will you need to start using this money?",
+    "answer": "3 to 5 years"
+   },
+   {
+    "id": "B3_invested",
+    "section": "B",
+    "question": "How much are you investing now?",
+    "answer": "200,000"
+   },
+   {
+    "id": "B3_needed",
+    "section": "B",
+    "question": "Of that amount, how much must you have back by your goal date?",
+    "answer": "170,000"
+   },
+   {
+    "id": "B4",
+    "section": "B",
+    "question": "How many months of living expenses do you have saved outside this investment?",
+    "answer": "More than 6 months"
+   },
+   {
+    "id": "B5",
+    "section": "B",
+    "question": "What share of your total wealth is this investment?",
+    "answer": "Over 50% up to 75%"
+   },
+   {
+    "id": "B6",
+    "section": "B",
+    "question": "How would you describe your income?",
+    "answer": "No regular income"
+   },
+   {
+    "id": "K1",
+    "section": "K",
+    "question": "Suppose you had $100 in a savings account and the interest rate was 2% per year. After 5 years, how much do you think you would have in the account if you left the money to grow: more than $102, exactly $102, less than $102?",
+    "answer": "More than $102"
+   },
+   {
+    "id": "K2",
+    "section": "K",
+    "question": "Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, would you be able to buy more than, exactly the same as, or less than today with the money in this account?",
+    "answer": "Less than today"
+   },
+   {
+    "id": "K3",
+    "section": "K",
+    "question": "Do you think that the following statement is true or false? \u201cBuying a single company stock usually provides a safer return than a stock mutual fund.\u201d",
+    "answer": "False"
+   },
+   {
+    "id": "K4",
+    "section": "K",
+    "question": "Which of these have you invested in before? Select all that apply.",
+    "answer": "Bank deposits or money market funds; Bonds or bond funds"
+   },
+   {
+    "id": "K5",
+    "section": "K",
+    "question": "How many years have you been investing?",
+    "answer": "More than 5 years"
+   },
+   {
+    "id": "D1",
+    "section": "D",
+    "question": "Could you accept the value of your investment going down, even temporarily? If you answer No, we only offer cash-like products.",
+    "answer": "Yes"
+   }
+  ],
+  "intake": {
+   "goal_amount": 245000,
+   "monthly_flow": 0,
+   "horizon": 5,
+   "liquidity": 0.1,
+   "min_cash": 0.1,
+   "game": {
+    "tolerance": 0,
+    "loss_acceptance": 50,
+    "how": "pick the SAFEST card in every round"
+   }
+  },
+  "profile_with_game": {
+   "questionnaire_version": "eq-rq-0.1.0",
+   "c_level": "C2",
+   "explanation": [
+    "Your attitude to risk scored 20 out of 47: attitude level 2 of 5 (below average).",
+    "The Risk Game you played came to level 2 of 5 (score 25 out of 100). Together with your questionnaire (two thirds / one third) that is attitude level 2. Your financial situation sets a cap at level 3. Your category is the lower of the two: C2.",
+    "The game did not change your category: your questionnaire attitude level (2) sets it, C2.",
+    "In a severe market fall (hypothetical), a C2 portfolio of your 200,000 could fall to about 180,000 (illustrative estimate, not a forecast)."
+   ],
+   "tolerance_score": 20,
+   "tolerance_level": 2,
+   "capacity_level": 3,
+   "loss_capacity": 0.15,
+   "knowledge_score": 3,
+   "binding_dimension": "tolerance",
+   "no_loss_gate": false,
+   "suitability_max_equity": 0.0,
+   "product_access": "full",
+   "max_r_level": 2,
+   "blocked_product_types": [],
+   "flags": [],
+   "game_played": true,
+   "game_score": 25.0,
+   "game_level": 2,
+   "blended_level": 2,
+   "questionnaire_class": "C2"
+  },
+  "profile": {
+   "questionnaire_version": "eq-rq-0.1.0",
+   "c_level": "C2",
+   "explanation": [
+    "Your attitude to risk scored 20 out of 47: attitude level 2 of 5 (below average).",
+    "Your financial situation allows level 3, so your attitude level (2) sets your risk category: C2.",
+    "In a severe market fall (hypothetical), a C2 portfolio of your 200,000 could fall to about 180,000 (illustrative estimate, not a forecast)."
+   ],
+   "tolerance_score": 20,
+   "tolerance_level": 2,
+   "capacity_level": 3,
+   "loss_capacity": 0.15,
+   "knowledge_score": 3,
+   "binding_dimension": "tolerance",
+   "no_loss_gate": false,
+   "suitability_max_equity": 0.0,
+   "product_access": "full",
+   "max_r_level": 2,
+   "blocked_product_types": [],
+   "flags": []
+  },
+  "preferences": [
+   {
+    "id": "P1",
+    "question": "Based on your risk profile, these are the kinds of investments you can make. Which would you like us to consider?",
+    "answer": [
+     "Bonds (loans to governments and companies)",
+     "Cash and money-market funds"
+    ],
+    "not_offered": [
+     {
+      "option": "Stocks (shares of companies, through funds or individually)",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R3 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Real estate (listed property companies, REITs)",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Gold",
+      "reason": "your risk category C2 does not include gold"
+     },
+     {
+      "option": "Silver, platinum and palladium",
+      "reason": "your risk category C2 does not include silver, platinum and palladium"
+     },
+     {
+      "option": "Broad commodities (energy, industrial metals, agriculture)",
+      "reason": "your risk category C2 does not include broad commodities (energy, industrial metals, agriculture)"
+     },
+     {
+      "option": "Bitcoin and Ether",
+      "reason": "your risk category C2 does not include Bitcoin and Ether"
+     },
+     {
+      "option": "Other cryptocurrencies (Solana, BNB, XRP)",
+      "reason": "your risk category C2 does not include other cryptocurrencies (Solana, BNB, XRP)"
+     }
+    ]
+   },
+   {
+    "id": "P2",
+    "question": "Which industries interest you most? Pick as many as you like, or no preference.",
+    "answer": [],
+    "not_offered": [
+     {
+      "option": "Technology",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Healthcare and pharmaceuticals",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Banks, insurance and payments",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Energy (oil and gas)",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Consumer goods and retail",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Industrials and manufacturing",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Utilities",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Communication and media",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Materials, chemicals and mining",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     }
+    ]
+   },
+   {
+    "id": "P3",
+    "question": "Which markets or kinds of companies?",
+    "answer": [],
+    "not_offered": [
+     {
+      "option": "United States",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R3 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Other developed markets (Europe, Japan, ...)",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R3 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Emerging markets",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "China",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Smaller companies",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "Companies that pay steady dividends",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R3 or higher; C2 allows up to R2)"
+     }
+    ]
+   },
+   {
+    "id": "P4",
+    "question": "How would you like to hold stocks?",
+    "answer": [],
+    "not_offered": [
+     {
+      "option": "Individual stocks: hands-on control over each company",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     },
+     {
+      "option": "A mix of both",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R4 or higher; C2 allows up to R2)"
+     }
+    ]
+   },
+   {
+    "id": "P5",
+    "question": "Are there industries you do NOT want to invest in?",
+    "answer": [],
+    "not_offered": []
+   },
+   {
+    "id": "P6",
+    "question": "Which kinds of bonds?",
+    "answer": [
+     "Government bonds",
+     "Inflation-protected bonds"
+    ],
+    "not_offered": [
+     {
+      "option": "Long-term bonds",
+      "reason": "riskier than your category C2 allows (these products are rated risk level R3 or higher; C2 allows up to R2)"
+     }
+    ]
+   },
+   {
+    "id": "P7",
+    "question": "How would you like to hold bonds?",
+    "answer": [
+     "Bond funds: many bonds in one fund"
+    ],
+    "not_offered": []
+   }
+  ],
+  "without_ibkr": {
+   "status": 200,
+   "approved": true,
+   "optimizer_status": "optimal",
+   "c_level": "C2",
+   "as_of": "2026-10-16",
+   "data_source": "historical",
+   "fallback_reason": "Tiingo key not configured",
+   "violations": [],
+   "game_note": "Risk Game played: score 25/100, level 2 of 5. It counts one third of your attitude to risk (the questionnaire two thirds); your finances then set a cap. Your category: C2.",
+   "goal_unavailable": null,
+   "equity_weight": 0.0,
+   "bond_weight": 0.8888888585856322,
+   "cash_weight": 0.11111111111111133,
+   "commodity_weight": 0.0,
+   "crypto_weight": 0.0,
+   "volatility": 0.017246907321055372,
+   "worst_loss": 0.05159024950203985,
+   "worst_scenario": "Inflation shock",
+   "headline": "We propose 0% in stocks, 89% in bonds and 11% in cash. Its estimated volatility (the typical size of its yearly ups and downs) is about 1.7%. In the harshest of our hypothetical scenarios it would lose about 5% (roughly 516 USD per 10,000 invested).",
+   "goal": {
+    "chance": "75%",
+    "in_100": 75,
+    "headline": "In about 75 of every 100 simulated futures, this portfolio reaches your goal of 245,000 USD or more in 5 years. In the other 25 it falls short.",
+    "plan": "You start with 200,000 USD, add nothing more, and want 245,000 USD in 5 years. Paid in without any growth: 200,000 USD.",
+    "goal_amount": 245000.0,
+    "start_amount": 200000.0,
+    "monthly_flow": 0.0,
+    "horizon_years": 5.0
+   },
+   "holdings": [
+    {
+     "id": "VTIP",
+     "name": "Vanguard Short-Term Inflation-Protected Securities ETF",
+     "class": "bond",
+     "weight": 0.4
+    },
+    {
+     "id": "STIP",
+     "name": "iShares 0-5 Year TIPS Bond ETF",
+     "class": "bond",
+     "weight": 0.1851254181908471
+    },
+    {
+     "id": "BNDX",
+     "name": "Vanguard Total International Bond ETF (USD hedged)",
+     "class": "bond",
+     "weight": 0.1581750267338738
+    },
+    {
+     "id": "IAGG",
+     "name": "iShares Core International Aggregate Bond ETF",
+     "class": "bond",
+     "weight": 0.07807891048555543
+    },
+    {
+     "id": "BWX",
+     "name": "SPDR Bloomberg International Treasury Bond ETF (not hedged)",
+     "class": "bond",
+     "weight": 0.05525131581045855
+    },
+    {
+     "id": "SHV",
+     "name": "iShares Short Treasury Bond ETF",
+     "class": "cash",
+     "weight": 0.032793794005988385
+    },
+    {
+     "id": "USFR",
+     "name": "WisdomTree Floating Rate Treasury Fund",
+     "class": "cash",
+     "weight": 0.03178047718363425
+    },
+    {
+     "id": "BIL",
+     "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+     "class": "cash",
+     "weight": 0.024045500739560813
+    },
+    {
+     "id": "SGOV",
+     "name": "iShares 0-3 Month Treasury Bond ETF",
+     "class": "cash",
+     "weight": 0.022491339181927868
+    },
+    {
+     "id": "LQD",
+     "name": "iShares iBoxx $ Investment Grade Corporate Bond ETF",
+     "class": "bond",
+     "weight": 0.01225818736489723
+    }
+   ],
+   "limits": [
+    {
+     "name": "Share in stocks",
+     "value": 0.0,
+     "limit": 0.0,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C2 and your answers"
+    },
+    {
+     "name": "Estimated volatility",
+     "value": 0.017246907321055372,
+     "limit": 0.07,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C2"
+    },
+    {
+     "name": "Loss in a severe fall",
+     "value": 0.04444444292928161,
+     "limit": 0.1,
+     "direction": "max",
+     "ok": true,
+     "source": "your category and the loss you said you can afford (equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%)"
+    },
+    {
+     "name": "Largest single holding",
+     "value": 0.4,
+     "limit": 0.4,
+     "direction": "max",
+     "ok": true,
+     "source": "the standard limit of 40% on any one holding"
+    },
+    {
+     "name": "Cash buffer",
+     "value": 0.11111111111111133,
+     "limit": 0.1,
+     "direction": "min",
+     "ok": true,
+     "source": "your liquidity needs"
+    }
+   ],
+   "trading_history": null,
+   "risk_engine_checks": {
+    "passed": 17,
+    "total": 17
+   },
+   "n_instruments": 23,
+   "interest_areas": [
+    "bonds",
+    "cash",
+    "government_bonds",
+    "inflation_protected"
+   ],
+   "banners": [
+    "DRAFT LIMITS: the C1-C5 limits are EgoQuant's provisional placeholder defaults; a bank would replace them with its own approved mapping.",
+    "LIVE PRICES UNAVAILABLE: this portfolio uses saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+   ],
+   "category_basis": {
+    "questionnaire_level": 2,
+    "game_level": 2,
+    "blended_level": 2,
+    "capacity_level": 3,
+    "questionnaire_class": "C2",
+    "final": "C2",
+    "binding": "tolerance",
+    "text": "Your category rests on three things: your answers on attitude to risk (level 2 of 5, two thirds), the Risk Game you played (level 2 of 5, one third) and your finances (a cap at level 3). Your attitude to risk came to level 2; your category is the lower of that and the cap: C2."
+   }
+  },
+  "with_ibkr": {
+   "status": 200,
+   "approved": true,
+   "optimizer_status": "optimal",
+   "c_level": "C2",
+   "as_of": "2026-10-16",
+   "data_source": "historical",
+   "fallback_reason": "Tiingo key not configured",
+   "violations": [],
+   "game_note": "Risk Game played: score 25/100, level 2 of 5. It counts one third of your attitude to risk (the questionnaire two thirds); your finances then set a cap. Your category: C2.",
+   "goal_unavailable": null,
+   "equity_weight": 0.0,
+   "bond_weight": 0.8888888888888888,
+   "cash_weight": 0.11111111111111105,
+   "commodity_weight": 0.0,
+   "crypto_weight": 0.0,
+   "volatility": 0.013902432835862264,
+   "worst_loss": 0.04444444444444445,
+   "worst_scenario": "Severe crash (stocks -30%)",
+   "headline": "We propose 0% in stocks, 89% in bonds and 11% in cash. Its estimated volatility (the typical size of its yearly ups and downs) is about 1.4%. In the harshest of our hypothetical scenarios it would lose about 4% (roughly 444 USD per 10,000 invested).",
+   "goal": {
+    "chance": "82%",
+    "in_100": 82,
+    "headline": "In about 82 of every 100 simulated futures, this portfolio reaches your goal of 245,000 USD or more in 5 years. In the other 18 it falls short.",
+    "plan": "You start with 200,000 USD, add nothing more, and want 245,000 USD in 5 years. Paid in without any growth: 200,000 USD.",
+    "goal_amount": 245000.0,
+    "start_amount": 200000.0,
+    "monthly_flow": 0.0,
+    "horizon_years": 5.0
+   },
+   "holdings": [
+    {
+     "id": "SHY",
+     "name": "iShares 1-3 Year Treasury Bond ETF",
+     "class": "bond",
+     "weight": 0.20093829745690764
+    },
+    {
+     "id": "VTIP",
+     "name": "Vanguard Short-Term Inflation-Protected Securities ETF",
+     "class": "bond",
+     "weight": 0.19844753150279776
+    },
+    {
+     "id": "STIP",
+     "name": "iShares 0-5 Year TIPS Bond ETF",
+     "class": "bond",
+     "weight": 0.19796938698143426
+    },
+    {
+     "id": "VCSH",
+     "name": "Vanguard Short-Term Corporate Bond ETF",
+     "class": "bond",
+     "weight": 0.13425209795202434
+    },
+    {
+     "id": "IAGG",
+     "name": "iShares Core International Aggregate Bond ETF",
+     "class": "bond",
+     "weight": 0.09088567770125393
+    },
+    {
+     "id": "BNDX",
+     "name": "Vanguard Total International Bond ETF (USD hedged)",
+     "class": "bond",
+     "weight": 0.04534468955487857
+    },
+    {
+     "id": "USFR",
+     "name": "WisdomTree Floating Rate Treasury Fund",
+     "class": "cash",
+     "weight": 0.030977045548160973
+    },
+    {
+     "id": "BIL",
+     "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+     "class": "cash",
+     "weight": 0.029869090855773564
+    },
+    {
+     "id": "SGOV",
+     "name": "iShares 0-3 Month Treasury Bond ETF",
+     "class": "cash",
+     "weight": 0.02942952150198289
+    },
+    {
+     "id": "SHV",
+     "name": "iShares Short Treasury Bond ETF",
+     "class": "cash",
+     "weight": 0.020835453205193623
+    },
+    {
+     "id": "IEI",
+     "name": "iShares 3-7 Year Treasury Bond ETF",
+     "class": "bond",
+     "weight": 0.01913156134712788
+    },
+    {
+     "id": "SCHP",
+     "name": "Schwab U.S. TIPS ETF",
+     "class": "bond",
+     "weight": 0.0019196463924644738
+    }
+   ],
+   "limits": [
+    {
+     "name": "Share in stocks",
+     "value": 0.0,
+     "limit": 0.0,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C2 and your answers"
+    },
+    {
+     "name": "Estimated volatility",
+     "value": 0.013902432835862264,
+     "limit": 0.07,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C2"
+    },
+    {
+     "name": "Loss in a severe fall",
+     "value": 0.04444444444444445,
+     "limit": 0.1,
+     "direction": "max",
+     "ok": true,
+     "source": "your category and the loss you said you can afford (equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%)"
+    },
+    {
+     "name": "Largest single holding",
+     "value": 0.20093829745690764,
+     "limit": 0.4,
+     "direction": "max",
+     "ok": true,
+     "source": "the standard limit of 40% on any one holding"
+    },
+    {
+     "name": "Cash buffer",
+     "value": 0.11111111111111105,
+     "limit": 0.1,
+     "direction": "min",
+     "ok": true,
+     "source": "your liquidity needs"
+    }
+   ],
+   "trading_history": {
+    "source": "ibkr_report",
+    "n_trades": 2,
+    "start": "2025-01-02",
+    "end": "2026-10-16",
+    "currency": "USD",
+    "valued_at_trade_price": [],
+    "holdings_left_out": [],
+    "notes": [
+     "Asset class taken from IBKR's category for: BIL."
+    ]
+   },
+   "risk_engine_checks": {
+    "passed": 19,
+    "total": 19
+   },
+   "n_instruments": 23,
+   "interest_areas": [
+    "bonds",
+    "cash",
+    "government_bonds",
+    "inflation_protected"
+   ],
+   "banners": [
+    "DRAFT LIMITS: the C1-C5 limits are EgoQuant's provisional placeholder defaults; a bank would replace them with its own approved mapping.",
+    "LIVE PRICES UNAVAILABLE: this portfolio uses saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+   ],
+   "category_basis": {
+    "questionnaire_level": 2,
+    "game_level": 2,
+    "blended_level": 2,
+    "capacity_level": 3,
+    "questionnaire_class": "C2",
+    "final": "C2",
+    "binding": "tolerance",
+    "text": "Your category rests on three things: your answers on attitude to risk (level 2 of 5, two thirds), the Risk Game you played (level 2 of 5, one third) and your finances (a cap at level 3). Your attitude to risk came to level 2; your category is the lower of that and the cap: C2."
+   }
+  },
+  "what_ifs": [
+   {
+    "question": "What if I add $100 a month?",
+    "scenario_sent_to_the_engine": {
+     "extra_monthly_contribution": 100
+    },
+    "status": "ok",
+    "reason": null,
+    "scenario": {
+     "extra_monthly_contribution": 100.0,
+     "one_time_contribution": null,
+     "horizon_years": null,
+     "goal_amount": null,
+     "exclude_assets": null,
+     "mode": "same_portfolio"
+    },
+    "scenario_text": "add 100 a month more; keep the same portfolio",
+    "baseline": {
+     "goal_frequency": 82,
+     "goal_chance": "82%",
+     "median_final": 254396.87,
+     "p5_final": 237489.51,
+     "drawdown_p95": 0.0292
+    },
+    "scenario_outcome": {
+     "goal_frequency": 94,
+     "goal_chance": "94%",
+     "median_final": 261170.47,
+     "p5_final": 244028.82,
+     "drawdown_p95": 0.0279
+    },
+    "baseline_goal_frequency": 82,
+    "scenario_goal_frequency": 94,
+    "goal_amount": 245000.0,
+    "horizon_years": 5.0,
+    "portfolio_changed": false,
+    "new_weights": null,
+    "risk_engine": {
+     "approved": true,
+     "reasons": []
+    },
+    "n_paths": 10000,
+    "selection_paths": null,
+    "seed": 20261017,
+    "base_report_id": null,
+    "engine_version": "what-if-0.2.0+regime_hmm_v2.4e284ef19993",
+    "timestamp": "2026-10-20T03:44:40+00:00",
+    "label": "hypothetical simulation on past market data; not a forecast or a guarantee",
+    "sampler": {
+     "sampler": "regime_hmm_v2",
+     "model_version": "regime_hmm_v2",
+     "model_sha256": "4e284ef19993511be317f1c6e5c091596adf2e809d6fc4fa0c2fa4f1cedf3674",
+     "fit_start": "2007-06-22",
+     "fit_end": "2026-10-16",
+     "start_probs": [
+      6.806194447583329e-06,
+      0.9999798829768961,
+      3.2101220594883522e-06,
+      1.0100706596816026e-05
+     ],
+     "start_source": "filtered",
+     "regime_data_end": "2026-10-16",
+     "regime_today": "normal",
+     "regime_today_probability": 0.9999798829768961,
+     "state_names": [
+      "calm",
+      "normal",
+      "stressed",
+      "crisis"
+     ],
+     "block_label": "first_day",
+     "block_days": 21,
+     "n_blocks": 4857,
+     "pool_blocks": [
+      1876,
+      1485,
+      1083,
+      397
+     ],
+     "unlabelled_blocks": 16,
+     "labelled_days": 4861,
+     "long_crisis_blocks": 3,
+     "replayed_from_report": true,
+     "model_funds": [
+      "SPY",
+      "AGG"
+     ],
+     "long_crisis_share": 0.5149,
+     "long_crisis_in_100": 51,
+     "month_shares": [
+      0.365495,
+      0.339725,
+      0.21453333333333333,
+      0.08024666666666666
+     ]
+    }
+   },
+   {
+    "question": "What if I need 255,000 instead?",
+    "scenario_sent_to_the_engine": {
+     "goal_amount": 255000
+    },
+    "status": "ok",
+    "reason": null,
+    "scenario": {
+     "extra_monthly_contribution": null,
+     "one_time_contribution": null,
+     "horizon_years": null,
+     "goal_amount": 255000.0,
+     "exclude_assets": null,
+     "mode": "same_portfolio"
+    },
+    "scenario_text": "a goal of 255,000; keep the same portfolio",
+    "baseline": {
+     "goal_frequency": 82,
+     "goal_chance": "82%",
+     "median_final": 254396.87,
+     "p5_final": 237489.51,
+     "drawdown_p95": 0.0292
+    },
+    "scenario_outcome": {
+     "goal_frequency": 48,
+     "goal_chance": "48%",
+     "median_final": 254396.87,
+     "p5_final": 237489.51,
+     "drawdown_p95": 0.0292
+    },
+    "baseline_goal_frequency": 82,
+    "scenario_goal_frequency": 48,
+    "goal_amount": 255000.0,
+    "horizon_years": 5.0,
+    "portfolio_changed": false,
+    "new_weights": null,
+    "risk_engine": {
+     "approved": true,
+     "reasons": []
+    },
+    "n_paths": 10000,
+    "selection_paths": null,
+    "seed": 20261017,
+    "base_report_id": null,
+    "engine_version": "what-if-0.2.0+regime_hmm_v2.4e284ef19993",
+    "timestamp": "2026-10-20T03:44:40+00:00",
+    "label": "hypothetical simulation on past market data; not a forecast or a guarantee",
+    "sampler": {
+     "sampler": "regime_hmm_v2",
+     "model_version": "regime_hmm_v2",
+     "model_sha256": "4e284ef19993511be317f1c6e5c091596adf2e809d6fc4fa0c2fa4f1cedf3674",
+     "fit_start": "2007-06-22",
+     "fit_end": "2026-10-16",
+     "start_probs": [
+      6.806194447583329e-06,
+      0.9999798829768961,
+      3.2101220594883522e-06,
+      1.0100706596816026e-05
+     ],
+     "start_source": "filtered",
+     "regime_data_end": "2026-10-16",
+     "regime_today": "normal",
+     "regime_today_probability": 0.9999798829768961,
+     "state_names": [
+      "calm",
+      "normal",
+      "stressed",
+      "crisis"
+     ],
+     "block_label": "first_day",
+     "block_days": 21,
+     "n_blocks": 4857,
+     "pool_blocks": [
+      1876,
+      1485,
+      1083,
+      397
+     ],
+     "unlabelled_blocks": 16,
+     "labelled_days": 4861,
+     "long_crisis_blocks": 3,
+     "replayed_from_report": true,
+     "model_funds": [
+      "SPY",
+      "AGG"
+     ],
+     "long_crisis_share": 0.5149,
+     "long_crisis_in_100": 51,
+     "month_shares": [
+      0.365495,
+      0.339725,
+      0.21453333333333333,
+      0.08024666666666666
+     ]
+    }
+   }
+  ],
+  "trade_checks": [
+   {
+    "status": 200,
+    "planned": {
+     "ticker": "VT",
+     "side": "buy",
+     "amount": 20000
+    },
+    "verdict": "not_advisable",
+    "reasons": [
+     {
+      "code": "not_allowed",
+      "severity": "blocking",
+      "message": "VT is a higher-risk product (risk level R3); your category (C2) allows products up to R2, so it is not available to you.",
+      "source": "suitability",
+      "limit": null,
+      "before": null,
+      "after": null,
+      "ticker": "VT",
+      "scenario": null
+     },
+     {
+      "code": "max_equity",
+      "severity": "blocking",
+      "message": "Your stock share would be 8.7%, above the limit of 0.0% (now 0.0%).",
+      "source": "suitability",
+      "limit": 0.0,
+      "before": 0.0,
+      "after": 0.08672116925403929,
+      "ticker": null,
+      "scenario": null
+     },
+     {
+      "code": "new_money",
+      "severity": "warning",
+      "message": "The purchase costs 18,011.65 more than the cash in the account; the check treats that as new money paid in.",
+      "source": null,
+      "limit": null,
+      "before": null,
+      "after": null,
+      "ticker": null,
+      "scenario": null
+     },
+     {
+      "code": "reduces_breach",
+      "severity": "warning",
+      "message": "Your AGG share is already above the limit of 40.0% (48.7%). This trade moves you closer: it becomes 44.9%. It is still above the limit of 40.0%.",
+      "source": "system",
+      "limit": 0.4,
+      "before": 0.4867412498902007,
+      "after": 0.44872696883330676,
+      "ticker": "AGG",
+      "scenario": null
+     },
+     {
+      "code": "reduces_breach",
+      "severity": "warning",
+      "message": "Your BIL share is already above the limit of 40.0% (50.4%). This trade moves you closer: it becomes 46.5%. It is still above the limit of 40.0%.",
+      "source": "system",
+      "limit": 0.4,
+      "before": 0.5039067620430521,
+      "after": 0.464551861912654,
+      "ticker": "BIL",
+      "scenario": null
+     }
+    ],
+    "direction": "mixed",
+    "direction_parts": [
+     "Your stock share rises from 0.0% to 8.7%.",
+     "The hypothetical loss in the scenario 'Severe crash (stocks -30%)' rises from 2.4% to 4.8%.",
+     "Your largest holding, BIL, falls from 50.4% to 46.5% of the account."
+    ],
+    "before": {
+     "total_value": 212612.54674499997,
+     "weights": {
+      "BIL": 0.5039067620430521,
+      "AGG": 0.4867412498902007,
+      "CASH": 0.009351988066747228
+     },
+     "equity_share": 0.0,
+     "class_shares": {
+      "equity": 0.0,
+      "bond": 0.4867412498902007,
+      "cash": 0.5132587501097993,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.024337062494510037,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "BIL",
+     "largest_weight": 0.5039067620430521,
+     "max_r_level": 2
+    },
+    "after": {
+     "total_value": 230624.19674499996,
+     "weights": {
+      "BIL": 0.464551861912654,
+      "AGG": 0.44872696883330676,
+      "VT": 0.08672116925403929
+     },
+     "equity_share": 0.08672116925403929,
+     "class_shares": {
+      "equity": 0.08672116925403929,
+      "bond": 0.44872696883330676,
+      "cash": 0.464551861912654,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.04845269921787712,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "BIL",
+     "largest_weight": 0.464551861912654,
+     "max_r_level": 3
+    },
+    "notes": [
+     "18,011.65 of the purchase is treated as new money paid in.",
+     "Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+    ],
+    "investor_max_r_level": 2,
+    "traded_r_level": 3,
+    "risk_engine_approved": false,
+    "template_reply": "This trade is outside your limits: it breaks or worsens one of them.\n- VT is a higher-risk product (risk level R3); your category (C2) allows products up to R2, so it is not available to you. That is about the product's risk category against the maximum your questionnaire allows.\n- Your stock share would be 8.7%, above the limit of 0.0% (now 0.0%). That limit is about how much of the account moves with the stock market.\n- The purchase costs 18,011.65 more than the cash in the account; the check treats that as new money paid in.\n- Your AGG share is already above the limit of 40.0% (48.7%). This trade moves you closer: it becomes 44.9%. It is still above the limit of 40.0%. That limit is about how much one fund or company's fall would hit the whole account.\n- Your BIL share is already above the limit of 40.0% (50.4%). This trade moves you closer: it becomes 46.5%. It is still above the limit of 40.0%. That limit is about how much one fund or company's fall would hit the whole account.\n- Your stock share rises from 0.0% to 8.7%. So more of the account moves with the stock market.\n- In the scenario 'Severe crash (stocks -30%)' the account would lose about 4.9% instead of 2.4%. That is an outcome only inside that hypothetical scenario, not a forecast.\n- Your largest holding, BIL, falls from 50.4% to 46.5% of the account. So a fall in that one fund or company would hit the whole account less.\n- Your cash falls from 51.3% to 46.5%, so less money is available without selling anything.\n\n_The AI assistant is not available right now, so this is the standard explanation of the same check. The verdict and the numbers are the same._\n\n_deterministic check against your limits and hypothetical stress scenarios; not a forecast and not a recommendation to trade_"
+   },
+   {
+    "status": 200,
+    "planned": {
+     "ticker": "SHY",
+     "side": "buy",
+     "amount": 5000
+    },
+    "verdict": "allowed_with_warnings",
+    "reasons": [
+     {
+      "code": "new_money",
+      "severity": "warning",
+      "message": "The purchase costs 3,011.65 more than the cash in the account; the check treats that as new money paid in.",
+      "source": null,
+      "limit": null,
+      "before": null,
+      "after": null,
+      "ticker": null,
+      "scenario": null
+     },
+     {
+      "code": "reduces_breach",
+      "severity": "warning",
+      "message": "Your AGG share is already above the limit of 40.0% (48.7%). This trade moves you closer: it becomes 48.0%. It is still above the limit of 40.0%.",
+      "source": "system",
+      "limit": 0.4,
+      "before": 0.4867412498902007,
+      "after": 0.4799428742562944,
+      "ticker": "AGG",
+      "scenario": null
+     },
+     {
+      "code": "reduces_breach",
+      "severity": "warning",
+      "message": "Your BIL share is already above the limit of 40.0% (50.4%). This trade moves you closer: it becomes 49.7%. It is still above the limit of 40.0%.",
+      "source": "system",
+      "limit": 0.4,
+      "before": 0.5039067620430521,
+      "after": 0.49686863356389216,
+      "ticker": "BIL",
+      "scenario": null
+     }
+    ],
+    "direction": "lowers_exposure",
+    "direction_parts": [
+     "Your largest holding, BIL, falls from 50.4% to 49.7% of the account."
+    ],
+    "before": {
+     "total_value": 212612.54674499997,
+     "weights": {
+      "BIL": 0.5039067620430521,
+      "AGG": 0.4867412498902007,
+      "CASH": 0.009351988066747228
+     },
+     "equity_share": 0.0,
+     "class_shares": {
+      "equity": 0.0,
+      "bond": 0.4867412498902007,
+      "cash": 0.5132587501097993,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.024337062494510037,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "BIL",
+     "largest_weight": 0.5039067620430521,
+     "max_r_level": 2
+    },
+    "after": {
+     "total_value": 215624.19674499996,
+     "weights": {
+      "BIL": 0.49686863356389216,
+      "AGG": 0.4799428742562944,
+      "SHY": 0.023188492179813502
+     },
+     "equity_share": 0.0,
+     "class_shares": {
+      "equity": 0.0,
+      "bond": 0.5031313664361079,
+      "cash": 0.49686863356389216,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.0251565683218054,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "BIL",
+     "largest_weight": 0.49686863356389216,
+     "max_r_level": 2
+    },
+    "notes": [
+     "3,011.65 of the purchase is treated as new money paid in.",
+     "Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+    ],
+    "investor_max_r_level": 2,
+    "traded_r_level": 1,
+    "risk_engine_approved": true,
+    "template_reply": "This trade stays within your limits, with warnings.\n- The purchase costs 3,011.65 more than the cash in the account; the check treats that as new money paid in.\n- Your AGG share is already above the limit of 40.0% (48.7%). This trade moves you closer: it becomes 48.0%. It is still above the limit of 40.0%. That limit is about how much one fund or company's fall would hit the whole account.\n- Your BIL share is already above the limit of 40.0% (50.4%). This trade moves you closer: it becomes 49.7%. It is still above the limit of 40.0%. That limit is about how much one fund or company's fall would hit the whole account.\n- Your largest holding, BIL, falls from 50.4% to 49.7% of the account. So a fall in that one fund or company would hit the whole account less.\n- Your cash falls from 51.3% to 49.7%, so less money is available without selling anything.\n- 3,011.65 of the purchase is treated as new money paid in.\n- Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it.\n\n_The AI assistant is not available right now, so this is the standard explanation of the same check. The verdict and the numbers are the same._\n\n_deterministic check against your limits and hypothetical stress scenarios; not a forecast and not a recommendation to trade_"
+   }
+  ]
+ },
+ "balanced": {
+  "persona": "balanced_saver",
+  "description": "Mid-career saver with a balanced attitude who wants stocks, bonds and gold through funds. Borrows the synthetic 'sara' history (one panic sale, cautious game).",
+  "platforms": [
+   "Interactive Brokers"
+  ],
+  "answers": [
+   {
+    "id": "GL1",
+    "section": "GL",
+    "question": "In general, how would your best friend describe you as a risk taker?",
+    "answer": "Willing to take risks after completing adequate research"
+   },
+   {
+    "id": "GL2",
+    "section": "GL",
+    "question": "You are on a TV game show and can choose one of the following. Which would you take?",
+    "answer": "A 50% chance at winning $5,000"
+   },
+   {
+    "id": "GL3",
+    "section": "GL",
+    "question": "You have just finished saving for a \u201conce-in-a-lifetime\u201d vacation. Three weeks before you plan to leave, you lose your job. You would:",
+    "answer": "Go as scheduled, reasoning that you need the time to prepare for a job search"
+   },
+   {
+    "id": "GL4",
+    "section": "GL",
+    "question": "If you unexpectedly received $20,000 to invest, what would you do?",
+    "answer": "Invest it in safe high quality bonds or bond mutual funds"
+   },
+   {
+    "id": "GL5",
+    "section": "GL",
+    "question": "In terms of experience, how comfortable are you investing in stocks or stock mutual funds?",
+    "answer": "Somewhat comfortable"
+   },
+   {
+    "id": "GL6",
+    "section": "GL",
+    "question": "When you think of the word \u201crisk\u201d which of the following words comes to mind first?",
+    "answer": "Uncertainty"
+   },
+   {
+    "id": "GL7",
+    "section": "GL",
+    "question": "Some experts are predicting prices of assets such as gold, jewels, collectibles, and real estate (hard assets) to increase in value; bond prices may fall, however, experts tend to agree that government bonds are relatively safe. Most of your investment assets are now in high interest government bonds. What would you do?",
+    "answer": "Hold the bonds"
+   },
+   {
+    "id": "GL8",
+    "section": "GL",
+    "question": "Given the best and worst case returns of the four investment choices below, which would you prefer?",
+    "answer": "$800 gain best case; $200 loss worst case"
+   },
+   {
+    "id": "GL9",
+    "section": "GL",
+    "question": "In addition to whatever you own, you have been given $1,000. You are now asked to choose between:",
+    "answer": "A sure gain of $500"
+   },
+   {
+    "id": "GL10",
+    "section": "GL",
+    "question": "In addition to whatever you own, you have been given $2,000. You are now asked to choose between:",
+    "answer": "A 50% chance to lose $1,000 and a 50% chance to lose nothing"
+   },
+   {
+    "id": "GL11",
+    "section": "GL",
+    "question": "Suppose a relative left you an inheritance of $100,000, stipulating in the will that you invest ALL the money in ONE of the following choices. Which one would you select?",
+    "answer": "A mutual fund that owns stocks and bonds"
+   },
+   {
+    "id": "GL12",
+    "section": "GL",
+    "question": "If you had to invest $20,000, which of the following investment choices would you find most appealing?",
+    "answer": "30% in low-risk investments 40% in medium-risk investments 30% in high-risk investments"
+   },
+   {
+    "id": "GL13",
+    "section": "GL",
+    "question": "Your trusted friend and neighbor, an experienced geologist, is putting together a group of investors to fund an exploratory gold mining venture. The venture could pay back 50 to 100 times the investment if successful. If the mine is a bust, the entire investment is worthless. Your friend estimates the chance of success is only 20%. If you had the money, how much would you invest?",
+    "answer": "One month\u2019s salary"
+   },
+   {
+    "id": "B1",
+    "section": "B",
+    "question": "What is the main goal for this money?",
+    "answer": "General wealth growth"
+   },
+   {
+    "id": "B2",
+    "section": "B",
+    "question": "When will you need to start using this money?",
+    "answer": "More than 5 years"
+   },
+   {
+    "id": "B3_invested",
+    "section": "B",
+    "question": "How much are you investing now?",
+    "answer": "50,000"
+   },
+   {
+    "id": "B3_needed",
+    "section": "B",
+    "question": "Of that amount, how much must you have back by your goal date?",
+    "answer": "30,000"
+   },
+   {
+    "id": "B4",
+    "section": "B",
+    "question": "How many months of living expenses do you have saved outside this investment?",
+    "answer": "3 to 6 months"
+   },
+   {
+    "id": "B5",
+    "section": "B",
+    "question": "What share of your total wealth is this investment?",
+    "answer": "Over 25% up to 50%"
+   },
+   {
+    "id": "B6",
+    "section": "B",
+    "question": "How would you describe your income?",
+    "answer": "Stable income"
+   },
+   {
+    "id": "K1",
+    "section": "K",
+    "question": "Suppose you had $100 in a savings account and the interest rate was 2% per year. After 5 years, how much do you think you would have in the account if you left the money to grow: more than $102, exactly $102, less than $102?",
+    "answer": "More than $102"
+   },
+   {
+    "id": "K2",
+    "section": "K",
+    "question": "Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, would you be able to buy more than, exactly the same as, or less than today with the money in this account?",
+    "answer": "Less than today"
+   },
+   {
+    "id": "K3",
+    "section": "K",
+    "question": "Do you think that the following statement is true or false? \u201cBuying a single company stock usually provides a safer return than a stock mutual fund.\u201d",
+    "answer": "False"
+   },
+   {
+    "id": "K4",
+    "section": "K",
+    "question": "Which of these have you invested in before? Select all that apply.",
+    "answer": "Bonds or bond funds; Stocks or stock funds"
+   },
+   {
+    "id": "K5",
+    "section": "K",
+    "question": "How many years have you been investing?",
+    "answer": "3 to 5 years"
+   },
+   {
+    "id": "D1",
+    "section": "D",
+    "question": "Could you accept the value of your investment going down, even temporarily? If you answer No, we only offer cash-like products.",
+    "answer": "Yes"
+   }
+  ],
+  "intake": {
+   "goal_amount": 120000,
+   "monthly_flow": 300,
+   "horizon": 10,
+   "liquidity": 0.05,
+   "min_cash": 0.05,
+   "game": {
+    "tolerance": 50,
+    "loss_acceptance": 50,
+    "how": "pick the MIDDLE card in every round"
+   }
+  },
+  "profile_with_game": {
+   "questionnaire_version": "eq-rq-0.1.0",
+   "c_level": "C3",
+   "explanation": [
+    "Your attitude to risk scored 27 out of 47: attitude level 3 of 5 (average).",
+    "The Risk Game you played came to level 3 of 5 (score 50 out of 100). Together with your questionnaire (two thirds / one third) that is attitude level 3. Your financial situation sets a cap at level 5. Your category is the lower of the two: C3.",
+    "The game did not change your category: your questionnaire attitude level (3) sets it, C3.",
+    "In a severe market fall (hypothetical), a C3 portfolio of your 50,000 could fall to about 40,000 (illustrative estimate, not a forecast)."
+   ],
+   "tolerance_score": 27,
+   "tolerance_level": 3,
+   "capacity_level": 5,
+   "loss_capacity": 0.4,
+   "knowledge_score": 3,
+   "binding_dimension": "tolerance",
+   "no_loss_gate": false,
+   "suitability_max_equity": 0.4,
+   "product_access": "full",
+   "max_r_level": 3,
+   "blocked_product_types": [],
+   "flags": [],
+   "game_played": true,
+   "game_score": 50.0,
+   "game_level": 3,
+   "blended_level": 3,
+   "questionnaire_class": "C3"
+  },
+  "profile": {
+   "questionnaire_version": "eq-rq-0.1.0",
+   "c_level": "C3",
+   "explanation": [
+    "Your attitude to risk scored 27 out of 47: attitude level 3 of 5 (average).",
+    "Your financial situation allows level 5, so your attitude level (3) sets your risk category: C3.",
+    "In a severe market fall (hypothetical), a C3 portfolio of your 50,000 could fall to about 40,000 (illustrative estimate, not a forecast)."
+   ],
+   "tolerance_score": 27,
+   "tolerance_level": 3,
+   "capacity_level": 5,
+   "loss_capacity": 0.4,
+   "knowledge_score": 3,
+   "binding_dimension": "tolerance",
+   "no_loss_gate": false,
+   "suitability_max_equity": 0.4,
+   "product_access": "full",
+   "max_r_level": 3,
+   "blocked_product_types": [],
+   "flags": []
+  },
+  "preferences": [
+   {
+    "id": "P1",
+    "question": "Based on your risk profile, these are the kinds of investments you can make. Which would you like us to consider?",
+    "answer": [
+     "Stocks (shares of companies, through funds or individually)",
+     "Bonds (loans to governments and companies)",
+     "Gold"
+    ],
+    "not_offered": [
+     {
+      "option": "Real estate (listed property companies, REITs)",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Silver, platinum and palladium",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Broad commodities (energy, industrial metals, agriculture)",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Bitcoin and Ether",
+      "reason": "your risk category C3 does not include Bitcoin and Ether"
+     },
+     {
+      "option": "Other cryptocurrencies (Solana, BNB, XRP)",
+      "reason": "your risk category C3 does not include other cryptocurrencies (Solana, BNB, XRP)"
+     }
+    ]
+   },
+   {
+    "id": "P2",
+    "question": "Which industries interest you most? Pick as many as you like, or no preference.",
+    "answer": [],
+    "not_offered": [
+     {
+      "option": "Technology",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Healthcare and pharmaceuticals",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Banks, insurance and payments",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Energy (oil and gas)",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Consumer goods and retail",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Industrials and manufacturing",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Utilities",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Communication and media",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Materials, chemicals and mining",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     }
+    ]
+   },
+   {
+    "id": "P3",
+    "question": "Which markets or kinds of companies?",
+    "answer": [
+     "United States",
+     "Companies that pay steady dividends"
+    ],
+    "not_offered": [
+     {
+      "option": "Emerging markets",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "China",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "Smaller companies",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     }
+    ]
+   },
+   {
+    "id": "P4",
+    "question": "How would you like to hold stocks?",
+    "answer": [
+     "Funds (ETFs): instant diversification across many companies"
+    ],
+    "not_offered": [
+     {
+      "option": "Individual stocks: hands-on control over each company",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     },
+     {
+      "option": "A mix of both",
+      "reason": "riskier than your category C3 allows (these products are rated risk level R4 or higher; C3 allows up to R3)"
+     }
+    ]
+   },
+   {
+    "id": "P5",
+    "question": "Are there industries you do NOT want to invest in?",
+    "answer": [],
+    "not_offered": []
+   },
+   {
+    "id": "P6",
+    "question": "Which kinds of bonds?",
+    "answer": [
+     "No preference"
+    ],
+    "not_offered": []
+   },
+   {
+    "id": "P7",
+    "question": "How would you like to hold bonds?",
+    "answer": [],
+    "not_offered": []
+   }
+  ],
+  "without_ibkr": {
+   "status": 200,
+   "approved": true,
+   "optimizer_status": "optimal",
+   "c_level": "C3",
+   "as_of": "2026-10-16",
+   "data_source": "historical",
+   "fallback_reason": "Tiingo key not configured",
+   "violations": [],
+   "game_note": "Risk Game played: score 50/100, level 3 of 5. It counts one third of your attitude to risk (the questionnaire two thirds); your finances then set a cap. Your category: C3.",
+   "goal_unavailable": null,
+   "equity_weight": 0.2,
+   "bond_weight": 0.6001836788347413,
+   "cash_weight": 0.1002754817422396,
+   "commodity_weight": 0.09954083942301911,
+   "crypto_weight": 0.0,
+   "volatility": 0.05325630798660653,
+   "worst_loss": 0.10494030985518994,
+   "worst_scenario": "Severe crash (stocks -30%)",
+   "headline": "We propose 20% in stocks, 60% in bonds, 10% in gold & commodities and 10% in cash. Its estimated volatility (the typical size of its yearly ups and downs) is about 5.3%. In the harshest of our hypothetical scenarios it would lose about 10% (roughly 1,049 USD per 10,000 invested).",
+   "goal": {
+    "chance": "83%",
+    "in_100": 83,
+    "headline": "In about 83 of every 100 simulated futures, this portfolio reaches your goal of 120,000 USD or more in 10 years. In the other 17 it falls short.",
+    "plan": "You start with 50,000 USD, add 300 USD every month, and want 120,000 USD in 10 years. Paid in without any growth: 86,000 USD.",
+    "goal_amount": 120000.0,
+    "start_amount": 50000.0,
+    "monthly_flow": 300.0,
+    "horizon_years": 10.0
+   },
+   "holdings": [
+    {
+     "id": "SCHD",
+     "name": "Schwab U.S. Dividend Equity ETF",
+     "class": "equity",
+     "weight": 0.15165288597119628
+    },
+    {
+     "id": "SCHZ",
+     "name": "Schwab U.S. Aggregate Bond ETF",
+     "class": "bond",
+     "weight": 0.0995408604388276
+    },
+    {
+     "id": "BND",
+     "name": "Vanguard Total Bond Market ETF",
+     "class": "bond",
+     "weight": 0.09954086043882758
+    },
+    {
+     "id": "IAU",
+     "name": "iShares Gold Trust",
+     "class": "commodity",
+     "weight": 0.09954083942301911
+    },
+    {
+     "id": "IEFA",
+     "name": "iShares Core MSCI EAFE ETF",
+     "class": "equity",
+     "weight": 0.04834711402880373
+    },
+    {
+     "id": "IAGG",
+     "name": "iShares Core International Aggregate Bond ETF",
+     "class": "bond",
+     "weight": 0.03342517913450123
+    },
+    {
+     "id": "STIP",
+     "name": "iShares 0-5 Year TIPS Bond ETF",
+     "class": "bond",
+     "weight": 0.03342517694279474
+    },
+    {
+     "id": "VTIP",
+     "name": "Vanguard Short-Term Inflation-Protected Securities ETF",
+     "class": "bond",
+     "weight": 0.033425164170131846
+    },
+    {
+     "id": "USFR",
+     "name": "WisdomTree Floating Rate Treasury Fund",
+     "class": "cash",
+     "weight": 0.03342516225120445
+    },
+    {
+     "id": "AGG",
+     "name": "iShares Core U.S. Aggregate Bond ETF",
+     "class": "bond",
+     "weight": 0.03342515974551759
+    },
+    {
+     "id": "SHY",
+     "name": "iShares 1-3 Year Treasury Bond ETF",
+     "class": "bond",
+     "weight": 0.03342515974551759
+    },
+    {
+     "id": "SPTL",
+     "name": "SPDR Portfolio Long Term Treasury ETF",
+     "class": "bond",
+     "weight": 0.03342515974551759
+    },
+    {
+     "id": "VCIT",
+     "name": "Vanguard Intermediate-Term Corporate Bond ETF",
+     "class": "bond",
+     "weight": 0.03342515974551759
+    },
+    {
+     "id": "SCHP",
+     "name": "Schwab U.S. TIPS ETF",
+     "class": "bond",
+     "weight": 0.03342515974551759
+    },
+    {
+     "id": "BIL",
+     "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+     "class": "cash",
+     "weight": 0.03342515974551758
+    },
+    {
+     "id": "BNDX",
+     "name": "Vanguard Total International Bond ETF (USD hedged)",
+     "class": "bond",
+     "weight": 0.03342515974551758
+    },
+    {
+     "id": "GOVT",
+     "name": "iShares U.S. Treasury Bond ETF",
+     "class": "bond",
+     "weight": 0.03342515974551758
+    },
+    {
+     "id": "VGLT",
+     "name": "Vanguard Long-Term Treasury ETF",
+     "class": "bond",
+     "weight": 0.03342515974551758
+    },
+    {
+     "id": "IGIB",
+     "name": "iShares 5-10 Year Investment Grade Corporate Bond ETF",
+     "class": "bond",
+     "weight": 0.03342515974551758
+    },
+    {
+     "id": "SGOV",
+     "name": "iShares 0-3 Month Treasury Bond ETF",
+     "class": "cash",
+     "weight": 0.03342515974551758
+    }
+   ],
+   "limits": [
+    {
+     "name": "Share in stocks",
+     "value": 0.2,
+     "limit": 0.4,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C3 and your answers"
+    },
+    {
+     "name": "Estimated volatility",
+     "value": 0.05325630798660653,
+     "limit": 0.1,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C3"
+    },
+    {
+     "name": "Loss in a severe fall",
+     "value": 0.10494030985518994,
+     "limit": 0.2,
+     "direction": "max",
+     "ok": true,
+     "source": "your category and the loss you said you can afford (equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%)"
+    },
+    {
+     "name": "Largest single holding",
+     "value": 0.15165288597119628,
+     "limit": 0.4,
+     "direction": "max",
+     "ok": true,
+     "source": "the standard limit of 40% on any one holding"
+    },
+    {
+     "name": "Cash buffer",
+     "value": 0.1002754817422396,
+     "limit": 0.05,
+     "direction": "min",
+     "ok": true,
+     "source": "your liquidity needs"
+    },
+    {
+     "name": "Share in gold & commodities",
+     "value": 0.09954083942301911,
+     "limit": 0.1,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C3"
+    },
+    {
+     "name": "Share in cash",
+     "value": 0.1002754817422396,
+     "limit": 0.3,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C3"
+    }
+   ],
+   "trading_history": null,
+   "risk_engine_checks": {
+    "passed": 28,
+    "total": 28
+   },
+   "n_instruments": 48,
+   "interest_areas": [
+    "stocks",
+    "bonds",
+    "us_stocks",
+    "dividend_stocks",
+    "gold"
+   ],
+   "banners": [
+    "DRAFT LIMITS: the C1-C5 limits are EgoQuant's provisional placeholder defaults; a bank would replace them with its own approved mapping.",
+    "LIVE PRICES UNAVAILABLE: this portfolio uses saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+   ],
+   "category_basis": {
+    "questionnaire_level": 3,
+    "game_level": 3,
+    "blended_level": 3,
+    "capacity_level": 5,
+    "questionnaire_class": "C3",
+    "final": "C3",
+    "binding": "tolerance",
+    "text": "Your category rests on three things: your answers on attitude to risk (level 3 of 5, two thirds), the Risk Game you played (level 3 of 5, one third) and your finances (a cap at level 5). Your attitude to risk came to level 3; your category is the lower of that and the cap: C3."
+   }
+  },
+  "with_ibkr": {
+   "status": 200,
+   "approved": true,
+   "optimizer_status": "optimal",
+   "c_level": "C3",
+   "as_of": "2026-10-16",
+   "data_source": "historical",
+   "fallback_reason": "Tiingo key not configured",
+   "violations": [],
+   "game_note": "Risk Game played: score 50/100, level 3 of 5. It counts one third of your attitude to risk (the questionnaire two thirds); your finances then set a cap. Your category: C3.",
+   "goal_unavailable": null,
+   "equity_weight": 0.11111111111111113,
+   "bond_weight": 0.48888888888888904,
+   "cash_weight": 0.29999999999999993,
+   "commodity_weight": 0.10000000000000002,
+   "crypto_weight": 0.0,
+   "volatility": 0.04487172131949694,
+   "worst_loss": 0.0727777777777778,
+   "worst_scenario": "Severe crash (stocks -30%)",
+   "headline": "We propose 11% in stocks, 49% in bonds, 10% in gold & commodities and 30% in cash. Its estimated volatility (the typical size of its yearly ups and downs) is about 4.5%. In the harshest of our hypothetical scenarios it would lose about 7% (roughly 728 USD per 10,000 invested).",
+   "goal": {
+    "chance": "80%",
+    "in_100": 80,
+    "headline": "In about 80 of every 100 simulated futures, this portfolio reaches your goal of 120,000 USD or more in 10 years. In the other 20 it falls short.",
+    "plan": "You start with 50,000 USD, add 300 USD every month, and want 120,000 USD in 10 years. Paid in without any growth: 86,000 USD.",
+    "goal_amount": 120000.0,
+    "start_amount": 50000.0,
+    "monthly_flow": 300.0,
+    "horizon_years": 10.0
+   },
+   "holdings": [
+    {
+     "id": "BIL",
+     "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+     "class": "cash",
+     "weight": 0.127431948035569
+    },
+    {
+     "id": "USFR",
+     "name": "WisdomTree Floating Rate Treasury Fund",
+     "class": "cash",
+     "weight": 0.10243567050276409
+    },
+    {
+     "id": "SGOV",
+     "name": "iShares 0-3 Month Treasury Bond ETF",
+     "class": "cash",
+     "weight": 0.07013238146166684
+    },
+    {
+     "id": "VTIP",
+     "name": "Vanguard Short-Term Inflation-Protected Securities ETF",
+     "class": "bond",
+     "weight": 0.06731754951597298
+    },
+    {
+     "id": "STIP",
+     "name": "iShares 0-5 Year TIPS Bond ETF",
+     "class": "bond",
+     "weight": 0.06078513181515478
+    },
+    {
+     "id": "SCHD",
+     "name": "Schwab U.S. Dividend Equity ETF",
+     "class": "equity",
+     "weight": 0.05204189940626208
+    },
+    {
+     "id": "EDV",
+     "name": "Vanguard Extended Duration Treasury ETF",
+     "class": "bond",
+     "weight": 0.04899988779354031
+    },
+    {
+     "id": "IAGG",
+     "name": "iShares Core International Aggregate Bond ETF",
+     "class": "bond",
+     "weight": 0.04884730633348802
+    },
+    {
+     "id": "BWX",
+     "name": "SPDR Bloomberg International Treasury Bond ETF (not hedged)",
+     "class": "bond",
+     "weight": 0.04664800800881974
+    },
+    {
+     "id": "BNDX",
+     "name": "Vanguard Total International Bond ETF (USD hedged)",
+     "class": "bond",
+     "weight": 0.04614282354060252
+    },
+    {
+     "id": "SHY",
+     "name": "iShares 1-3 Year Treasury Bond ETF",
+     "class": "bond",
+     "weight": 0.042537045470327724
+    },
+    {
+     "id": "LQD",
+     "name": "iShares iBoxx $ Investment Grade Corporate Bond ETF",
+     "class": "bond",
+     "weight": 0.04253704547032768
+    },
+    {
+     "id": "IEI",
+     "name": "iShares 3-7 Year Treasury Bond ETF",
+     "class": "bond",
+     "weight": 0.04253704547032766
+    },
+    {
+     "id": "SCHZ",
+     "name": "Schwab U.S. Aggregate Bond ETF",
+     "class": "bond",
+     "weight": 0.04253704547032764
+    },
+    {
+     "id": "DVY",
+     "name": "iShares Select Dividend ETF",
+     "class": "equity",
+     "weight": 0.030060663855269617
+    },
+    {
+     "id": "VXUS",
+     "name": "Vanguard Total International Stock ETF",
+     "class": "equity",
+     "weight": 0.02900854784957943
+    },
+    {
+     "id": "SGOL",
+     "name": "abrdn Physical Gold Shares ETF",
+     "class": "commodity",
+     "weight": 0.025448782609442725
+    },
+    {
+     "id": "IAU",
+     "name": "iShares Gold Trust",
+     "class": "commodity",
+     "weight": 0.025077138356934002
+    },
+    {
+     "id": "GLDM",
+     "name": "SPDR Gold MiniShares Trust",
+     "class": "commodity",
+     "weight": 0.024873240026330103
+    },
+    {
+     "id": "GLD",
+     "name": "SPDR Gold Shares",
+     "class": "commodity",
+     "weight": 0.024600839007293193
+    }
+   ],
+   "limits": [
+    {
+     "name": "Share in stocks",
+     "value": 0.11111111111111113,
+     "limit": 0.4,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C3 and your answers"
+    },
+    {
+     "name": "Estimated volatility",
+     "value": 0.04487172131949694,
+     "limit": 0.1,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C3"
+    },
+    {
+     "name": "Loss in a severe fall",
+     "value": 0.0727777777777778,
+     "limit": 0.2,
+     "direction": "max",
+     "ok": true,
+     "source": "your category and the loss you said you can afford (equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%)"
+    },
+    {
+     "name": "Largest single holding",
+     "value": 0.127431948035569,
+     "limit": 0.4,
+     "direction": "max",
+     "ok": true,
+     "source": "the standard limit of 40% on any one holding"
+    },
+    {
+     "name": "Cash buffer",
+     "value": 0.29999999999999993,
+     "limit": 0.05,
+     "direction": "min",
+     "ok": true,
+     "source": "your liquidity needs"
+    },
+    {
+     "name": "Share in gold & commodities",
+     "value": 0.10000000000000002,
+     "limit": 0.1,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C3"
+    },
+    {
+     "name": "Share in cash",
+     "value": 0.29999999999999993,
+     "limit": 0.3,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C3"
+    },
+    {
+     "name": "Loss in a severe fall, behavioural limit",
+     "value": 0.0727777777777778,
+     "limit": 0.08838636370167552,
+     "direction": "max",
+     "ok": true,
+     "source": "what your past choices suggest (confidence 80%) (equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%)"
+    }
+   ],
+   "trading_history": {
+    "source": "ibkr_report",
+    "n_trades": 7,
+    "start": "2025-01-02",
+    "end": "2026-10-16",
+    "currency": "USD",
+    "valued_at_trade_price": [],
+    "holdings_left_out": [],
+    "notes": [
+     "Asset class taken from IBKR's category for: BIL."
+    ]
+   },
+   "risk_engine_checks": {
+    "passed": 29,
+    "total": 29
+   },
+   "n_instruments": 48,
+   "interest_areas": [
+    "stocks",
+    "bonds",
+    "us_stocks",
+    "dividend_stocks",
+    "gold"
+   ],
+   "banners": [
+    "DRAFT LIMITS: the C1-C5 limits are EgoQuant's provisional placeholder defaults; a bank would replace them with its own approved mapping.",
+    "LIVE PRICES UNAVAILABLE: this portfolio uses saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+   ],
+   "category_basis": {
+    "questionnaire_level": 3,
+    "game_level": 3,
+    "blended_level": 3,
+    "capacity_level": 5,
+    "questionnaire_class": "C3",
+    "final": "C3",
+    "binding": "tolerance",
+    "text": "Your category rests on three things: your answers on attitude to risk (level 3 of 5, two thirds), the Risk Game you played (level 3 of 5, one third) and your finances (a cap at level 5). Your attitude to risk came to level 3; your category is the lower of that and the cap: C3."
+   }
+  },
+  "what_ifs": [
+   {
+    "question": "What if I drop all my bond funds?",
+    "scenario_sent_to_the_engine": {
+     "exclude_assets": [
+      "bond"
+     ]
+    },
+    "status": "blocked",
+    "reason": "The Risk Engine rejected the scenario's portfolio: it would break one of your limits. No chance is shown for a portfolio that may not be offered.",
+    "scenario": {
+     "extra_monthly_contribution": null,
+     "one_time_contribution": null,
+     "horizon_years": null,
+     "goal_amount": null,
+     "exclude_assets": [
+      "bond"
+     ],
+     "mode": "same_portfolio"
+    },
+    "scenario_text": "leave out bond; keep the same portfolio",
+    "baseline": null,
+    "scenario_outcome": null,
+    "baseline_goal_frequency": null,
+    "scenario_goal_frequency": null,
+    "goal_amount": 120000.0,
+    "horizon_years": 10.0,
+    "portfolio_changed": true,
+    "new_weights": null,
+    "risk_engine": {
+     "approved": false,
+     "reasons": [
+      "your share in gold and commodities would be 19.6%, above your limit of 10%",
+      "your share in cash would be 58.7%, above your limit of 30%",
+      "in the \"equity_down_30_bond_down_5\" scenario the portfolio could lose 9.5%, more than your limit of 8.8%"
+     ]
+    },
+    "n_paths": null,
+    "selection_paths": null,
+    "seed": 20261017,
+    "base_report_id": null,
+    "engine_version": "what-if-0.1.0",
+    "timestamp": "2026-10-20T03:45:24+00:00",
+    "label": "hypothetical simulation on past market data; not a forecast or a guarantee"
+   },
+   {
+    "question": "What if I add $300 a month more?",
+    "scenario_sent_to_the_engine": {
+     "extra_monthly_contribution": 300
+    },
+    "status": "ok",
+    "reason": null,
+    "scenario": {
+     "extra_monthly_contribution": 300.0,
+     "one_time_contribution": null,
+     "horizon_years": null,
+     "goal_amount": null,
+     "exclude_assets": null,
+     "mode": "same_portfolio"
+    },
+    "scenario_text": "add 300 a month more; keep the same portfolio",
+    "baseline": {
+     "goal_frequency": 80,
+     "goal_chance": "80%",
+     "median_final": 131389.86,
+     "p5_final": 110301.18,
+     "drawdown_p95": 0.0692
+    },
+    "scenario_outcome": {
+     "goal_frequency": 100,
+     "goal_chance": "100%",
+     "median_final": 178613.46,
+     "p5_final": 152183.29,
+     "drawdown_p95": 0.0605
+    },
+    "baseline_goal_frequency": 80,
+    "scenario_goal_frequency": 100,
+    "goal_amount": 120000.0,
+    "horizon_years": 10.0,
+    "portfolio_changed": false,
+    "new_weights": null,
+    "risk_engine": {
+     "approved": true,
+     "reasons": []
+    },
+    "n_paths": 10000,
+    "selection_paths": null,
+    "seed": 20261017,
+    "base_report_id": null,
+    "engine_version": "what-if-0.2.0+regime_hmm_v2.4e284ef19993",
+    "timestamp": "2026-10-20T03:45:28+00:00",
+    "label": "hypothetical simulation on past market data; not a forecast or a guarantee",
+    "sampler": {
+     "sampler": "regime_hmm_v2",
+     "model_version": "regime_hmm_v2",
+     "model_sha256": "4e284ef19993511be317f1c6e5c091596adf2e809d6fc4fa0c2fa4f1cedf3674",
+     "fit_start": "2007-06-22",
+     "fit_end": "2026-10-16",
+     "start_probs": [
+      6.806194447583329e-06,
+      0.9999798829768961,
+      3.2101220594883522e-06,
+      1.0100706596816026e-05
+     ],
+     "start_source": "filtered",
+     "regime_data_end": "2026-10-16",
+     "regime_today": "normal",
+     "regime_today_probability": 0.9999798829768961,
+     "state_names": [
+      "calm",
+      "normal",
+      "stressed",
+      "crisis"
+     ],
+     "block_label": "first_day",
+     "block_days": 21,
+     "n_blocks": 4857,
+     "pool_blocks": [
+      1876,
+      1485,
+      1083,
+      397
+     ],
+     "unlabelled_blocks": 16,
+     "labelled_days": 4861,
+     "long_crisis_blocks": 3,
+     "replayed_from_report": true,
+     "model_funds": [
+      "SPY",
+      "AGG"
+     ],
+     "long_crisis_share": 0.7717,
+     "long_crisis_in_100": 77,
+     "month_shares": [
+      0.37431,
+      0.32426916666666666,
+      0.220395,
+      0.08102583333333334
+     ]
+    }
+   }
+  ],
+  "trade_checks": [
+   {
+    "status": 200,
+    "planned": {
+     "ticker": "VT",
+     "side": "sell",
+     "amount": 8000
+    },
+    "verdict": "allowed_with_warnings",
+    "reasons": [
+     {
+      "code": "reduces_breach",
+      "severity": "warning",
+      "message": "Your stock share is already above the limit of 40.0% (60.5%). This trade moves you closer: it becomes 46.0%. It is still above the limit of 40.0%.",
+      "source": "suitability",
+      "limit": 0.4,
+      "before": 0.6050916180703632,
+      "after": 0.46017104202982245,
+      "ticker": null,
+      "scenario": null
+     },
+     {
+      "code": "reduces_breach",
+      "severity": "warning",
+      "message": "The hypothetical loss in the scenario 'Severe crash (stocks -30%)' is already above the limit of 8.8% (19.2%). This trade moves you closer: it becomes 14.9%. It is still above the limit of 8.8%.",
+      "source": "behavioral",
+      "limit": 0.08838636370167552,
+      "before": 0.19206716005344754,
+      "after": 0.14859098724128533,
+      "ticker": null,
+      "scenario": "equity_down_30_bond_down_5"
+     },
+     {
+      "code": "reduces_breach",
+      "severity": "warning",
+      "message": "Your VT share is already above the limit of 40.0% (60.5%). This trade moves you closer: it becomes 46.0%. It is still above the limit of 40.0%.",
+      "source": "system",
+      "limit": 0.4,
+      "before": 0.6050916180703632,
+      "after": 0.46017104202982245,
+      "ticker": "VT",
+      "scenario": null
+     }
+    ],
+    "direction": "lowers_exposure",
+    "direction_parts": [
+     "Your stock share falls from 60.5% to 46.0%.",
+     "The hypothetical loss in the scenario 'Severe crash (stocks -30%)' falls from 19.2% to 14.9%.",
+     "Your largest holding, VT, falls from 60.5% to 46.0% of the account."
+    ],
+    "before": {
+     "total_value": 55202.651125,
+     "weights": {
+      "VT": 0.6050916180703632,
+      "AGG": 0.21079349264677189,
+      "CASH": 0.12605698926022363,
+      "BIL": 0.05805790002264135
+     },
+     "equity_share": 0.6050916180703632,
+     "class_shares": {
+      "equity": 0.6050916180703632,
+      "bond": 0.21079349264677189,
+      "cash": 0.18411488928286499,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.19206716005344754,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "VT",
+     "largest_weight": 0.6050916180703632,
+     "max_r_level": 3
+    },
+    "after": {
+     "total_value": 55202.651125,
+     "weights": {
+      "VT": 0.46017104202982245,
+      "CASH": 0.2709775653007643,
+      "AGG": 0.21079349264677189,
+      "BIL": 0.05805790002264135
+     },
+     "equity_share": 0.46017104202982245,
+     "class_shares": {
+      "equity": 0.46017104202982245,
+      "bond": 0.21079349264677189,
+      "cash": 0.3290354653234056,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.14859098724128533,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "VT",
+     "largest_weight": 0.46017104202982245,
+     "max_r_level": 3
+    },
+    "notes": [
+     "The sale's proceeds stay in the account as cash.",
+     "The portfolio builder's cash cap (30%) is a construction rule and is not applied to your own trades.",
+     "Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+    ],
+    "investor_max_r_level": 3,
+    "traded_r_level": 3,
+    "risk_engine_approved": false,
+    "template_reply": "This trade stays within your limits, with warnings.\n- Your stock share is already above the limit of 40.0% (60.5%). This trade moves you closer: it becomes 46.0%. It is still above the limit of 40.0%. That limit is about how much of the account moves with the stock market.\n- The hypothetical loss in the scenario 'Severe crash (stocks -30%)' is already above the limit of 8.8% (19.2%). This trade moves you closer: it becomes 14.9%. It is still above the limit of 8.8%. That limit is about what the account would lose in that hypothetical scenario, not a forecast.\n- Your VT share is already above the limit of 40.0% (60.5%). This trade moves you closer: it becomes 46.0%. It is still above the limit of 40.0%. That limit is about how much one fund or company's fall would hit the whole account.\n- Your stock share falls from 60.5% to 46.0%. So less of the account moves with the stock market.\n- In the scenario 'Severe crash (stocks -30%)' the account would lose about 14.9% instead of 19.2%. That is an outcome only inside that hypothetical scenario, not a forecast.\n- Your largest holding, VT, falls from 60.5% to 46.0% of the account. So a fall in that one fund or company would hit the whole account less.\n- Your cash rises from 18.4% to 32.9%, money available without selling anything.\n- The sale's proceeds stay in the account as cash.\n- The portfolio builder's cash cap (30%) is a construction rule and is not applied to your own trades.\n\n_The AI assistant is not available right now, so this is the standard explanation of the same check. The verdict and the numbers are the same._\n\n_deterministic check against your limits and hypothetical stress scenarios; not a forecast and not a recommendation to trade_"
+   },
+   {
+    "status": 200,
+    "planned": {
+     "ticker": "VT",
+     "side": "buy",
+     "amount": 5000
+    },
+    "verdict": "not_advisable",
+    "reasons": [
+     {
+      "code": "max_equity",
+      "severity": "blocking",
+      "message": "Your stock share is already above the limit of 40.0% (60.5%); this trade makes it 69.6%.",
+      "source": "suitability",
+      "limit": 0.4,
+      "before": 0.6050916180703632,
+      "after": 0.695666978095701,
+      "ticker": null,
+      "scenario": null
+     },
+     {
+      "code": "max_stress_loss",
+      "severity": "blocking",
+      "message": "The hypothetical loss in the scenario 'Severe crash (stocks -30%)' is already above the limit of 8.8% (19.2%); this trade makes it 21.9%.",
+      "source": "behavioral",
+      "limit": 0.08838636370167552,
+      "before": 0.19206716005344754,
+      "after": 0.2192397680610489,
+      "ticker": null,
+      "scenario": "equity_down_30_bond_down_5"
+     },
+     {
+      "code": "concentration",
+      "severity": "warning",
+      "message": "Your VT share is already above the limit of 40.0% (60.5%); this trade makes it 69.6%.",
+      "source": "system",
+      "limit": 0.4,
+      "before": 0.6050916180703632,
+      "after": 0.695666978095701,
+      "ticker": "VT",
+      "scenario": null
+     }
+    ],
+    "direction": "raises_exposure",
+    "direction_parts": [
+     "Your stock share rises from 60.5% to 69.6%.",
+     "The hypothetical loss in the scenario 'Severe crash (stocks -30%)' rises from 19.2% to 21.9%.",
+     "Your largest holding, VT, rises from 60.5% to 69.6% of the account."
+    ],
+    "before": {
+     "total_value": 55202.651125,
+     "weights": {
+      "VT": 0.6050916180703632,
+      "AGG": 0.21079349264677189,
+      "CASH": 0.12605698926022363,
+      "BIL": 0.05805790002264135
+     },
+     "equity_share": 0.6050916180703632,
+     "class_shares": {
+      "equity": 0.6050916180703632,
+      "bond": 0.21079349264677189,
+      "cash": 0.18411488928286499,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.19206716005344754,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "VT",
+     "largest_weight": 0.6050916180703632,
+     "max_r_level": 3
+    },
+    "after": {
+     "total_value": 55202.651125,
+     "weights": {
+      "VT": 0.695666978095701,
+      "AGG": 0.21079349264677189,
+      "BIL": 0.05805790002264135,
+      "CASH": 0.035481629234885695
+     },
+     "equity_share": 0.695666978095701,
+     "class_shares": {
+      "equity": 0.695666978095701,
+      "bond": 0.21079349264677189,
+      "cash": 0.09353952925752704,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.2192397680610489,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "VT",
+     "largest_weight": 0.695666978095701,
+     "max_r_level": 3
+    },
+    "notes": [
+     "The portfolio builder's cash cap (30%) is a construction rule and is not applied to your own trades.",
+     "Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+    ],
+    "investor_max_r_level": 3,
+    "traded_r_level": 3,
+    "risk_engine_approved": false,
+    "template_reply": "This trade is outside your limits: it breaks or worsens one of them.\n- Your stock share is already above the limit of 40.0% (60.5%); this trade makes it 69.6%. That limit is about how much of the account moves with the stock market.\n- The hypothetical loss in the scenario 'Severe crash (stocks -30%)' is already above the limit of 8.8% (19.2%); this trade makes it 21.9%. That limit is about what the account would lose in that hypothetical scenario, not a forecast.\n- Your VT share is already above the limit of 40.0% (60.5%); this trade makes it 69.6%. That limit is about how much one fund or company's fall would hit the whole account.\n- Your stock share rises from 60.5% to 69.6%. So more of the account moves with the stock market.\n- In the scenario 'Severe crash (stocks -30%)' the account would lose about 21.9% instead of 19.2%. That is an outcome only inside that hypothetical scenario, not a forecast.\n- Your largest holding, VT, rises from 60.5% to 69.6% of the account. So a fall in that one fund or company would hit the whole account harder.\n- Your cash falls from 18.4% to 9.3%, so less money is available without selling anything.\n- The portfolio builder's cash cap (30%) is a construction rule and is not applied to your own trades.\n- Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it.\n\n_The AI assistant is not available right now, so this is the standard explanation of the same check. The verdict and the numbers are the same._\n\n_deterministic check against your limits and hypothetical stress scenarios; not a forecast and not a recommendation to trade_"
+   }
+  ]
+ },
+ "beginner": {
+  "persona": "eager_beginner",
+  "description": "Bold answers but no investing experience and weak financial knowledge: crypto is not offered on her preference form (knowledge restriction), so she picks US stocks.",
+  "platforms": [
+   "Robinhood"
+  ],
+  "answers": [
+   {
+    "id": "GL1",
+    "section": "GL",
+    "question": "In general, how would your best friend describe you as a risk taker?",
+    "answer": "A real gambler"
+   },
+   {
+    "id": "GL2",
+    "section": "GL",
+    "question": "You are on a TV game show and can choose one of the following. Which would you take?",
+    "answer": "A 5% chance at winning $100,000"
+   },
+   {
+    "id": "GL3",
+    "section": "GL",
+    "question": "You have just finished saving for a \u201conce-in-a-lifetime\u201d vacation. Three weeks before you plan to leave, you lose your job. You would:",
+    "answer": "Extend your vacation, because this might be your last chance to go first-class"
+   },
+   {
+    "id": "GL4",
+    "section": "GL",
+    "question": "If you unexpectedly received $20,000 to invest, what would you do?",
+    "answer": "Invest it in stocks or stock mutual funds"
+   },
+   {
+    "id": "GL5",
+    "section": "GL",
+    "question": "In terms of experience, how comfortable are you investing in stocks or stock mutual funds?",
+    "answer": "Very comfortable"
+   },
+   {
+    "id": "GL6",
+    "section": "GL",
+    "question": "When you think of the word \u201crisk\u201d which of the following words comes to mind first?",
+    "answer": "Thrill"
+   },
+   {
+    "id": "GL7",
+    "section": "GL",
+    "question": "Some experts are predicting prices of assets such as gold, jewels, collectibles, and real estate (hard assets) to increase in value; bond prices may fall, however, experts tend to agree that government bonds are relatively safe. Most of your investment assets are now in high interest government bonds. What would you do?",
+    "answer": "Sell the bonds and put the total proceeds into hard assets"
+   },
+   {
+    "id": "GL8",
+    "section": "GL",
+    "question": "Given the best and worst case returns of the four investment choices below, which would you prefer?",
+    "answer": "$4,800 gain best case; $2,400 loss worst case"
+   },
+   {
+    "id": "GL9",
+    "section": "GL",
+    "question": "In addition to whatever you own, you have been given $1,000. You are now asked to choose between:",
+    "answer": "A 50% chance to gain $1,000 and a 50% chance to gain nothing"
+   },
+   {
+    "id": "GL10",
+    "section": "GL",
+    "question": "In addition to whatever you own, you have been given $2,000. You are now asked to choose between:",
+    "answer": "A 50% chance to lose $1,000 and a 50% chance to lose nothing"
+   },
+   {
+    "id": "GL11",
+    "section": "GL",
+    "question": "Suppose a relative left you an inheritance of $100,000, stipulating in the will that you invest ALL the money in ONE of the following choices. Which one would you select?",
+    "answer": "A portfolio of 15 common stocks"
+   },
+   {
+    "id": "GL12",
+    "section": "GL",
+    "question": "If you had to invest $20,000, which of the following investment choices would you find most appealing?",
+    "answer": "10% in low-risk investments 40% in medium-risk investments 50% in high-risk investments"
+   },
+   {
+    "id": "GL13",
+    "section": "GL",
+    "question": "Your trusted friend and neighbor, an experienced geologist, is putting together a group of investors to fund an exploratory gold mining venture. The venture could pay back 50 to 100 times the investment if successful. If the mine is a bust, the entire investment is worthless. Your friend estimates the chance of success is only 20%. If you had the money, how much would you invest?",
+    "answer": "Three month\u2019s salary"
+   },
+   {
+    "id": "B1",
+    "section": "B",
+    "question": "What is the main goal for this money?",
+    "answer": "General wealth growth"
+   },
+   {
+    "id": "B2",
+    "section": "B",
+    "question": "When will you need to start using this money?",
+    "answer": "More than 5 years"
+   },
+   {
+    "id": "B3_invested",
+    "section": "B",
+    "question": "How much are you investing now?",
+    "answer": "10,000"
+   },
+   {
+    "id": "B3_needed",
+    "section": "B",
+    "question": "Of that amount, how much must you have back by your goal date?",
+    "answer": "0"
+   },
+   {
+    "id": "B4",
+    "section": "B",
+    "question": "How many months of living expenses do you have saved outside this investment?",
+    "answer": "More than 6 months"
+   },
+   {
+    "id": "B5",
+    "section": "B",
+    "question": "What share of your total wealth is this investment?",
+    "answer": "25% or less"
+   },
+   {
+    "id": "B6",
+    "section": "B",
+    "question": "How would you describe your income?",
+    "answer": "Stable income"
+   },
+   {
+    "id": "K1",
+    "section": "K",
+    "question": "Suppose you had $100 in a savings account and the interest rate was 2% per year. After 5 years, how much do you think you would have in the account if you left the money to grow: more than $102, exactly $102, less than $102?",
+    "answer": "Do not know"
+   },
+   {
+    "id": "K2",
+    "section": "K",
+    "question": "Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, would you be able to buy more than, exactly the same as, or less than today with the money in this account?",
+    "answer": "Do not know"
+   },
+   {
+    "id": "K3",
+    "section": "K",
+    "question": "Do you think that the following statement is true or false? \u201cBuying a single company stock usually provides a safer return than a stock mutual fund.\u201d",
+    "answer": "True"
+   },
+   {
+    "id": "K4",
+    "section": "K",
+    "question": "Which of these have you invested in before? Select all that apply.",
+    "answer": "None of these"
+   },
+   {
+    "id": "K5",
+    "section": "K",
+    "question": "How many years have you been investing?",
+    "answer": "I have not invested before"
+   },
+   {
+    "id": "D1",
+    "section": "D",
+    "question": "Could you accept the value of your investment going down, even temporarily? If you answer No, we only offer cash-like products.",
+    "answer": "Yes"
+   }
+  ],
+  "intake": {
+   "goal_amount": 40000,
+   "monthly_flow": 150,
+   "horizon": 10,
+   "liquidity": 0.0,
+   "min_cash": 0.05,
+   "game": {
+    "tolerance": 0,
+    "loss_acceptance": 50,
+    "how": "pick the SAFEST card in every round"
+   }
+  },
+  "profile_with_game": {
+   "questionnaire_version": "eq-rq-0.1.0",
+   "c_level": "C4",
+   "explanation": [
+    "Your attitude to risk scored 44 out of 47: attitude level 5 of 5 (high).",
+    "The Risk Game you played came to level 2 of 5 (score 25 out of 100). Together with your questionnaire (two thirds / one third) that is attitude level 4. Your financial situation sets a cap at level 5. Your category is the lower of the two: C4.",
+    "The game moved your category: your questionnaire answers alone would give C5; how you played points to a more careful attitude, so it is C4.",
+    "In a severe market fall (hypothetical), a C4 portfolio of your 10,000 could fall to about 6,500 (illustrative estimate, not a forecast).",
+    "Based on your answers on investment basics, complex products such as crypto or leveraged funds are not available to you for now."
+   ],
+   "tolerance_score": 44,
+   "tolerance_level": 5,
+   "capacity_level": 5,
+   "loss_capacity": 1.0,
+   "knowledge_score": 0,
+   "binding_dimension": "game",
+   "no_loss_gate": false,
+   "suitability_max_equity": 0.7,
+   "product_access": "blocked_complex",
+   "max_r_level": 4,
+   "blocked_product_types": [
+    "crypto_etp",
+    "crypto_spot"
+   ],
+   "flags": [
+    "complex_products_blocked"
+   ],
+   "game_played": true,
+   "game_score": 25.0,
+   "game_level": 2,
+   "blended_level": 4,
+   "questionnaire_class": "C5"
+  },
+  "profile": {
+   "questionnaire_version": "eq-rq-0.1.0",
+   "c_level": "C5",
+   "explanation": [
+    "Your attitude to risk scored 44 out of 47: attitude level 5 of 5 (high).",
+    "Your financial situation allows level 5, so your attitude level (5) sets your risk category: C5.",
+    "In a severe market fall (hypothetical), a C5 portfolio of your 10,000 could fall to about 5,500 (illustrative estimate, not a forecast).",
+    "Based on your answers on investment basics, complex products such as crypto or leveraged funds are not available to you for now."
+   ],
+   "tolerance_score": 44,
+   "tolerance_level": 5,
+   "capacity_level": 5,
+   "loss_capacity": 1.0,
+   "knowledge_score": 0,
+   "binding_dimension": "tolerance",
+   "no_loss_gate": false,
+   "suitability_max_equity": 0.9,
+   "product_access": "blocked_complex",
+   "max_r_level": 5,
+   "blocked_product_types": [
+    "crypto_etp",
+    "crypto_spot"
+   ],
+   "flags": [
+    "complex_products_blocked"
+   ]
+  },
+  "preferences": [
+   {
+    "id": "P1",
+    "question": "Based on your risk profile, these are the kinds of investments you can make. Which would you like us to consider?",
+    "answer": [
+     "Stocks (shares of companies, through funds or individually)"
+    ],
+    "not_offered": [
+     {
+      "option": "Bitcoin and Ether",
+      "reason": "your risk category C4 does not include Bitcoin and Ether"
+     },
+     {
+      "option": "Other cryptocurrencies (Solana, BNB, XRP)",
+      "reason": "your risk category C4 does not include other cryptocurrencies (Solana, BNB, XRP)"
+     }
+    ]
+   },
+   {
+    "id": "P2",
+    "question": "Which industries interest you most? Pick as many as you like, or no preference.",
+    "answer": [],
+    "not_offered": []
+   },
+   {
+    "id": "P3",
+    "question": "Which markets or kinds of companies?",
+    "answer": [
+     "United States"
+    ],
+    "not_offered": []
+   },
+   {
+    "id": "P4",
+    "question": "How would you like to hold stocks?",
+    "answer": [
+     "Funds (ETFs): instant diversification across many companies"
+    ],
+    "not_offered": []
+   },
+   {
+    "id": "P5",
+    "question": "Are there industries you do NOT want to invest in?",
+    "answer": [],
+    "not_offered": []
+   },
+   {
+    "id": "P6",
+    "question": "Which kinds of bonds?",
+    "answer": [],
+    "not_offered": []
+   },
+   {
+    "id": "P7",
+    "question": "How would you like to hold bonds?",
+    "answer": [],
+    "not_offered": []
+   }
+  ],
+  "without_ibkr": {
+   "status": 200,
+   "approved": true,
+   "optimizer_status": "optimal",
+   "c_level": "C4",
+   "as_of": "2026-10-16",
+   "data_source": "historical",
+   "fallback_reason": "Tiingo key not configured",
+   "violations": [],
+   "game_note": "Risk Game played: score 25/100, level 2 of 5. It counts one third of your attitude to risk (the questionnaire two thirds); your finances then set a cap. Your category: C4.",
+   "goal_unavailable": null,
+   "equity_weight": 0.6222222222222225,
+   "bond_weight": 0.21503932969789774,
+   "cash_weight": 0.04999999999999996,
+   "commodity_weight": 0.11273844807988007,
+   "crypto_weight": 0.0,
+   "volatility": 0.0760551442758042,
+   "worst_loss": 0.21432940036354362,
+   "worst_scenario": "Severe crash (stocks -30%)",
+   "headline": "We propose 62% in stocks, 22% in bonds, 11% in gold & commodities and 5% in cash. Its estimated volatility (the typical size of its yearly ups and downs) is about 7.6%. In the harshest of our hypothetical scenarios it would lose about 21% (roughly 2,143 USD per 10,000 invested).",
+   "goal": {
+    "chance": "62%",
+    "in_100": 62,
+    "headline": "In about 62 of every 100 simulated futures, this portfolio reaches your goal of 40,000 USD or more in 10 years. In the other 38 it falls short.",
+    "plan": "You start with 10,000 USD, add 150 USD every month, and want 40,000 USD in 10 years. Paid in without any growth: 28,000 USD.",
+    "goal_amount": 40000.0,
+    "start_amount": 10000.0,
+    "monthly_flow": 150.0,
+    "horizon_years": 10.0
+   },
+   "holdings": [
+    {
+     "id": "IVV",
+     "name": "iShares Core S&P 500 ETF",
+     "class": "equity",
+     "weight": 0.06631972836561444
+    },
+    {
+     "id": "IGIB",
+     "name": "iShares 5-10 Year Investment Grade Corporate Bond ETF",
+     "class": "bond",
+     "weight": 0.05731291286604906
+    },
+    {
+     "id": "GSG",
+     "name": "iShares S&P GSCI Commodity-Indexed Trust",
+     "class": "commodity",
+     "weight": 0.05689310896649092
+    },
+    {
+     "id": "GLDM",
+     "name": "SPDR Gold MiniShares Trust",
+     "class": "commodity",
+     "weight": 0.05584533911338915
+    },
+    {
+     "id": "SCHD",
+     "name": "Schwab U.S. Dividend Equity ETF",
+     "class": "equity",
+     "weight": 0.05386470783285037
+    },
+    {
+     "id": "SPTL",
+     "name": "SPDR Portfolio Long Term Treasury ETF",
+     "class": "bond",
+     "weight": 0.05367884316284828
+    },
+    {
+     "id": "SCHP",
+     "name": "Schwab U.S. TIPS ETF",
+     "class": "bond",
+     "weight": 0.0522241708528791
+    },
+    {
+     "id": "LQD",
+     "name": "iShares iBoxx $ Investment Grade Corporate Bond ETF",
+     "class": "bond",
+     "weight": 0.051823402816121286
+    },
+    {
+     "id": "USFR",
+     "name": "WisdomTree Floating Rate Treasury Fund",
+     "class": "cash",
+     "weight": 0.04999999999999996
+    },
+    {
+     "id": "VTI",
+     "name": "Vanguard Total Stock Market ETF",
+     "class": "equity",
+     "weight": 0.04958173168010865
+    },
+    {
+     "id": "XLP",
+     "name": "Consumer Staples Select Sector SPDR Fund",
+     "class": "equity",
+     "weight": 0.048959787686460365
+    },
+    {
+     "id": "SCHE",
+     "name": "Schwab Emerging Markets Equity ETF",
+     "class": "equity",
+     "weight": 0.04815257502935561
+    },
+    {
+     "id": "IJR",
+     "name": "iShares Core S&P Small-Cap ETF",
+     "class": "equity",
+     "weight": 0.04430221516650955
+    },
+    {
+     "id": "VOO",
+     "name": "Vanguard S&P 500 ETF",
+     "class": "equity",
+     "weight": 0.043092681012402934
+    },
+    {
+     "id": "MCHI",
+     "name": "iShares MSCI China ETF",
+     "class": "equity",
+     "weight": 0.0426821059320917
+    },
+    {
+     "id": "VXUS",
+     "name": "Vanguard Total International Stock ETF",
+     "class": "equity",
+     "weight": 0.041700547529118975
+    },
+    {
+     "id": "VBR",
+     "name": "Vanguard Small-Cap Value ETF",
+     "class": "equity",
+     "weight": 0.0386774262989504
+    },
+    {
+     "id": "SCHA",
+     "name": "Schwab U.S. Small-Cap ETF",
+     "class": "equity",
+     "weight": 0.037344273743033056
+    },
+    {
+     "id": "VPU",
+     "name": "Vanguard Utilities ETF",
+     "class": "equity",
+     "weight": 0.03637459804828553
+    },
+    {
+     "id": "VHT",
+     "name": "Vanguard Health Care ETF",
+     "class": "equity",
+     "weight": 0.0356696175045102
+    },
+    {
+     "id": "DGRO",
+     "name": "iShares Core Dividend Growth ETF",
+     "class": "equity",
+     "weight": 0.03550022639293066
+    }
+   ],
+   "limits": [
+    {
+     "name": "Share in stocks",
+     "value": 0.6222222222222225,
+     "limit": 0.7,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C4 and your answers"
+    },
+    {
+     "name": "Estimated volatility",
+     "value": 0.0760551442758042,
+     "limit": 0.13,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C4"
+    },
+    {
+     "name": "Loss in a severe fall",
+     "value": 0.21432940036354362,
+     "limit": 0.35,
+     "direction": "max",
+     "ok": true,
+     "source": "your category and the loss you said you can afford (equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%)"
+    },
+    {
+     "name": "Largest single holding",
+     "value": 0.06631972836561444,
+     "limit": 0.4,
+     "direction": "max",
+     "ok": true,
+     "source": "the standard limit of 40% on any one holding"
+    },
+    {
+     "name": "Cash buffer",
+     "value": 0.04999999999999996,
+     "limit": 0.05,
+     "direction": "min",
+     "ok": true,
+     "source": "your liquidity needs"
+    },
+    {
+     "name": "Share in gold & commodities",
+     "value": 0.11273844807988007,
+     "limit": 0.15,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C4"
+    },
+    {
+     "name": "Share in cash",
+     "value": 0.04999999999999996,
+     "limit": 0.2,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C4"
+    }
+   ],
+   "trading_history": null,
+   "risk_engine_checks": {
+    "passed": 29,
+    "total": 29
+   },
+   "n_instruments": 102,
+   "interest_areas": [
+    "stocks",
+    "us_stocks"
+   ],
+   "banners": [
+    "DRAFT LIMITS: the C1-C5 limits are EgoQuant's provisional placeholder defaults; a bank would replace them with its own approved mapping.",
+    "LIVE PRICES UNAVAILABLE: this portfolio uses saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+   ],
+   "category_basis": {
+    "questionnaire_level": 5,
+    "game_level": 2,
+    "blended_level": 4,
+    "capacity_level": 5,
+    "questionnaire_class": "C5",
+    "final": "C4",
+    "binding": "game",
+    "text": "Your category rests on three things: your answers on attitude to risk (level 5 of 5, two thirds), the Risk Game you played (level 2 of 5, one third) and your finances (a cap at level 5). Your attitude to risk came to level 4; your category is the lower of that and the cap: C4."
+   }
+  },
+  "with_ibkr": {
+   "status": 200,
+   "approved": true,
+   "optimizer_status": "optimal",
+   "c_level": "C4",
+   "as_of": "2026-10-16",
+   "data_source": "historical",
+   "fallback_reason": "Tiingo key not configured",
+   "violations": [],
+   "game_note": "Risk Game played: score 25/100, level 2 of 5. It counts one third of your attitude to risk (the questionnaire two thirds); your finances then set a cap. Your category: C4.",
+   "goal_unavailable": null,
+   "equity_weight": 0.6222222222222223,
+   "bond_weight": 0.303041968337449,
+   "cash_weight": 0.04999999999999992,
+   "commodity_weight": 0.02473580944032879,
+   "crypto_weight": 0.0,
+   "volatility": 0.08165867674642656,
+   "worst_loss": 0.20552913649958843,
+   "worst_scenario": "Severe crash (stocks -30%)",
+   "headline": "We propose 62% in stocks, 30% in bonds, 2% in gold & commodities and 5% in cash. Its estimated volatility (the typical size of its yearly ups and downs) is about 8.2%. In the harshest of our hypothetical scenarios it would lose about 21% (roughly 2,055 USD per 10,000 invested).",
+   "goal": {
+    "chance": "67%",
+    "in_100": 67,
+    "headline": "In about 67 of every 100 simulated futures, this portfolio reaches your goal of 40,000 USD or more in 10 years. In the other 33 it falls short.",
+    "plan": "You start with 10,000 USD, add 150 USD every month, and want 40,000 USD in 10 years. Paid in without any growth: 28,000 USD.",
+    "goal_amount": 40000.0,
+    "start_amount": 10000.0,
+    "monthly_flow": 150.0,
+    "horizon_years": 10.0
+   },
+   "holdings": [
+    {
+     "id": "STIP",
+     "name": "iShares 0-5 Year TIPS Bond ETF",
+     "class": "bond",
+     "weight": 0.07778732916192002
+    },
+    {
+     "id": "VB",
+     "name": "Vanguard Small-Cap ETF",
+     "class": "equity",
+     "weight": 0.06862829772283123
+    },
+    {
+     "id": "SCHD",
+     "name": "Schwab U.S. Dividend Equity ETF",
+     "class": "equity",
+     "weight": 0.06590867166128501
+    },
+    {
+     "id": "ITOT",
+     "name": "iShares Core S&P Total U.S. Stock Market ETF",
+     "class": "equity",
+     "weight": 0.061044398454767994
+    },
+    {
+     "id": "VTI",
+     "name": "Vanguard Total Stock Market ETF",
+     "class": "equity",
+     "weight": 0.05982760761619274
+    },
+    {
+     "id": "VTIP",
+     "name": "Vanguard Short-Term Inflation-Protected Securities ETF",
+     "class": "bond",
+     "weight": 0.05671706175944707
+    },
+    {
+     "id": "IJR",
+     "name": "iShares Core S&P Small-Cap ETF",
+     "class": "equity",
+     "weight": 0.055050495792487115
+    },
+    {
+     "id": "VIG",
+     "name": "Vanguard Dividend Appreciation ETF",
+     "class": "equity",
+     "weight": 0.05279419201501579
+    },
+    {
+     "id": "BIL",
+     "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+     "class": "cash",
+     "weight": 0.04999999999999992
+    },
+    {
+     "id": "VOO",
+     "name": "Vanguard S&P 500 ETF",
+     "class": "equity",
+     "weight": 0.04975217975259864
+    },
+    {
+     "id": "SPTL",
+     "name": "SPDR Portfolio Long Term Treasury ETF",
+     "class": "bond",
+     "weight": 0.0461871559478035
+    },
+    {
+     "id": "SCHP",
+     "name": "Schwab U.S. TIPS ETF",
+     "class": "bond",
+     "weight": 0.04246554697155147
+    },
+    {
+     "id": "IEMG",
+     "name": "iShares Core MSCI Emerging Markets ETF",
+     "class": "equity",
+     "weight": 0.0421099939258025
+    },
+    {
+     "id": "VYM",
+     "name": "Vanguard High Dividend Yield ETF",
+     "class": "equity",
+     "weight": 0.04195070785089771
+    },
+    {
+     "id": "IGIB",
+     "name": "iShares 5-10 Year Investment Grade Corporate Bond ETF",
+     "class": "bond",
+     "weight": 0.039971202371588514
+    },
+    {
+     "id": "EDV",
+     "name": "Vanguard Extended Duration Treasury ETF",
+     "class": "bond",
+     "weight": 0.03991367212513839
+    },
+    {
+     "id": "IVV",
+     "name": "iShares Core S&P 500 ETF",
+     "class": "equity",
+     "weight": 0.034550041753973415
+    },
+    {
+     "id": "VBR",
+     "name": "Vanguard Small-Cap Value ETF",
+     "class": "equity",
+     "weight": 0.03247709123152128
+    },
+    {
+     "id": "SCHE",
+     "name": "Schwab Emerging Markets Equity ETF",
+     "class": "equity",
+     "weight": 0.029649068897797237
+    },
+    {
+     "id": "DGRO",
+     "name": "iShares Core Dividend Growth ETF",
+     "class": "equity",
+     "weight": 0.02847947554705158
+    },
+    {
+     "id": "GLDM",
+     "name": "SPDR Gold MiniShares Trust",
+     "class": "commodity",
+     "weight": 0.02473580944032879
+    }
+   ],
+   "limits": [
+    {
+     "name": "Share in stocks",
+     "value": 0.6222222222222223,
+     "limit": 0.7,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C4 and your answers"
+    },
+    {
+     "name": "Estimated volatility",
+     "value": 0.08165867674642656,
+     "limit": 0.13,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C4"
+    },
+    {
+     "name": "Loss in a severe fall",
+     "value": 0.20552913649958843,
+     "limit": 0.35,
+     "direction": "max",
+     "ok": true,
+     "source": "your category and the loss you said you can afford (equities fall 30%, bonds 5%, gold and commodities 15%, crypto 60%)"
+    },
+    {
+     "name": "Largest single holding",
+     "value": 0.07778732916192002,
+     "limit": 0.4,
+     "direction": "max",
+     "ok": true,
+     "source": "the standard limit of 40% on any one holding"
+    },
+    {
+     "name": "Cash buffer",
+     "value": 0.04999999999999992,
+     "limit": 0.05,
+     "direction": "min",
+     "ok": true,
+     "source": "your liquidity needs"
+    },
+    {
+     "name": "Share in gold & commodities",
+     "value": 0.02473580944032879,
+     "limit": 0.15,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C4"
+    },
+    {
+     "name": "Share in cash",
+     "value": 0.04999999999999992,
+     "limit": 0.2,
+     "direction": "max",
+     "ok": true,
+     "source": "your category C4"
+    }
+   ],
+   "trading_history": {
+    "source": "ibkr_report",
+    "n_trades": 1,
+    "start": "2026-01-05",
+    "end": "2026-10-16",
+    "currency": "USD",
+    "valued_at_trade_price": [],
+    "holdings_left_out": [],
+    "notes": []
+   },
+   "risk_engine_checks": {
+    "passed": 29,
+    "total": 29
+   },
+   "n_instruments": 103,
+   "interest_areas": [
+    "stocks",
+    "us_stocks"
+   ],
+   "banners": [
+    "DRAFT LIMITS: the C1-C5 limits are EgoQuant's provisional placeholder defaults; a bank would replace them with its own approved mapping.",
+    "LIVE PRICES UNAVAILABLE: this portfolio uses saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+   ],
+   "category_basis": {
+    "questionnaire_level": 5,
+    "game_level": 2,
+    "blended_level": 4,
+    "capacity_level": 5,
+    "questionnaire_class": "C5",
+    "final": "C4",
+    "binding": "game",
+    "text": "Your category rests on three things: your answers on attitude to risk (level 5 of 5, two thirds), the Risk Game you played (level 2 of 5, one third) and your finances (a cap at level 5). Your attitude to risk came to level 4; your category is the lower of that and the cap: C4."
+   }
+  },
+  "what_ifs": [
+   {
+    "question": "What if I invest for 15 years instead of 10?",
+    "scenario_sent_to_the_engine": {
+     "horizon_years": 15
+    },
+    "status": "ok",
+    "reason": null,
+    "scenario": {
+     "extra_monthly_contribution": null,
+     "one_time_contribution": null,
+     "horizon_years": 15.0,
+     "goal_amount": null,
+     "exclude_assets": null,
+     "mode": "same_portfolio"
+    },
+    "scenario_text": "a horizon of 15 years; keep the same portfolio",
+    "baseline": {
+     "goal_frequency": 67,
+     "goal_chance": "67%",
+     "median_final": 44905.23,
+     "p5_final": 28902.02,
+     "drawdown_p95": 0.2815
+    },
+    "scenario_outcome": {
+     "goal_frequency": 97,
+     "goal_chance": "97%",
+     "median_final": 72982.33,
+     "p5_final": 42842.39,
+     "drawdown_p95": 0.3179
+    },
+    "baseline_goal_frequency": 67,
+    "scenario_goal_frequency": 97,
+    "goal_amount": 40000.0,
+    "horizon_years": 15.0,
+    "portfolio_changed": false,
+    "new_weights": null,
+    "risk_engine": {
+     "approved": true,
+     "reasons": []
+    },
+    "n_paths": 10000,
+    "selection_paths": null,
+    "seed": 20261017,
+    "base_report_id": null,
+    "engine_version": "what-if-0.2.0+regime_hmm_v2.4e284ef19993",
+    "timestamp": "2026-10-20T03:46:57+00:00",
+    "label": "hypothetical simulation on past market data; not a forecast or a guarantee",
+    "sampler": {
+     "sampler": "regime_hmm_v2",
+     "model_version": "regime_hmm_v2",
+     "model_sha256": "4e284ef19993511be317f1c6e5c091596adf2e809d6fc4fa0c2fa4f1cedf3674",
+     "fit_start": "2007-06-22",
+     "fit_end": "2026-10-16",
+     "start_probs": [
+      6.806194447583329e-06,
+      0.9999798829768961,
+      3.2101220594883522e-06,
+      1.0100706596816026e-05
+     ],
+     "start_source": "filtered",
+     "regime_data_end": "2026-10-16",
+     "regime_today": "normal",
+     "regime_today_probability": 0.9999798829768961,
+     "state_names": [
+      "calm",
+      "normal",
+      "stressed",
+      "crisis"
+     ],
+     "block_label": "first_day",
+     "block_days": 21,
+     "n_blocks": 4857,
+     "pool_blocks": [
+      1876,
+      1485,
+      1083,
+      397
+     ],
+     "unlabelled_blocks": 16,
+     "labelled_days": 4861,
+     "long_crisis_blocks": 3,
+     "replayed_from_report": true,
+     "model_funds": [
+      "SPY",
+      "AGG"
+     ],
+     "long_crisis_share": 0.7717,
+     "long_crisis_in_100": 77,
+     "month_shares": [
+      0.37431,
+      0.32426916666666666,
+      0.220395,
+      0.08102583333333334
+     ]
+    }
+   },
+   {
+    "question": "What if I add $300 a month more?",
+    "scenario_sent_to_the_engine": {
+     "extra_monthly_contribution": 300
+    },
+    "status": "ok",
+    "reason": null,
+    "scenario": {
+     "extra_monthly_contribution": 300.0,
+     "one_time_contribution": null,
+     "horizon_years": null,
+     "goal_amount": null,
+     "exclude_assets": null,
+     "mode": "same_portfolio"
+    },
+    "scenario_text": "add 300 a month more; keep the same portfolio",
+    "baseline": {
+     "goal_frequency": 67,
+     "goal_chance": "67%",
+     "median_final": 44905.23,
+     "p5_final": 28902.02,
+     "drawdown_p95": 0.2815
+    },
+    "scenario_outcome": {
+     "goal_frequency": 99,
+     "goal_chance": "more than 99%",
+     "median_final": 96108.85,
+     "p5_final": 64819.42,
+     "drawdown_p95": 0.2565
+    },
+    "baseline_goal_frequency": 67,
+    "scenario_goal_frequency": 99,
+    "goal_amount": 40000.0,
+    "horizon_years": 10.0,
+    "portfolio_changed": false,
+    "new_weights": null,
+    "risk_engine": {
+     "approved": true,
+     "reasons": []
+    },
+    "n_paths": 10000,
+    "selection_paths": null,
+    "seed": 20261017,
+    "base_report_id": null,
+    "engine_version": "what-if-0.2.0+regime_hmm_v2.4e284ef19993",
+    "timestamp": "2026-10-20T03:46:59+00:00",
+    "label": "hypothetical simulation on past market data; not a forecast or a guarantee",
+    "sampler": {
+     "sampler": "regime_hmm_v2",
+     "model_version": "regime_hmm_v2",
+     "model_sha256": "4e284ef19993511be317f1c6e5c091596adf2e809d6fc4fa0c2fa4f1cedf3674",
+     "fit_start": "2007-06-22",
+     "fit_end": "2026-10-16",
+     "start_probs": [
+      6.806194447583329e-06,
+      0.9999798829768961,
+      3.2101220594883522e-06,
+      1.0100706596816026e-05
+     ],
+     "start_source": "filtered",
+     "regime_data_end": "2026-10-16",
+     "regime_today": "normal",
+     "regime_today_probability": 0.9999798829768961,
+     "state_names": [
+      "calm",
+      "normal",
+      "stressed",
+      "crisis"
+     ],
+     "block_label": "first_day",
+     "block_days": 21,
+     "n_blocks": 4857,
+     "pool_blocks": [
+      1876,
+      1485,
+      1083,
+      397
+     ],
+     "unlabelled_blocks": 16,
+     "labelled_days": 4861,
+     "long_crisis_blocks": 3,
+     "replayed_from_report": true,
+     "model_funds": [
+      "SPY",
+      "AGG"
+     ],
+     "long_crisis_share": 0.7717,
+     "long_crisis_in_100": 77,
+     "month_shares": [
+      0.37431,
+      0.32426916666666666,
+      0.220395,
+      0.08102583333333334
+     ]
+    }
+   }
+  ],
+  "trade_checks": [
+   {
+    "status": 200,
+    "planned": {
+     "ticker": "IBIT",
+     "side": "buy",
+     "amount": 1000
+    },
+    "verdict": "not_advisable",
+    "reasons": [
+     {
+      "code": "not_allowed",
+      "severity": "blocking",
+      "message": "IBIT is a higher-risk product (risk level R5); your category (C4) allows products up to R4, so it is not available to you.",
+      "source": "suitability",
+      "limit": null,
+      "before": null,
+      "after": null,
+      "ticker": "IBIT",
+      "scenario": null
+     },
+     {
+      "code": "max_class_weight",
+      "severity": "blocking",
+      "message": "Your crypto share would be 9.9%, above the limit of 0.0% (now 0.0%).",
+      "source": "risk_class",
+      "limit": 0.0,
+      "before": 0.0,
+      "after": 0.09866165441125715,
+      "ticker": null,
+      "scenario": null
+     },
+     {
+      "code": "instrument_cap",
+      "severity": "warning",
+      "message": "Your NVDA share is already above the limit of 10.0% (10.6%); this trade does not change that.",
+      "source": "agent_c",
+      "limit": 0.1,
+      "before": 0.10563210276195384,
+      "after": 0.10563210276195384,
+      "ticker": "NVDA",
+      "scenario": null
+     }
+    ],
+    "direction": "raises_exposure",
+    "direction_parts": [
+     "The hypothetical loss in the scenario 'Severe crash (stocks -30%)' rises from 3.2% to 9.1%."
+    ],
+    "before": {
+     "total_value": 10135.650025,
+     "weights": {
+      "CASH": 0.8943678972380461,
+      "NVDA": 0.10563210276195384
+     },
+     "equity_share": 0.10563210276195384,
+     "class_shares": {
+      "equity": 0.10563210276195384,
+      "bond": 0.0,
+      "cash": 0.8943678972380461,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.03168963082858615,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "CASH",
+     "largest_weight": 0.8943678972380461,
+     "max_r_level": 4
+    },
+    "after": {
+     "total_value": 10135.650025,
+     "weights": {
+      "CASH": 0.7957062428267889,
+      "NVDA": 0.10563210276195384,
+      "IBIT": 0.09866165441125715
+     },
+     "equity_share": 0.10563210276195384,
+     "class_shares": {
+      "equity": 0.10563210276195384,
+      "bond": 0.0,
+      "cash": 0.7957062428267889,
+      "commodity": 0.0,
+      "crypto": 0.09866165441125715
+     },
+     "stress_loss": 0.09088662347534043,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "CASH",
+     "largest_weight": 0.7957062428267889,
+     "max_r_level": 5
+    },
+    "notes": [
+     "The portfolio builder's cash cap (20%) is a construction rule and is not applied to your own trades.",
+     "Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+    ],
+    "investor_max_r_level": 4,
+    "traded_r_level": 5,
+    "risk_engine_approved": false,
+    "template_reply": "This trade is outside your limits: it breaks or worsens one of them.\n- IBIT is a higher-risk product (risk level R5); your category (C4) allows products up to R4, so it is not available to you. That is about the product's risk category against the maximum your questionnaire allows.\n- Your crypto share would be 9.9%, above the limit of 0.0% (now 0.0%).\n- Your NVDA share is already above the limit of 10.0% (10.6%); this trade does not change that. That limit is about how much one fund or company's fall would hit the whole account.\n- In the scenario 'Severe crash (stocks -30%)' the account would lose about 9.1% instead of 3.2%. That is an outcome only inside that hypothetical scenario, not a forecast.\n- Your cash falls from 89.4% to 79.6%, so less money is available without selling anything.\n- The portfolio builder's cash cap (20%) is a construction rule and is not applied to your own trades.\n- Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it.\n\n_The AI assistant is not available right now, so this is the standard explanation of the same check. The verdict and the numbers are the same._\n\n_deterministic check against your limits and hypothetical stress scenarios; not a forecast and not a recommendation to trade_"
+   },
+   {
+    "status": 200,
+    "planned": {
+     "ticker": "NVDA",
+     "side": "sell",
+     "amount": 300
+    },
+    "verdict": "advisable",
+    "reasons": [],
+    "direction": "lowers_exposure",
+    "direction_parts": [
+     "Your stock share falls from 10.6% to 7.6%.",
+     "The hypothetical loss in the scenario 'Severe crash (stocks -30%)' falls from 3.2% to 2.3%.",
+     "Your largest holding, NVDA, falls from 10.6% to 7.6% of the account."
+    ],
+    "before": {
+     "total_value": 10135.650025,
+     "weights": {
+      "CASH": 0.8943678972380461,
+      "NVDA": 0.10563210276195384
+     },
+     "equity_share": 0.10563210276195384,
+     "class_shares": {
+      "equity": 0.10563210276195384,
+      "bond": 0.0,
+      "cash": 0.8943678972380461,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.03168963082858615,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "CASH",
+     "largest_weight": 0.8943678972380461,
+     "max_r_level": 4
+    },
+    "after": {
+     "total_value": 10135.650025,
+     "weights": {
+      "CASH": 0.9239663935614232,
+      "NVDA": 0.07603360643857669
+     },
+     "equity_share": 0.07603360643857669,
+     "class_shares": {
+      "equity": 0.07603360643857669,
+      "bond": 0.0,
+      "cash": 0.9239663935614232,
+      "commodity": 0.0,
+      "crypto": 0.0
+     },
+     "stress_loss": 0.022810081931573006,
+     "stress_scenario": "equity_down_30_bond_down_5",
+     "largest_holding": "CASH",
+     "largest_weight": 0.9239663935614232,
+     "max_r_level": 4
+    },
+    "notes": [
+     "The sale's proceeds stay in the account as cash.",
+     "The portfolio builder's cash cap (20%) is a construction rule and is not applied to your own trades.",
+     "Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it."
+    ],
+    "investor_max_r_level": 4,
+    "traded_r_level": 4,
+    "risk_engine_approved": true,
+    "template_reply": "This trade stays within your limits.\n- Your stock share falls from 10.6% to 7.6%. So less of the account moves with the stock market.\n- In the scenario 'Severe crash (stocks -30%)' the account would lose about 2.3% instead of 3.2%. That is an outcome only inside that hypothetical scenario, not a forecast.\n- Your largest holding, NVDA, falls from 10.6% to 7.6% of the account. So a fall in that one fund or company would hit the whole account less.\n- Your cash rises from 89.4% to 92.4%, money available without selling anything.\n- The sale's proceeds stay in the account as cash.\n- The portfolio builder's cash cap (20%) is a construction rule and is not applied to your own trades.\n- Live prices were unavailable, so the product list for this check was built on saved real prices as of 2026-10-16, cached (Yahoo Finance). Markets after 2026-10-16 are not in it.\n\n_The AI assistant is not available right now, so this is the standard explanation of the same check. The verdict and the numbers are the same._\n\n_deterministic check against your limits and hypothetical stress scenarios; not a forecast and not a recommendation to trade_"
+   }
+  ]
+ },
+ "_meta": {
+  "made_by": "EGOQUANT_PORTFOLIO_METHOD=v2 python eval/demo_pack.py",
+  "method": "v2",
+  "prices": "real prices as of 2026-10-16, cached (Yahoo Finance; crypto from Binance)",
+  "prices_file": "prices_snapshot_yahoo.json.gz",
+  "network": "blocked; no key; no OpenAI call",
+  "ibkr_replay_prices": "as-deployed",
+  "as_of": "2026-10-16",
+  "risk_game": "played in all three scenarios"
+ }
+}

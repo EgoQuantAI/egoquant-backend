@@ -1,0 +1,241 @@
+EgoQuant: offline test run, every area in separate processes (eval/run_tests_per_file.py), 20 Oct 2026
+Run 1 (12:45-13:47): the DEPLOYED backend 8f21177, areas: anchoring, accounts, advisor, preferences, risk_profile, regime, agent_c, agent_a, agent_a/v2, system, top level, briefing, agent_b
+Run 2 (13:26-13:31): the final candidate, areas agent_a/v2, agent_a, anchoring (the v2 shortcut was reverted between the two).
+Each line: file, attempt, exit code, seconds, pytest's last line. 'SUMMARY' lines count files. The test names are in the repository.
+Result: 3,538 passed, 1 failed (a known timing test of the news page), 1 skipped, of 3,540 selected; see docs/judges/04_TESTING_AND_EVIDENCE.md section 1.
+NOTE on run 1, area anchoring: it shows 16 failures of test_byte_exact_evidence_has_no_carriage_return. That worktree had been checked out before the .gitattributes fix (-text for the byte-exact evidence files) and held Windows line endings, which is exactly what the test exists to catch; run 2 (a fresh checkout) passes all of them (463 passed, 1 Windows-only wallet test left out by the runner).
+The counts in the 'passed/failed' column of run 1 therefore include those 16 artefact failures; the figures in the Result line above are the final ones.
+
+=== run 1 (deployed 8f21177) :: tests
+tests/test_body_limit.py attempt 1 exit 0 5s :: 16 passed in 3.64s
+tests/test_build_gate.py attempt 1 exit 0 8s :: 7 passed in 6.26s
+tests/test_chat.py attempt 1 exit 0 19s :: 17 passed, 10 subtests passed in 17.15s
+tests/test_chat_redteam_trade.py attempt 1 exit 0 31s :: 45 passed in 28.81s
+tests/test_chat_v10.py attempt 1 exit 0 9s :: 9 passed in 6.23s
+tests/test_chat_view.py attempt 1 exit 0 9s :: 16 passed in 6.27s
+tests/test_chat_what_if.py attempt 1 exit 0 40s :: 9 passed in 37.68s
+tests/test_data_status_mode.py attempt 1 exit 0 7s :: 3 passed in 4.89s
+tests/test_debug_gate.py attempt 1 exit 0 9s :: 12 passed in 7.30s
+tests/test_demo_pack.py attempt 1 exit 0 2s :: 15 passed in 1.12s
+tests/test_deploy_check.py attempt 1 exit 0 3s :: 31 passed in 1.73s
+tests/test_egoquant_routes.py attempt 1 exit 0 115s :: 32 passed, 24 subtests passed in 114.07s (0:01:54)
+tests/test_grounding_redaction.py attempt 1 exit 0 2s :: 6 passed in 0.14s
+tests/test_hardening_20oct.py attempt 1 exit 0 8s :: 7 passed in 5.70s
+tests/test_http_edges.py attempt 1 exit 0 11s :: 5 passed in 8.94s
+tests/test_hygiene.py attempt 1 exit 0 7s :: 3 passed in 5.09s
+tests/test_ibkr_price_fallback.py attempt 1 exit 0 8s :: 9 passed in 6.76s
+tests/test_judge_docs.py attempt 1 exit 0 7s :: 11 passed in 5.34s
+tests/test_live_smoke_script.py attempt 1 exit 0 2s :: 6 passed in 0.17s
+tests/test_no_echo_422.py attempt 1 exit 0 7s :: 8 passed in 4.30s
+tests/test_no_secrets_in_public_endpoints.py attempt 1 exit 0 4s :: 2 passed in 3.17s
+tests/test_plain_wording.py attempt 1 exit 0 3s :: 10 passed in 2.21s
+tests/test_portfolio_method_flag.py attempt 1 exit 0 1s :: 22 passed in 0.08s
+tests/test_portfolio_time_budget.py attempt 1 exit 0 20s :: 6 passed in 18.41s
+tests/test_portfolio_v2_compare.py attempt 1 exit 0 11s :: 20 passed in 9.46s
+tests/test_preferences_areas.py attempt 1 exit 0 7s :: 7 passed in 5.66s
+tests/test_price_cause_labels.py attempt 1 exit 0 6s :: 7 passed in 3.86s
+tests/test_report_serializers.py attempt 1 exit 0 7s :: 2 passed in 5.41s
+tests/test_risk_game_routes.py attempt 1 exit 0 22s :: 30 passed in 20.31s
+tests/test_slow_feed_drill.py attempt 1 exit 0 69s :: 18 passed in 67.53s (0:01:07)
+tests/test_stack_safety.py attempt 1 exit 0 17s :: 3 passed in 15.25s
+tests/test_trade_explain_redteam_checks.py attempt 1 exit 0 7s :: 1 passed in 5.98s
+tests/test_twelve_users.py attempt 1 exit 0 22s :: 1 passed in 20.77s
+tests/test_v2_views_wiring.py attempt 1 exit 0 100s :: 3 passed in 98.21s (0:01:38)
+tests/test_validation_messages.py attempt 1 exit 0 8s :: 8 passed in 6.11s
+SUMMARY: 35 files, 35 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_accounts
+tests/accounts/test_account_risk_game.py attempt 1 exit 0 59s :: 10 passed in 56.30s
+tests/accounts/test_accounts.py attempt 1 exit 0 23s :: 55 passed in 20.35s
+tests/accounts/test_avatar.py attempt 1 exit 0 5s :: 22 passed in 3.13s
+tests/accounts/test_chat_trade_tool.py attempt 1 exit 0 122s :: 38 passed in 119.27s (0:01:59)
+tests/accounts/test_extreme_inputs.py attempt 1 exit 0 11s :: 80 passed in 9.20s
+tests/accounts/test_migrations.py attempt 1 exit 0 2s :: 5 passed in 0.17s
+tests/accounts/test_onchain_wiring.py attempt 1 exit 0 24s :: 4 passed in 22.03s
+tests/accounts/test_report_contexts.py attempt 1 exit 0 5s :: 7 passed in 2.70s
+tests/accounts/test_saved_summary_prices.py attempt 1 exit 0 16s :: 2 passed in 13.80s
+tests/accounts/test_saved_what_if.py attempt 1 exit 0 40s :: 6 passed in 37.62s
+tests/accounts/test_sealed_briefing.py attempt 1 exit 0 23s :: 8 passed in 21.82s
+tests/accounts/test_trade_check_routes.py attempt 1 exit 0 32s :: 28 passed in 31.12s
+SUMMARY: 12 files, 12 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_advisor
+tests/advisor/test_ai_down.py attempt 1 exit 0 8s :: 9 passed, 10 subtests passed in 5.86s
+tests/advisor/test_guard_soft_advice.py attempt 1 exit 0 2s :: 64 passed in 0.79s
+tests/advisor/test_trade_explain.py attempt 1 exit 0 9s :: 32 passed in 7.49s
+SUMMARY: 3 files, 3 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_agent_a
+tests/agent_a/test_backtest.py attempt 1 exit 0 6s :: 16 passed in 3.92s
+tests/agent_a/test_goal_rate_anchor.py attempt 1 exit 0 57s :: 8 passed in 54.07s
+tests/agent_a/test_goal_streaming.py attempt 1 exit 0 4s :: 4 passed in 2.92s
+tests/agent_a/test_quant_agent.py attempt 1 exit 0 36s :: 51 passed in 33.35s
+tests/agent_a/test_quant_core.py attempt 1 exit 0 5s :: 25 passed in 2.99s
+SUMMARY: 5 files, 5 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_agent_a_v2
+tests/agent_a/v2/test_random_investors.py attempt 1 exit 0 354s :: 13 passed in 352.19s (0:05:52)
+tests/agent_a/v2/test_returns_bl.py attempt 1 exit 0 19s :: 28 passed in 16.36s
+tests/agent_a/v2/test_screening.py attempt 1 exit 0 13s :: 28 passed in 10.36s
+tests/agent_a/v2/test_solve_fast_path.py attempt 1 exit 0 8s :: 78 passed in 5.23s
+tests/agent_a/v2/test_targets.py attempt 1 exit 0 7s :: 88 passed in 5.03s
+tests/agent_a/v2/test_v2_engine.py attempt 1 exit 0 8s :: 10 passed in 5.40s
+tests/agent_a/v2/test_v2_parts.py attempt 1 exit 0 4s :: 15 passed in 2.59s
+SUMMARY: 7 files, 7 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_agent_b
+tests/agent_b/test_behavioral.py attempt 1 exit 0 14s :: 41 passed in 12.49s
+tests/agent_b/test_crash_test.py attempt 1 exit 0 4s :: 9 passed in 3.37s
+tests/agent_b/test_game_in_profile.py attempt 1 exit 0 9s :: 9 passed in 7.80s
+tests/agent_b/test_ibkr.py attempt 1 exit 0 6s :: 67 passed in 4.42s
+tests/agent_b/test_ibkr_flex.py attempt 1 exit 0 3s :: 30 passed in 1.55s
+tests/agent_b/test_ibkr_shapes.py attempt 1 exit 0 12s :: 318 passed in 10.37s
+tests/agent_b/test_loss_acceptance.py attempt 1 exit 0 9s :: 24 passed in 7.45s
+tests/agent_b/test_robustness.py attempt 1 exit 0 179s :: 182 passed in 177.71s (0:02:57)
+SUMMARY: 8 files, 8 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_agent_c
+tests/agent_c/test_cache_write_failure.py attempt 1 exit 0 2s :: 6 passed in 0.95s
+tests/agent_c/test_data_fallback.py attempt 1 exit 0 3s :: 4 passed in 1.94s
+tests/agent_c/test_directory.py attempt 1 exit 0 22s :: 65 passed in 20.05s
+tests/agent_c/test_fetch_time_limit.py attempt 1 exit 0 9s :: 4 passed in 7.84s
+tests/agent_c/test_market_intel.py attempt 1 exit 0 20s :: 90 passed in 18.54s
+tests/agent_c/test_price_note_feeds.py attempt 1 exit 0 4s :: 9 passed in 2.33s
+tests/agent_c/test_price_snapshot.py attempt 1 exit 0 102s :: 28 passed in 99.70s (0:01:39)
+tests/agent_c/test_slow_feed_and_snapshot_mode.py attempt 1 exit 0 54s :: 12 passed in 52.22s
+tests/agent_c/test_snapshot_memo.py attempt 1 exit 0 63s :: 11 passed in 61.42s (0:01:01)
+tests/agent_c/test_universe_v2.py attempt 1 exit 0 107s :: 26 passed in 104.74s (0:01:44)
+tests/agent_c/test_warm_cache.py attempt 1 exit 0 4s :: 11 passed in 2.53s
+tests/agent_c/test_yahoo_source.py attempt 1 exit 0 35s :: 8 passed in 33.88s
+SUMMARY: 12 files, 12 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_anchoring
+tests/anchoring/test_canonical_commit.py attempt 1 exit 0 2s :: 319 passed in 0.66s
+tests/anchoring/test_client.py attempt 1 exit 0 4s :: 15 passed in 2.98s
+tests/anchoring/test_committed_proofs.py attempt 1 exit 1 3s :: 16 failed, 23 passed in 1.39s
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[real-balanced_saver.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[real-crypto_trader.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[real-growth_investor.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[real-no_loss_saver.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[test-c1.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[test-c3.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[test-c5.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[test-wide25.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[real-balanced_saver.tampered.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[real-crypto_trader.tampered.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[real-growth_investor.tampered.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[real-no_loss_saver.tampered.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[test-c1.tampered.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[test-c3.tampered.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[test-c5.tampered.proof.json]
+    FAILED tests/anchoring/test_committed_proofs.py::test_byte_exact_evidence_has_no_carriage_return[test-wide25.tampered.proof.json]
+tests/anchoring/test_final_news_paths.py attempt 1 exit 0 43s :: 7 passed in 40.67s
+tests/anchoring/test_live_seal.py attempt 1 exit 5 2s :: 1 deselected in 0.14s
+tests/anchoring/test_main_wiring.py attempt 1 exit 0 10s :: 5 passed in 7.72s
+tests/anchoring/test_proof_cli.py attempt 1 exit 0 6s :: 20 passed in 3.32s
+tests/anchoring/test_record.py attempt 1 exit 0 5s :: 20 passed in 2.59s
+tests/anchoring/test_routes.py attempt 1 exit 0 10s :: 20 passed in 7.44s
+tests/anchoring/test_seal_v2.py attempt 1 exit 0 94s :: 16 passed in 91.36s (0:01:31)
+tests/anchoring/test_wallet_script.py attempt 1 exit 0 16s :: 2 passed, 1 deselected in 14.66s
+SUMMARY: 11 files, 10 clean, 1 with failures or crashes
+  tests/anchoring/test_committed_proofs.py: failed
+
+=== run 1 (deployed 8f21177) :: tests_briefing
+tests/briefing/test_aggregate_alerts.py attempt 1 exit 0 7s :: 26 passed in 5.85s
+tests/briefing/test_build_report.py attempt 1 exit 0 15s :: 7 passed in 12.98s
+tests/briefing/test_eval.py attempt 1 exit 0 5s :: 7 passed in 3.13s
+tests/briefing/test_eval_methods.py attempt 1 exit 0 4s :: 22 passed in 2.13s
+tests/briefing/test_exchange_tags_non_news.py attempt 1 exit 0 4s :: 49 passed in 2.47s
+tests/briefing/test_feeds_sampling.py attempt 1 exit 0 11s :: 18 passed in 9.14s
+tests/briefing/test_final_report.py attempt 1 exit 0 37s :: 8 passed in 35.43s
+tests/briefing/test_fund_tone.py attempt 1 exit 0 23s :: 31 passed in 21.52s
+tests/briefing/test_jobs_worker.py attempt 1 exit 0 34s :: 16 passed in 31.59s
+tests/briefing/test_labeling.py attempt 1 exit 5 1s :: 1 skipped in 0.06s
+tests/briefing/test_matching_fetch.py attempt 1 exit 0 3s :: 22 passed in 1.85s
+tests/briefing/test_news_ui.py attempt 1 exit 1 46s :: 1 failed, 30 passed in 44.22s
+    FAILED tests/briefing/test_news_ui.py::test_dedupe_catches_near_identical_titles_and_scales
+tests/briefing/test_periods_archive.py attempt 1 exit 0 13s :: 12 passed in 11.64s
+tests/briefing/test_pipeline_wiring.py attempt 1 exit 0 180s :: 17 passed in 178.97s (0:02:58)
+tests/briefing/test_round4_coverage_confidence.py attempt 1 exit 0 14s :: 63 passed, 6 warnings in 11.73s
+tests/briefing/test_summarize_filter.py attempt 1 exit 0 9s :: 49 passed in 6.93s
+tests/briefing/test_tone_gating.py attempt 1 exit 0 4s :: 8 passed in 2.15s
+tests/briefing/test_web.py attempt 1 exit 0 29s :: 28 passed in 26.70s
+SUMMARY: 18 files, 17 clean, 1 with failures or crashes
+  tests/briefing/test_news_ui.py: failed
+
+=== run 1 (deployed 8f21177) :: tests_preferences
+tests/preferences/test_preferences.py attempt 1 exit 0 3s :: 30 passed in 1.52s
+tests/preferences/test_views.py attempt 1 exit 0 7s :: 30 passed in 5.41s
+SUMMARY: 2 files, 2 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_regime
+tests/regime/test_regime_goal.py attempt 1 exit 0 24s :: 20 passed in 22.73s
+tests/regime/test_regime_model.py attempt 1 exit 0 2s :: 23 passed in 0.40s
+tests/regime/test_regime_no_hmmlearn.py attempt 1 exit 0 6s :: 3 passed in 3.94s
+tests/regime/test_regime_sampler.py attempt 1 exit 0 4s :: 12 passed in 0.88s
+tests/regime/test_regime_surfacing.py attempt 1 exit 0 5s :: 8 passed in 1.83s
+tests/regime/test_regime_v2.py attempt 1 exit 0 4s :: 18 passed in 1.76s
+tests/regime/test_regime_what_if.py attempt 1 exit 0 46s :: 6 passed in 43.36s
+SUMMARY: 7 files, 7 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_risk_profile
+tests/risk_profile/test_compliance.py attempt 1 exit 0 20s :: 16 passed in 17.71s
+tests/risk_profile/test_personas_game.py attempt 1 exit 0 6s :: 5 passed in 4.18s
+tests/risk_profile/test_risk_game.py attempt 1 exit 0 6s :: 40 passed in 4.19s
+tests/risk_profile/test_risk_profile.py attempt 1 exit 0 4s :: 73 passed in 1.79s
+SUMMARY: 4 files, 4 clean, 0 with failures or crashes
+
+=== run 1 (deployed 8f21177) :: tests_system
+tests/system/test_concurrent_builds.py attempt 1 exit 0 166s :: 3 passed in 163.58s (0:02:43)
+tests/system/test_crypto_floor.py attempt 1 exit 0 55s :: 5 passed in 52.99s
+tests/system/test_data_provenance.py attempt 1 exit 0 11s :: 3 passed in 8.66s
+tests/system/test_engine_edge_cases.py attempt 1 exit 0 126s :: 3 passed in 124.10s (0:02:04)
+tests/system/test_goal_based.py attempt 1 exit 0 41s :: 21 passed in 39.32s
+tests/system/test_goal_history.py attempt 1 exit 0 14s :: 12 passed in 12.86s
+tests/system/test_goal_report.py attempt 1 exit 0 9s :: 26 passed in 7.50s
+tests/system/test_no_stocks_chosen.py attempt 1 exit 0 8s :: 3 passed in 7.07s
+tests/system/test_pipeline.py attempt 1 exit 0 70s :: 26 passed in 68.00s (0:01:07)
+tests/system/test_price_note_in_reports.py attempt 1 exit 0 15s :: 3 passed in 11.73s
+tests/system/test_report.py attempt 1 exit 0 9s :: 18 passed in 6.72s
+tests/system/test_risk_engine.py attempt 1 exit 0 5s :: 20 passed in 3.19s
+tests/system/test_risk_game_blend.py attempt 1 exit 0 72s :: 95 passed in 70.60s (0:01:10)
+tests/system/test_risk_game_end_to_end.py attempt 1 exit 0 61s :: 3 passed in 57.94s
+tests/system/test_snapshot_banner.py attempt 1 exit 0 14s :: 4 passed in 11.60s
+tests/system/test_trade_check.py attempt 1 exit 0 8s :: 36 passed in 6.85s
+tests/system/test_trade_check_sweep.py attempt 1 exit 0 26s :: 18 passed in 24.27s
+tests/system/test_what_if.py attempt 1 exit 0 124s :: 37 passed in 121.45s (0:02:01)
+tests/system/test_what_if_no_echo.py attempt 1 exit 0 45s :: 24 passed in 43.41s
+SUMMARY: 19 files, 19 clean, 0 with failures or crashes
+
+=== run 2 (final candidate) :: tests_agent_a
+tests/agent_a/test_backtest.py attempt 1 exit 0 3s :: 16 passed in 1.72s
+tests/agent_a/test_goal_rate_anchor.py attempt 1 exit 0 48s :: 8 passed in 46.85s
+tests/agent_a/test_goal_streaming.py attempt 1 exit 0 5s :: 4 passed in 2.67s
+tests/agent_a/test_quant_agent.py attempt 1 exit 0 34s :: 51 passed in 31.59s
+tests/agent_a/test_quant_core.py attempt 1 exit 0 4s :: 25 passed in 2.64s
+SUMMARY: 5 files, 5 clean, 0 with failures or crashes
+
+=== run 2 (final candidate) :: tests_agent_a_v2
+tests/agent_a/v2/test_random_investors.py attempt 1 exit 0 373s :: 13 passed in 370.83s (0:06:10)
+tests/agent_a/v2/test_returns_bl.py attempt 1 exit 0 12s :: 28 passed in 10.76s
+tests/agent_a/v2/test_screening.py attempt 1 exit 0 9s :: 28 passed in 7.28s
+tests/agent_a/v2/test_solve_level_uses_the_solver.py attempt 1 exit 0 4s :: 1 passed in 2.15s
+tests/agent_a/v2/test_targets.py attempt 1 exit 0 5s :: 88 passed in 3.42s
+tests/agent_a/v2/test_v2_engine.py attempt 1 exit 0 4s :: 10 passed in 3.11s
+tests/agent_a/v2/test_v2_parts.py attempt 1 exit 0 3s :: 15 passed in 1.79s
+SUMMARY: 7 files, 7 clean, 0 with failures or crashes
+
+=== run 2 (final candidate) :: tests_anchoring
+tests/anchoring/test_canonical_commit.py attempt 1 exit 0 2s :: 319 passed in 0.90s
+tests/anchoring/test_client.py attempt 1 exit 0 5s :: 15 passed in 3.34s
+tests/anchoring/test_committed_proofs.py attempt 1 exit 0 2s :: 39 passed in 0.72s
+tests/anchoring/test_final_news_paths.py attempt 1 exit 0 38s :: 7 passed in 36.20s
+tests/anchoring/test_live_seal.py attempt 1 exit 5 1s :: 1 deselected in 0.06s
+tests/anchoring/test_main_wiring.py attempt 1 exit 0 8s :: 5 passed in 6.39s
+tests/anchoring/test_proof_cli.py attempt 1 exit 0 3s :: 20 passed in 1.83s
+tests/anchoring/test_record.py attempt 1 exit 0 2s :: 20 passed in 1.26s
+tests/anchoring/test_routes.py attempt 1 exit 0 5s :: 20 passed in 4.12s
+tests/anchoring/test_seal_v2.py attempt 1 exit 0 112s :: 16 passed in 110.21s (0:01:50)
+tests/anchoring/test_wallet_script.py attempt 1 exit 0 16s :: 2 passed, 1 deselected in 14.72s
+SUMMARY: 11 files, 11 clean, 0 with failures or crashes
+

@@ -1,0 +1,369 @@
+{
+ "_meta": {
+  "from": "docs/demo_data/demo_numbers_v1.json + egoquant.demo.personas",
+  "made_by": "python eval/deploy_check.py --write-requests"
+ },
+ "areas_probe": {
+  "answers": {
+   "amount_invested": 100000,
+   "amount_needed": 0,
+   "choices": {
+    "B1": "growth",
+    "B2": "gt5",
+    "B4": "gt6",
+    "B5": "lt25",
+    "B6": "stable",
+    "D1": "yes",
+    "GL1": "b",
+    "GL10": "b",
+    "GL11": "b",
+    "GL12": "b",
+    "GL13": "b",
+    "GL2": "c",
+    "GL3": "c",
+    "GL4": "c",
+    "GL5": "c",
+    "GL6": "b",
+    "GL7": "b",
+    "GL8": "c",
+    "GL9": "a",
+    "K1": "more",
+    "K2": "less",
+    "K3": "false",
+    "K5": "gt5"
+   },
+   "multi_choices": {
+    "K4": [
+     "stocks",
+     "bonds"
+    ]
+   },
+   "questionnaire_version": "eq-rq-0.1.0"
+  },
+  "preferences": {
+   "choices": {
+    "P1": [
+     "stocks",
+     "real_estate",
+     "gold",
+     "commodities"
+    ],
+    "P2": [
+     "technology",
+     "healthcare"
+    ],
+    "P4": [
+     "mix"
+    ],
+    "P5": [
+     "energy"
+    ]
+   },
+   "preferences_version": "eq-pref-0.1.0"
+  },
+  "trading_platforms": [
+   "Charles Schwab"
+  ]
+ },
+ "personas": {
+  "balanced": {
+   "body": {
+    "answers": {
+     "amount_invested": 50000,
+     "amount_needed": 30000,
+     "choices": {
+      "B1": "growth",
+      "B2": "gt5",
+      "B4": "m3_6",
+      "B5": "p25_50",
+      "B6": "stable",
+      "D1": "yes",
+      "GL1": "b",
+      "GL10": "b",
+      "GL11": "b",
+      "GL12": "b",
+      "GL13": "b",
+      "GL2": "b",
+      "GL3": "c",
+      "GL4": "b",
+      "GL5": "b",
+      "GL6": "b",
+      "GL7": "a",
+      "GL8": "b",
+      "GL9": "a",
+      "K1": "more",
+      "K2": "less",
+      "K3": "false",
+      "K5": "y3_5"
+     },
+     "multi_choices": {
+      "K4": [
+       "stocks",
+       "bonds"
+      ]
+     },
+     "questionnaire_version": "eq-rq-0.1.0",
+     "risk_game": {
+      "completed_at": "2026-10-16T09:00:00Z",
+      "loss_acceptance": 50,
+      "tolerance": 50
+     }
+    },
+    "goal_amount": 120000,
+    "horizon_years": 10,
+    "liquidity_need": 0.05,
+    "min_cash_buffer": 0.05,
+    "monthly_flow": 300,
+    "preferences": {
+     "choices": {
+      "P1": [
+       "stocks",
+       "bonds",
+       "gold"
+      ],
+      "P3": [
+       "us_stocks",
+       "dividend_stocks"
+      ],
+      "P4": [
+       "funds"
+      ],
+      "P6": [
+       "no_preference"
+      ]
+     },
+     "preferences_version": "eq-pref-0.1.0"
+    },
+    "trading_platforms": [
+     "Interactive Brokers"
+    ]
+   },
+   "ibkr_file": "ibkr_balanced_investor.xml",
+   "persona": "balanced_saver",
+   "trade": {
+    "amount": 8000,
+    "side": "sell",
+    "ticker": "VT"
+   }
+  },
+  "beginner": {
+   "body": {
+    "answers": {
+     "amount_invested": 10000,
+     "amount_needed": 0,
+     "choices": {
+      "B1": "growth",
+      "B2": "gt5",
+      "B4": "gt6",
+      "B5": "lt25",
+      "B6": "stable",
+      "D1": "yes",
+      "GL1": "a",
+      "GL10": "b",
+      "GL11": "c",
+      "GL12": "c",
+      "GL13": "c",
+      "GL2": "d",
+      "GL3": "d",
+      "GL4": "c",
+      "GL5": "c",
+      "GL6": "d",
+      "GL7": "c",
+      "GL8": "d",
+      "GL9": "b",
+      "K1": "dk",
+      "K2": "dk",
+      "K3": "true",
+      "K5": "none"
+     },
+     "multi_choices": {
+      "K4": [
+       "none"
+      ]
+     },
+     "questionnaire_version": "eq-rq-0.1.0",
+     "risk_game": {
+      "completed_at": "2026-10-16T09:00:00Z",
+      "loss_acceptance": 50,
+      "tolerance": 0
+     }
+    },
+    "goal_amount": 40000,
+    "horizon_years": 10,
+    "liquidity_need": 0.0,
+    "min_cash_buffer": 0.05,
+    "monthly_flow": 150,
+    "preferences": {
+     "choices": {
+      "P1": [
+       "stocks"
+      ],
+      "P3": [
+       "us_stocks"
+      ],
+      "P4": [
+       "funds"
+      ]
+     },
+     "preferences_version": "eq-pref-0.1.0"
+    },
+    "trading_platforms": [
+     "Robinhood"
+    ]
+   },
+   "ibkr_file": "ibkr_eager_beginner.xml",
+   "persona": "eager_beginner",
+   "trade": {
+    "amount": 1000,
+    "side": "buy",
+    "ticker": "IBIT"
+   }
+  },
+  "saver": {
+   "body": {
+    "answers": {
+     "amount_invested": 200000,
+     "amount_needed": 170000,
+     "choices": {
+      "B1": "retirement",
+      "B2": "y3_5",
+      "B4": "gt6",
+      "B5": "p50_75",
+      "B6": "none",
+      "D1": "yes",
+      "GL1": "c",
+      "GL10": "a",
+      "GL11": "b",
+      "GL12": "a",
+      "GL13": "b",
+      "GL2": "a",
+      "GL3": "b",
+      "GL4": "b",
+      "GL5": "b",
+      "GL6": "a",
+      "GL7": "a",
+      "GL8": "b",
+      "GL9": "a",
+      "K1": "more",
+      "K2": "less",
+      "K3": "false",
+      "K5": "gt5"
+     },
+     "multi_choices": {
+      "K4": [
+       "deposits",
+       "bonds"
+      ]
+     },
+     "questionnaire_version": "eq-rq-0.1.0",
+     "risk_game": {
+      "completed_at": "2026-10-16T09:00:00Z",
+      "loss_acceptance": 50,
+      "tolerance": 0
+     }
+    },
+    "goal_amount": 245000,
+    "horizon_years": 5,
+    "liquidity_need": 0.1,
+    "min_cash_buffer": 0.1,
+    "monthly_flow": 0,
+    "preferences": {
+     "choices": {
+      "P1": [
+       "bonds",
+       "cash"
+      ],
+      "P6": [
+       "government_bonds",
+       "inflation_protected"
+      ],
+      "P7": [
+       "funds"
+      ]
+     },
+     "preferences_version": "eq-pref-0.1.0"
+    },
+    "trading_platforms": [
+     "Fidelity"
+    ]
+   },
+   "ibkr_file": "ibkr_cautious_saver.xml",
+   "persona": "cautious_retiree",
+   "trade": {
+    "amount": 20000,
+    "side": "buy",
+    "ticker": "VT"
+   }
+  }
+ },
+ "twenty_areas": {
+  "body": {
+   "answers": {
+    "amount_invested": 30000,
+    "amount_needed": 0,
+    "choices": {
+     "B1": "growth",
+     "B2": "gt5",
+     "B4": "gt6",
+     "B5": "lt25",
+     "B6": "stable",
+     "D1": "yes",
+     "GL1": "a",
+     "GL10": "b",
+     "GL11": "c",
+     "GL12": "c",
+     "GL13": "c",
+     "GL2": "d",
+     "GL3": "d",
+     "GL4": "c",
+     "GL5": "c",
+     "GL6": "d",
+     "GL7": "c",
+     "GL8": "d",
+     "GL9": "b",
+     "K1": "more",
+     "K2": "less",
+     "K3": "false",
+     "K5": "gt5"
+    },
+    "multi_choices": {
+     "K4": [
+      "stocks",
+      "crypto",
+      "derivatives"
+     ]
+    },
+    "questionnaire_version": "eq-rq-0.1.0"
+   },
+   "horizon_years": 10,
+   "interest_areas": [
+    "stocks",
+    "bonds",
+    "cash",
+    "technology",
+    "healthcare",
+    "financials",
+    "energy",
+    "consumer",
+    "industrials",
+    "utilities",
+    "communication",
+    "materials",
+    "real_estate",
+    "gold",
+    "precious_metals",
+    "commodities",
+    "crypto",
+    "altcoins",
+    "us_stocks",
+    "international_stocks"
+   ],
+   "liquidity_need": 0.0,
+   "min_cash_buffer": 0.05,
+   "trading_platforms": [
+    "Interactive Brokers",
+    "Binance"
+   ]
+  }
+ }
+}

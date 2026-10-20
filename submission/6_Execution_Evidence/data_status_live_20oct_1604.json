@@ -1,0 +1,42 @@
+{
+    "state": "off",
+    "tiingo_traders_key": {
+        "key": "set",
+        "last_429": null,
+        "cooldown_seconds_left": 0
+    },
+    "news_worker": {
+        "state": "idle",
+        "runs": 6,
+        "last_run_at": "2026-10-20T11:56:06.891998+00:00",
+        "last_run_seconds": 66.1,
+        "items_fetched": 19759,
+        "new_in_archive": 88,
+        "pairs_found": 15,
+        "pairs_rated": 15,
+        "pairs_failed": 0,
+        "pairs_left": 0,
+        "feeds": 495,
+        "feeds_failed": 40,
+        "labels_today": 2059,
+        "day": "2026-10-20",
+        "next_run_at": "2026-10-20T12:12:12.992775+00:00",
+        "last_error": null,
+        "stage": null,
+        "rated_so_far": 15
+    },
+    "price_mode": "snapshot",
+    "live_budget_seconds": 15.0,
+    "slow_request_seconds": 8.0,
+    "portfolio_method": "v1",
+    "python_version": "3.14.4",
+    "libraries": {
+        "pandas": "3.0.6",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+    },
+    "risk_game_weight": 0.3333333333,
+    "risk_game_may_raise": true,
+    "traders_key_requests_last_hour": 0,
+    "builder_key_requests_last_hour": 0
+}

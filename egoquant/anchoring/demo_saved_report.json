@@ -1,0 +1,49 @@
+{
+  "approved": true,
+  "status": "optimal",
+  "c_level": "C3",
+  "as_of": "2026-10-16",
+  "data_source": "synthetic",
+  "violations": [],
+  "checks": [
+    {"name": "suitability:max_equity", "passed": true, "detail": "equity 40.0% <= 40.0%"},
+    {"name": "r_level[VT]", "passed": true, "detail": "R4 <= R4"},
+    {"name": "r_level[SHY]", "passed": true, "detail": "R1 <= R4"},
+    {"name": "r_level[BIL]", "passed": true, "detail": "R1 <= R4"},
+    {"name": "stress:max_loss", "passed": true, "detail": "worst loss 14.2% <= 18.0%"}
+  ],
+  "game_note": null,
+  "report": {
+    "status": "optimal",
+    "investor_id": "demo-investor",
+    "as_of": "2026-10-16",
+    "currency": "USD",
+    "reference_amount": 10000.0,
+    "risk_class": "C3",
+    "headline": "TEST RECORD: hand-written numbers (not engine output) for an invented investor; for CLI tests only.",
+    "equity_weight": 0.4,
+    "bond_weight": 0.3,
+    "cash_weight": 0.30000000000000004,
+    "allocation": [
+      {"asset_id": "VT", "name": "Vanguard Total World Stock ETF", "asset_class": "equity", "weight": 0.39999999999999997, "amount": 4000.0, "expense_ratio": 0.0006, "risk_share": 0.91},
+      {"asset_id": "SHY", "name": "iShares 1-3 Year Treasury Bond ETF", "asset_class": "bond", "weight": 0.3, "amount": 3000.0, "expense_ratio": 0.0015, "risk_share": 0.07},
+      {"asset_id": "BIL", "name": "SPDR Bloomberg 1-3 Month T-Bill ETF", "asset_class": "cash", "weight": 0.30000000000000004, "amount": 3000.0, "expense_ratio": 0.00135, "risk_share": 0.02}
+    ],
+    "worst_loss": 0.142,
+    "banners": ["TEST RECORD: hand-written numbers, not produced by the engine; invented investor; for CLI tests only."],
+    "risk_review_approved": true,
+    "risk_review_violations": [],
+    "engine_version": "0.3.0",
+    "input_hash": "demo0000c3000001",
+    "data_source": "synthetic"
+  },
+  "inputs": {
+    "answers": {
+      "questionnaire_version": "eq-rq-0.1.0",
+      "choices": {"G1": "b", "G2": "c", "G3": "a"},
+      "multi_choices": {},
+      "amount_invested": 10000.0,
+      "amount_needed": 0.0
+    }
+  }
+}

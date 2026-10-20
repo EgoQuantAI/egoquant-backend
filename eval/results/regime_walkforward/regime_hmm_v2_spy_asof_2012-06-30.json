@@ -1,0 +1,390 @@
+{
+ "model_version": "regime_hmm_v2",
+ "format": 2,
+ "kind": "gaussian_hmm",
+ "variant": "spy",
+ "market_proxy": "SPY",
+ "data": {
+  "SPY": {
+   "source": "EgoQuant price cache (Tiingo adjusted close)",
+   "cache_start": "2007-05-23",
+   "cache_end": "2026-10-16",
+   "fetched_on": "2026-10-18"
+  }
+ },
+ "fit_start": "2007-06-22",
+ "fit_end": "2012-06-29",
+ "n_days": 1267,
+ "walk_forward_as_of": "2012-06-30",
+ "n_components": 4,
+ "covariance_type": "full",
+ "random_state": 20261017,
+ "created_with": {
+  "script": "scripts/fit_regime_model.py",
+  "hmmlearn": "0.3.3",
+  "numpy": "2.0.2",
+  "pandas": "2.3.3"
+ },
+ "features": {
+  "tickers": [
+   "SPY"
+  ],
+  "per_ticker": [
+   "log_return",
+   "realised_vol_21d"
+  ],
+  "names": [
+   "SPY:log_return",
+   "SPY:realised_vol_21d"
+  ],
+  "vol_window": 21,
+  "vol_ddof": 0,
+  "mean": [
+   -3.3100219357e-06,
+   0.0137446550788
+  ],
+  "std": [
+   0.0167150649487,
+   0.00899123186005
+  ]
+ },
+ "state_names": [
+  "calm",
+  "normal",
+  "stressed",
+  "crisis"
+ ],
+ "start_probs": [
+  1.0,
+  4.83424798138e-105,
+  0.0,
+  0.0
+ ],
+ "transition_matrix": [
+  [
+   0.9777554191251956,
+   0.02224458087480445,
+   5.468535334211094e-73,
+   1.5066499762503014e-33
+  ],
+  [
+   0.02080519548649979,
+   0.9679736594599904,
+   0.008193262211199918,
+   0.0030278828423099696
+  ],
+  [
+   3.280677959209738e-125,
+   0.026070871329297914,
+   0.9652885975229228,
+   0.00864053114777931
+  ],
+  [
+   6.496198330923249e-110,
+   2.5724049942712864e-57,
+   0.018438106749509218,
+   0.9815618932504908
+  ]
+ ],
+ "means": [
+  [
+   0.0263701195299,
+   -0.705460575907
+  ],
+  [
+   0.000625798629014,
+   -0.202789356178
+  ],
+  [
+   0.0383648619857,
+   0.412267693653
+  ],
+  [
+   -0.121497858379,
+   2.06773969277
+  ]
+ ],
+ "covariances": [
+  [
+   [
+    0.224847777641,
+    -0.00485780623459
+   ],
+   [
+    -0.00485780623459,
+    0.0344192093749
+   ]
+  ],
+  [
+   [
+    0.552324385156,
+    0.0108693006528
+   ],
+   [
+    0.0108693006528,
+    0.0270523017094
+   ]
+  ],
+  [
+   [
+    1.04530398005,
+    0.00734443282583
+   ],
+   [
+    0.00734443282583,
+    0.0243044514465
+   ]
+  ],
+  [
+   [
+    4.34926430242,
+    0.104209710126
+   ],
+   [
+    0.104209710126,
+    1.54957323937
+   ]
+  ]
+ ],
+ "state_summary": [
+  {
+   "state": 0,
+   "name": "calm",
+   "days": 466,
+   "share": 0.367798,
+   "ann_vol": 0.125005,
+   "ann_mean_log_return": 0.121972,
+   "expected_spell_days": 44.955
+  },
+  {
+   "state": 1,
+   "name": "normal",
+   "days": 449,
+   "share": 0.35438,
+   "ann_vol": 0.196339,
+   "ann_mean_log_return": -0.004876,
+   "expected_spell_days": 31.224
+  },
+  {
+   "state": 2,
+   "name": "stressed",
+   "days": 189,
+   "share": 0.149171,
+   "ann_vol": 0.272355,
+   "ann_mean_log_return": 0.212331,
+   "expected_spell_days": 28.809
+  },
+  {
+   "state": 3,
+   "name": "crisis",
+   "days": 163,
+   "share": 0.12865,
+   "ann_vol": 0.55557,
+   "ann_mean_log_return": -0.587955,
+   "expected_spell_days": 54.236
+  }
+ ],
+ "selection": {
+  "criterion": "BIC on the training data (lower is better)",
+  "states_tried": [
+   2,
+   3,
+   4
+  ],
+  "restarts_per_k": 10,
+  "restart_seeds": "20261017 + 0..9",
+  "candidates": [
+   {
+    "n_components": 2,
+    "log_likelihood": -2353.9347,
+    "bic": 4800.7467,
+    "parameters": 13,
+    "best_restart": 7,
+    "converged": true,
+    "n_iter": 22
+   },
+   {
+    "n_components": 3,
+    "log_likelihood": -1855.7512,
+    "bic": 3875.8237,
+    "parameters": 23,
+    "best_restart": 5,
+    "converged": true,
+    "n_iter": 103
+   },
+   {
+    "n_components": 4,
+    "log_likelihood": -1458.6301,
+    "bic": 3167.3144,
+    "parameters": 35,
+    "best_restart": 2,
+    "converged": true,
+    "n_iter": 56
+   }
+  ],
+  "chosen_n_components": 4,
+  "protocol": "eval/regime/PROTOCOL_v2.md"
+ },
+ "fit": {
+  "log_likelihood": -1458.6301,
+  "n_iter": 56,
+  "converged": true,
+  "labelling": "Viterbi path (most likely regime sequence)"
+ },
+ "labels": {
+  "encoding": "run_length",
+  "first_date": "2007-06-22",
+  "last_date": "2012-06-29",
+  "n_days": 1267,
+  "counts": [
+   466,
+   449,
+   189,
+   163
+  ],
+  "segments": [
+   [
+    "2007-06-22",
+    0
+   ],
+   [
+    "2007-07-26",
+    1
+   ],
+   [
+    "2007-09-27",
+    0
+   ],
+   [
+    "2007-11-01",
+    1
+   ],
+   [
+    "2007-11-28",
+    2
+   ],
+   [
+    "2007-12-13",
+    1
+   ],
+   [
+    "2008-03-18",
+    2
+   ],
+   [
+    "2008-04-17",
+    1
+   ],
+   [
+    "2008-04-30",
+    0
+   ],
+   [
+    "2008-06-05",
+    1
+   ],
+   [
+    "2008-09-15",
+    2
+   ],
+   [
+    "2008-09-17",
+    3
+   ],
+   [
+    "2008-12-31",
+    2
+   ],
+   [
+    "2009-01-20",
+    3
+   ],
+   [
+    "2009-04-22",
+    2
+   ],
+   [
+    "2009-06-09",
+    1
+   ],
+   [
+    "2009-08-05",
+    0
+   ],
+   [
+    "2009-08-17",
+    1
+   ],
+   [
+    "2009-09-16",
+    0
+   ],
+   [
+    "2009-10-01",
+    1
+   ],
+   [
+    "2009-12-01",
+    0
+   ],
+   [
+    "2010-01-28",
+    1
+   ],
+   [
+    "2010-03-08",
+    0
+   ],
+   [
+    "2010-04-30",
+    1
+   ],
+   [
+    "2010-05-10",
+    2
+   ],
+   [
+    "2010-07-01",
+    1
+   ],
+   [
+    "2010-09-29",
+    0
+   ],
+   [
+    "2011-03-15",
+    1
+   ],
+   [
+    "2011-03-30",
+    0
+   ],
+   [
+    "2011-07-27",
+    1
+   ],
+   [
+    "2011-08-04",
+    3
+   ],
+   [
+    "2011-09-12",
+    2
+   ],
+   [
+    "2011-12-23",
+    1
+   ],
+   [
+    "2012-01-12",
+    0
+   ],
+   [
+    "2012-06-06",
+    1
+   ]
+  ],
+  "note": "segments: [first day, state]; a day's state is that of the last segment starting on or before it"
+ },
+ "sha256": "eb63897d5fecbd54680d612c663ee4885c327b21de5b2e552e3e40e603f64a55"
+}

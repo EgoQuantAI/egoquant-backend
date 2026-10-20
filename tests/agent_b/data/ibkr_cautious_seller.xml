@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVENTED sample in IBKR's Flex Query XML format. Not real account data. A "cautious seller": sells most of
+     the stock fund in two market falls and buys back after the recovery. -->
+<FlexQueryResponse queryName="EgoQuant sample" type="AF">
+<FlexStatements count="1">
+<FlexStatement accountId="U0000000" fromDate="20250101" toDate="20260930" period="Custom" whenGenerated="20260930;180000">
+<Trades>
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VTI" description="VANGUARD TOTAL STOCK MKT ETF" tradeDate="20250103" dateTime="20250103;100512" quantity="300" tradePrice="250" proceeds="-75000" ibCommission="-1" netCash="-75001" buySell="BUY" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="AGG" description="ISHARES CORE US AGGREGATE" tradeDate="20250103" dateTime="20250103;100733" quantity="100" tradePrice="100" proceeds="-10000" ibCommission="-1" netCash="-10001" buySell="BUY" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VTI" description="VANGUARD TOTAL STOCK MKT ETF" tradeDate="20250417" dateTime="20250417;153002" quantity="-200" tradePrice="232" proceeds="46400" ibCommission="-1" netCash="46399" buySell="SELL" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VTI" description="VANGUARD TOTAL STOCK MKT ETF" tradeDate="20250602" dateTime="20250602;101500" quantity="200" tradePrice="262" proceeds="-52400" ibCommission="-1" netCash="-52401" buySell="BUY" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VTI" description="VANGUARD TOTAL STOCK MKT ETF" tradeDate="20251126" dateTime="20251126;154011" quantity="-220" tradePrice="252" proceeds="55440" ibCommission="-1" netCash="55439" buySell="SELL" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VTI" description="VANGUARD TOTAL STOCK MKT ETF" tradeDate="20260202" dateTime="20260202;100100" quantity="220" tradePrice="286" proceeds="-62920" ibCommission="-1" netCash="-62921" buySell="BUY" levelOfDetail="EXECUTION" />
+</Trades>
+<CashTransactions>
+<CashTransaction accountId="U0000000" currency="USD" assetCategory="" symbol="" description="CASH RECEIPTS / ELECTRONIC FUND TRANSFERS" dateTime="20250102" amount="100000" type="Deposits/Withdrawals" />
+<CashTransaction accountId="U0000000" currency="USD" assetCategory="STK" symbol="VTI" description="VTI CASH DIVIDEND" dateTime="20250325" amount="300" type="Dividends" />
+<CashTransaction accountId="U0000000" currency="USD" assetCategory="STK" symbol="VTI" description="VTI US TAX" dateTime="20250325" amount="-45" type="Withholding Tax" />
+<CashTransaction accountId="U0000000" currency="USD" assetCategory="" symbol="" description="CASH RECEIPTS / ELECTRONIC FUND TRANSFERS" dateTime="20250701" amount="5000" type="Deposits/Withdrawals" />
+</CashTransactions>
+</FlexStatement>
+</FlexStatements>
+</FlexQueryResponse>

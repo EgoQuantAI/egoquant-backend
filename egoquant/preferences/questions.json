@@ -1,0 +1,115 @@
+{
+  "preferences_version": "eq-pref-0.1.0",
+  "note": "Asked AFTER the risk questionnaire. Not scored: these answers decide what Agent C looks at, never the C-level or any limit. Options the investor's class or knowledge does not allow are not offered (they are listed separately with the reason).",
+  "questions": [
+    {
+      "id": "P1",
+      "type": "multi",
+      "required": true,
+      "text": "Based on your risk profile, these are the kinds of investments you can make. Which would you like us to consider?",
+      "options": [
+        {"id": "stocks", "text": "Stocks (shares of companies, through funds or individually)", "areas": ["stocks"]},
+        {"id": "bonds", "text": "Bonds (loans to governments and companies)", "areas": ["bonds"]},
+        {"id": "cash", "text": "Cash and money-market funds", "areas": ["cash"]},
+        {"id": "real_estate", "text": "Real estate (listed property companies, REITs)", "areas": ["real_estate"]},
+        {"id": "gold", "text": "Gold", "areas": ["gold"]},
+        {"id": "precious_metals", "text": "Silver, platinum and palladium", "areas": ["precious_metals"]},
+        {"id": "commodities", "text": "Broad commodities (energy, industrial metals, agriculture)", "areas": ["commodities"]},
+        {"id": "crypto", "text": "Bitcoin and Ether", "areas": ["crypto"]},
+        {"id": "altcoins", "text": "Other cryptocurrencies (Solana, BNB, XRP)", "areas": ["altcoins"]}
+      ]
+    },
+    {
+      "id": "P2",
+      "type": "multi",
+      "required": false,
+      "requires": {"P1": "stocks"},
+      "text": "Which industries interest you most? Pick as many as you like, or no preference.",
+      "options": [
+        {"id": "technology", "text": "Technology", "areas": ["technology"]},
+        {"id": "healthcare", "text": "Healthcare and pharmaceuticals", "areas": ["healthcare"]},
+        {"id": "financials", "text": "Banks, insurance and payments", "areas": ["financials"]},
+        {"id": "energy", "text": "Energy (oil and gas)", "areas": ["energy"]},
+        {"id": "consumer", "text": "Consumer goods and retail", "areas": ["consumer"]},
+        {"id": "industrials", "text": "Industrials and manufacturing", "areas": ["industrials"]},
+        {"id": "utilities", "text": "Utilities", "areas": ["utilities"]},
+        {"id": "communication", "text": "Communication and media", "areas": ["communication"]},
+        {"id": "materials", "text": "Materials, chemicals and mining", "areas": ["materials"]},
+        {"id": "no_preference", "text": "No preference", "areas": []}
+      ]
+    },
+    {
+      "id": "P3",
+      "type": "multi",
+      "required": false,
+      "requires": {"P1": "stocks"},
+      "text": "Which markets or kinds of companies?",
+      "options": [
+        {"id": "us_stocks", "text": "United States", "areas": ["us_stocks"]},
+        {"id": "international_stocks", "text": "Other developed markets (Europe, Japan, ...)", "areas": ["international_stocks"]},
+        {"id": "emerging_markets", "text": "Emerging markets", "areas": ["emerging_markets"]},
+        {"id": "china", "text": "China", "areas": ["china"]},
+        {"id": "small_caps", "text": "Smaller companies", "areas": ["small_caps"]},
+        {"id": "dividend_stocks", "text": "Companies that pay steady dividends", "areas": ["dividend_stocks"]},
+        {"id": "no_preference", "text": "No preference (any market)", "areas": []}
+      ]
+    },
+    {
+      "id": "P4",
+      "type": "single",
+      "required": false,
+      "requires": {"P1": "stocks"},
+      "text": "How would you like to hold stocks?",
+      "options": [
+        {"id": "funds", "text": "Funds (ETFs): instant diversification across many companies", "style": "funds"},
+        {"id": "individual", "text": "Individual stocks: hands-on control over each company", "style": "individual"},
+        {"id": "mix", "text": "A mix of both", "style": "mix"}
+      ]
+    },
+    {
+      "id": "P5",
+      "type": "multi",
+      "required": false,
+      "text": "Are there industries you do NOT want to invest in?",
+      "options": [
+        {"id": "technology", "text": "Technology", "sector": "technology"},
+        {"id": "healthcare", "text": "Healthcare and pharmaceuticals", "sector": "healthcare"},
+        {"id": "financials", "text": "Banks, insurance and payments", "sector": "financials"},
+        {"id": "energy", "text": "Energy (oil and gas)", "sector": "energy"},
+        {"id": "consumer", "text": "Consumer goods and retail", "sector": "consumer"},
+        {"id": "industrials", "text": "Industrials and manufacturing", "sector": "industrials"},
+        {"id": "utilities", "text": "Utilities", "sector": "utilities"},
+        {"id": "communication", "text": "Communication and media", "sector": "communication"},
+        {"id": "materials", "text": "Materials, chemicals and mining", "sector": "materials"},
+        {"id": "real_estate", "text": "Real estate", "sector": "real_estate"},
+        {"id": "none", "text": "None", "sector": null}
+      ]
+    },
+    {
+      "id": "P6",
+      "type": "multi",
+      "required": false,
+      "requires": {"P1": "bonds"},
+      "text": "Which kinds of bonds?",
+      "options": [
+        {"id": "government_bonds", "text": "Government bonds", "areas": ["government_bonds"]},
+        {"id": "corporate_bonds", "text": "Investment-grade company bonds", "areas": ["corporate_bonds"]},
+        {"id": "inflation_protected", "text": "Inflation-protected bonds", "areas": ["inflation_protected"]},
+        {"id": "long_term_bonds", "text": "Long-term bonds", "areas": ["long_term_bonds"]},
+        {"id": "international_bonds", "text": "International bonds", "areas": ["international_bonds"]},
+        {"id": "no_preference", "text": "No preference", "areas": []}
+      ]
+    },
+    {
+      "id": "P7",
+      "type": "single",
+      "required": false,
+      "requires": {"P1": "bonds"},
+      "text": "How would you like to hold bonds?",
+      "options": [
+        {"id": "funds", "text": "Bond funds: many bonds in one fund", "individual_bonds": false},
+        {"id": "individual", "text": "Individual bonds (we cannot price these, so bond funds are used instead)", "individual_bonds": true}
+      ]
+    }
+  ]
+}

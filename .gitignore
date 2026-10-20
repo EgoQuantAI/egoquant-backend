@@ -1,0 +1,36 @@
+.venv/
+
+.env
+
+__pycache__/
+
+*.pyc
+
+.DS_Store
+
+# EgoQuant engine
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+# generated client reports and saved price files (Tiingo data may not be redistributed)
+reports/
+pipeline_*.html
+pipeline_*.json
+report_*.html
+report_*.json
+prices*.csv
+# market briefing: local caches and third-party headlines collected for labeling
+briefing_cache/
+eval/headlines_to_label.csv
+
+# IDE settings
+.idea/
+# labeling handouts and returned label files (people's answers; never commit)
+eval/labeling/
+eval/labels_merged.csv
+# real human labels (never commit; run eval/merge_labels.py to create)
+eval/headlines_labeled.csv
+# Loughran-McDonald Master Dictionary: free for academic use, no redistribution. Never commit.
+LM_dictionary.csv

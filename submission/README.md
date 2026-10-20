@@ -1,0 +1,26 @@
+# EgoQuant: submission package
+
+*2026 Shenzhen FinTechathon, WeBank International Track, Topic B: Wealth Advisory Agent. Team EgoQuant (NYU Abu Dhabi). Submitted 20 October 2026. Everything in this package describes the version tagged `submission-20oct`.*
+
+**EgoQuant in one paragraph.** EgoQuant is a wealth-advisory agent that gives a person a portfolio they can understand, question and audit. A formal risk questionnaire and a short Risk Game find out how much risk the person can afford and how they actually behave about it; specialised agents turn that, the person's interests and real market data into a portfolio and a plain-language report; an independent Risk Engine re-checks every limit and has the final word; and an AI advisor explains everything, runs "what if" scenarios and checks possible trades without ever being allowed to decide anything. Confirmed advice can be sealed on a public test blockchain so that any later change is detectable. The design rule behind the whole system: **numbers that matter come from deterministic, tested code; AI only explains.**
+
+**Try it.** Live website: https://fintechaton-frontend.vercel.app (the demo account's credentials are in the submission form). API with interactive documentation: https://web-production-ee5cc.up.railway.app/docs. Two minutes without an account: open **Verify a report**, press **Use the demo report**, then **Try a tampered copy**.
+
+## What is in this package (the organisers' six items)
+
+| # | Required item | Folder | Files |
+|---|---|---|---|
+| 1 | Technical documentation: system architecture, core algorithms, security design | `1_Technical_Documentation/` | `01_PROJECT_SUMMARY.pdf` (what it is, the journey, the architecture, how a portfolio is built), `03_METHODS_AND_MODELS.pdf` and `03b_METHODS_QUANT_RISK_ADVISOR.pdf` (every algorithm: questionnaire scoring, the Risk Game blend, behaviour, market data, portfolio construction, the goal simulation, the Risk Engine, the trade check, the advisor), `02_SECURITY_COMPLIANCE_REPORT.pdf` (the security design), `08_FRONTEND_AND_API_REFERENCE.pdf` (pages, proxy, every endpoint, headers), `09_ON_CHAIN_SEAL.pdf`, `05_USER_GUIDE_AND_DEMO.pdf` with `05b_SCREENS.pdf` (the user guide and the 26 screenshots), `06_LIMITATIONS_AND_ROADMAP.pdf`, `07_JUDGES_QA.pdf`, `README.pdf` (the index of the set) |
+| 2 | Presentation deck (at most 10 minutes) | `2_Presentation/` | `EGOQUANT_PRESENTATION.pdf` (13 slides), the same deck as `EGOQUANT_PRESENTATION.pptx` (speaker notes on every slide), `SPEAKER_NOTES.pdf` (the timed 10-minute script) |
+| 3 | Demo video (optional, at most 5 minutes) | `2_Presentation/` | Not recorded. The five-minute script with every number from the committed demo pack is `DEMO_VIDEO_SCRIPT.pdf`; the click-by-click demo script with three invented investors is `DEMO_SCRIPT.pdf` |
+| 4 | Source code with README, repository link, deployment instructions, test cases | `4_Source_Code/` | `REPOSITORIES.md` (the GitHub links and the tag), plus the complete tagged trees as `fintechaton-backend_submission-20oct.zip` (Python, FastAPI: `README.md`, `docs/DEPLOY_ENV.md` = deployment instructions and the post-deploy check, `tests/` = 3,540 offline tests, `eval/deploy_check.py`) and `fintechaton-frontend_submission-20oct.zip` (Next.js: `README.md` with run instructions) |
+| 5 | Security self-assessment: permission-tier implementation and known-risk list | `5_Security_Self_Assessment/` | `SECURITY_SELF_ASSESSMENT.pdf` (section 1 permission tiers, section 2 threat table T1 to T19, section 3 privacy, section 4 the 28 known risks and gaps with owners), `02_SECURITY_COMPLIANCE_REPORT.pdf` (the judge-facing report with evidence tags), `04_TESTING_AND_EVIDENCE.pdf` (what was tested, how, and what was not) |
+| 6 | Execution evidence: simulated-account operation logs; on-chain transaction hashes | `6_Execution_Evidence/` | `EVIDENCE_INDEX.pdf` explains every file: the dated read-only deploy checks of the live system before and after the final deployment (71 of 71 checks), the live status, the fourteen-investor simulated-account run (30 builds, 26 trade checks, 14 what-ifs, 31 wrong requests, 0 rule failures), the test-run log, the demo pack, the raw AI red-team results, the calibration backtest, the database proofs, and `ON_CHAIN_EVIDENCE.md` with every real Sepolia transaction hash and Etherscan link |
+
+## Data and honesty notes (as agreed with the organisers on 19 October)
+- Market prices are a locally cached snapshot of real historical prices (Yahoo Finance, 292 tickers, to 16 October 2026), cited in the documents and accepted for the competition only; the live service sends no live price request. Every report names the source and the date of its prices.
+- Every demo investor is invented and labelled as such. Every chance is a simulation on past data, shown as "N in 100 simulated futures", never a forecast. The category limits are the team's provisional placeholders and every report says so.
+- The on-chain part runs on the Ethereum Sepolia test network only; the transactions are real.
+
+## Contact
+Team EgoQuant, NYU Abu Dhabi; the registered team contact is the one entered in the submission form.

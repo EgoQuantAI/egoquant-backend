@@ -1,0 +1,12 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# The fund-aware tone prompt is pinned by SHA-256 (tests/briefing/test_fund_tone.py) and its hash is part of
+# every fund-tone cache key, so it must be checked out byte-identical (LF) on every OS / core.autocrlf setting.
+egoquant/briefing/prompts/*.txt text eol=lf
+# Committed fund-tone labels, keyed by (headline id, ticker, prompt hash, model)
+egoquant/briefing/data/fixture_fund_tones.json text eol=lf
+# Byte-exact seal evidence: the proofs and the sealed demo report are fingerprinted bytes; Git must never rewrite them
+# (tests/anchoring/test_committed_proofs.py fails on a CR).
+docs/anchoring/*.json -text
+docs/anchoring/*.html -text

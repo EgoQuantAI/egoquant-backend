@@ -1,0 +1,136 @@
+{
+ "proof": "egoq-proof-1",
+ "record": "{\"allocation\":[{\"ticker\":\"BIL\",\"weight_ppm\":30001},{\"ticker\":\"GLD\",\"weight_ppm\":70000},{\"ticker\":\"QQQ\",\"weight_ppm\":300000},{\"ticker\":\"VT\",\"weight_ppm\":450000},{\"ticker\":\"VWO\",\"weight_ppm\":149999}],\"confirmed_at\":\"2026-10-19T15:57:38Z\",\"consent_version\":\"2026-10-20\",\"investor\":{\"answers\":{\"amount_invested_cents\":25000000,\"amount_needed_cents\":0,\"choices\":{\"G1\":\"d\",\"G2\":\"d\",\"G3\":\"c\"},\"multi_choices\":{}},\"questionnaire_version\":\"eq-rq-0.1.0\",\"risk_class\":\"C5\"},\"operation_log\":[{\"action\":\"questionnaire_submitted\",\"at\":\"2026-10-19T15:57:38Z\"},{\"action\":\"report_generated\",\"at\":\"2026-10-19T15:57:38Z\"},{\"action\":\"report_viewed\",\"at\":\"2026-10-19T15:57:38Z\"},{\"action\":\"plan_confirmed\",\"at\":\"2026-10-19T15:57:38Z\"}],\"record_version\":1,\"report_id\":\"1ff1a696-decf-478b-ac53-44e1d5e25f0e\",\"risk_engine\":{\"approved\":true,\"checks\":[{\"detail\":\"7.0% <= 10.0%\",\"name\":\"commodity_cap\",\"passed\":true},{\"detail\":\"R4 <= R5\",\"name\":\"r_level[GLD]\",\"passed\":true},{\"detail\":\"R4 <= R5\",\"name\":\"r_level[QQQ]\",\"passed\":true},{\"detail\":\"R4 <= R5\",\"name\":\"r_level[VT]\",\"passed\":true},{\"detail\":\"R4 <= R5\",\"name\":\"r_level[VWO]\",\"passed\":true},{\"detail\":\"worst loss 38.4% <= 45.0%\",\"name\":\"stress:max_loss\",\"passed\":true},{\"detail\":\"equity 90.0% <= 95.0%\",\"name\":\"suitability:max_equity\",\"passed\":true}],\"violations\":[]},\"schema\":\"egoq-record-1\",\"versions\":{\"agent_d_model\":\"gpt-4.1-mini\",\"agent_d_prompt_sha256\":\"ebb752b547507ffcf8edd43fa8eac0bb4dd9990249355a86bbe2bb50ea5c8544\",\"engine\":\"0.3.0\",\"input_hash\":\"demo0000c5000005\",\"report_sha256\":\"4de51982ed17bf0bcf93e884ccf9a01d46ae6c33800cfcd89cde1c7cb04031cd\",\"risk_engine\":\"0.2.0\",\"risk_profile_config\":\"a3dd56a9ff83615ea8893651f02e5c408ce0a04f93facb6e22b7cf0ec5f876e1\"}}",
+ "salt": "053721bf18000f5500f95e271320fa5c94d4612656ebf72a9c1465b0a15c413c",
+ "commitment": "cdd3b5b03026887a77d38e66a81ebdd87b5358c8a01280c3e156b10eaba6c27a",
+ "chain_id": 11155111,
+ "tx_hash": "0xcdcf88edb48fd24cf7de43a373bc69a23d802347213b60612d47e3f03a1400f8",
+ "sealing_address": "0x3c9E28032A834F958BaBE168aa9AcC116D2c9ddC",
+ "report": {
+  "approved": true,
+  "status": "optimal",
+  "c_level": "C5",
+  "as_of": "2026-10-16",
+  "data_source": "synthetic",
+  "violations": [],
+  "checks": [
+   {
+    "name": "suitability:max_equity",
+    "passed": true,
+    "detail": "equity 90.0% <= 95.0%"
+   },
+   {
+    "name": "commodity_cap",
+    "passed": true,
+    "detail": "7.0% <= 10.0%"
+   },
+   {
+    "name": "stress:max_loss",
+    "passed": true,
+    "detail": "worst loss 38.4% <= 45.0%"
+   },
+   {
+    "name": "r_level[VT]",
+    "passed": true,
+    "detail": "R4 <= R5"
+   },
+   {
+    "name": "r_level[QQQ]",
+    "passed": true,
+    "detail": "R4 <= R5"
+   },
+   {
+    "name": "r_level[VWO]",
+    "passed": true,
+    "detail": "R4 <= R5"
+   },
+   {
+    "name": "r_level[GLD]",
+    "passed": true,
+    "detail": "R4 <= R5"
+   }
+  ],
+  "game_note": null,
+  "report": {
+   "status": "optimal",
+   "investor_id": "demo-investor",
+   "as_of": "2026-10-16",
+   "currency": "USD",
+   "reference_amount": 250000.0,
+   "risk_class": "C5",
+   "headline": "DEMO: a fake investor, synthetic prices. A growth portfolio within your C5 limits.",
+   "equity_weight": 0.9,
+   "bond_weight": 0.3,
+   "cash_weight": 0.30000000000000004,
+   "allocation": [
+    {
+     "asset_id": "VT",
+     "name": "Vanguard Total World Stock ETF",
+     "asset_class": "equity",
+     "weight": 0.45,
+     "amount": 112500.0,
+     "expense_ratio": 0.0006,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "QQQ",
+     "name": "Invesco QQQ Trust",
+     "asset_class": "equity",
+     "weight": 0.3,
+     "amount": 75000.0,
+     "expense_ratio": 0.002,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "VWO",
+     "name": "Vanguard FTSE Emerging Markets ETF",
+     "asset_class": "equity",
+     "weight": 0.15,
+     "amount": 37500.0,
+     "expense_ratio": 0.0008,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "GLD",
+     "name": "SPDR Gold Shares",
+     "asset_class": "commodity",
+     "weight": 0.07,
+     "amount": 17500.0,
+     "expense_ratio": 0.004,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "BIL",
+     "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+     "asset_class": "cash",
+     "weight": 0.030000000000000027,
+     "amount": 7500.0,
+     "expense_ratio": 0.00135,
+     "risk_share": 0.0
+    }
+   ],
+   "worst_loss": 0.384,
+   "banners": [
+    "DEMO: fake investor and synthetic prices, for the on-chain sealing demo only."
+   ],
+   "risk_review_approved": true,
+   "risk_review_violations": [],
+   "engine_version": "0.3.0",
+   "input_hash": "demo0000c5000005",
+   "data_source": "synthetic"
+  },
+  "inputs": {
+   "answers": {
+    "questionnaire_version": "eq-rq-0.1.0",
+    "choices": {
+     "G1": "d",
+     "G2": "d",
+     "G3": "c"
+    },
+    "multi_choices": {},
+    "amount_invested": 250000.0,
+    "amount_needed": 0.0
+   }
+  }
+ }
+}

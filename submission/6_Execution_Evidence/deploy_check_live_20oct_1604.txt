@@ -1,0 +1,108 @@
+run at 2026-10-20 11:58 UTC
+target: https://web-production-ee5cc.up.railway.app  (price_mode snapshot; read-only; no account, no AI call, no spend)
+
+Deploy check of https://web-production-ee5cc.up.railway.app  (read-only; nothing is stored, no AI is called)
+
+
+== Server facts
+PASS  GET /data/status answers  [answered in 0.5 s]
+PASS  GET /data/status answers JSON
+PASS  price_mode is snapshot  [price_mode='snapshot']
+PASS  Python version starts with 3.14  [python_version='3.14.4']
+PASS  portfolio_method is v1  [portfolio_method='v1']
+PASS  news worker state  [state='idle' (runs=6, pairs_rated=15, last_run_seconds=66.1)]
+PASS  Risk Game weight is 0.3333  [risk_game_weight=0.3333333333]
+PASS  Risk Game may raise the category  [risk_game_may_raise=True]
+PASS  slow-feed guard settings are reported  [{'live_budget_seconds': 15.0, 'slow_request_seconds': 8.0}]
+      facts: server date Tue, 20 Oct 2026 11:58:50 GMT; price_mode=snapshot; portfolio_method=v1; python 3.14.4; risk_game_weight=0.3333333333; risk_game_may_raise=True
+PASS  GET /docs is reachable  [HTTP 200]
+PASS  GET /openapi.json is reachable  [EgoQuant API 0.1.0]
+
+== Headers and CORS
+PASS  security headers  [all present]
+PASS  CORS: https://fintechaton-frontend.vercel.app is allowed to POST  [HTTP 200, allow-origin='https://fintechaton-frontend.vercel.app', methods='GET, POST, DELETE, OPTIONS']
+PASS  CORS: no credentials are allowed  [allow-credentials=None]
+PASS  CORS: a foreign origin gets no allow-origin header  [allow-origin=None]
+
+== Interest areas
+PASS  POST /preferences/areas answers  [answered in 0.4 s]
+PASS  POST /preferences/areas answers {areas, limit: 8}  [limit=8, 6 areas]
+
+== Risk Game in the category
+PASS  saver: POST /profile with the Risk Game is played and gives C2  [game_played=True, c_level='C2', game_level=2, blended_level=2]
+PASS  saver: the questionnaire alone would give C2 (questionnaire_class)  [questionnaire_class='C2']
+PASS  saver: POST /profile without the game carries no game field and gives C2  [c_level='C2']
+PASS  balanced: POST /profile with the Risk Game is played and gives C3  [game_played=True, c_level='C3', game_level=3, blended_level=3]
+PASS  balanced: the questionnaire alone would give C3 (questionnaire_class)  [questionnaire_class='C3']
+PASS  balanced: POST /profile without the game carries no game field and gives C3  [c_level='C3']
+PASS  beginner: POST /profile with the Risk Game is played and gives C4  [game_played=True, c_level='C4', game_level=2, blended_level=4]
+PASS  beginner: the questionnaire alone would give C5 (questionnaire_class)  [questionnaire_class='C5']
+PASS  beginner: POST /profile without the game carries no game field and gives C5  [c_level='C5']
+
+(demo pack compared with: demo_numbers_v1.json, method v1, decision date 2026-10-16; deployed numbers use the server's own date)
+
+== Demo investor 'saver' (cautious_retiree): build
+PASS  saver: POST /portfolio answers within 30 s  [answered in 5.2 s]
+      facts: as_of 2026-10-19, data_source historical, fallback_reason None, 6 instruments
+PASS  saver: category is C2  [c_level='C2']
+PASS  saved-prices note is shown  [Prices: saved snapshot of real prices as of 16 Oct 2026, Yahoo Finance. Markets after 16 Oct 2026 are not in it.]
+PASS  saver: approved by the Risk Engine  [approved=True, status='optimal']
+PASS  saver: every Risk Engine check passes  [12 of 12 (the pack: 12 of 12; the number of checks follows the number of holdings)]
+PASS  saver: goal chance within 3 points of the pack  [82 in 100 (pack 82)]
+PASS  saver: stock share within 2 points of the pack  [0.0% (pack 0.0%)]
+PASS  saver: volatility within 0.5 points of the pack  [1.4% (pack 1.4%)]
+
+== Demo investor 'balanced' (balanced_saver): build
+PASS  balanced: POST /portfolio answers within 30 s  [answered in 5.4 s]
+      facts: as_of 2026-10-19, data_source historical, fallback_reason None, 11 instruments
+PASS  balanced: category is C3  [c_level='C3']
+PASS  saved-prices note is shown  [Prices: saved snapshot of real prices as of 16 Oct 2026, Yahoo Finance. Markets after 16 Oct 2026 are not in it.]
+PASS  balanced: approved by the Risk Engine  [approved=True, status='optimal']
+PASS  balanced: every Risk Engine check passes  [19 of 19 (the pack: 19 of 19; the number of checks follows the number of holdings)]
+PASS  balanced: goal chance within 3 points of the pack  [87 in 100 (pack 87)]
+PASS  balanced: stock share within 2 points of the pack  [23.2% (pack 23.2%)]
+PASS  balanced: volatility within 0.5 points of the pack  [5.7% (pack 5.7%)]
+
+== Demo investor 'beginner' (eager_beginner): build
+PASS  beginner: POST /portfolio answers within 30 s  [answered in 4.9 s]
+      facts: as_of 2026-10-19, data_source historical, fallback_reason None, 7 instruments
+PASS  beginner: category is C4  [c_level='C4']
+PASS  saved-prices note is shown  [Prices: saved snapshot of real prices as of 16 Oct 2026, Yahoo Finance. Markets after 16 Oct 2026 are not in it.]
+PASS  beginner: approved by the Risk Engine  [approved=True, status='optimal']
+PASS  beginner: every Risk Engine check passes  [15 of 15 (the pack: 15 of 15; the number of checks follows the number of holdings)]
+PASS  beginner: goal chance within 3 points of the pack  [65 in 100 (pack 65)]
+PASS  beginner: stock share within 2 points of the pack  [64.5% (pack 64.5%)]
+PASS  beginner: volatility within 0.5 points of the pack  [8.8% (pack 8.8%)]
+
+== Balanced investor with the invented IBKR file (Agent B)
+PASS  balanced + IBKR: POST /portfolio answers within 30 s  [answered in 5.2 s]
+PASS  balanced + IBKR: approved by the Risk Engine  [approved=True, status='optimal']
+PASS  balanced + IBKR: every Risk Engine check passes  [20 of 20 (the pack: 20 of 20; the number of checks follows the number of holdings)]
+PASS  balanced + IBKR: goal chance within 3 points of the pack  [86 in 100 (pack 86)]
+PASS  balanced + IBKR: stock share within 2 points of the pack  [8.4% (pack 8.4%)]
+PASS  balanced + IBKR: volatility within 0.5 points of the pack  [4.2% (pack 4.2%)]
+PASS  balanced + IBKR: Agent B's behavioural limit equals the pack's (8.8%)  [8.8%]
+
+== 20 interest areas
+PASS  POST /portfolio with 20 areas answers within 30 s  [answered in 4.9 s]
+PASS  banner says the first 8 of 20 areas were used  [Your choices cover 20 interest areas; to keep this fast we used 8 of them (stocks, bonds, cash, technology, healthcare, financials, energy, consumer) for prices and news and left out industrials, util]
+PASS  20 areas: approved  [approved=True]
+
+== Trade checks
+PASS  saver: POST /trade-check answers within 30 s  [answered in 3.5 s]
+PASS  saver buy VT: verdict is the pack's (not_advisable)  [verdict='not_advisable']
+PASS  saver buy VT: the check has reasons and a sealed chat context  [5 reasons, trade_context present]
+PASS  balanced: POST /trade-check answers within 30 s  [answered in 4.1 s]
+PASS  balanced sell VT: verdict is the pack's (allowed_with_warnings)  [verdict='allowed_with_warnings']
+PASS  balanced sell VT: the check has reasons and a sealed chat context  [3 reasons, trade_context present]
+PASS  beginner: POST /trade-check answers within 30 s  [answered in 4.3 s]
+PASS  beginner buy IBIT: verdict is the pack's (not_advisable)  [verdict='not_advisable']
+PASS  beginner buy IBIT: the check has reasons and a sealed chat context  [3 reasons, trade_context present]
+
+== What-if
+PASS  /portfolio hands out a sealed what-if context  [present]
+PASS  POST /what-if without a sign-in is refused politely  [HTTP 401: 'Please sign in.']
+
+71 PASS, 0 FAIL, 0 WARN, 0 SKIP
+slowest answers: balanced 5.4 s; saver 5.2 s; balanced + IBKR 5.2 s
+DEPLOY CHECK PASSED

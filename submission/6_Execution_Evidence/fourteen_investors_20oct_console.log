@@ -1,0 +1,91 @@
+== student: 22-year-old student, 500 USD, no income, no savings, first investment
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C4; findings so far 0
+== retiree3: 68-year-old retiree, 300,000, needs 240,000 back, goal in 3 years
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C2; findings so far 0
+== needs1y: 45-year-old who needs the money in under a year (house), 80,000, 70,000 needed back, strong finances
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C2; findings so far 0
+== irregular: 38-year-old freelancer, irregular income, 15 years, 150,000, savings over 6 months, small share of wealth
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C4; findings so far 0
+== crypto_fan: 29-year-old crypto fan with a Binance and an IBKR account, bold in everything
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C5; findings so far 0
+== excluder: 41-year-old who wants healthcare and consumer companies but NOT technology, energy or financials
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C4; findings so far 0
+== panic_ibkr: 52-year-old with a large IBKR history: sold in every fall, bought back higher
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C4; findings so far 0
+== calm_ibkr: 47-year-old with a calm IBKR history: a monthly purchase, nothing ever sold
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C3; findings so far 0
+== skips_game: 35-year-old who skips the Risk Game
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C3; findings so far 0
+== bold_low_cap: 26-year-old who plays the game boldly but whose finances cap them: 12,000, 9,000 needed in 2 years
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C2; findings so far 0
+== twenty_areas: 33-year-old who ticks every interest they are offered
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C5; findings so far 0
+== short_horizon: 50-year-old with strong finances who must start spending the money within a year
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C2; findings so far 0
+== no_stocks: 44-year-old growth-minded investor who ticks only bonds, cash and gold (no stocks)
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+   category C4; findings so far 0
+== changes_game: 40-year-old who plays the game timidly, builds, then replays it boldly and rebuilds
+Market briefing: no live items (34 sources skipped); sent without it
+Market briefing: no live items (34 sources skipped); sent without it
+Market briefing: no live items (38 sources skipped); sent without it
+Market briefing: no live items (38 sources skipped); sent without it
+Market briefing: no live items (34 sources skipped); sent without it
+   category C2; findings so far 0
+Market briefing: no live items (42 sources skipped); sent without it
+Market briefing: no live items (42 sources skipped); sent without it
+[C] T01 errors | /profile (an unknown question) | expected: a sentence a person can read | actual: HTTP 422: Invalid answers: answers to unknown questions: ['XX']
+[C] T02 errors | /profile (game with an extra field) | expected: a sentence a person can read | actual: HTTP 422: Extra inputs are not permitted
+
+2 automatic findings

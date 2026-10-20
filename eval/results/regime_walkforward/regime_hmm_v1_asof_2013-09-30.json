@@ -1,0 +1,248 @@
+{
+ "model_version": "regime_hmm_v1",
+ "format": 1,
+ "kind": "gaussian_hmm",
+ "market_proxy": "SPY",
+ "data": {
+  "source": "EgoQuant price cache (Tiingo adjusted close)",
+  "cache_start": "2007-05-23",
+  "cache_end": "2026-10-16",
+  "fetched_on": "2026-10-18"
+ },
+ "fit_start": "2007-06-22",
+ "fit_end": "2013-09-27",
+ "n_days": 1579,
+ "walk_forward_as_of": "2013-09-30",
+ "n_components": 3,
+ "covariance_type": "full",
+ "random_state": 20261017,
+ "created_with": {
+  "script": "scripts/fit_regime_model.py",
+  "hmmlearn": "0.3.3",
+  "numpy": "2.0.2",
+  "pandas": "2.3.3"
+ },
+ "features": {
+  "names": [
+   "log_return",
+   "realised_vol_21d"
+  ],
+  "vol_window": 21,
+  "vol_ddof": 0,
+  "mean": [
+   0.0001512614034,
+   0.0124560399523
+  ],
+  "std": [
+   0.0153221487195,
+   0.0085011474815
+  ]
+ },
+ "state_names": [
+  "calm",
+  "stressed",
+  "crisis"
+ ],
+ "start_probs": [
+  1.0,
+  1.43398483932e-78,
+  2.15254105464e-187
+ ],
+ "transition_matrix": [
+  [
+   0.989332735590802,
+   0.010667264409197866,
+   6.484864036768702e-22
+  ],
+  [
+   0.015730568941006922,
+   0.9804660758354314,
+   0.0038033552235616735
+  ],
+  [
+   1.8321120980194506e-79,
+   0.012006790204296399,
+   0.9879932097957036
+  ]
+ ],
+ "means": [
+  [
+   0.0334981400538,
+   -0.579674617106
+  ],
+  [
+   -0.00126089023049,
+   0.157251935293
+  ],
+  [
+   -0.152153044846,
+   2.20541330391
+  ]
+ ],
+ "covariances": [
+  [
+   [
+    0.266173990844,
+    0.00229216971064
+   ],
+   [
+    0.00229216971064,
+    0.0460193813616
+   ]
+  ],
+  [
+   [
+    0.85041308012,
+    0.0279745391035
+   ],
+   [
+    0.0279745391035,
+    0.103011833432
+   ]
+  ],
+  [
+   [
+    4.8643467345,
+    0.121553895347
+   ],
+   [
+    0.121553895347,
+    1.7702308711
+   ]
+  ]
+ ],
+ "state_summary": [
+  {
+   "state": 0,
+   "name": "calm",
+   "days": 835,
+   "share": 0.528816,
+   "ann_vol": 0.125396,
+   "ann_mean_log_return": 0.170145,
+   "expected_spell_days": 93.745
+  },
+  {
+   "state": 1,
+   "name": "stressed",
+   "days": 565,
+   "share": 0.357821,
+   "ann_vol": 0.224196,
+   "ann_mean_log_return": 0.032947,
+   "expected_spell_days": 51.193
+  },
+  {
+   "state": 2,
+   "name": "crisis",
+   "days": 179,
+   "share": 0.113363,
+   "ann_vol": 0.536771,
+   "ann_mean_log_return": -0.561442,
+   "expected_spell_days": 83.286
+  }
+ ],
+ "fit": {
+  "log_likelihood": -2229.5478,
+  "n_iter": 33,
+  "converged": true,
+  "labelling": "Viterbi path (most likely regime sequence)"
+ },
+ "labels": {
+  "encoding": "run_length",
+  "first_date": "2007-06-22",
+  "last_date": "2013-09-27",
+  "n_days": 1579,
+  "counts": [
+   835,
+   565,
+   179
+  ],
+  "segments": [
+   [
+    "2007-06-22",
+    0
+   ],
+   [
+    "2007-07-26",
+    1
+   ],
+   [
+    "2007-09-27",
+    0
+   ],
+   [
+    "2007-11-01",
+    1
+   ],
+   [
+    "2008-04-30",
+    0
+   ],
+   [
+    "2008-06-06",
+    1
+   ],
+   [
+    "2008-09-15",
+    2
+   ],
+   [
+    "2009-04-28",
+    1
+   ],
+   [
+    "2009-08-04",
+    0
+   ],
+   [
+    "2009-10-21",
+    1
+   ],
+   [
+    "2009-12-01",
+    0
+   ],
+   [
+    "2010-02-01",
+    1
+   ],
+   [
+    "2010-03-02",
+    0
+   ],
+   [
+    "2010-05-04",
+    1
+   ],
+   [
+    "2010-09-27",
+    0
+   ],
+   [
+    "2011-08-02",
+    1
+   ],
+   [
+    "2011-08-08",
+    2
+   ],
+   [
+    "2011-09-12",
+    1
+   ],
+   [
+    "2012-01-11",
+    0
+   ],
+   [
+    "2012-06-06",
+    1
+   ],
+   [
+    "2012-07-11",
+    0
+   ]
+  ],
+  "note": "segments: [first day, state]; a day's state is that of the last segment starting on or before it"
+ },
+ "sha256": "7df0462584250fb9dc13821efe747fc6d136dfe8c73346a2b83f4977ed387a69"
+}

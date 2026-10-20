@@ -1,0 +1,614 @@
+# EgoQuant market briefing: configuration.
+#
+# PROVISIONAL: every number and list here is a team proposal for the FinTechathon demo, with a one-line
+# reason. The code reads all of it from this file; nothing below is hard-coded in the logic.
+# The briefing is shown ALONGSIDE the portfolio and never changes it.
+
+version: briefing-0.1.0
+
+# Briefing period: the window a briefing SUMMARISES (an investor-level setting). Separate from `cadence` below,
+# which is how OFTEN a briefing is refreshed. PROVISIONAL presets; build_briefing(briefing_period=...) applies one.
+briefing_periods:
+  week:  {period_days: 7,  lookback_days: 14, recency_half_life_days: 3,  this: "this week",  last: "last week"}
+  month: {period_days: 30, lookback_days: 60, recency_half_life_days: 10, this: "this month", last: "last month"}
+default_briefing_period: week
+
+window:                      # = the week preset (kept for callers that do not choose a period)
+  lookback_days: 14          # two full periods, so a period-over-period change can be computed
+  period_days: 7             # one briefing period = one week, matching the default weekly cadence
+  max_items: 5000            # PROVISIONAL hard cap on items per run (was 300: with ~140 feeds per investor the
+                             # newest 300 crowded out last week's relevant headlines). LLM spend has its own caps.
+
+dedupe:
+  title_similarity: 0.90     # titles at least this similar (difflib ratio) are treated as the same story
+
+truncation:
+  summary_chars: 600         # feed summary/description kept per item; we never store full articles
+  reddit_selftext_chars: 500 # forum posts can be long; keep the opening only
+  finbert_max_tokens: 512    # FinBERT's (BERT's) maximum input length
+
+tone:
+  method: llm_fund_aware     # PROVISIONAL: llm_fund_aware (primary; FinBERT fallback) | finbert (FinBERT only)
+  llm_model: gpt-4.1-mini    # the EVALUATED model for prompts/fund_aware_tone.txt; changing it needs a new evaluation
+  llm_max_calls_per_run: 100 # spending cap for fund-aware tone calls; uncached pairs beyond it use FinBERT
+  llm_values: {positive: 1.0, neutral: 0.0, negative: -1.0}   # fund-aware label -> tone value
+  display:                   # PROVISIONAL words for a per-fund tone value (symmetric bands)
+    strong: 0.5              # >= +0.5 mostly positive; <= -0.5 mostly negative
+    slight: 0.15             # +0.15..+0.5 slightly positive; -0.5..-0.15 slightly negative; between: mixed or neutral
+  header_note: "News tone: AI-assessed for holders of each fund. On 120 headlines labeled by our team, this method matched the human label 85% of the time (FinBERT: 53%). FinBERT is used when offline."
+  finbert_header_note: "News tone: FinBERT, which reads the wording of each headline. On 120 headlines labeled by our team it matched the human label 53% of the time."
+  model: ProsusAI/finbert    # local, free, finance-tuned; fallback (and the method when tone.method is finbert)
+  source_weights:            # how much each source type counts in an aggregate
+    outlet: 1.0              # edited news
+    analyst: 1.0             # research notes
+    filing: 1.0              # regulatory filings and official releases
+    forum: 0.4               # anonymous, easy to brigade or manipulate, so it counts less
+  recency_half_life_days: 3  # news older than a few days matters less for "what changed this week"
+  min_items_for_aggregate: 3 # below this an aggregate is "not enough coverage", not a number
+  neutral_gating: true       # PROVISIONAL: tone = 0 when P(neutral) is the largest probability (matches the
+                             # evaluated FinBERT label); otherwise P(pos) - P(neg). Raw probabilities are kept.
+
+alerts:
+  # PROVISIONAL. Change in weighted tone (scale -1..1) between periods that counts as material. 0.5, not 0.3:
+  # fund-aware labels are +1/0/-1 and an aggregate needs >= 3 headlines, so ONE neutral->negative flip in a
+  # 3-headline window already moves the score by 0.33. At 0.5 about half the headlines must turn neutral->negative
+  # (or a quarter flip sign) before the investor is offered a re-check. Counts: eval/alert_thresholds.py.
+  tone_change_threshold: 0.5
+  min_exposure: 0.05           # only alert when the investor holds more than 5% in the affected instruments/area
+  # The ONLY alert action that exists is offer_risk_profile_recheck (hard-wired in models.py, not configurable).
+
+suitability:
+  note: "Some instruments in {area} are above your risk level (R{max_r}) and are shown for information only."
+
+diversity:
+  max_share_one_type: 0.60     # if one source type supplies more than 60% of an area's items, suggest others
+  one_sided_tone: 0.50         # ...or if the dominant type's tone is this one-sided (|tone| >= 0.5)
+  min_items: 3                 # do not judge diversity on fewer items than this
+  curated_sources:             # the ONLY sources ever suggested (verify URLs before the demo)
+    - {name: "Federal Reserve press releases", url: "https://www.federalreserve.gov/feeds/press_all.xml", type: outlet}
+    - {name: "U.S. SEC press releases", url: "https://www.sec.gov/news/pressreleases.rss", type: outlet}
+    - {name: "U.S. Bureau of Labor Statistics releases", url: "https://www.bls.gov/feed/bls_latest.rss", type: outlet}
+    - {name: "European Central Bank press releases", url: "https://www.ecb.europa.eu/rss/press.html", type: outlet}
+    - {name: "SEC EDGAR fund filings", url: "https://www.sec.gov/edgar/search/", type: filing}
+
+cadence:                       # horizon -> how often a briefing is produced (metadata for the app; no scheduler)
+  rules:
+    - {min_horizon_years: 0.25, frequency: weekly}   # longer horizons do not need daily news
+    - {min_horizon_years: 0.0, frequency: daily}     # short horizons: more frequent
+  alerts_between_briefings: true                     # material-change alerts are not held back for the next briefing
+
+llm:
+  enabled: true                # global switch; tests force it off; false = template summaries only
+  model_env: OPENAI_MODEL      # env var that names the model (same as chat.py)
+  model_default: gpt-4.1-mini  # used when the env var is not set
+  temperature: 0               # most repeatable output
+  max_output_tokens: 300       # a 2-3 sentence summary needs far fewer; caps cost per call
+  timeout_seconds: 20
+  max_llm_calls_per_run: 60    # spending cap; items beyond it get the template summary
+  prompt_version: brief-v1     # part of the cache key; bump it when the prompt changes
+  summary_max_chars: 400       # longer outputs are rejected (template fallback)
+  summary_max_sentences: 3
+
+# Advice / forecast filter: case-insensitive regular expressions. They target ADVICE and FORECASTS, not
+# market vocabulary: "Investors sell bonds", "a broad sell-off", "share buyback" or "the fund outperformed
+# its index last year" are facts and pass. A summary that matches is never shown (template fallback; the
+# item stays in the briefing). Final rendered lines are checked again.
+forbidden_patterns:
+  - '\b(you|investors|readers|we|they|one)\s+(should|must|ought\s+to|need\s+to)\s+(buy|sell|hold|invest|consider|add|exit|avoid|accumulate|load\s+up)\b'
+  - '\bshould\s+(buy|sell|hold|invest)\b'                          # "... should buy"
+  - '\b(buy|sell)\s+(\w+\s+){0,2}?(now|today|immediately|right\s+away|on\s+(any\s+)?(dips?|weakness|strength|rallies))\b'
+  - '\bbuy\s+the\s+dip\b'
+  - '\btime\s+to\s+(buy|sell)\b'
+  - '\b(buy|sell)\s+(signal|recommendation)s?\b'
+  - '\bstrong\s+(buy|sell)\b'
+  - '\b(buy|sell|hold)\s+ratings?\b'                                # "sell rating"
+  - '\b(rated|rates|rating|upgrades?|upgraded|downgrades?|downgraded)\s+(\w+\s+){0,3}?(to\s+)?(an?\s+)?(buy|sell|hold|outperform|underperform|overweight|underweight)\b'
+  - '\b(we|i)\s+recommend\b'
+  - '\brecommend(s|ed)?\s+(buying|selling|holding|investing|adding)\b'
+  - '\bprice\s+targets?\b'
+  - '\bwill\s+(rise|fall|drop|climb|surge|soar|crash|rally|recover|decline|rebound|increase|decrease|go\s+up|go\s+down)\b'
+  - '\b(is|are)\s+(going|bound|set|poised)\s+to\s+(rise|fall|drop|climb|surge|soar|crash|rally|rebound)\b'
+  - '\b(may|could|will|likely\s+to|set\s+to|poised\s+to)\s+(out|under)perform\b'
+  - '\bguarantee(d|s)?\b'
+  - '\bhold\s+(on\s+to|onto)\s+(your|these|this|the)\b'
+  - '\bgo\s+(long|short)\b'
+  - '\bmust[- ]own\b'
+  - '\b(upside|downside)\s+of\s+\d'
+  - '\b(instructions?|instructs?|tells?|telling|urges?|urging|advises?|advising)\s+(\w+\s+){0,2}?to\s+(buy|sell|hold)\b'   # relayed advice
+  - '\bpredicts?\s+(an?\s+)?\d+(\.\d+)?\s*%\s+(rise|gain|jump|increase|fall|drop|decline)\b'   # relayed forecasts
+
+# Exchange tags such as "(NASDAQ:SHY)", "(NYSEARCA:SCHD)", "(NYSE ARCA:VNQ)" count as a mention of that ticker
+# only (like a $cashtag) and are removed before keyword matching, so the exchange name never matches a fund.
+# US exchange tags only: "(NYSEARCA:SCHD)" is a mention of that US fund. Any OTHER exchange tag ("(ASX:IVV)",
+# "(LSE:VUSA)", "(TSX:XIU)") is a different, non-US listing: it is removed and never matches a US fund.
+exchange_tag_prefixes: [NASDAQ, NYSE, NYSEARCA, NYSE ARCA, NYSE AMERICAN, NYSEAMERICAN, CBOE, BATS]
+# Non-US exchanges also written WITHOUT parentheses ("ASX:IVV"); those mentions are removed before matching too.
+non_us_exchange_prefixes: [ASX, LSE, LON, TSX, TSXV, TSE, HKEX, HKG, SGX, NZX, XETRA, ETR, FRA, EPA, AMS, BIT, BME, SIX, SWX, TYO, JPX, KRX, NSE, BSE, SHA, SHE, SZSE, SSE, JSE, BMV, B3]
+
+# PROVISIONAL: titles that are quote, chart, holdings or listing pages, or truncated, not news. They are dropped
+# in fetch.prepare (before dedupe) by both the live briefing and eval/collect_headlines.py: labelers and models
+# would both call them neutral, which would inflate accuracy. Case-insensitive regular expressions.
+non_news_patterns:
+  - '\bstock\s+price,?\s+news,?\s+quote\s*(&|and)\s*history\b'   # "(IAU) Stock Price, News, Quote & History"
+  - '\bstock\s+price\s*(&|and)\s*news\b'                          # "... - VTI - Stock Price & News"
+  - '\bprice,?\s+quote\s*(&|and)\s*chart\b'                       # "LQD Price, Quote & Chart, NYSE ARCA"
+  - '\boptions\s+chain\b'                                        # "(SCHD) Options Chain - Yahoo Finance"
+  - '\bholdings?\s+history\b'                                    # "...ETF(VNQ) Holding History"
+  - '\btop\s+holdings\s+list\b'                                  # "VNQ Top Holdings List & Exposure"
+  - '\)\s*holdings\s*$'                                           # "...(VXUS.DE) holdings"
+  - '\binteractive\s+stock\s+chart\b'
+  - '^\s*\$[^$]+\$\s*$'                                            # "$Schwab US Dividend Equity ETF (SCHD.US)$" quote tag
+  - '(\.\.\.|…)\s*$'                                              # truncated titles
+  - '\bpre-market\s+most\s+active\b'                             # lists of tickers, no news
+  - '\boptions\s+begin\s+trading\b'                              # listing notices
+  - '^[^:?!%]*\b(ETF|Trust|Funds?|PLC|Shares|Acc)\b[^:?!%]*\(\s*[A-Z0-9]{1,6}(\.[A-Z]{1,3})?\s*\)\s*$'   # bare quote page: "iShares Bitcoin Trust ETF (IBIT)"
+
+# Single-stock catalog names that are ambiguous even when capitalized ("the Dow" usually means the index). They
+# match only as $cashtags or exchange tags. Other stock names match case-sensitively (proper nouns).
+ambiguous_stock_names: [Dow]
+
+# Tickers that are also ordinary words or abbreviations: never matched as bare words (only $CASHTAGS, US exchange
+# tags, the instrument's name or keywords).
+ticker_stopwords: [VT, VB,
+                   C, CAT, D, DIS, LOW, MA, NOW, O, SO, T, V, WELL]   # stocks in Agent C's catalog: "T-bills" is not AT&T
+# PROVISIONAL: fund tickers that are also English words. They match a bare headline token ONLY in capitals and as a
+# whole token ("BIL: ETF Inflow Alert", "Noteworthy ETF Inflows: SHY"), never in another case ("Investors Shy Away",
+# "shy"), never before a hyphen or apostrophe, and never in a headline written entirely in capitals.
+capital_only_tickers: [SHY, BIL, TIP, AGG]
+
+# Extra words per catalog instrument (keys MUST be Agent C catalog tickers; a test checks this).
+# The catalog's own name and aliases are added automatically. A keyword written in ALL CAPS is matched
+# case-sensitively (so "TIPS" does not match "tips"); everything else is case-insensitive, whole words.
+instrument_keywords:
+  BIL: ["T-bill", "T-bills", "Treasury bill", "Treasury bills", "1-3 month Treasury", "bill yields"]
+  AGG: ["aggregate bond", "core bond"]
+  SHY: ["short-term Treasury", "short-term Treasuries", "2-year Treasury", "two-year Treasury", "1-3 year Treasury", "1-3 year Treasuries", "2-year yield"]
+  VT: ["global stocks", "world stocks", "global equities"]
+  VTI: ["U.S. stocks", "US stocks", "S&P 500", "U.S. stock market"]
+  VXUS: ["international stocks", "developed-market stocks", "non-U.S. stocks", "European stocks", "Japanese stocks"]
+  VWO: ["emerging markets", "emerging-market stocks", "emerging market"]
+  QQQ: ["Nasdaq-100", "Nasdaq 100", "Nasdaq Composite", "tech stocks", "technology stocks", "chipmakers", "semiconductor stocks"]   # not bare "Nasdaq" (the exchange, e.g. "(NASDAQ:SHY)")
+  VB: ["small-cap", "small caps", "small-cap stocks", "Russell 2000"]
+  SCHD: ["dividend stocks", "dividend payers", "dividend-paying"]
+  VNQ: ["real estate", "REIT", "REITs", "commercial property", "office vacancies"]
+  IEF: ["10-year Treasury", "ten-year Treasury", "intermediate Treasuries", "Treasury yields", "10-year yield", "7-10 year Treasury"]
+  TLT: ["long-term Treasury", "long-term Treasuries", "long-dated Treasuries", "30-year Treasury"]
+  LQD: ["corporate bonds", "investment-grade credit", "corporate credit spreads"]   # not bare "credit spreads" (options)
+  TIP: ["TIPS", "inflation-protected", "inflation-linked bonds"]
+  VTIP: ["short-term TIPS", "inflation-protected"]
+  VIG: ["dividend growth", "dividend growers"]
+  VYM: ["high-dividend", "high dividend yield"]
+  IEFA: ["EAFE", "developed markets", "developed-market stocks"]
+  BND: ["total bond market"]
+  BNDX: ["international bonds", "global bonds", "foreign bonds"]
+  IAU: ["gold price", "gold prices", "gold futures", "spot gold", "bullion"]   # not bare "gold" ("gold medal")
+  SLV: ["silver"]
+  PDBC: ["commodities", "commodity prices", "crude oil", "oil prices", "copper prices"]
+  IBIT: ["bitcoin ETF", "bitcoin ETFs", "spot bitcoin"]
+  BTCUSDT: ["bitcoin"]
+  ETHUSDT: ["ether", "ethereum"]
+
+# Live sources for the demo and for eval/collect_headlines.py (users choose their own in the app).
+live_sources:
+  rss:
+    - {name: "Federal Reserve press releases", url: "https://www.federalreserve.gov/feeds/press_all.xml", type: outlet}
+    - {name: "U.S. SEC press releases", url: "https://www.sec.gov/news/pressreleases.rss", type: outlet}
+    - {name: "U.S. Bureau of Labor Statistics releases", url: "https://www.bls.gov/feed/bls_latest.rss", type: outlet}
+    # Established market news (verified 19 Oct 2026: each returns dated items; headline + link + date are kept)
+    - {name: "MarketWatch", url: "https://feeds.content.dowjones.io/public/rss/mw_topstories", type: outlet, headline_only: true}
+    - {name: "MarketWatch", url: "https://feeds.content.dowjones.io/public/rss/mw_bulletins", type: outlet, headline_only: true}
+    - {name: "CNBC", url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114", type: outlet, headline_only: true}
+    - {name: "CNBC", url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069", type: outlet, headline_only: true}
+    - {name: "CNBC", url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839135", type: outlet, headline_only: true}
+    - {name: "CNBC", url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258", type: outlet, headline_only: true}
+    - {name: "PR Newswire", url: "https://www.prnewswire.com/rss/financial-services-latest-news/financial-services-latest-news-list.rss", type: outlet, headline_only: true}
+    # Fund issuers' own press-release feeds (BlackRock, Vanguard, Invesco, State Street, Schwab) returned 404 or HTML on
+    # 19 Oct 2026; their releases still arrive through Business Wire / PR Newswire and Google News.
+  # Free per-ticker headline feeds. {ticker} is filled in from an EXPLICIT ticker list: all US-listed catalog
+  # funds for eval/collect_headlines.py, only the investor's relevant tickers for live briefings.
+  # headline_only: keep headline, link and date (drop the feed's summary). Free, non-commercial use.
+  # publisher_from: how the REAL publisher is found (it becomes source_name; the feed name is kept in NewsItem.feed):
+  #   link_domain     Yahoo syndicates other sites; the link's domain names the publisher (sources.publisher_domains)
+  #   author          Nasdaq's feed names the partner in <author> ("The Motley Fool", "BNK Invest")
+  #   source_element  Google News: the entry's <source> element; the " - Publisher" title suffix is removed
+  rss_per_ticker:
+    - {name: "Yahoo Finance", url_template: "https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US", type: outlet, headline_only: true, publisher_from: link_domain}
+    - {name: "Nasdaq", url_template: "https://www.nasdaq.com/feed/rssoutbound?symbol={ticker}", type: outlet, headline_only: true, publisher_from: author}
+    - {name: "Google News", url_template: "https://news.google.com/rss/search?q={ticker}+ETF&hl=en-US&gl=US&ceid=US:en", type: outlet, headline_only: true, strip_publisher_suffix: true, publisher_from: source_element}
+    - {name: "Seeking Alpha", url_template: "https://seekingalpha.com/api/sa/combined/{ticker}.xml", type: outlet, headline_only: true}
+  # Google News searched by fund NAME (holdings) and by TOPIC (per interest area), not only by ticker. {query} is
+  # URL-encoded. Results go through the same matching, tiers and dedupe as everything else.
+  query_feeds:
+    - {name: "Google News", url_template: "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en", type: outlet, headline_only: true, strip_publisher_suffix: true, publisher_from: source_element}
+  name_queries: true             # one Google News search per held fund's name ("iShares 1-3 Year Treasury Bond ETF")
+  topic_queries:                 # PROVISIONAL search phrases per interest area (US markets: our funds are US-listed)
+    bonds: ["U.S. Treasury yields", "U.S. bond market", "bond ETF"]
+    government_bonds: ["U.S. Treasury yields", "U.S. Treasury bonds", "Treasury auction"]
+    cash: ["U.S. Treasury bills", "money market funds"]
+    inflation_protected: ["TIPS inflation-protected", "U.S. inflation expectations"]
+    corporate_bonds: ["U.S. corporate bonds", "credit spreads"]
+    stocks: ["U.S. stock market", "S&P 500"]
+    us_stocks: ["S&P 500", "U.S. stocks"]
+    international_stocks: ["international stocks ETF", "developed markets stocks"]
+    emerging_markets: ["emerging markets stocks"]
+    dividend_stocks: ["dividend stocks", "dividend ETF"]
+    real_estate: ["REIT stocks", "U.S. real estate stocks", "commercial real estate REIT"]
+    technology: ["tech stocks", "semiconductor stocks"]
+    healthcare: ["healthcare stocks"]
+    gold: ["gold price"]
+    commodities: ["commodity prices", "oil prices"]
+    crypto: ["bitcoin ETF", "bitcoin price"]
+  user_agent: "EgoQuant-eval/0.1 (hackathon research)"   # identifies us to feed hosts
+  request_pause_seconds: 0.5   # polite pause between feed requests
+  max_live_tickers: 30         # PROVISIONAL (was 15): holdings first (by weight), then interest areas round-robin
+  subreddits: [investing, Bogleheads, ETFs]
+  reddit_posts_per_subreddit: 50
+  edgar_enabled: false         # true, OR the SEC_USER_AGENT environment variable set, turns on SEC EDGAR filings
+  edgar_filings_per_ticker: 5
+  tiingo_news_enabled: false   # DISABLED: Tiingo's news API needs a paid plan (cost rule: no paid news/sentiment APIs)
+
+# --------------------------------------------------------------------------------------------------------------
+# Source reliability (PROVISIONAL; from the 14-day source audit of 18 Oct 2026, headlines read per source).
+# Tone weight per tier. tier3 items are LISTED ("low-reliability sources, not used for tone") but never count for
+# tone or alerts, and get no LLM call. Forums keep tone.source_weights.forum (0.4) unless they are tier3.
+# Matching is by the real publisher (source_name) first, then by headline pattern (tier3_title_patterns win).
+# --------------------------------------------------------------------------------------------------------------
+sources:
+  future_date_tolerance_minutes: 15   # a feed date later than fetch time + this is rejected (clock or feed error)
+  tier_weights: {tier1: 1.0, tier2: 0.7, unrated: 0.4}
+  tier_labels:
+    tier1: "Established"
+    tier2: "Opinion & analysis"
+    unrated: "Not yet reviewed"
+    tier3: "Automated pages"
+  tier_explanations:
+    tier1: "wires, newspapers, regulators, fund issuers"
+    tier2: "named authors giving opinions"
+    unrated: "sites we haven't rated"
+    tier3: "template or auto-generated pages, shown for transparency"
+  tiers:
+    tier1:
+      Reuters: "global news wire"
+      AP: "global news wire"
+      Associated Press: "global news wire"
+      Bloomberg: "financial news wire"
+      The Wall Street Journal: "national newspaper"
+      Financial Times: "national newspaper"
+      CNBC: "financial broadcaster"
+      MarketWatch: "Dow Jones financial news"
+      Barron's: "Dow Jones financial weekly"
+      Morningstar: "fund research firm"
+      ETF.com: "ETF data and news"
+      ETF Database: "ETF data and news (VettaFi)"
+      Investor's Business Daily: "financial newspaper"
+      The Globe and Mail: "national newspaper"
+      Hindustan Times: "national newspaper"
+      NDTV Profit: "national financial broadcaster"
+      Kitco: "precious-metals news desk"
+      Business Wire: "press-release wire (issuer releases)"
+      PR Newswire: "press-release wire (issuer releases)"
+      GlobeNewswire: "press-release wire (issuer releases)"
+      Invesco: "fund issuer"
+      Vanguard: "fund issuer"
+      iShares: "fund issuer"
+      BlackRock: "fund issuer"
+      State Street Global Advisors: "fund issuer"
+      Schwab: "fund issuer"
+      World Gold Council: "industry body for gold"
+      CME Group: "exchange operator"
+      Federal Reserve press releases: "regulator / central bank"
+      U.S. SEC press releases: "regulator"
+      U.S. Bureau of Labor Statistics releases: "official statistics"
+      SEC EDGAR: "regulatory filings"
+      Sample Market Wire: "invented DEMO source (sample news only)"
+      Example Financial Daily: "invented DEMO source (sample news only)"
+      Sample Filings Feed: "invented DEMO source (sample news only)"
+    tier2:
+      The Motley Fool: "analysis with named authors"
+      The Motley Fool Australia: "analysis with named authors"
+      Seeking Alpha: "contributor analysis with named authors"
+      Zacks: "research commentary"
+      Zacks Investment Research: "research commentary"
+      Kiplinger: "personal-finance commentary"
+      24/7 Wall St.: "commentary with named authors"
+      Yahoo Finance: "Yahoo Finance originals and partners"
+      Nasdaq: "Nasdaq.com syndicated articles"
+      Benzinga: "market commentary"
+      TheStreet: "market commentary"
+      Investing.com: "market commentary"
+      TradingView: "market commentary and syndicated news"
+      Stocktwits: "market commentary desk"
+      FXStreet: "market commentary"
+      Finimize: "market commentary"
+      The Daily Upside: "market newsletter"
+      NerdWallet: "personal-finance commentary"
+      YCharts: "data-driven commentary"
+      Barchart: "market commentary"
+      AOL.com: "syndicated commentary"
+      ETF Trends: "ETF commentary (VettaFi)"
+      Trefis: "data-driven commentary"
+      International Business Times: "general news with market coverage"
+      Decrypt: "crypto news with named authors"
+      BeInCrypto: "crypto news with named authors"
+      Cryptonews: "crypto news with named authors"
+      Cryptonews.net: "crypto news aggregator"
+      CryptoSlate: "crypto news with named authors"
+      Investopedia: "financial education"
+      U.S. News - Money: "personal-finance commentary"
+      StreetInsider: "market news (mixed with sponsored items)"
+      TIKR: "data-driven commentary"
+      Demo Research Notes: "invented DEMO source (sample news only)"
+      Illustrative Fund Analytics: "invented DEMO source (sample news only)"
+    tier3:
+      Stock Traders Daily: "template-generated trading-signal pages"
+      Kalkine: "template pages ('What did X say for Y')"
+      Kalkine Media: "template pages ('What did X say for Y')"
+      kalkine.ca: "template pages ('What did X say for Y')"
+      GuruFocus: "auto-generated holding-history pages"
+      MarketBeat: "auto-generated holdings and 13F pages"
+      Moomoo: "quote and options pages"
+      BNK Invest: "auto-generated ETF flow alerts"
+      BigGo Finance: "AI-written aggregator"
+      Pluang: "truncated automated rewrites"
+      ad-hoc-news.de: "automated aggregator"
+      intelligentinvestor.com.au: "warrant listing pages"
+      www.intelligentinvestor.com.au: "warrant listing pages"
+      Bybit: "price-prediction pages"
+      Binance: "price pages"
+      CryptoRank: "analytics pages"
+      Yahoo! Finance Canada: "quote and options pages"
+      Yahoo Finance UK: "quote pages"
+      Yahoo Finance Australia: "quote and options pages"
+      Yahoo Finance Singapore: "quote and options pages"
+      TOP1markets: "broker marketing"
+      VT Markets: "broker marketing"
+      Sample Flow Alerts: "invented DEMO source (sample news only)"
+      Sample Holdings Pages: "invented DEMO source (sample news only)"
+  # Headlines like these are tier3 whatever the source (quote, flow, holdings, listing and template pages).
+  tier3_title_patterns:
+    - '\bholding history\b'
+    - '\bshares (in|of)\b.{0,80}\b(acquired|sold|bought|purchased)\s+by\b'
+    - '\btop holdings list\b'
+    - '\betf (inflow|outflow) alert\b'
+    - '\b(large )?(inflows|outflows) detected\b'
+    - '\boptions chain\b'
+    - '\bstock price,? news,? quote\b'
+    - '\bprice prediction\b'
+    - '\bwhat did\b.{0,80}\bsay (for|about)\b'
+    - '\bpre-market most active\b'
+    - '\binstal(ment)?\b'
+  # Yahoo Finance links point at the publisher's own site (feed publisher_from: link_domain).
+  publisher_domains:
+    finance.yahoo.com: "Yahoo Finance"
+    247wallst.com: "24/7 Wall St."
+    www.fool.com: "The Motley Fool"
+    fool.com: "The Motley Fool"
+    www.etf.com: "ETF.com"
+    www.trefis.com: "Trefis"
+    www.marketwatch.com: "MarketWatch"
+    www.barchart.com: "Barchart"
+    cryptonews.com: "Cryptonews"
+    stocktwits.com: "Stocktwits"
+    www.marketbeat.com: "MarketBeat"
+    www.tikr.com: "TIKR"
+    decrypt.co: "Decrypt"
+    www.ibtimes.com: "International Business Times"
+    beincrypto.com: "BeInCrypto"
+    www.investopedia.com: "Investopedia"
+    www.reuters.com: "Reuters"
+    www.bloomberg.com: "Bloomberg"
+    www.cnbc.com: "CNBC"
+    www.barrons.com: "Barron's"
+    www.wsj.com: "The Wall Street Journal"
+    www.morningstar.com: "Morningstar"
+    www.kiplinger.com: "Kiplinger"
+    www.zacks.com: "Zacks"
+    seekingalpha.com: "Seeking Alpha"
+    www.benzinga.com: "Benzinga"
+  # Nasdaq's own automated pages carry the author "NASDAQ.com"; their titles are covered by tier3_title_patterns.
+
+# --------------------------------------------------------------------------------------------------------------
+# Region signals (PROVISIONAL). A KEYWORD match (not a ticker, $cashtag or US exchange tag) for a US-region fund
+# (US Treasuries/T-bills, US bond, US stock and US sector funds) is dropped when the text names a foreign
+# government, currency, central bank or bill code and no US signal. The generic bill/auction/yield terms need a US
+# signal as well (and no foreign one): "Pakistan raises Rs685.5bn at treasury bill auction" is not about BIL.
+# --------------------------------------------------------------------------------------------------------------
+region_signals:
+  us: ['\bU\.\s?S\.', '\bUS\b', '\bUSA\b', '\bAmerican?\b', '\bWashington\b', '\bTreasury (Department|Secretary)\b',
+       '\bBessent\b', '\bFed\b', '\bFederal Reserve\b', '\bFOMC\b', '\b(Fed|Chair|Chairman|Jerome|Jay) Powell\b|\bPowell\b(?=[^.;]{0,60}\b(rates?|inflation|Fed|FOMC|policy|hikes?|cuts?|economy|Treasur))', '\bTreasuryDirect\b',
+       '\$\s?\d', '\bWall Street\b', '\bS&P\b', '\bNasdaq\b', '\bNYSE\b', '\bDow\b']
+  foreign:
+    - '\b(Pakistan|Nigeria|Ghana|Kenya|India|Iceland|Bangladesh|Sri Lanka|Egypt|Philippines|Indonesia|Malaysia|Turkey|Türkiye|South Africa|Zambia|Uganda|Tanzania|Rwanda|Ethiopia|Malawi|Mozambique|Zimbabwe|Botswana|Namibia|Mauritius|Jamaica|Trinidad|Nepal|Vietnam|Thailand|Korea|Japan|China|Hong Kong|Taiwan|Singapore|Australia|New Zealand|Canada|Mexico|Brazil|Argentina|Chile|Colombia|Peru|Saudi|UAE|Qatar|Kuwait|Oman|Bahrain|Israel|Jordan|Lebanon|Morocco|Tunisia|Algeria|Germany|France|Italy|Spain|Portugal|Greece|Ireland|Netherlands|Belgium|Austria|Switzerland|Sweden|Norway|Denmark|Finland|Poland|Hungary|Czech|Romania|Ukraine|Russia|Britain|U\.K\.|UK|England|Scotland|Eurozone|euro area)\b'
+    - '\b(Pakistani|Nigerian|Ghanaian|Kenyan|Indian|Icelandic|Egyptian|Filipino|Turkish|Japanese|Chinese|Korean|Australian|Canadian|Mexican|Brazilian|British|German|French|Italian|Spanish|European|Saudi)\s+(?i:bills?|bonds?|government|treasury|treasuries|central bank|debt|auction|stocks?|shares|equities|REITs?|dividend stocks|companies|stock market)'
+    - '(\bRs\.?\s?\d|₦|₹|GH¢|Gh¢|\bKSh\b|\bKsh\b|\bISK\b|€|£|¥|\bNaira\b|\brupees?\b|\bcedis?\b|\bshillings?\b|\brand\b|\bpesos?\b|\blira\b|\btaka\b|\bPKR\b|\bNGN\b|\bINR\b|\bKES\b|\bZAR\b|\bEGP\b|\bBDT\b)'
+    - '\b(LSE|LON|TSX|TSXV|ASX|HKEX|HKG|SGX|NZX|XETRA|ETR|FRA|EPA|AMS|SIX|SWX|TYO|JPX|KRX|NSE|BSE|JSE)\s*:\s*[A-Z]'   # non-US listing tag
+    - '\b(EM|emerging[- ]markets?|developing (countries|economies))\b'     # EM credit/bonds are not US bonds
+    - '\b(RBI|CBN|SBP|BoE|ECB|BoJ|BOJ|PBOC|PBoC|SNB|RBA|RBNZ|Bank of (England|Japan|Canada|Ghana|Korea|Thailand)|Central Bank of [A-Z][a-z]+|State Bank of Pakistan|Reserve Bank of [A-Z][a-z]+)\b'
+    - '\bRIKV\b|\bRIKB\b'
+  # keyword terms that alone are too generic for a US fund: they need a US signal in the same text
+  # Bill and auction words are used by every government: alone they need a US signal. (Yield words are protected by
+  # the foreign-signal check only: "Treasury yields" in English financial news is the US market.)
+  generic_terms: ["T-bill", "T-bills", "Treasury bill", "Treasury bills", "bill yields", "1-3 month Treasury",
+                  "Treasury auction", "auction"]
+  # crypto news ("BNB Chain claims 42.6% of tokenized stock market") is never stock-market news: with one of these,
+  # stock-market themes and equity funds' topic words do not count (a fund's own name or ticker still does)
+  crypto: ['(?i)\b(crypto(currenc(y|ies))?|bitcoin|BTC|ethereum|ether|solana|BNB|XRP|stablecoins?|tokeni[sz]ed|on-chain|blockchain|DeFi|altcoins?|memecoins?)\b']
+  us_region_areas: [cash, government_bonds, long_term_bonds, bonds, corporate_bonds, inflation_protected, us_stocks,
+                    small_caps, dividend_stocks, real_estate]
+
+# --------------------------------------------------------------------------------------------------------------
+# Exposure news (PROVISIONAL): news about what a fund HOLDS, attached to every held fund with that theme and rated per
+# fund with the same pinned prompt. Fund-specific items weigh 1.0 x tier x recency; exposure items x factor.
+# Themes come from Agent C's catalog fields (rules below, first matching rules all apply) plus overrides.
+# --------------------------------------------------------------------------------------------------------------
+exposure:
+  factor: 0.6
+  cap_per_theme: {week: 15, month: 40}      # newest first, per period, after dedupe
+  group_above_holdings: 6                   # My portfolio groups holdings by theme above this many
+  small_position: 0.02                      # holdings below 2% are collapsed and fetched after the larger holdings
+exposure_themes:
+  us_tbills_fed:
+    label: "US T-bills & Fed policy"
+    region: us
+    match: ['\bFed\b', '\bFederal Reserve\b', '\bFOMC\b', '\b(Fed|Chair|Chairman|Jerome|Jay) Powell\b|\bPowell\b(?=[^.;]{0,60}\b(rates?|inflation|Fed|FOMC|policy|hikes?|cuts?|economy|Treasur))', '\brate (cut|cuts|hike|hikes)\b', '\bT-bills?\b', '\bTreasury bills?\b', '\bmoney[- ]market (funds?|yields?)\b']
+    queries: ["Federal Reserve interest rates", "FOMC decision", "U.S. Treasury bill auction", "money market fund yields"]
+  short_ust:
+    label: "Short-term US Treasuries & Fed policy"
+    region: us
+    match: ['\bFed\b', '\bFederal Reserve\b', '\bFOMC\b', '\b(Fed|Chair|Chairman|Jerome|Jay) Powell\b|\bPowell\b(?=[^.;]{0,60}\b(rates?|inflation|Fed|FOMC|policy|hikes?|cuts?|economy|Treasur))', '\brate (cut|cuts|hike|hikes)\b', '\b(2|two)-year (Treasury|yield)', '\bshort-term Treasur(y|ies)\b']
+    queries: ["2-year Treasury yield", "Federal Reserve rate cut"]
+  mid_ust:
+    label: "US Treasury yields"
+    region: us
+    match: ['\b(10|ten)-year (Treasury|yield)', '\bTreasury yields?\b', '\bTreasur(y|ies) (rally|selloff|sell-off|prices)\b', '\bbond market\b']
+    queries: ["10-year Treasury yield", "U.S. Treasury yields"]
+  long_ust:
+    label: "Long-term US Treasury yields"
+    region: us
+    match: ['\b(30|thirty)-year (Treasury|yield|bond)', '\b(10|ten)-year (Treasury|yield)', '\blong[- ](term|dated) Treasur(y|ies)\b', '\blong bonds?\b', '\bTreasury yields?\b']
+    queries: ["30-year Treasury yield", "long-term Treasury bonds"]
+  us_bonds:
+    label: "US bond market"
+    region: us
+    match: ['\bbond market\b', '\bcorporate bonds?\b', '\b(corporate|bond|investment[- ]grade|high[- ]yield|junk) (credit )?spreads?\b', '\bcredit spreads? (widen|widened|widening|tighten|tightened|narrow|narrowed|blow out)', '\binvestment[- ]grade\b', '\bTreasury yields?\b']
+    queries: ["U.S. bond market", "corporate bonds credit spreads"]
+  tips_inflation:
+    label: "US inflation & TIPS"
+    region: us
+    match: ['\bCPI\b', '\binflation\b', '\bPCE\b', '\bTIPS\b', '\bconsumer prices\b']
+    queries: ["U.S. inflation CPI", "TIPS inflation-protected bonds"]
+  intl_bonds:
+    label: "International bonds"
+    match: ['\bglobal bond (yields?|market)\b', '\bBunds?\b', '\bJGBs?\b', '\bgilts?\b', '\beuro(zone)? bonds?\b']
+    queries: ["global bond yields"]
+  global_stocks:
+    label: "Global stock markets"
+    match: ['\bglobal (stocks|equities|markets)\b', '\bworld (stocks|markets|equities)\b', '\bMSCI (World|ACWI|All Country)\b']
+    queries: ["global stock markets", "world stocks"]
+  us_stocks:
+    label: "US stock market"
+    region: us
+    not_with_crypto: true
+    # not bare "Wall Street" ("Wall Street analysts", "Wall Street trades"): only the market itself moving
+    match: ['\bS&P 500\b', '\b(stocks|shares)\b[^.;:]{0,30}\b(on|at) Wall Street\b', '\bWall Street (stocks|closes|ends|opens|rallies|falls|slips|gains|drops|rises|sinks|jumps|tumbles)\b', '\bDow Jones\b', '\bNasdaq Composite\b', '\bU\.?S\.? stocks\b', '\bstock market\b']
+    queries: ["Wall Street stocks", "S&P 500"]
+  dev_ex_us:
+    label: "Developed markets ex-US"
+    match: ['\bEuropean (stocks|shares|equities)\b', '\bStoxx\b', '\bNikkei\b', '\bJapanese (stocks|shares)\b', '\bFTSE 100\b', '\bDAX\b', '\bMSCI EAFE\b', '\bdeveloped markets\b']
+    queries: ["European stocks", "Japan stocks Nikkei"]
+  emerging:
+    label: "Emerging markets"
+    match: ['\bemerging[- ]markets?\b', '\bMSCI Emerging\b', '\bEM (stocks|equities|currencies)\b']
+    queries: ["emerging markets stocks"]
+  china:
+    label: "China stocks"
+    match: ['\bChin(a|ese) (stocks|shares|equities|market)\b', '\bHang Seng\b', '\bCSI 300\b', '\bShanghai Composite\b']
+    queries: ["China stocks"]
+  small_caps:
+    label: "US small caps"
+    region: us
+    match: ['\bsmall[- ]caps?\b', '\bRussell 2000\b']
+    queries: ["Russell 2000 small caps"]
+  dividends:
+    label: "Dividend stocks"
+    match: ['\bdividend (stocks|payers|growth|ETFs?|investors)\b', '\bdividend aristocrats\b']
+    queries: ["dividend stocks"]
+  sector_technology: {label: "Technology sector", match: ['\btech (stocks|sector|shares)\b', '\bsemiconductors?\b', '\bchip(maker)?s?\b', '\bsoftware stocks\b', '\bNasdaq-100\b', '\bAI (stocks|trade|bubble)\b'], queries: ["tech stocks", "semiconductor stocks"]}
+  sector_healthcare: {label: "Healthcare sector", match: ['\bhealth ?care (stocks|sector)\b', '\bpharma(ceutical)? (stocks|sector)\b', '\bbiotech\b', '\bdrugmakers?\b'], queries: ["healthcare stocks"]}
+  sector_financials: {label: "Financial sector", match: ['\bbank (stocks|shares|earnings)\b', '\bfinancial (stocks|sector)\b', '\bregional banks?\b', '\bbanks\b'], queries: ["bank stocks"]}
+  sector_energy: {label: "Energy sector", match: ['\benergy (stocks|sector)\b', '\boil (prices?|stocks|majors)\b', '\bcrude\b', '\bOPEC\b', '\bnatural gas\b'], queries: ["energy stocks oil prices"]}
+  sector_consumer: {label: "Consumer sector", match: ['\bconsumer (stocks|spending|discretionary|staples)\b', '\bretail(ers)? (sales|stocks)\b'], queries: ["consumer stocks retail sales"]}
+  sector_industrials: {label: "Industrial sector", match: ['\bindustrial (stocks|sector)\b', '\bmanufacturing\b', '\baerospace\b', '\bdefen[cs]e (stocks|spending)\b'], queries: ["industrial stocks"]}
+  sector_utilities: {label: "Utilities sector", match: ['\butilit(y|ies) (stocks|sector)\b', '\bpower (demand|prices|grid)\b'], queries: ["utility stocks"]}
+  sector_materials: {label: "Materials sector", match: ['\bmaterials (stocks|sector)\b', '\bmining stocks\b', '\bminers\b', '\bchemicals? (stocks|makers)\b'], queries: ["materials stocks mining"]}
+  sector_real_estate: {label: "Real estate", region: us, match: ['\bREITs?\b', '\breal estate (stocks|market|investment)\b', '\bcommercial (real estate|property)\b', '\boffice vacanc(y|ies)\b', '\bmortgage rates\b'], queries: ["REIT stocks", "commercial real estate"]}
+  sector_communication: {label: "Communication services", match: ['\bcommunication services\b', '\btelecom (stocks|sector)\b', '\bmedia stocks\b', '\bstreaming\b'], queries: ["communication services stocks"]}
+  gold: {label: "Gold", match: ['\bgold (price|prices|futures|ETFs?|demand)\b', '\bspot gold\b', '\bbullion\b'], queries: ["gold price"]}
+  precious_metals: {label: "Silver & precious metals", match: ['\bsilver (price|prices|futures)?\b', '\bplatinum\b', '\bpalladium\b', '\bprecious metals\b'], queries: ["silver price", "precious metals"]}
+  commodities: {label: "Commodities & oil", match: ['\bcommodit(y|ies)\b', '\boil prices?\b', '\bcrude\b', '\bcopper\b', '\bagricultur(e|al) (prices|commodities)\b'], queries: ["commodity prices", "oil prices"]}
+  bitcoin: {label: "Bitcoin", match: ['\bbitcoin\b', '\bBTC\b', '\bspot bitcoin ETFs?\b'], queries: ["bitcoin price", "bitcoin ETF"]}
+  crypto: {label: "Crypto market", match: ['\bcrypto(currency|currencies)?\b', '\bether(eum)?\b', '\bsolana\b', '\baltcoins?\b'], queries: ["crypto market"]}
+# Rules on Agent C's catalog fields: every matching rule adds its themes (single stocks: none; company news suffices).
+theme_rules:
+  - {when: {product_type: [stock]}, themes: [], stop: true}
+  - {when: {asset_class: [cash]}, themes: [us_tbills_fed]}
+  - {when: {areas: [government_bonds], duration_max: 3.0}, themes: [short_ust]}
+  - {when: {areas: [government_bonds], duration_min: 3.0, duration_max: 10.0}, themes: [mid_ust]}
+  - {when: {areas: [long_term_bonds]}, themes: [long_ust]}
+  - {when: {areas: [bonds, corporate_bonds]}, themes: [us_bonds]}
+  - {when: {areas: [inflation_protected]}, themes: [tips_inflation]}
+  - {when: {areas: [international_bonds]}, themes: [intl_bonds]}
+  - {when: {areas: [us_stocks]}, themes: [us_stocks]}
+  - {when: {areas: [international_stocks]}, themes: [dev_ex_us]}
+  - {when: {areas: [emerging_markets]}, themes: [emerging]}
+  - {when: {areas: [china]}, themes: [china]}
+  - {when: {areas: [small_caps]}, themes: [small_caps]}
+  - {when: {areas: [dividend_stocks]}, themes: [dividends, us_stocks]}
+  - {when: {sector: [technology]}, themes: [sector_technology]}
+  - {when: {sector: [healthcare]}, themes: [sector_healthcare]}
+  - {when: {sector: [financials]}, themes: [sector_financials]}
+  - {when: {sector: [energy]}, themes: [sector_energy]}
+  - {when: {sector: [consumer]}, themes: [sector_consumer]}
+  - {when: {sector: [industrials]}, themes: [sector_industrials]}
+  - {when: {sector: [utilities]}, themes: [sector_utilities]}
+  - {when: {sector: [materials]}, themes: [sector_materials]}
+  - {when: {sector: [real_estate]}, themes: [sector_real_estate]}
+  - {when: {sector: [communication]}, themes: [sector_communication]}
+  - {when: {areas: [gold]}, themes: [gold]}
+  - {when: {areas: [precious_metals]}, themes: [precious_metals]}
+  - {when: {areas: [commodities]}, themes: [commodities]}
+  - {when: {exposure_group: [bitcoin_funds]}, themes: [bitcoin]}
+  - {when: {areas: [crypto, altcoins]}, themes: [crypto]}
+theme_overrides:                 # ticker -> themes (replaces the rules for that ticker)
+  VT: [global_stocks]
+  VXUS: [dev_ex_us, emerging]
+  QQQ: [sector_technology, us_stocks]
+  GDX: [gold, sector_materials]
+  BTCUSDT: [bitcoin]
+  PAXGUSDT: [gold]
+  SGOV: [us_tbills_fed]
+  USFR: [us_tbills_fed]
+  SHV: [us_tbills_fed]
+  BIL: [us_tbills_fed]
+  SHY: [short_ust]
+  AGG: [us_bonds]
+
+# Confidence instead of a hard minimum (PROVISIONAL): score = sum(w*s) / (sum(w) + k); evidence = sum(w).
+confidence:
+  k: 1.5                       # pulls thin evidence toward 0
+  medium: 1.5                  # evidence for "medium confidence"
+  high: 4.0                    # evidence for "high confidence"
+
+# Background news worker (worker.py): starts with the app, never inside a request. PROVISIONAL numbers.
+# Off with EGOQUANT_NEWS_WORKER=off, in fixture/off briefing mode, without EGOQUANT_BRIEFING_LLM=1 + an OpenAI key,
+# with synthetic prices, and in tests (unless enabled there).
+news_worker:
+  interval_minutes: 15         # one run every 15 minutes
+  max_tickers: 120             # core funds + every fund in any interest area (US-listed), in priority order
+  per_ticker_feeds: ["Yahoo Finance", "Nasdaq", "Google News", "Seeking Alpha"]
+  topic_queries: true          # also every area's topic searches
+  fetch_seconds: 90            # all feeds of one run together
+  parallel_fetch: 8
+  parallel_labels: 10          # fund-aware tone calls at a time
+  labels_per_run: 1500
+  labels_per_day: 3000         # about $0.30 a day at gpt-4.1-mini list prices
+  retries: 2
+
+# One briefing load (/briefing/start -> /briefing/{job}): rates EVERY relevant (headline, fund) pair missing from the
+# cache, holdings first. The ceilings are only a safety net; leftovers go to the background and show
+# "rating in progress".
+briefing_job:
+  fetch_seconds: 25
+  parallel_labels: 20
+  retries: 2
+  max_seconds: 150             # safety net only (a month of news for one investor is ~800-1000 pairs from scratch)
+  max_pairs: 2500             # PROVISIONAL (was 1500): 25 holdings + broad interests = 2679 pairs from an empty cache; holdings come first
+  max_jobs: 50                 # jobs kept in memory
+  ttl_minutes: 30
+  per_window: 20               # /briefing/start calls per minute (its own rate-limit bucket)
+
+eval:
+  sample_size: 120             # headlines sampled for hand labeling
+  random_seed: 42              # fixed so the sample is reproducible
+  max_rows_per_ticker: 20      # no single matched fund may fill more than 20 of the sampled rows
+  llm_neutral_band: 0.10       # LLM tone in [-0.1, 0.1] counts as "neutral" (evaluation only)

@@ -1,0 +1,1166 @@
+{
+ "03b8da2ee4c08d87|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "03b8da2ee4c08d87|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "03b8da2ee4c08d87|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "03b8da2ee4c08d87|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "03b8da2ee4c08d87|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|EDV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|SCHP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "0572576e14b5cb6b|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|SPTL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|STIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "0572576e14b5cb6b|TIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|TLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|VGLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0572576e14b5cb6b|VTIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "05bf3ed9cc5b0a60|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0aeb76b24dd494b1|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0aeb76b24dd494b1|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0aeb76b24dd494b1|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0aeb76b24dd494b1|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0ceba46d9f9a2d42|BIL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0ceba46d9f9a2d42|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "0ceba46d9f9a2d42|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "0ceba46d9f9a2d42|SGOV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0ceba46d9f9a2d42|SHV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0ceba46d9f9a2d42|SHY|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0ceba46d9f9a2d42|USFR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0ceba46d9f9a2d42|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "0ceba46d9f9a2d42|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "0d345793681240d9|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0d345793681240d9|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0d345793681240d9|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0d345793681240d9|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0d345793681240d9|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0e3d22e13d9e7116|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|EDV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|SCHP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "0e3d22e13d9e7116|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|SPTL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|STIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|TIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|TLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|VGLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "0e3d22e13d9e7116|VTIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "123760748feac0cb|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|EDV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|SPTL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|TLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "123760748feac0cb|VGLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "157784c95be6aea9|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "157784c95be6aea9|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "157784c95be6aea9|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "157784c95be6aea9|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "157784c95be6aea9|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "16ec33404fb28f28|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "176bc42c665f1e0d|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "176bc42c665f1e0d|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "176bc42c665f1e0d|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "176bc42c665f1e0d|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "1ce69c07b0b80984|EEM|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "1ce69c07b0b80984|FXI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "1ce69c07b0b80984|IEMG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "1ce69c07b0b80984|KWEB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "1ce69c07b0b80984|MCHI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "1ce69c07b0b80984|SCHE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "1ce69c07b0b80984|VWO|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "1ce69c07b0b80984|VXUS|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "20ef04f447243cc1|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "2797e57a931c99ac|PALL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "2797e57a931c99ac|PPLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "2797e57a931c99ac|SIVR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "2797e57a931c99ac|SLV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|EDV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|SPTL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|TLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "27caf344c08afb79|VGLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3365284ec2fa42f8|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "3365284ec2fa42f8|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "3365284ec2fa42f8|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "3365284ec2fa42f8|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "3748a280d2f4635c|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3748a280d2f4635c|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3748a280d2f4635c|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3748a280d2f4635c|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3748a280d2f4635c|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3a76c7a2a6d0f8a1|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|EDV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|SCHP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|SPTL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|STIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|TIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|TLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|VGLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3a76c7a2a6d0f8a1|VTIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "3c075dc16f9b4039|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "3c075dc16f9b4039|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "3c075dc16f9b4039|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "3c075dc16f9b4039|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "3ec8a385ffe937ab|BNBUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3ec8a385ffe937ab|BTCUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3ec8a385ffe937ab|ETHA|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3ec8a385ffe937ab|ETHUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3ec8a385ffe937ab|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3ec8a385ffe937ab|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3ec8a385ffe937ab|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3ec8a385ffe937ab|SOLUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3ec8a385ffe937ab|XRPUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3eebaeaeea97ccc0|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3eebaeaeea97ccc0|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3eebaeaeea97ccc0|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3eebaeaeea97ccc0|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "3eebaeaeea97ccc0|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "421a52617f6823e1|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "421a52617f6823e1|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "421a52617f6823e1|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "421a52617f6823e1|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "424a6314baf0a519|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "424a6314baf0a519|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "424a6314baf0a519|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "424a6314baf0a519|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "43e2d6f98f785da0|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "4ab5199883d72c15|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "4d27aba3d61dac10|BTCUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "4d27aba3d61dac10|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "4d27aba3d61dac10|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "4d27aba3d61dac10|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "4e0dd908c2a46613|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "4e0dd908c2a46613|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "4e0dd908c2a46613|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "4e0dd908c2a46613|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "4ec4636ad81c650e|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "4ec4636ad81c650e|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "4ec4636ad81c650e|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "4ec4636ad81c650e|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "4ec4636ad81c650e|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "52969bd38c3ca03a|BTCUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "52969bd38c3ca03a|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "52969bd38c3ca03a|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "52969bd38c3ca03a|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "52ef7aa185a919be|BNBUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "52ef7aa185a919be|ETHA|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "52ef7aa185a919be|ETHUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "52ef7aa185a919be|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "52ef7aa185a919be|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "52ef7aa185a919be|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "52ef7aa185a919be|SOLUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "52ef7aa185a919be|XRPUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "54341af0ab2add4b|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "54341af0ab2add4b|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "54341af0ab2add4b|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "54341af0ab2add4b|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "579d2800f6744bab|BTCUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "579d2800f6744bab|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "579d2800f6744bab|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "579d2800f6744bab|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "57a3ad2c69bf0dd1|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "57a3ad2c69bf0dd1|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "57a3ad2c69bf0dd1|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "57a3ad2c69bf0dd1|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "5aba2fd33f742d0e|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|EDV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|SPTL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|TLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "5aba2fd33f742d0e|VGLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "661b66436d98b291|BTCUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "661b66436d98b291|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "661b66436d98b291|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "661b66436d98b291|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "6ae9298a16472d1f|BNBUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "6ae9298a16472d1f|ETHA|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "6ae9298a16472d1f|ETHUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "6ae9298a16472d1f|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "6ae9298a16472d1f|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "6ae9298a16472d1f|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "6ae9298a16472d1f|SOLUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "6ae9298a16472d1f|XRPUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "798816182972087b|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "798816182972087b|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "798816182972087b|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "798816182972087b|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "798816182972087b|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "7d863d518789a439|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "7d863d518789a439|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "7d863d518789a439|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "7d863d518789a439|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "7d863d518789a439|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "829f3bd54aec6a05|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "82bc30cfb0b48cd9|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "82dc3700c271890b|BNBUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "82dc3700c271890b|ETHA|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "82dc3700c271890b|ETHUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "82dc3700c271890b|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "82dc3700c271890b|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "82dc3700c271890b|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "82dc3700c271890b|SOLUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "82dc3700c271890b|XRPUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "830597a5915f0f3b|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "830597a5915f0f3b|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "830597a5915f0f3b|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "830597a5915f0f3b|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "8a8fe4e370ee6c70|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "a17289c3de85940c|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a17289c3de85940c|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a17289c3de85940c|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a17289c3de85940c|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a17289c3de85940c|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a4a65bfb9728ea8d|BNBUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a4a65bfb9728ea8d|ETHA|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "a4a65bfb9728ea8d|ETHUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "a4a65bfb9728ea8d|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a4a65bfb9728ea8d|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a4a65bfb9728ea8d|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a4a65bfb9728ea8d|SOLUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a4a65bfb9728ea8d|XRPUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|CPER|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|DBA|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|DBC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|GSG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|PDBC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|USO|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|VDE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|XLE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "a9abe346d633cc17|XOP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "aba8cd9172bc7d0c|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "aba8cd9172bc7d0c|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "aba8cd9172bc7d0c|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "aba8cd9172bc7d0c|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "aba8cd9172bc7d0c|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bfe9844cc663e6d6|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bfe9844cc663e6d6|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bfe9844cc663e6d6|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bfe9844cc663e6d6|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bfe9844cc663e6d6|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bffc754f7c4d902b|BTCUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bffc754f7c4d902b|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bffc754f7c4d902b|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "bffc754f7c4d902b|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c410d7e1af2972eb|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "c410d7e1af2972eb|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "c410d7e1af2972eb|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "c410d7e1af2972eb|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "c4ea2a7a5916aa46|GDX|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c4ea2a7a5916aa46|GLDM|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c4ea2a7a5916aa46|GLD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c4ea2a7a5916aa46|IAU|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c4ea2a7a5916aa46|PAXGUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c4ea2a7a5916aa46|SGOL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c575c7406e7a082e|BTCUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c575c7406e7a082e|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c575c7406e7a082e|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c575c7406e7a082e|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c6db438662e3f8fc|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "c6db438662e3f8fc|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "c6db438662e3f8fc|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "c6db438662e3f8fc|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "c84fe54a78c2cae8|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c84fe54a78c2cae8|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c84fe54a78c2cae8|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "c84fe54a78c2cae8|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "ccbdc6f4845529ea|BTCUSDT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "ccbdc6f4845529ea|FBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "ccbdc6f4845529ea|GBTC|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "ccbdc6f4845529ea|IBIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "cf33f0759691fa2f|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "cf33f0759691fa2f|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "cf33f0759691fa2f|SCHP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "cf33f0759691fa2f|STIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "cf33f0759691fa2f|TIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "cf33f0759691fa2f|VTIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "negative"
+ },
+ "d987211b04cb125e|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "d987211b04cb125e|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "d987211b04cb125e|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "d987211b04cb125e|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "e2a39827cbcd2166|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "eca13a3a00bc621e|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "eca13a3a00bc621e|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "eca13a3a00bc621e|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "eca13a3a00bc621e|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|AGG|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|BND|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|EDV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|GOVT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|IEF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|IEI|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|IGIB|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|LQD|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|SCHP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|SCHZ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|SPTL|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|STIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|TIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|TLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|VCIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|VCSH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|VGIT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|VGLT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f0e42ce5d7676a06|VTIP|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f66bc0231b051cc2|IYR|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f66bc0231b051cc2|KRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f66bc0231b051cc2|SCHH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f66bc0231b051cc2|VFH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f66bc0231b051cc2|VNQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f66bc0231b051cc2|XLF|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "f66bc0231b051cc2|XLRE|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "fa5fed71b29a87c1|IGV|ebb752b54750|gpt-4.1-mini": {
+  "answer": "neutral"
+ },
+ "fa5fed71b29a87c1|QQQ|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "fa5fed71b29a87c1|SMH|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "fa5fed71b29a87c1|VGT|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ },
+ "fa5fed71b29a87c1|XLK|ebb752b54750|gpt-4.1-mini": {
+  "answer": "positive"
+ }
+}

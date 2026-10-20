@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVENTED sample in IBKR's Flex Query XML format. Not real account data. Balanced investor: 50,000, mostly in a world stock fund; sold half of it in two market falls (April 2025, March 2026) and bought back after the recovery.
+     Prices are real adjusted closing prices (dividends included) from the committed snapshot on each date. Read-only: EgoQuant never
+     places an order. -->
+<FlexQueryResponse queryName="EgoQuant demo" type="AF">
+<FlexStatements count="1">
+<FlexStatement accountId="U0000000" fromDate="20250101" toDate="20261015" period="Custom" whenGenerated="20261016;180000">
+<Trades>
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VT" description="VANGUARD TOTAL WORLD STOCK ETF" tradeDate="20250103" dateTime="20250103;100512" quantity="287" tradePrice="115.18" proceeds="-33056.66" ibCommission="-1" netCash="-33057.66" buySell="BUY" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="AGG" description="ISHARES CORE US AGGREGATE" tradeDate="20250103" dateTime="20250103;100512" quantity="122" tradePrice="90.31" proceeds="-11017.82" ibCommission="-1" netCash="-11018.82" buySell="BUY" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="BIL" description="SPDR BLOOMBERG 1-3 MONTH T-BILL" tradeDate="20250103" dateTime="20250103;100512" quantity="35" tradePrice="85.49" proceeds="-2992.15" ibCommission="-1" netCash="-2993.15" buySell="BUY" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VT" description="VANGUARD TOTAL WORLD STOCK ETF" tradeDate="20250408" dateTime="20250408;100512" quantity="-169" tradePrice="100.64" proceeds="17008.16" ibCommission="-1" netCash="17007.16" buySell="SELL" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VT" description="VANGUARD TOTAL WORLD STOCK ETF" tradeDate="20250701" dateTime="20250701;100512" quantity="135" tradePrice="125.99" proceeds="-17008.65" ibCommission="-1" netCash="-17009.65" buySell="BUY" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VT" description="VANGUARD TOTAL WORLD STOCK ETF" tradeDate="20260330" dateTime="20260330;100512" quantity="-120" tradePrice="133.36" proceeds="16003.2" ibCommission="-1" netCash="16002.2" buySell="SELL" levelOfDetail="EXECUTION" />
+<Trade accountId="U0000000" currency="USD" assetCategory="STK" symbol="VT" description="VANGUARD TOTAL WORLD STOCK ETF" tradeDate="20260504" dateTime="20260504;100512" quantity="80" tradePrice="149.63" proceeds="-11970.4" ibCommission="-1" netCash="-11971.4" buySell="BUY" levelOfDetail="EXECUTION" />
+</Trades>
+<CashTransactions>
+<CashTransaction accountId="U0000000" currency="USD" assetCategory="" symbol="" description="CASH RECEIPTS / ELECTRONIC FUND TRANSFERS" dateTime="20250102" amount="50000" type="Deposits/Withdrawals" />
+</CashTransactions>
+</FlexStatement>
+</FlexStatements>
+</FlexQueryResponse>

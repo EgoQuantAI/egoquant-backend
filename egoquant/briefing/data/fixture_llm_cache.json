@@ -1,0 +1,389 @@
+{
+ "03b8da2ee4c08d87|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "tech stocks"
+  ],
+  "summary": "The article is outdated and does not provide current information on tech stocks or market activity."
+ },
+ "0572576e14b5cb6b|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "10-year Treasury yields",
+   "consumer prices",
+   "bond prices"
+  ],
+  "summary": "10-year Treasury yields increased following a higher-than-expected rise in consumer prices, leading to a decline in bond prices."
+ },
+ "0aeb76b24dd494b1|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.5,
+  "mentions": [
+   "office vacancies",
+   "REITs"
+  ],
+  "summary": "Office vacancy rates have reached a record high, which is negatively impacting Real Estate Investment Trusts (REITs). This trend reflects challenges in the commercial real estate sector."
+ },
+ "0ceba46d9f9a2d42|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "REITs",
+   "rate cuts"
+  ],
+  "summary": "The article is an old item and falls outside the 14-day window for current news. No recent information is provided about REITs or rate cuts."
+ },
+ "0efcb9ba784c5ac6|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "budgeting apps",
+   "household spending"
+  ],
+  "summary": "The article discusses various tools available for tracking household spending. It focuses on budgeting apps that help users manage their finances. The conversation highlights different options without endorsing any specific app."
+ },
+ "123760748feac0cb|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "Core bond funds",
+   "Treasury yields"
+  ],
+  "summary": "Core investment-grade bond funds have continued to see inflows despite recent fluctuations in Treasury yields. This trend indicates ongoing investor interest in these funds amid market volatility."
+ },
+ "157784c95be6aea9|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "Nasdaq-100",
+   "technology companies",
+   "data centres"
+  ],
+  "summary": "Large technology companies in the Nasdaq-100 have reported increased capital spending on data centres. This indicates a focus on expanding infrastructure within these firms."
+ },
+ "16ec33404fb28f28|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "U.S. aggregate bond market"
+  ],
+  "summary": "The broad U.S. aggregate bond market experienced a small weekly gain due to a slight easing in yields. The article provides a brief update on bond market performance."
+ },
+ "176bc42c665f1e0d|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "Residential REITs",
+   "Apartment REITs"
+  ],
+  "summary": "Residential REITs reported occupancy rates above 95% and modest rent growth in the latest quarter. This indicates a solid performance for apartment REITs during this period."
+ },
+ "1ce69c07b0b80984|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "emerging markets currencies",
+   "U.S. dollar"
+  ],
+  "summary": "Several emerging markets currencies strengthened against the U.S. dollar. The article provides a brief update on currency movements. No further details are given."
+ },
+ "20ef04f447243cc1|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.5,
+  "mentions": [
+   "real estate funds",
+   "property valuations"
+  ],
+  "summary": "Real estate funds experienced their largest weekly outflows of the year due to declining property valuations. Investors withdrew money from these funds amid the downturn in the property market."
+ },
+ "2797e57a931c99ac|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "silver"
+  ],
+  "summary": "Industrial demand for silver has increased, based on estimates from a trade group. The article provides a brief update on silver demand trends."
+ },
+ "3365284ec2fa42f8|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.3,
+  "mentions": [
+   "real estate trust",
+   "office buildings"
+  ],
+  "summary": "A sample real estate investment trust reported impairment charges related to office buildings and reduced its distribution estimate. The announcement reflects adjustments in the trust's financial outlook. No further details were provided."
+ },
+ "3a76c7a2a6d0f8a1|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "10-year Treasury yields",
+   "consumer price data"
+  ],
+  "summary": "10-year Treasury yields remained mostly unchanged as investors awaited upcoming consumer price inflation data. Market participants are closely monitoring the inflation report for potential impacts."
+ },
+ "3ec8a385ffe937ab|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.8,
+  "mentions": [
+   "bitcoin",
+   "ether"
+  ],
+  "summary": "Posters reported strong gains in their bitcoin and ether holdings. The article highlights positive performance in these cryptocurrencies. No further details were provided."
+ },
+ "3eebaeaeea97ccc0|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "Semiconductor stocks",
+   "Chipmakers"
+  ],
+  "summary": "Semiconductor stocks increased following a report from an industry group about record quarterly shipments. The news highlights strong performance in the chipmaking sector. No further details were provided."
+ },
+ "421a52617f6823e1|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.5,
+  "mentions": [
+   "real estate stocks",
+   "office space leasing"
+  ],
+  "summary": "Real estate stocks continued to fall following weaker leasing activity in office spaces. This decline has increased concerns about potential defaults in the sector."
+ },
+ "43e2d6f98f785da0|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "$QQQ",
+   "Nasdaq"
+  ],
+  "summary": "Members discussed Nasdaq earnings in the $QQQ thread, with most describing the results as better than feared."
+ },
+ "4ab5199883d72c15|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "QQQ",
+   "tech earnings"
+  ],
+  "summary": "The article mentions that tech earnings were mostly in line this week. It also includes an instruction to buy QQQ and predicts a 50% rise by year end, but this is not a factual statement from the article's data. Less factual content is provided overall."
+ },
+ "4e0dd908c2a46613|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "real estate investment trusts",
+   "REITs",
+   "rent collections"
+  ],
+  "summary": "Listed real estate investment trusts (REITs) traded within a narrow range as their quarterly rent collection figures remained close to those of the previous quarter. There was little change in market activity for these REITs during this period."
+ },
+ "4ec4636ad81c650e|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "Technology stocks",
+   "cloud services"
+  ],
+  "summary": "Technology stocks increased due to strong growth in cloud services revenue among several major companies."
+ },
+ "52969bd38c3ca03a|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "spot bitcoin ETFs"
+  ],
+  "summary": "The article reports that spot bitcoin ETFs have experienced strong inflows. Posters have expressed positive views about these inflows."
+ },
+ "52ef7aa185a919be|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "Ethereum"
+  ],
+  "summary": "Forum members showed strong excitement about an upcoming Ethereum network upgrade. The discussion highlighted widespread anticipation within the community. No further details were provided."
+ },
+ "54341af0ab2add4b|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.5,
+  "mentions": [
+   "REITs",
+   "office leasing",
+   "distributions"
+  ],
+  "summary": "The article reports concerns among posters about declining REIT prices this month. It mentions issues such as weak office leasing and reductions in distributions. Overall, the discussion reflects worries about the current state of REITs."
+ },
+ "579d2800f6744bab|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "bitcoin"
+  ],
+  "summary": "Bitcoin experienced its strongest weekly gain in several months, which was celebrated by users. The cryptocurrency showed a notable breakout during this period."
+ },
+ "57a3ad2c69bf0dd1|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.5,
+  "mentions": [
+   "real estate investment trusts",
+   "REITs"
+  ],
+  "summary": "Several real estate investment trusts reported that higher refinancing costs will reduce their cash flow, leading to a decline in their share prices."
+ },
+ "5aba2fd33f742d0e|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "10-year Treasury yields",
+   "aggregate bond market"
+  ],
+  "summary": "10-year Treasury yields declined slightly during quiet trading, causing a modest rise in the overall bond market. The market activity was subdued as the weekend approached."
+ },
+ "6ae9298a16472d1f|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "Ethereum"
+  ],
+  "summary": "Ethereum network users experienced lower gas fees following a recent upgrade. The change was positively received by the community. No further details were provided."
+ },
+ "7d863d518789a439|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "Nasdaq-100",
+   "technology companies"
+  ],
+  "summary": "The Nasdaq-100 index increased slightly following generally strong quarterly earnings reports from technology companies. The market movement was modest and linked to earnings performance. No further details were provided."
+ },
+ "9f61b6fbf0a12f2f|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "real estate funds"
+  ],
+  "summary": "Weekly data indicated that inflows and outflows for real estate funds were approximately balanced. There was no significant net movement in these funds during the period."
+ },
+ "a17289c3de85940c|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "sample technology fund trust",
+   "Nasdaq-100"
+  ],
+  "summary": "A sample technology fund trust that tracks the Nasdaq-100 has filed its semi-annual report. The report provides updated information on the fund's status. No further details were provided in the text."
+ },
+ "a4a65bfb9728ea8d|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.7,
+  "mentions": [
+   "ether"
+  ],
+  "summary": "Ether has gained for a fifth consecutive day, leading to overwhelmingly optimistic comments from investors. The rally in ether continues to attract positive sentiment."
+ },
+ "a6077fda06c18b2a|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "software companies",
+   "software sector"
+  ],
+  "summary": "Profit margins at large software companies improved for the second consecutive quarter, according to a sector review. This indicates a positive trend in the software sector's profitability. No further details were provided."
+ },
+ "a9abe346d633cc17|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "crude oil futures",
+   "copper futures"
+  ],
+  "summary": "A sample commodity fund trust submitted its quarterly report detailing its positions in crude oil and copper futures. The report provides an update on the fund's holdings in these commodities."
+ },
+ "aba8cd9172bc7d0c|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "Semiconductor companies",
+   "Nasdaq-100"
+  ],
+  "summary": "Semiconductor companies experienced strong order growth, which contributed to gains in the Nasdaq-100 index. The positive performance in chipmakers helped lift the overall Nasdaq-100. The article highlights the connection between semiconductor orders and the Nasdaq-100's movement."
+ },
+ "b1a98c27f7ead3ef|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [],
+  "summary": "The city council has approved plans to build a new public park near the river. This development aims to enhance community recreational spaces. No further details were provided."
+ },
+ "bffc754f7c4d902b|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.8,
+  "mentions": [
+   "bitcoin ETFs"
+  ],
+  "summary": "Trading volumes in bitcoin ETFs have reached a new record high. Members of the discussion expressed very positive sentiments about this development."
+ },
+ "c24c16f8c01b9f85|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "Technology funds"
+  ],
+  "summary": "Technology funds have experienced steady inflows for the fourth week in a row."
+ },
+ "c410d7e1af2972eb|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.5,
+  "mentions": [
+   "office vacancy rates",
+   "real estate investment trusts",
+   "REITs"
+  ],
+  "summary": "Office vacancy rates have reached a record high. Real estate investment trusts with significant office holdings experienced sharp declines."
+ },
+ "c4ea2a7a5916aa46|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "gold"
+  ],
+  "summary": "Spot gold prices remained near their recent highs during a period of quiet trading. There were no significant changes reported in the gold market. The trading activity was subdued."
+ },
+ "c575c7406e7a082e|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.2,
+  "mentions": [
+   "Bitcoin",
+   "spot bitcoin ETF"
+  ],
+  "summary": "Bitcoin's price increased following a second consecutive week of inflows into spot bitcoin ETFs. The article highlights growing demand for bitcoin ETFs. No further details were provided."
+ },
+ "c6db438662e3f8fc|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.5,
+  "mentions": [
+   "commercial property values",
+   "office properties",
+   "retail properties"
+  ],
+  "summary": "Commercial property values have declined for the third consecutive month. Office and retail properties experienced the largest decreases in value."
+ },
+ "ccbdc6f4845529ea|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.7,
+  "mentions": [
+   "Bitcoin"
+  ],
+  "summary": "The article is a collection of posts from a forum where users celebrate Bitcoin's recent price increase and share their profits. It reflects positive sentiment among the community regarding Bitcoin's rally."
+ },
+ "cf33f0759691fa2f|gpt-4.1-mini|brief-v1": {
+  "llm_tone": -0.3,
+  "mentions": [
+   "Core bond funds",
+   "intermediate Treasuries"
+  ],
+  "summary": "Core bond funds declined last week due to a sell-off in intermediate Treasuries following the inflation report. The increase in yields impacted the performance of these funds."
+ },
+ "cfd1350f5d023382|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "local football club",
+   "regional cup"
+  ],
+  "summary": "The local football club won the regional cup final in extra time with a full stadium in attendance. The match was closely contested and decided beyond regular time."
+ },
+ "e2a39827cbcd2166|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "sample bond fund trust"
+  ],
+  "summary": "A sample bond fund trust has filed its annual shareholder report, which includes details about its core bond holdings. The report provides an overview of the fund's bond investments over the past year. No additional information was provided."
+ },
+ "eca13a3a00bc621e|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "Data centre REITs",
+   "technology tenants"
+  ],
+  "summary": "Data centre real estate investment trusts (REITs) have experienced strong leasing demand from technology tenants. This indicates robust activity in the data centre leasing market. No further details were provided."
+ },
+ "f0e42ce5d7676a06|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "bond market",
+   "Treasury yields"
+  ],
+  "summary": "The bond market has stabilized following a recent sell-off caused by inflation concerns. Treasury yields have decreased slightly. Overall, the market shows signs of steadiness after volatility."
+ },
+ "f66bc0231b051cc2|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.0,
+  "mentions": [
+   "commercial property lending"
+  ],
+  "summary": "Banks reported that lending volumes for commercial property remained broadly unchanged, with loan terms similar to the previous quarter."
+ },
+ "fa5fed71b29a87c1|gpt-4.1-mini|brief-v1": {
+  "llm_tone": 0.5,
+  "mentions": [
+   "chipmakers"
+  ],
+  "summary": "Demo Research Notes has upgraded chipmakers to a strong buy rating and set a price target above current levels. The note suggests investors consider buying on any weakness."
+ }
+}

@@ -1,0 +1,416 @@
+{
+ "proof": "egoq-proof-1",
+ "record": "{\"allocation\":[{\"ticker\":\"AGG\",\"weight_ppm\":53579},{\"ticker\":\"BIL\",\"weight_ppm\":45042},{\"ticker\":\"BND\",\"weight_ppm\":38377},{\"ticker\":\"DBC\",\"weight_ppm\":63203},{\"ticker\":\"GLD\",\"weight_ppm\":16378},{\"ticker\":\"IEF\",\"weight_ppm\":55213},{\"ticker\":\"IWM\",\"weight_ppm\":45066},{\"ticker\":\"LQD\",\"weight_ppm\":36065},{\"ticker\":\"QQQ\",\"weight_ppm\":57740},{\"ticker\":\"SCHD\",\"weight_ppm\":47771},{\"ticker\":\"SHY\",\"weight_ppm\":44447},{\"ticker\":\"TIP\",\"weight_ppm\":30100},{\"ticker\":\"TLT\",\"weight_ppm\":20524},{\"ticker\":\"VEA\",\"weight_ppm\":56217},{\"ticker\":\"VIG\",\"weight_ppm\":55614},{\"ticker\":\"VNQ\",\"weight_ppm\":13059},{\"ticker\":\"VT\",\"weight_ppm\":31085},{\"ticker\":\"VTI\",\"weight_ppm\":60707},{\"ticker\":\"VWO\",\"weight_ppm\":22307},{\"ticker\":\"XLE\",\"weight_ppm\":33623},{\"ticker\":\"XLF\",\"weight_ppm\":24551},{\"ticker\":\"XLK\",\"weight_ppm\":27256},{\"ticker\":\"XLP\",\"weight_ppm\":17477},{\"ticker\":\"XLU\",\"weight_ppm\":42482},{\"ticker\":\"XLV\",\"weight_ppm\":62117}],\"confirmed_at\":\"2026-10-19T15:57:49Z\",\"consent_version\":\"2026-10-20\",\"investor\":{\"answers\":{\"amount_invested_cents\":100000000,\"amount_needed_cents\":0,\"choices\":{\"G1\":\"c\",\"G2\":\"c\",\"G3\":\"b\"},\"multi_choices\":{}},\"questionnaire_version\":\"eq-rq-0.1.0\",\"risk_class\":\"C4\"},\"operation_log\":[{\"action\":\"questionnaire_submitted\",\"at\":\"2026-10-19T15:57:49Z\"},{\"action\":\"report_generated\",\"at\":\"2026-10-19T15:57:49Z\"},{\"action\":\"report_viewed\",\"at\":\"2026-10-19T15:57:49Z\"},{\"action\":\"plan_confirmed\",\"at\":\"2026-10-19T15:57:49Z\"}],\"record_version\":1,\"report_id\":\"f2fa47f4-24ef-44c1-81d0-6be1f1428d40\",\"risk_engine\":{\"approved\":true,\"checks\":[{\"detail\":\"R3 <= R4\",\"name\":\"r_level[AGG]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[BIL]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[BND]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[DBC]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[GLD]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[IEF]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[IWM]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[LQD]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[QQQ]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[SCHD]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[SHY]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[TIP]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[TLT]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[VEA]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[VIG]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[VNQ]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[VTI]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[VT]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[VWO]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[XLE]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[XLF]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[XLK]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[XLP]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[XLU]\",\"passed\":true},{\"detail\":\"R3 <= R4\",\"name\":\"r_level[XLV]\",\"passed\":true},{\"detail\":\"worst loss 27.5% <= 32.0%\",\"name\":\"stress:max_loss\",\"passed\":true},{\"detail\":\"equity 64.1% <= 70.0%\",\"name\":\"suitability:max_equity\",\"passed\":true}],\"violations\":[]},\"schema\":\"egoq-record-1\",\"versions\":{\"agent_d_model\":\"gpt-4.1-mini\",\"agent_d_prompt_sha256\":\"ebb752b547507ffcf8edd43fa8eac0bb4dd9990249355a86bbe2bb50ea5c8544\",\"engine\":\"0.3.0\",\"input_hash\":\"demo0000c4000025\",\"report_sha256\":\"509622fe910cdb73ff15a52b6199f102c238e82105013971cade7bf0f8d7ea44\",\"risk_engine\":\"0.2.0\",\"risk_profile_config\":\"a3dd56a9ff83615ea8893651f02e5c408ce0a04f93facb6e22b7cf0ec5f876e1\"}}",
+ "salt": "cb85e6f6ec44e38456ba000a6f21bd2ec1fc483b887831453fc2aa0ea8b91746",
+ "commitment": "c4457b5e5bc42993073531b7047b6697ab331c8dec13201a6b2ddd977841cca7",
+ "chain_id": 11155111,
+ "tx_hash": "0xfd7e41b07c38ab0fe3d526578fa3a1dacaa7a0027f7399c2bbf99107df5670c9",
+ "sealing_address": "0x3c9E28032A834F958BaBE168aa9AcC116D2c9ddC",
+ "report": {
+  "approved": true,
+  "status": "optimal",
+  "c_level": "C4",
+  "as_of": "2026-10-16",
+  "data_source": "synthetic",
+  "violations": [],
+  "checks": [
+   {
+    "name": "suitability:max_equity",
+    "passed": true,
+    "detail": "equity 64.1% <= 70.0%"
+   },
+   {
+    "name": "stress:max_loss",
+    "passed": true,
+    "detail": "worst loss 27.5% <= 32.0%"
+   },
+   {
+    "name": "r_level[VT]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[VTI]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[VEA]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[VWO]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[QQQ]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[IWM]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[VNQ]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[XLV]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[XLF]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[XLK]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[XLE]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[XLU]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[XLP]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[SCHD]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[VIG]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[BND]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[AGG]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[SHY]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[IEF]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[TLT]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[TIP]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[LQD]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[GLD]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[DBC]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   },
+   {
+    "name": "r_level[BIL]",
+    "passed": true,
+    "detail": "R3 <= R4"
+   }
+  ],
+  "game_note": null,
+  "report": {
+   "status": "optimal",
+   "investor_id": "demo-investor",
+   "as_of": "2026-10-16",
+   "currency": "USD",
+   "reference_amount": 1000000.0,
+   "risk_class": "C4",
+   "headline": "DEMO: a fake investor, synthetic prices. A broad 25-fund portfolio within your C4 limits.",
+   "equity_weight": 0.641,
+   "bond_weight": 0.3,
+   "cash_weight": 0.30000000000000004,
+   "allocation": [
+    {
+     "asset_id": "VT",
+     "name": "VT (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.031084708675068306,
+     "amount": 31084.71,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "VTI",
+     "name": "VTI (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.06070741945526332,
+     "amount": 60707.42,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "VEA",
+     "name": "VEA (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.056217256776560275,
+     "amount": 56217.26,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "VWO",
+     "name": "VWO (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.022307336343779266,
+     "amount": 22307.34,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "QQQ",
+     "name": "QQQ (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.05773988060543338,
+     "amount": 57739.88,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "IWM",
+     "name": "IWM (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.045065630071107,
+     "amount": 45065.63,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "VNQ",
+     "name": "VNQ (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.013059239044806659,
+     "amount": 13059.24,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "XLV",
+     "name": "XLV (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.0621180975792975,
+     "amount": 62118.1,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "XLF",
+     "name": "XLF (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.02455064051119087,
+     "amount": 24550.64,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "XLK",
+     "name": "XLK (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.02725617345354172,
+     "amount": 27256.17,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "XLE",
+     "name": "XLE (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.03362325367621873,
+     "amount": 33623.25,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "XLU",
+     "name": "XLU (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.04248237417008814,
+     "amount": 42482.37,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "XLP",
+     "name": "XLP (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.017477086248190048,
+     "amount": 17477.09,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "SCHD",
+     "name": "SCHD (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.0477710685715954,
+     "amount": 47771.07,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "VIG",
+     "name": "VIG (demo fund)",
+     "asset_class": "equity",
+     "weight": 0.05561350510912614,
+     "amount": 55613.51,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "BND",
+     "name": "BND (demo fund)",
+     "asset_class": "bond",
+     "weight": 0.03837725632233986,
+     "amount": 38377.26,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "AGG",
+     "name": "AGG (demo fund)",
+     "asset_class": "bond",
+     "weight": 0.05357806685268027,
+     "amount": 53578.07,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "SHY",
+     "name": "SHY (demo fund)",
+     "asset_class": "bond",
+     "weight": 0.04444703167278637,
+     "amount": 44447.03,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "IEF",
+     "name": "IEF (demo fund)",
+     "asset_class": "bond",
+     "weight": 0.05521331047957,
+     "amount": 55213.31,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "TLT",
+     "name": "TLT (demo fund)",
+     "asset_class": "bond",
+     "weight": 0.020523647882958247,
+     "amount": 20523.65,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "TIP",
+     "name": "TIP (demo fund)",
+     "asset_class": "bond",
+     "weight": 0.030099578464428806,
+     "amount": 30099.58,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "LQD",
+     "name": "LQD (demo fund)",
+     "asset_class": "bond",
+     "weight": 0.036064625497154,
+     "amount": 36064.63,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "GLD",
+     "name": "GLD (demo fund)",
+     "asset_class": "commodity",
+     "weight": 0.016377600636309334,
+     "amount": 16377.6,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "DBC",
+     "name": "DBC (demo fund)",
+     "asset_class": "commodity",
+     "weight": 0.06320286841356522,
+     "amount": 63202.87,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    },
+    {
+     "asset_id": "BIL",
+     "name": "BIL (demo fund)",
+     "asset_class": "cash",
+     "weight": 0.04504234348694113,
+     "amount": 45042.34,
+     "expense_ratio": 0.001,
+     "risk_share": 0.0
+    }
+   ],
+   "worst_loss": 0.275,
+   "banners": [
+    "DEMO: fake investor and synthetic prices, for the on-chain sealing demo only."
+   ],
+   "risk_review_approved": true,
+   "risk_review_violations": [],
+   "engine_version": "0.3.0",
+   "input_hash": "demo0000c4000025",
+   "data_source": "synthetic"
+  },
+  "inputs": {
+   "answers": {
+    "questionnaire_version": "eq-rq-0.1.0",
+    "choices": {
+     "G1": "c",
+     "G2": "c",
+     "G3": "b"
+    },
+    "multi_choices": {},
+    "amount_invested": 1000000.0,
+    "amount_needed": 0.0
+   }
+  }
+ }
+}

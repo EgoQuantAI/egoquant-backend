@@ -1,0 +1,48 @@
+# Advisor chat settings. All PROVISIONAL.
+
+# Sentences of a chat reply that match any of these are withheld before they reach the screen.
+# Chat-specific: the briefing's list (briefing/config.yaml) is tuned for news and would also remove honest
+# hypothetical stress explanations ("in this scenario the portfolio would fall 14%"). Case-insensitive.
+forbidden_patterns:
+  - '\b(you|investors|we|i)\s+(should|must|ought\s+to|need\s+to|have\s+to)\s+(definitely\s+|really\s+)?(buy|sell|short|dump|load\s+up\s+on|go\s+all[- ]in)\b'
+  - '\bi\s+(would|''d)\s+(buy|sell|short)\b'
+  - '\b(i|we)\s+recommend\s+(buying|selling|shorting|that\s+you\s+(buy|sell))\b'
+  - '\b(buy|sell)\s+(\w+\s+){0,2}?(now|today|immediately|right\s+away|before\s+it)\b'
+  - '\btime\s+to\s+(buy|sell)\b'
+  - '\bbuy\s+the\s+dip\b'
+  - '\bstrong\s+(buy|sell)\b'
+  - '\bprice\s+targets?\b'
+  - '(?<!no\s)(?<!not\s)(?<!never\s)\bguarantee(d|s)?\s+(\w+\s+){0,2}?(returns?|profits?|gains?|income|growth)\b'   # "no guarantee of ..." passes
+  - '\bguaranteed\s+to\s+(grow|rise|gain|make|earn|return|beat)\b'
+  - '\b(will|is\s+going\s+to|are\s+going\s+to)\s+(definitely\s+|surely\s+|certainly\s+)?(double|triple|skyrocket|moon|soar|surge|explode)\b'
+  - '\bcan''t\s+(lose|go\s+wrong)\b'
+  - '\bsure\s+thing\b'
+  # Softer ways of telling someone what to do with a security (compliance review, 20 Oct: the list above missed 14 of 23
+  # advice-like sentences). Narrow on purpose: "I'd suggest talking to a licensed adviser" and "you can add Stocks under
+  # Investments" must pass (tests/advisor/test_guard_soft_advice.py).
+  - '\b(you|we)\s+(could|might|may|ought\s+to)\s+(also\s+|then\s+|simply\s+|just\s+)?(want\s+to\s+)?(buy|sell|short|top\s+up|trim|cash\s+out|go\s+all[- ]in)\b'
+  - '\b(you|we)\s+can\s+(safely|easily|comfortably|simply|just|also)\s+(buy|sell|short|top\s+up|trim|cash\s+out)\b'
+  - '\byou\s+can\s+(sell|buy|trim|top\s+up)\s+(half|some|all|more|most|part|a\s+(little|bit|part|portion)|\d+%?)\s+of\s+(your|the|it|them)\b'
+  - '\b(selling|buying|holding|waiting|adding|trimming|keeping|switching)\b[^.]{0,20}\b(would|will)\s+be\s+(wise|smart|sensible|prudent|a\s+good\s+(idea|move))'
+  - '\b(would|will)\s+be\s+(wise|smart|sensible|prudent|a\s+good\s+(idea|move))\s+to\s+(buy|sell|hold|add|trim|wait|reduce|increase|switch|keep|stay|avoid)\b'
+  - '\b(will|is\s+going\s+to|are\s+going\s+to|is\s+likely\s+to|are\s+likely\s+to|is\s+expected\s+to)\s+(go\s+up|go\s+down|rise|rally|climb|increase|fall|drop|crash|decline|recover)\b[^.]{0,40}\b(next|tomorrow|soon|coming|after|before|by\s+the\s+end)\b'
+  - '\bconsider\s+(buying|selling|shorting|trimming|topping\s+up)\b'
+  - '\b(it''?s|it\s+is|it\s+would\s+be|that''?s|that\s+is|that\s+would\s+be|this\s+is|this\s+would\s+be)\s+(perfectly\s+|totally\s+|completely\s+)?(fine|ok|okay|reasonable|sensible|wise|smart|safe)\s+to\s+(buy|sell|short|trade|add|hold|go\s+ahead)\b'
+  - '\b(it''?s|it\s+is|that''?s|that\s+is|this\s+is)\s+a\s+(good|great|sensible|reasonable|smart|safe)\s+(idea|move|choice|trade|decision)\b'
+  - '\bgo\s+ahead\s+(and\s+)?(buy|sell|trade|with\s+(it|this|that|the\s+(trade|purchase|sale)))\b'
+  - '\bfeel\s+free\s+to\s+(buy|sell|trade|proceed)\b'
+  - '\bi(''d|\s+would)?\s+(suggest|advise|recommend)\s+(that\s+you\s+|you\s+)?(to\s+)?(buy|buying|sell|selling|hold|holding|wait|waiting|trim|trimming|switch|switching|keep|keeping|stay|staying|avoid|avoiding|reduce|reducing|add|adding|increase|increasing)\b'
+  - '\b(good|great|right|wrong|bad|perfect)\s+(time|moment|opportunity|entry\s+point)\s+to\s+(buy|sell|add|enter|exit)\b'
+  - '\bworth\s+(buying|selling|holding|adding)\b'
+  - '\b(safe|fine|ok|okay|smart)\s+to\s+(buy|sell|add)\b'
+  - '\bno\s+(harm|problem|risk)\s+in\s+(buying|selling|adding)\b'
+  - '\b(you\s+)?(should|shouldn''?t|better)\s+(not\s+)?(sell|buy|hold\s+(on|onto|off)|wait\s+(to|until|for\s+a\s+better)|proceed|go\s+ahead)\b'
+  # Chinese (the advisor answers in the investor's language): same ideas. Negated forms ("不保证收益", "没有稳赚不赔") pass.
+  - '(你|您)(应该|应当|最好|不妨|可以考虑)(买|卖|持有|加仓|减仓|清仓|抛|入手)'
+  - '(最好|不妨)(现在)?(买|卖|持有|加仓|减仓|清仓)'
+  - '建议(你|您)?(买|卖|持有|加仓|减仓|清仓|抛售|入手)'
+  - '(现在|目前)(是)?(买入|卖出|抛售|入场)的(好)?(时机|机会)'
+  - '(?<!不)(?<!没有)(?<!并非)(一定|肯定|必然|必定)(会)?(涨|跌|赚|翻倍)'
+  - '(?<!不)(?<!没有)(?<!无)(?<!并非)稳赚|(?<!不)(?<!不能)(?<!无法)(?<!没有)保证(收益|盈利|回报)|必涨|赶紧(买|卖)|放心(买|卖|持有)'
+
+withheld_note: "(Part of this answer was withheld by EgoQuant's compliance filter because it read like a trade instruction or a forecast.)"
