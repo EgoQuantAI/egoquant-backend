@@ -12,4 +12,4 @@ docs/anchoring/*.json -text
 docs/anchoring/*.html -text
 
 # Sealed on-chain evidence: byte-exact, never rewrite line endings (Aslan, 20 Oct)
-
+submission/**/b_onchain/proofs/* -text
