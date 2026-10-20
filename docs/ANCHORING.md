@@ -1,8 +1,8 @@
 # On-chain sealing of confirmed advice (`egoquant/anchoring`)
 
-Status: built and tested on branch `onchain` (backend and frontend), 19 Oct 2026. Real Sepolia seals of real engine
-output on real market data (invented investors) are listed in `docs/ON_CHAIN_EVIDENCE.md`. Wiring into `main.py`, the portfolio page and Supabase is Onur's side
-(`docs/ON_CHAIN_COORDINATION.md`). **Off by default:** without `EGOQ_SEAL_ENABLED=1`, a key and RPC URLs, the
+Status: built, tested and live (seal v2), 20 Oct 2026. Real Sepolia seals of real engine
+output on real market data (invented investors) are listed in `docs/ON_CHAIN_EVIDENCE.md`. The wiring into `main.py`, the portfolio page and Supabase is done; the decisions are in
+`docs/ONCHAIN_DECISIONS.md`. **Off by default:** without `EGOQ_SEAL_ENABLED=1`, a key and RPC URLs, the
 feature is hidden.
 
 ## What it does, in plain words

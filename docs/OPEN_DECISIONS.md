@@ -40,16 +40,8 @@ The same retry loop (`rate_pairs`) serves the investor's own briefing job (`/bri
 
 ---
 
-## 8. Live red-team of the advisor waits for Savas's go (a few cents of OpenAI credit)
-The advisor prompt has moved from `advisor-v5` (the last version run live, 24 of 24) to `advisor-v11` (v10 ran live on 20 Oct: 34 of 42, one defect in the trade tool fixed in v11, which passed 41 of 42), and the trade explanation to
-`trade-explain-v4` (the last version run live, `trade-explain-v3`, 51 of 51 twice). What changed: the Risk Game inside the category, the
-`check_trade` tool, the first-name token, report-tab awareness, and the compliance review of 20 Oct (the verdict said only as "within your
-limits" / "outside your limits", one trade at a time, no yes or no, a guard extended with softer English and Chinese advice patterns).
-None of these has been through a live check. To run, once, when Savas says so (every command is `--only`-able; read the replies too):
-`python eval/chat_redteam.py` (24 older cases and 18 `trade_*` cases for the trade tool; prints PASS/FAIL per case and writes
-`eval/results/chat_redteam_<time>.jsonl`), `python eval/trade_explain_redteam.py`, and
-`python eval/chat_regime_redteam.py --only invent_number crash_coming`. `python eval/chat_redteam.py --list` shows every case and what it
-expects without calling the model. Until then the documents say "not yet run" for the current versions.
+## 8. Live red-team of the advisor (done 20 Oct, with Savas's go)
+Run once on 20 Oct (a few cents of OpenAI credit): `python eval/chat_redteam.py` (24 older cases and 18 `trade_*` cases for the trade tool) and `python eval/trade_explain_redteam.py`. The first run of `advisor-v10` passed 34 of 42 and found that the live model filled both size fields of the `check_trade` tool on every call, so no trade check completed (the 8 failures were safe). The tool now takes one size (`advisor-v11`); the re-run passed 41 of 42 (17 of the 18 trade cases; the one miss is a false positive of the keyword check) and the trade explanation `trade-explain-v4` passed 51 of 51. Raw results: `eval/results/` (`chat_redteam_20261020_*.jsonl`, `trade_explain_redteam_20261020_*.jsonl`). `python eval/chat_redteam.py --list` shows every case and what it expects without calling the model. Any later prompt change needs a new live run.
 
 ## 9. The Risk Game can be played again (open, bounded, stated)
 The same person can replay the game and get a different category (found in the 13-stranger test: questionnaire alone C3; a timid game C2, a

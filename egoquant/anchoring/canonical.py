@@ -1,6 +1,6 @@
 """Canonical JSON: the same bytes from Python and from the browser (src/lib/proof.ts), for the same value.
 
-Rules (docs/ON_CHAIN_PLAN.md 3.1, docs/ANCHORING.md):
+Rules (docs/ANCHORING.md):
 - compact (",", ":"), UTF-8, no trailing newline, NaN / Infinity refused;
 - object keys sorted by UTF-16 code unit (what JavaScript's default sort does; for ASCII keys it is plain order);
 - integers only up to 2**53 - 1 (what JavaScript can hold exactly).

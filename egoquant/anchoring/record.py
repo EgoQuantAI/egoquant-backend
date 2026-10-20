@@ -1,6 +1,6 @@
 """The advisory record (`egoq-record-1`): what we advised, built from the saved report at confirm time.
 
-Fields: docs/ON_CHAIN_COORDINATION.md section 2. Never in the record: user id, email, username, IBKR data, the
+Fields: docs/ANCHORING.md. Never in the record: user id, email, username, IBKR data, the
 questionnaire score, free text, headlines. The whole saved report is only FINGERPRINTED (versions.report_sha256);
 it is never encrypted and never put on-chain. Building a record changes nothing in the report.
 """

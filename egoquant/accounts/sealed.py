@@ -3,7 +3,7 @@
 The only thing that writes into a saved report after it was built is the final news briefing
 (POST /account/reports/{id}/briefing). Once the investor has confirmed the plan and it was sealed, that save must
 answer 409 with a plain sentence, not a generic error. The route calls `require_unsealed(rows)` with whatever it
-read for "is there a seal record for this report" (the advisory_records row of ON_CHAIN_PLAN.md, section 5):
+read for "is there a seal record for this report" (the advisory_records row, docs/ANCHORING.md):
 
     rows = _call(get_store().select, token, "advisory_records", _own(user, report_id=f"eq.{report_id}", select="id", limit="1"))
     require_unsealed(rows)

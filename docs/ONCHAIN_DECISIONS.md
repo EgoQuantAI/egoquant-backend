@@ -32,8 +32,7 @@ Kept by Aslan's AI on branch `docs/aslan-N`. One line per decision; a later line
 | OC-18 | Limits: 5 seals per account per day, 200 a day in total (`EGOQ_SEAL_MAX_PER_DAY`, marked provisional in `egoquant/anchoring/config.py`); past them the plan is still confirmed and the seal waits. | before 19 Oct 2026 | implemented by Aslan's AI; Aslan has not confirmed the numbers | proposal |
 | OC-19 | Roadmap, not built: the same commitment on a consortium chain such as FISCO BCOS (what changes: the client and the chain id; what stays: the record, the salt, the commitment, the verifier). | 20 Oct 2026 | Savas's brief (open facts) | proposal |
 
-## Bonus points (what Aslan is adding)
+## Bonus points (on-chain work)
 
-The competition's exact bonus criteria for on-chain work are **not known to Aslan's AI**: NEEDS SAVAS / Aslan to write them
-here. What is built for them so far: OC-01 to OC-14 (a real public seal on Sepolia that anyone can check without an account,
+The competition's exact bonus criteria for on-chain work were not available to the team, so none is claimed here. What is built for the on-chain work: OC-01 to OC-14 (a real public seal on Sepolia that anyone can check without an account,
 with the report itself, its owner's username and a tamper check in the browser).

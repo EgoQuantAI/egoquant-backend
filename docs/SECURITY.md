@@ -1,6 +1,6 @@
 # EgoQuant security and compliance
 
-Status: **draft v3, Tue 2026-10-20 morning** (Onur). Items marked **PENDING** are not finished; nothing below claims more
+Status: 20 October 2026, the version tagged `submission-20oct`. Items marked **PENDING** are not finished; nothing below claims more
 than the code does. Every claim names the file or test that backs it.
 
 ## 1. Permission tiers
@@ -57,7 +57,7 @@ than the code does. Every claim names the file or test that backs it.
 4. The confirmation email link must be changed in Supabase's template to `{{ .SiteURL }}/api/auth/confirm?token_hash={{ .TokenHash }}&type=signup`.
 5. Binance read-only API keys: **roadmap**, not built. Design: verify the key's permissions via `GET /sapi/v1/account/apiRestrictions` and refuse any key that can trade, withdraw or transfer; fetch once; never store.
 6. `/debug/portfolio` answers 404 unless `EGOQUANT_DEBUG_PAGES=on` (unset in production); when on, it is public (synthetic data only, own rate limit).
-7. The old Tiingo key in git history must be rotated.
+7. The old Tiingo key in the private git history was rotated on 20 Oct (about 16:25) and the public repositories are one-commit copies without that history.
 8. Railway needs a volume at `EGOQUANT_CACHE_DIR` so price caches survive redeploys (availability, not security).
 9. What-if: `supabase/migrations/002_what_if.sql` must be run in Supabase (Savas) before signed-in runs are audited;
    until then the audit insert fails quietly (logged) and the chat still works.
@@ -73,7 +73,7 @@ than the code does. Every claim names the file or test that backs it.
 15. Supabase's free plan cannot edit the confirmation email template without custom SMTP. With the default link the email is confirmed but the user lands on the homepage signed out and logs in by hand (gap 4 describes the intended link).
 16. The `what_if_context` seal is a signature, not encryption: it carries the user's own questionnaire answers back to their own browser. It is never put in a prompt.
 17. Agent B: when real-history evidence is not stricter than the class limit it now sends no loss limit at all (it never loosens a limit, it just adds none).
-18. **The old Tiingo key is in the git history** (commits 33e7eac to 4770747 in the backend). The repository is private, but the key must be rotated; the backend's `.env` on the team PC still used it at the 19 Oct check.
+18. **The old Tiingo key was in the private development history** (commits 33e7eac to 4770747 in the backend). It was rotated on 20 Oct (about 16:25) and the public repositories are one-commit copies without that history.
 19. The frontend CSP allows `'unsafe-inline'` and `'unsafe-eval'` for scripts (Next.js needs the first; the second is only needed in development and should be dropped for production). The backend sends `Strict-Transport-Security` since 20 Oct; the frontend relies on Vercel's own HSTS on its domains. Hardening of both (drop `unsafe-eval` in production, `form-action`, `base-uri`, `object-src`, Origin checks on every proxy POST) is in progress.
 20. **Closed (20 Oct):** every `POST` proxy route now runs the same-origin check (`sameOrigin()` in `src/lib/server-auth.ts`), including `/api/chat*`, `/api/portfolio`, `/api/trade-check` and the two briefing routes (frontend `3d720c7`); only `/api/debugmodels` has none, and it is a 404 in production. `SameSite=Lax` cookies remain the second line.
 21. A 422 no longer repeats a field NAME the client invented (`extra_forbidden`); field names that exist in our schema are still shown, by design.

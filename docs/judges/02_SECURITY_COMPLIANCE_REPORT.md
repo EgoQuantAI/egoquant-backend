@@ -174,6 +174,6 @@ In detail: when a signed-in person confirms an *approved* plan (once the news ra
 9. **`operation_log` is an activity record**, not a tamper-proof audit log (a user can add entries for themselves).
 10. **Yahoo Finance data in the committed snapshot** is accepted for the competition only; a commercial product needs a licensed feed.
 11. **Binance and further broker imports, Chinese-language advice, and a consortium chain** are roadmap, not built.
-12. **The old Tiingo key is in git history** and must be rotated.
+12. **The old Tiingo key was in the private git history**; it was rotated on 20 Oct (about 16:25) and the public repositories are one-commit copies without that history.
 
 *Source documents: `docs/SECURITY.md` (threat table T1-T19 and the full gap list), `docs/RISK_GAME_BLEND.md`, `docs/ANCHORING.md`, `docs/DEPLOY_ENV.md`, `egoquant/risk_profile/README.md`, `egoquant/briefing/README.md`.*

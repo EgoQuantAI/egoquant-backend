@@ -1,4 +1,4 @@
-"""On-chain sealing endpoints (contract: docs/ON_CHAIN_COORDINATION.md section 6). Included from main.py by Onur.
+"""On-chain sealing endpoints (contract: docs/ANCHORING.md). Included from main.py.
 
 Owner routes reuse the accounts helpers (imported, never edited): identity comes only from the Supabase token,
 every read and write runs AS the user (Row-Level Security) and is filtered by user_id here too. There is no

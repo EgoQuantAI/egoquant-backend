@@ -1,6 +1,6 @@
 # Portfolio method v2: contract (Onur, Mon 19 Oct 2026, decided by Savas)
 
-Status: PLAN + CONTRACT. Nothing here is built yet. Every agent works on its own branch and edits only its own files.
+Status: built, tested and **off by default** (the optional method v2; the outcome and the switch are in `docs/V2_DECISION_SHEET.md`). This file keeps the original plan and contract.
 Flag: `EGOQUANT_PORTFOLIO_METHOD` = `v1` (default, today's engine, untouched) or `v2` (this document). It is read ONCE in Agent A
 (`egoquant/agents/quant/`). Until Savas accepts the before/after table (Tue 20 Oct 09:00 Dubai) the default stays `v1`.
 

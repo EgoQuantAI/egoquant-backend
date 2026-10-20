@@ -31,7 +31,7 @@ def save(client, report_id, job, headers=A):  # noqa: F811
 
 
 def seal(store, report_id, user_id="user-a"):
-    """What the seal router leaves behind (ON_CHAIN_PLAN.md section 5): one advisory_records row for the report."""
+    """What the seal router leaves behind (docs/ANCHORING.md): one advisory_records row for the report."""
     store.tables.setdefault("advisory_records", []).append(
         {"id": "00000000-0000-4000-8000-0000000000aa", "user_id": user_id, "report_id": report_id, "record_version": 1,
          "schema": "egoq-record-1", "commitment_hex": "0" * 64})
