@@ -3,7 +3,7 @@
     python eval/demo_pack.py --out docs/demo_data/demo_numbers.json     # run the three scenarios headless (offline)
     python eval/build_demo_doc.py                                       # fill the template with what that run produced
 
-Two variants, one per portfolio method, sit side by side so that choosing the default is copying files, not a rebuild (the demo video script, docs/DEMO_VIDEO_SCRIPT*.md from eval/demo_video.template.md via --template, follows the same pattern):
+Two variants, one per portfolio method, sit side by side so that choosing the default is copying files, not a rebuild:
     docs/demo_data/demo_numbers_v1.json + docs/DEMO_SCRIPT_v1.md        (flag unset)
     docs/demo_data/demo_numbers_v2.json + docs/DEMO_SCRIPT_v2.md        (EGOQUANT_PORTFOLIO_METHOD=v2)
     docs/demo_data/demo_numbers.json    + docs/DEMO_SCRIPT.md           (the default: a copy of one pair)
@@ -233,8 +233,7 @@ if __name__ == "__main__":
     parser.add_argument("--numbers", default=str(NUMBERS), help="the run to read (default: docs/demo_data/demo_numbers.json)")
     parser.add_argument("--out", default=str(OUT), help="the document to write (default: docs/DEMO_SCRIPT.md)")
     parser.add_argument("--template", default=str(TEMPLATE),
-                        help="the template to fill (default: eval/demo_script.template.md; the video script is "
-                             "eval/demo_video.template.md -> docs/DEMO_VIDEO_SCRIPT.md)")
+                        help="the template to fill (default: eval/demo_script.template.md)")
     args = parser.parse_args()
     out = Path(args.out)
     out.write_text(build(Path(args.numbers), Path(args.template)), encoding="utf-8")

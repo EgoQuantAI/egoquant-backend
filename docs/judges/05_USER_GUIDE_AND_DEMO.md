@@ -99,8 +99,7 @@ name and account data before it reaches the AI.
 
 ## 4. Three people to try (about three minutes each)
 
-The exact answers and the numbers to expect are in `docs/DEMO_SCRIPT.md`; a five-minute video script with a narration is in
-`docs/DEMO_VIDEO_SCRIPT.md`. The text is checked against the committed numbers file by tests; re-run `python eval/demo_pack.py` to reproduce the numbers (the search
+The exact answers and the numbers to expect are in `docs/DEMO_SCRIPT.md`. The text is checked against the committed numbers file by tests; re-run `python eval/demo_pack.py` to reproduce the numbers (the search
 can end on a slightly different, equally valid portfolio on another computer, and the optional v2 pack is the most sensitive to the
 computer's math libraries).
 
