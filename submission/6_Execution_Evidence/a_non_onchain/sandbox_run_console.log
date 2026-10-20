@@ -1,0 +1,15 @@
+# Raw console output of the sandbox run (simulated account, invented data; 20 Oct 2026, tag submission-20oct = 381f52b)
+[14:05:26]  1. Sign in: signed in (HTTP 200)
+[14:05:26]  2. Consent: recorded
+[14:05:26]  3. Consent: recorded
+[14:05:26]  4. Risk questionnaire + Risk Game: category C3
+[14:05:27]  5. Build and save the portfolio: category C3, risk check approved; saved as report dac493cb
+[14:05:27]  6. News rating to completion: news job done: 8 headlines, 12 fund ratings, none left unrated (ratings from the saved sample set); final news saved into the report
+[14:05:27]  7. Report viewed: view recorded
+[14:05:27]  8. Import past trades (IBKR): 7 trades and 1 cash flow imported (2025-01-02 to 2026-05-04)
+[14:05:28]  9. Trade check: verdict: outside your limits (Your stock share is already above the limit of 40.0% (60.5%); this trade makes it 63.2%.)
+[14:05:28] 10. Rebuild with the trading history: behaviour limits before: 0, after: 1: 'Loss in a severe fall, behavioural limit' at most 8.8% (from what your past choices suggest (confidence 80%) (equities fa…)
+[14:05:28] 11. Confirm and seal: confirmed; seal confirmed (sandbox chain, block 1000001)
+[14:05:28] 12. Verify the sealed report: original: Unchanged; changed copy: Does not match (report changed)
+[14:05:28] 13. Delete my data: rows before: 29, after: 0 (sign-in and username stay, as designed)
+DONE
