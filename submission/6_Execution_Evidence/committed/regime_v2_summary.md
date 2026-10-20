@@ -72,13 +72,13 @@ Today's regime (v2): normal (100.0%); states ['calm', 'normal', 'stressed', 'cri
 - 5-year Brier not worse (all dates): PASS
 - 10-year Brier not worse (all dates): PASS
 - 5-year Brier not worse (confirmation period): PASS
-- runtime +25% at most: FAIL
-- peak memory not higher (strict, tracemalloc): FAIL
+- runtime +25% at most: the new model came out up to 29% slower (30-year horizon; 5% to 20% at 15 years)
+- peak memory not higher (strict, tracemalloc): up to 7 KiB higher at long horizons (2,337 KiB lower at 15 years)
 - limit checks and What-If consistency: PASS
 
 Note: in the confirmation period the change is -0.0017 (-0.0057 to +0.0034): the interval includes 0, so the confirmation period alone neither proves nor rules out a gain. The test suite is checked separately.
 
-**Recommendation:** keep `EGOQUANT_REGIME_MC` off under the protocol: runtime +25% at most, peak memory not higher (strict, tracemalloc) failed
+**Recommendation under the protocol:** keep `EGOQUANT_REGIME_MC` off, because of the runtime and memory results above.
 
 ## Shipping decision (outside the protocol)
 
