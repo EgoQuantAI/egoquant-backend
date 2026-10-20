@@ -10,7 +10,7 @@ the briefing's news-tone label (see Agent D below). That label never sets a scor
 approval.
 
 - Live demo: https://fintechaton-frontend.vercel.app
-- API: https://web-production-ee5cc.up.railway.app (interactive docs at `/docs`)
+- API: https://web-production-59960.up.railway.app (interactive docs at `/docs`)
 - Backend repository: https://github.com/EgoQuantAI/egoquant-backend
 - Frontend repository: https://github.com/EgoQuantAI/egoquant-frontend
 

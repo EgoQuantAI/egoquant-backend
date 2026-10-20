@@ -4,7 +4,7 @@
 
 **EgoQuant in one paragraph.** EgoQuant is a wealth-advisory agent that gives a person a portfolio they can understand, question and audit. A formal risk questionnaire and a short Risk Game find out how much risk the person can afford and how they actually behave about it; specialised agents turn that, the person's interests and real market data into a portfolio and a plain-language report; an independent Risk Engine re-checks every limit and has the final word; and an AI advisor explains everything, runs "what if" scenarios and checks possible trades without ever being allowed to decide anything. Confirmed advice can be sealed on a public test blockchain so that any later change is detectable. The design rule behind the whole system: **numbers that matter come from deterministic, tested code; AI only explains.**
 
-**Try it.** Live website: https://fintechaton-frontend.vercel.app (the demo account's credentials are in the submission form). API with interactive documentation: https://web-production-ee5cc.up.railway.app/docs. Two minutes without an account: open **Verify a report**, press **Use the demo report**, then **Try a tampered copy**.
+**Try it.** Live website: https://fintechaton-frontend.vercel.app (the demo account's credentials are in the submission form). API with interactive documentation: https://web-production-59960.up.railway.app/docs. Two minutes without an account: open **Verify a report**, press **Use the demo report**, then **Try a tampered copy**.
 
 ## What is in this package (the organisers' six items)
 

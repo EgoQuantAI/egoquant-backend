@@ -9,7 +9,7 @@ This is a snapshot of the version we submitted on 20 October 2026 (tag `submissi
 ## Try it without installing anything
 
 - Website: https://fintechaton-frontend.vercel.app
-- API with interactive docs: https://web-production-ee5cc.up.railway.app/docs
+- API with interactive docs: https://web-production-59960.up.railway.app/docs
 
 Two minutes, no account: open **Verify a report** in the sidebar, press **Use the demo report**, then **Try a tampered copy**. The first checks a real sealed report against the Sepolia test chain; the second shows what happens when one number was changed.
 
@@ -31,7 +31,7 @@ set EGOQUANT_PRICE_MODE=snapshot    # on macOS or Linux: export EGOQUANT_PRICE_M
 uvicorn main:app --reload
 ```
 
-Open http://127.0.0.1:8000/docs and you can call every endpoint from the browser. `POST /questionnaire` to read the questions, `POST /profile` to score answers, `POST /portfolio` to build a portfolio.
+Open http://127.0.0.1:8000/docs and you can call every endpoint from the browser. `GET /questionnaire` to read the questions, `POST /profile` to score answers, `POST /portfolio` to build a portfolio.
 
 Things that are off until you give them a key, and work fine without one:
 

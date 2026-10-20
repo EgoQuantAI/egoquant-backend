@@ -12,7 +12,7 @@ never the accounts themselves). If you prefer separate throw-away accounts, sign
 ## 2. Run it (PowerShell, from the backend folder)
 ```powershell
 cd C:\Users\NYUAD\Downloads\FinTechaton\fintechaton-backend
-$env:BACKEND_URL = "https://web-production-ee5cc.up.railway.app"
+$env:BACKEND_URL = "https://web-production-59960.up.railway.app"
 $env:SMOKE_A_EMAIL = "<e-mail of account A>"; $env:SMOKE_A_PASSWORD = "<its password>"
 $env:SMOKE_B_EMAIL = "<e-mail of account B>"; $env:SMOKE_B_PASSWORD = "<its password>"
 .venv\Scripts\python supabase\tests\live_smoke.py
