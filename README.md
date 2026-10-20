@@ -46,18 +46,7 @@ You answer a proper risk questionnaire, play a short game about risk and say wha
 
 ## 🏗️ How a portfolio is built
 
-```mermaid
-flowchart LR
-    Q[Questionnaire and Risk Game] --> P[Category C1 to C5 and limits]
-    P --> C[Agent C: allowed universe and real prices]
-    C --> A[Agent A: about 100 candidate portfolios]
-    A --> B[Agent B: behaviour, tighten only]
-    B --> G[Goal simulation: 10,000 futures]
-    G --> R{Risk Engine: independent check}
-    R -->|approved| Rep[Report]
-    Rep --> Adv[Advisor: explains, what-if, trade check]
-    Rep --> Seal[Seal on Sepolia when confirmed]
-```
+<p align="center"><img src="docs/assets/architecture.png" alt="Profile, category, Agent C, Agent A, Agent B, goal simulation, Risk Engine, report, advisor, seal" width="100%"></p>
 
 ## 🚀 Try it in two minutes
 
