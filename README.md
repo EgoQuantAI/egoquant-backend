@@ -33,26 +33,26 @@ You answer a proper risk questionnaire, play a short game about risk and say wha
   <img src="docs/judges/screens/05-portfolio-summary-desktop.png" alt="A portfolio approved by the independent Risk Engine" width="88%">
 </p>
 
-## ✨ Highlights
+## Highlights
 
 | | |
 |---|---|
-| 🧭 **Suitability first** | Your category is the *lower* of what your finances allow and how you feel about risk; the Risk Game counts one third of the attitude part |
-| 🛡️ **An independent Risk Engine** | Recomputes every limit from the weights alone and has the final say; only an approved portfolio is shown |
-| 🧠 **Behaviour can only tighten** | A real trading history (IBKR) and a crash test can lower your limits, never raise them |
-| 🤖 **AI that explains, never decides** | Whitelisted tools, every number checked against the engine, personal data replaced by placeholders, a compliance filter |
-| ⛓️ **Tamper-evident advice** | A salted fingerprint of the confirmed plan on Sepolia; anyone can check a report on the **Verify** page |
-| 🔒 **One person never sees another's data** | Row-Level Security in the database, a second filter in the backend, no all-powerful key anywhere |
+| **Suitability first** | Your category is the *lower* of what your finances allow and how you feel about risk; the Risk Game counts one third of the attitude part |
+| **An independent Risk Engine** | Recomputes every limit from the weights alone and has the final say; only an approved portfolio is shown |
+| **Behaviour can only tighten** | A real trading history (IBKR) and a crash test can lower your limits, never raise them |
+| **The advisor explains, never decides** | Whitelisted tools, every number checked against the engine, personal data replaced by placeholders, a compliance filter |
+| **Tamper-evident advice** | A salted fingerprint of the confirmed plan on Sepolia; anyone can check a report on the **Verify** page |
+| **One person never sees another's data** | Row-Level Security in the database, a second filter in the backend, no all-powerful key anywhere |
 
-## 🏗️ How a portfolio is built
+## How a portfolio is built
 
 <p align="center"><img src="docs/assets/architecture.png" alt="Profile, category, Agent C, Agent A, Agent B, goal simulation, Risk Engine, report, advisor, seal" width="100%"></p>
 
-## 🚀 Try it in two minutes
+## Try it in two minutes
 
 Open **[www.egoquant.app](https://www.egoquant.app)**, choose **Verify a report** in the sidebar, press **Use the demo report**, then **Try a tampered copy**. The first checks a real sealed report against the Sepolia test chain; the second shows what happens when one number was changed. The full path is in the [user guide](docs/judges/05_USER_GUIDE_AND_DEMO.md).
 
-## 💻 Run it on your machine
+## Run it on your machine
 
 You need Python 3.11 or newer (we run 3.14). No API key is needed: the repository carries a saved snapshot of real market prices.
 
@@ -81,13 +81,13 @@ Open http://127.0.0.1:8000/docs: `GET /questionnaire` reads the questions, `POST
 Every setting, with a sentence each: [`docs/DEPLOY_ENV.md`](docs/DEPLOY_ENV.md).
 </details>
 
-## 🧪 Test cases
+## Test cases
 
 ```bash
 pytest -q -m "not live"
 ```
 
-**3,554 tests**, with no network and no AI calls; 7 to 35 minutes depending on the machine. `-m "not live"` leaves out the 21 tests that need live market data. On Windows the numerical libraries sometimes crash a long test process; then run one folder at a time with `python eval/run_tests_per_file.py . results.txt --dir tests/system` ([why](docs/judges/04_TESTING_AND_EVIDENCE.md)).
+**3,554 tests**, with no network and no calls to the language model; 7 to 35 minutes depending on the machine. `-m "not live"` leaves out the 21 tests that need live market data. On Windows the numerical libraries sometimes crash a long test process; then run one folder at a time with `python eval/run_tests_per_file.py . results.txt --dir tests/system` ([why](docs/judges/04_TESTING_AND_EVIDENCE.md)).
 
 <details>
 <summary><b>Tests by area</b></summary>
@@ -114,14 +114,14 @@ Beyond the unit tests:
 
 - `python eval/deploy_check.py https://your-backend` checks a deployed copy, read-only. The live copy passes **71 of 71**.
 - `supabase/tests/rls_isolation.sql` and `rls_onchain.sql` prove Row-Level Security on a real Supabase project; both pass on ours.
-- `eval/chat_redteam.py` and `eval/trade_explain_redteam.py` are live red-teams of the AI; results are kept in `eval/results/`.
+- `eval/chat_redteam.py` and `eval/trade_explain_redteam.py` are live red-teams of the advisor; results are kept in `eval/results/`.
 - `python -m egoquant.anchoring verify <file>` checks a seal against the chain without our website.
 
-## ☁️ Deploy it
+## Deploy it
 
 See **[DEPLOYMENT.md](DEPLOYMENT.md)**. Short version: the backend is one Python process (we use Railway), the website is a Next.js app (we use Vercel), accounts are a Supabase project.
 
-## 🗂️ What is where
+## What is where
 
 <details>
 <summary><b>Repository map</b></summary>
@@ -142,21 +142,19 @@ See **[DEPLOYMENT.md](DEPLOYMENT.md)**. Short version: the backend is one Python
 | `submission/` | The submission package: PDFs, slides, evidence |
 </details>
 
-## 📚 Documentation
+## Documentation
 
 | Document | |
 |---|---|
-| 📘 [Technical documentation (one PDF)](submission/1_Technical_Documentation/00_EgoQuant_Technical_Documentation.pdf) | Architecture, algorithms, security design and every supporting document |
-| 🔐 [Security and compliance report](docs/judges/02_SECURITY_COMPLIANCE_REPORT.md) | Suitability, access control, privacy, AI governance, residual risks |
-| 🧮 [Methods and models](docs/judges/03_METHODS_AND_MODELS.md) · [part B](docs/judges/03b_METHODS_QUANT_RISK_ADVISOR.md) | How every number is computed |
-| 🧾 [Testing and evidence](docs/judges/04_TESTING_AND_EVIDENCE.md) | Test counts, red-teams, probes, how to re-run |
-| ⛓️ [The on-chain seal](docs/judges/09_ON_CHAIN_SEAL.md) | What is sealed, what it proves, how to check it |
+| [Technical documentation (one PDF)](submission/1_Technical_Documentation/00_EgoQuant_Technical_Documentation.pdf) | Architecture, algorithms, security design and every supporting document |
+| [Security and compliance report](docs/judges/02_SECURITY_COMPLIANCE_REPORT.md) | Suitability, access control, privacy, AI governance, residual risks |
+| [Methods and models](docs/judges/03_METHODS_AND_MODELS.md) · [part B](docs/judges/03b_METHODS_QUANT_RISK_ADVISOR.md) | How every number is computed |
+| [Testing and evidence](docs/judges/04_TESTING_AND_EVIDENCE.md) | Test counts, red-teams, probes, how to re-run |
+| [The on-chain seal](docs/judges/09_ON_CHAIN_SEAL.md) | What is sealed, what it proves, how to check it |
 
 > [!IMPORTANT]
-> EgoQuant places no orders and moves no money. The category limits are our own placeholders, not a bank's policy. Every chance it shows is a simulation on past prices, not a forecast. What we know is weak: [limitations and roadmap](docs/judges/06_LIMITATIONS_AND_ROADMAP.md) and [`docs/SECURITY.md`](docs/SECURITY.md).
+> EgoQuant places no orders and moves no money. The category limits are our own placeholders, not a bank's policy. Every chance it shows is a simulation on past prices, not a forecast. Known weaknesses: [limitations and roadmap](docs/judges/06_LIMITATIONS_AND_ROADMAP.md) and [`docs/SECURITY.md`](docs/SECURITY.md).
 
-## 👥 Team
-
-**Savas, Umut Bideci, Aslan and Zerya**, working with several Claude Code sessions (Anthropic's Claude) that wrote and reviewed much of the code and the documents under the same rules as everyone: the full test suite before every merge and a secret scan on every change. The running product does not use Claude; the advisor uses OpenAI models.
+---
 
 <sub>The long technical README of the development repository: [README_DETAILED.md](README_DETAILED.md).</sub>
