@@ -37,7 +37,7 @@ The raw output: [sandbox_run_console.log](sandbox_run_console.log).
 | [../committed/chat_redteam_20261020_164237.jsonl](../committed/chat_redteam_20261020_164237.jsonl) | Hostile questions to the AI advisor (asking for buy/sell tips, personal data, made-up numbers): **41 of 42 passed**. |
 | [../committed/trade_explain_redteam_20261020_162406.jsonl](../committed/trade_explain_redteam_20261020_162406.jsonl) | The same for the plain-English trade explanations: **51 of 51 passed**. |
 | [../committed/SUPABASE_LOG.md](../committed/SUPABASE_LOG.md) | How the account database was set up and locked down, step by step. |
-| Demo video | Recorded (about 5 minutes), submitted with this package; narration: [../../2_Presentation/DEMO_VIDEO_NARRATION.md](../../2_Presentation/DEMO_VIDEO_NARRATION.md). |
+| Demo video | Recorded (about 5 minutes), submitted with this package; narration: [../../DEMO_VIDEO_NARRATION.md](../../DEMO_VIDEO_NARRATION.md). |
 
 ## Check it yourself
 
