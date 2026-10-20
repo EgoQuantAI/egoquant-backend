@@ -10,6 +10,3 @@ egoquant/briefing/data/fixture_fund_tones.json text eol=lf
 # (tests/anchoring/test_committed_proofs.py fails on a CR).
 docs/anchoring/*.json -text
 docs/anchoring/*.html -text
-
-# Sealed on-chain evidence: byte-exact, never rewrite line endings (Aslan, 20 Oct)
-submission/**/b_onchain/proofs/* -text
